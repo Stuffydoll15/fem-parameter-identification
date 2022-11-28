@@ -1478,6 +1478,9 @@ INPUT FrontBackMatter\ListOfContent.aux
 INPUT .\Content\Chapter1.aux
 INPUT Content\Chapter1.aux
 INPUT Content\Chapter1.aux
+INPUT .\Content\Chapter2.aux
+INPUT Content\Chapter2.aux
+INPUT Content\Chapter2.aux
 INPUT .\Appendix\AppendixA.aux
 INPUT Appendix\AppendixA.aux
 INPUT Appendix\AppendixA.aux
@@ -1790,6 +1793,16 @@ INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fpl
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7t.vf
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
+INPUT .\Content\Chapter2.tex
+INPUT .\Content\Chapter2.tex
+INPUT .\Content\Chapter2.tex
+OUTPUT Content\Chapter2.aux
+INPUT .\Content\Chapter2.tex
+INPUT .\Content\Chapter2.tex
+INPUT .\Content\Chapter2.tex
+INPUT Content\Chapter2.tex
+INPUT .\Content\Chapter2.tex
+INPUT Content\Chapter2.tex
 INPUT .\Appendix\AppendixA.tex
 INPUT .\Appendix\AppendixA.tex
 INPUT .\Appendix\AppendixA.tex
@@ -1823,6 +1836,9 @@ INPUT FrontBackMatter\ListOfContent.aux
 INPUT .\Content\Chapter1.aux
 INPUT Content\Chapter1.aux
 INPUT Content\Chapter1.aux
+INPUT .\Content\Chapter2.aux
+INPUT Content\Chapter2.aux
+INPUT Content\Chapter2.aux
 INPUT .\Appendix\AppendixA.aux
 INPUT Appendix\AppendixA.aux
 INPUT Appendix\AppendixA.aux

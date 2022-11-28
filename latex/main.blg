@@ -13,6 +13,8 @@ Reallocating 'name_of_file' (item size: 1) to 34 items.
 A level-1 auxiliary file: FrontBackMatter/ListOfContent.aux
 Reallocating 'name_of_file' (item size: 1) to 21 items.
 A level-1 auxiliary file: Content/Chapter1.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: Content/Chapter2.aux
 Reallocating 'name_of_file' (item size: 1) to 23 items.
 A level-1 auxiliary file: Appendix/AppendixA.aux
 Reallocating 'name_of_file' (item size: 1) to 30 items.
@@ -39,7 +41,7 @@ Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 4 entries,
             6399 wiz_defined-function locations,
-            1238 strings with 11166 characters,
+            1239 strings with 11186 characters,
 and the built_in function-call counts, 32516 in all, are:
 = -- 2693
 > -- 447
