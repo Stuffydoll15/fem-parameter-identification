@@ -24,7 +24,8 @@
 \contentsline {section}{\numberline {1.8}Sectioning and Subsectioning}{9}{section.31}%
 \contentsline {section}{\numberline {1.9}In Closing}{10}{section.32}%
 \contentsline {chapter}{\numberline {2}State of the Art}{11}{chapter.33}%
-\contentsline {section}{\numberline {2.1}Material Experiment testing in Organs}{11}{section.34}%
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{13}{appendix.35}%
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{13}{section.36}%
-\contentsline {chapter}{Bibliography}{15}{appendix*.37}%
+\contentsline {section}{\numberline {2.1}Inverse Finite Element Method for parameter estimation}{11}{section.34}%
+\contentsline {section}{\numberline {2.2}Material Experiment testing in Organs}{11}{section.35}%
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{13}{appendix.36}%
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{13}{section.37}%
+\contentsline {chapter}{Bibliography}{15}{appendix*.38}%
