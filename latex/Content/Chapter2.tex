@@ -4,11 +4,57 @@
 
 \label{Chapter2} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
+Precise knowledge about the biomechanical characterization of soft tissues has gained 
+attention in medical research, e.g. medical image analysis and visualization.
+For many years, the obtained medical diagnosis have come from assumptions of experts or 
+accumulated experience. This information although proven to be useful, has its limitations 
+when computed-assisted systems like, medical diagnosis, therapy ,and training, rely on 
+more quantificable data. (kauer 2002) To gather this data, it is important to gained access
+to the tissues and perform in-vivo testing experiments, where in cases of organs it is nearly impossible to achieve, because this 
+would involve a very invasive procedure. Also in case of extraction some of the properties
+may change as in case of biomaterials. Their biomechanical properties also depends from other 
+variables e.g., changes in blood presure. Furthermore, another encountered issue is the lack of samples, 
+not only due to the lack of a tissue sample, but also because the time-dependent material 
+properties. This will cause a change a in the material properties and analogically, an 
+inaccurate result.\\
+
+In the situation where the soft material's data can be gather in a constant, fast and realiable
+process, the data enables the system to predict the behaviour of soft tissues and give pre-operative
+ calculations. Therefore, the material models represent a vital part for the computational 
+ models, as their help to increase the accuracy of the simulation and ist applications in other
+ systems. 
+
+In soft materials analyses a non-linear situation is mostly encountered, for which a finite 
+element method becomes a common approach. The application of the finite element method
+ facilitates to analyze complex structures with complex material behaviour and aids in 
+ solving continuum mechanical problems. Nevertheless, in order to simulate a material with 
+ complexity requires complex algorithms with high computational costs. One of the goals of 
+ this study to identify the key parameters and their influence in a material model to 
+ approximate such a complex material and applied a simplified material model for medical 
+ research applications.\\
+ 
+ With the application of the experiment testing ,and the finite element method is possible 
+ to identify some key parameters through an inverse finite element method approach. With this 
+ method a framework can be established and the results of computaional model can be matched 
+ to the experimental data, and be validated with other experiments.
+
 %----------------------------------------------------------------------------------
 \section{State of the art}
 
 \subsection{Experimental techniques for soft materials}
 \subsubsection{Uniaxial testing}
+This method allows the validation of several computational models as it provides with
+ searched parameters done with other experimental procedure
+
+\subsubsection{Aspiration experiment}
+
+Tissue aspiration experiments introduces an aspiration tube which is put against the 
+soft tissue, generating a vacuum. With the help of a mirror placed next to aspiration 
+hole, the reflection of the side-view of the tissue can be captured with a video camera.
+This camera captures the images of the iluminated surface of the material and the 
+aspiration pressure is captured through a sensor. Through this process the captured 
+profile of the tissue is obtained and this can be used to characterize the deformation 
+and analyze the viscoelastic properties of the soft tissue. (kauer 2002)
 
 \subsubsection{Indentation}
 Indentation have being gaining popularity in the last decades and it is now one of
@@ -24,7 +70,11 @@ As some materials do not allow the use of uniaxial or biaxial tensile testing, t
 -why is relevant for this project 
 
 %---------------------------------------------------------------------------------
+\subsection{Material Modeling of Soft Tissues}
+ 
 
+
+%---------------------------------------------------------------------------------
 \subsection{Inverse Finite Element Method for Parameter Identification}
 
 An inverse finite element (FE) approach requires usually a certain experimental model,

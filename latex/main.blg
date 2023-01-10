@@ -12,8 +12,6 @@ A level-1 auxiliary file: FrontBackMatter/Authorship.aux
 Reallocating 'name_of_file' (item size: 1) to 34 items.
 A level-1 auxiliary file: FrontBackMatter/ListOfContent.aux
 Reallocating 'name_of_file' (item size: 1) to 21 items.
-A level-1 auxiliary file: Content/Chapter1.aux
-Reallocating 'name_of_file' (item size: 1) to 21 items.
 A level-1 auxiliary file: Content/Chapter2.aux
 Reallocating 'name_of_file' (item size: 1) to 21 items.
 A level-1 auxiliary file: Content/Chapter3.aux
@@ -41,44 +39,44 @@ Database file #2: Bibliography/bibliography.bib
 Biblatex version: 3.18
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 4 entries,
+You've used 1 entry,
             6399 wiz_defined-function locations,
-            1240 strings with 11206 characters,
-and the built_in function-call counts, 32516 in all, are:
-= -- 2693
-> -- 447
-< -- 97
-+ -- 858
-- -- 183
-* -- 2561
-:= -- 3967
+            1210 strings with 9166 characters,
+and the built_in function-call counts, 1522 in all, are:
+= -- 72
+> -- 70
+< -- 1
++ -- 49
+- -- 28
+* -- 31
+:= -- 368
 add.period$ -- 0
-call.type$ -- 4
-change.case$ -- 30
-chr.to.int$ -- 54
-cite$ -- 6
-duplicate$ -- 2838
-empty$ -- 2874
-format.name$ -- 234
-if$ -- 6556
+call.type$ -- 1
+change.case$ -- 0
+chr.to.int$ -- 42
+cite$ -- 0
+duplicate$ -- 11
+empty$ -- 103
+format.name$ -- 0
+if$ -- 322
 int.to.chr$ -- 0
-int.to.str$ -- 6
+int.to.str$ -- 0
 missing$ -- 0
-newline$ -- 147
-num.names$ -- 123
-pop$ -- 1143
+newline$ -- 20
+num.names$ -- 0
+pop$ -- 47
 preamble$ -- 1
-purify$ -- 51
+purify$ -- 0
 quote$ -- 0
-skip$ -- 613
+skip$ -- 77
 stack$ -- 0
-substring$ -- 5633
-swap$ -- 549
-text.length$ -- 118
-text.prefix$ -- 3
+substring$ -- 151
+swap$ -- 1
+text.length$ -- 20
+text.prefix$ -- 0
 top$ -- 1
-type$ -- 124
+type$ -- 22
 warning$ -- 0
-while$ -- 458
+while$ -- 64
 width$ -- 0
-write$ -- 144
+write$ -- 20
