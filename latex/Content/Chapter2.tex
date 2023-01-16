@@ -4,28 +4,24 @@
 
 \label{Chapter2} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
-Precise knowledge about the biomechanical characterization of soft tissues has received 
-attention in medical research, e.g. medical image analysis and visualization.
+Precise knowledge about the biomechanical characterization of soft tissues has received attention
+in medical research, e.g., medical image analysis and visualization.
 For many years, the obtained medical diagnosis have come from assumptions of experts or 
 accumulated experience. This information, although proven to be useful, has its limitations 
-when computed-assisted systems like, medical diagnosis, therapy ,and training, rely on 
-more quantificable data\cite{Kauer2002}. To gather this data, it is important to gain access
-to the tissues and perform in-vivo testing experiments, where in cases of organs it is nearly 
+when computed-assisted systems like, medical diagnosis, therapy, and training, rely on 
+more quantifiable data\cite{Kauer2002}. To gather this data, it is important to gain access
+to the tissues and perform in-vivo testing experiments. For organs, this procedure is nearly 
 impossible to achieve, due to the involvement of an invasive procedure, and the lack of constant
-and reproducible external and internal factors. \\ \cite{Reference1}
+and reproducible external and internal factors. \\ 
 
-One of the proposed techniques to execute the gathering of data is, the extraction of the 
-solicited organ and perform some experiments in a limited amount of time. With the extracted 
-data a approximated model is simulated, and inserted in the computed-assisted systems.
-One of the complications in case of extracting the organ is, some of the properties for 
-biomaterials may change despite examining the same organ. Their biomechanical properties depends
- from other variables e.g., changes in blood presure, time-dependant material properties, symptoms 
- from diseases, etc. Furthermore, another 
-encountered issue is the lack of replication, due to the use of different individuals organs,
-which includes more externals factor to add to the equation. Additionally, given a tissue sample,
- does not mean that the obtained material properties can characterize the organ properly, as a 
- consequence of the anisotropy propertie of soft tissues. This will cause a change a in the 
- material properties and analogically, an inaccurate result.
+One of the complications associated with the extraction of the organ is that some material 
+properties may change despite examination of the same organ. Their biomechanical properties 
+depend on other factors, such as changes in blood pressure, changes in material properties 
+over time, symptoms from diseases, etc. Furthermore, another encountered issue is the lack 
+of replication, due to the use of different individuals organs, which includes more external
+ factors to add to the equation. Moreover, given a tissue sample, it is difficult to 
+ characterize the organ's material properly due to its anisotropy property. The material 
+ properties change, resulting in an inaccurate result.
 %not only due to the lack of a tissue sample, but also because the time-dependent material properties. 
 \\
 
@@ -46,10 +42,10 @@ influence in the construction of a material model. These key parameters the atte
  approximate such a complex material will be done, and this simplified material model will be 
  validated for its future applications in medical research.\\
  
- With the application of the experiment testing ,and the finite element method is possible 
- to identify some key parameters through an inverse finite element method approach. With this 
+ With the application of the experiment testing, and the finite element method it is possible 
+ to identify some key material parameters through an inverse finite element method approach. With this 
  method a framework can be established and the results of computational model can be matched 
- to the experimental data, and be validated with other experiments.
+ to the experimental data, and afterwards be validated with other experiments.
 
 %----------------------------------------------------------------------------------
 \section{State of the art}
@@ -62,12 +58,14 @@ This method allows the validation of several computational models as it provides
 \subsubsection{Aspiration experiment}
 
 Tissue aspiration experiments introduces an aspiration tube which is put against the 
-soft tissue, generating a vacuum. With the help of a mirror placed next to aspiration 
+soft tissue, generating a vacuum. An advantageous feature of this experiment is that 
+it can be perfomed in-vivo and ex-vivo.
+With the help of a mirror placed next to aspiration 
 hole, the reflection of the side-view of the tissue can be captured with a video camera.
 This camera captures the images of the iluminated surface of the material and the 
 aspiration pressure is captured through a sensor. Through this process the captured 
 profile of the tissue is obtained and this can be used to characterize the deformation 
-and analyze the viscoelastic properties of the soft tissue. (kauer 2002)
+and analyze the viscoelastic properties of the soft tissue\cite{Kauer2002}.
 
 \subsubsection{Indentation}
 Indentation have being gaining popularity in the last decades and it is now one of
@@ -138,12 +136,28 @@ counterparts. This characterization allows to validate a proposed inverse finite
 before its applicatoin with a biomaterial, where the measurements to gather the experimental data are 
 some in-vivo, and more challenging to recreate.
 
-For example, Silgel, a very soft gel-like material (M. Kauer, 2002) was used for the experimental 
-validation of the inverse method proposed, to characterized the tissue of a human uteri. In this 
-work, the tensile behavior of the material was predicted through the parameters obtained in the 
-aspiration method. 
-\subsubsection{Biomaterials}
+For example, Silgel, a very soft gel-like material \cite{Kauer2002} was used for the experimental 
+validation of the inverse finite element method proposed, to characterized the tissue of 
+a human uteri. In this work, the tensile behavior of the material was predicted through the 
+parameters obtained in the aspiration method. The matching procedure is optimize through 
+an objective function, which consists of the squared differences between the simulation 
+and exprimental data. With an optimization algorithm an optimal set of the following parameters 
+was found: the material parameters \(\mu_i\) [N/m\textsuperscript{2}] and the bulk Modulus
+\(\kappa\) [N/m\textsuperscript{2}]. This method showed good prediction quality of the mentioned 
+material parameters.
 
+\subsubsection{Biomaterials}
+Biomaterials as mentioned before, represent a challenge due its difficult access and lesser replicability.
+Therefore these materials are usually used for the experimetnal validation of a methd applied previously in 
+synthetic materials. 
+ Following the first example of the Silgel in the previous section, the inverse finite element parameter
+ estimation is applied now on human uteri \cite{Kauer2002} through in vivo and ex vivo measurements of the human tissue of 
+ different patients. It was mentioned, that in comparison from the silgel the uterus possesses a complex 
+ multi layered structure with strongly anistropic and viscoelastic properties. Nevertheless, five 
+ material parameters were determined, based on the strain energy function to model a human uterus (Yamada 1970).
+Through the same inverse method applied with the synthetic material, the obtained parameters facilitated the prediction of stress-elongation curves for tensile experiments. The 
+ resulting curves showed the difference of stiffness for in vivo and ex vivo measurements and the material 
+ singurality for each uterus.
 
 
 

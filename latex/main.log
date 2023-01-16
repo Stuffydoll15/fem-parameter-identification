@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  16 JAN 2023 18:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  17 JAN 2023 00:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1313,27 +1313,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 (Content/Chapter2.tex
 Chapter 1.
 
-Overfull \hbox (4.81682pt too wide) in paragraph at lines 7--16
-\OT1/ppl/m/n/10.95 Precise knowl-edge about the biome-chan-i-cal char-ac-ter-i-za-tion of soft tis-sues has gained
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 7--16
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--31
+Overfull \hbox (0.79831pt too wide) in paragraph at lines 17--27
+\OT1/ppl/m/n/10.95 ma-te-rial prop-er-ties may change de-spite ex-am-i-na-tion of the same or-gan. Their biome-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--43
+Underfull \hbox (badness 10000) in paragraph at lines 34--39
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--48
+Underfull \hbox (badness 10000) in paragraph at lines 40--44
 
  []
 
@@ -1342,23 +1342,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--48
 
 
 ] [2]
-Overfull \hbox (0.81552pt too wide) in paragraph at lines 117--121
+Overfull \hbox (0.81552pt too wide) in paragraph at lines 115--119
 []\OT1/ppl/m/n/10.95 For biome-chan-i-cal mod-els, where the mod-els re-quire knowl-edge from lo-cal prop-
  []
 
-) [3]
+) [3] [4]
 \openout2 = `Content/Chapter3.aux'.
 
- (Content/Chapter3.tex [4
+ (Content/Chapter3.tex
+Chapter 2.
+)
+1: section
+[5
 
 
 
 
 ]
-Chapter 2.
-)
-1: section
-[5]
 \openout2 = `Appendix/AppendixA.aux'.
 
  (Appendix/AppendixA.tex [6
@@ -1378,22 +1378,7 @@ Appendix A.
 
 
 
-]
-Overfull \hbox (113.41255pt too wide) in paragraph at lines 1--1
-[]\OT1/ppl/m/n/10.95 M Kauer et al. \OT1/ppl/m/it/10.95 In-verse fi-nite el-e-ment char-ac-ter-i-za-tion of soft tis-sues\OT1/ppl/m/n/10.95 . <b>Abstract</b><br/><br/>determination
- []
-
-
-Overfull \hbox (0.61139pt too wide) in paragraph at lines 1--1
-\OT1/ppl/m/n/10.95 pre-cise in-for-ma-tion about the elas-tic prop-er-ties of a liv-ing tis-sue.<br/><br/>Only
- []
-
-
-Overfull \hbox (13.04471pt too wide) in paragraph at lines 1--1
-\OT1/ppl/m/n/10.95 char-ac-ter-izes the de-for-ma-tion of the tis-sue. 2002, pp. 275{287. \OT1/ppl/m/sc/10.95 url\OT1/ppl/m/n/10.95 : [][]$\OT1/cmtt/l/it/10.95 www . elsevier .
- []
-
-)
+])
 1: section
 [9] (main.aux (FrontBackMatter/Titlepage.aux) (FrontBackMatter/Authorship.aux) (FrontBackMatter/ListOfContent.aux) (Content/Chapter2.aux) (Content/Chapter3.aux) (Appendix/AppendixA.aux) (Bibliography/Bibliography.aux))
 
@@ -1406,17 +1391,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37279 strings out of 475281
- 804601 string characters out of 2774064
- 1562264 words of memory out of 3000000
+ 37282 strings out of 475281
+ 804621 string characters out of 2774064
+ 1563264 words of memory out of 3000000
  58145 multiletter control sequences out of 15000+600000
- 492812 words of font info for 85 fonts, out of 8000000 for 9000
+ 494097 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,20n,97p,2324b,1844s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (19 pages, 169341 bytes).
+Output written on main.pdf (19 pages, 169747 bytes).
 PDF statistics:
- 243 PDF objects out of 1000 (max. 8388607)
+ 246 PDF objects out of 1000 (max. 8388607)
  45 named destinations out of 1000 (max. 500000)
  166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
