@@ -16,5 +16,101 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global}\enddatalist
+\datalist[entry]{nty/global//global/global}
+  \entry{Kauer2002}{report}{}
+    \name{author}{5}{}{%
+      {{hash=KM}{%
+         family={Kauer},
+         familyi={K\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+      {{hash=VV}{%
+         family={Vuskovic},
+         familyi={V\bibinitperiod},
+         given={V},
+         giveni={V},
+      }}%
+      {{hash=DJ}{%
+         family={Dual},
+         familyi={D\bibinitperiod},
+         given={J},
+         giveni={J},
+      }}%
+      {{hash=SG}{%
+         family={Szekely},
+         familyi={S\bibinitperiod},
+         given={G},
+         giveni={G},
+      }}%
+      {{hash=BM}{%
+         family={Bajka},
+         familyi={B\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+    }
+    \keyw{Aspiration,In vivo,Inverse finite element,Soft tissues,Viscoelastic}
+    \strng{namehash}{KM+1}
+    \strng{fullhash}{KMVVDJSGBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    In this work a tissue aspiration method for the in vivo determination of
+  biological soft tissue material parameters is presented. An explicit
+  axisymmetric finite element simulation of the aspiration experiment is used
+  together with a Levenberg-Marquardt algorithm to estimate the material model
+  parameters in an inverse parameter determination process. An optimal fit of
+  the simulated experiment and the real experiment is sought with the parameter
+  estimation algorithm. Soft biological tissue is modelled as a viscoelastic,
+  non-linear, nearly incompressible, isotropic continuum. Viscoelasticity is
+  accounted for by a quasi-linear formulation. The aspiration method is
+  validated experimentally with a synthetic material. In vivo
+  (intra-operatively during surgical interventions) and ex vivo experiments
+  were performed on human uteri.%
+    }
+    \field{note}{<b>Abstract</b><br/><br/>determination of material model
+  parameters for biological soft tissues <br/><br/>aspiration instrument
+  in-vivo applicability requirement <br/><br/>validity under more general
+  loading conditions <br/><br/>explicit asymmetric fe formulation of the
+  aspiration experiment incompressible material results in very small time
+  steps and computationally expensive simulations <br/><br/>viscoelasticiy is a
+  quasi-linear formulation! <br/><br/>mainly it is assumed for isotropic
+  behaviour due to large increase number of unknown material parameters
+  <br/><br/>influence of the friction coefficient on the parameter
+  determination process was studied <br/><br/>increase the friction as much as
+  possible to ensure sticking of the tissue to the
+  surface<br/><br/><b>Introduction</b><br/><br/>For example soft tissue
+  modelling plays an important role in the development of virtual reality based
+  simulator is for surgery training, the performance of the simulation in both
+  application areas highly depends on the availability of appropiate methods
+  for calculating soft tissue deformation.<br/><br/>fe based simulation of soft
+  tissue deformation has been applied both in surgical simulator and elastic
+  image registration.<br/>A sophisticated simulation algorithm is limited
+  without precise information about the elastic properties of a living
+  tissue.<br/><br/>Only limited quantitative data is available about
+  biomechical properties of soft tissues, especially regarding human
+  organs<br/><br/>Difficulties of getting this information lies in the acces to
+  the internal organs, which needs to direct. Due to being a very invasive
+  procedure it is mostly not possible to achieve this. Additionally traditional
+  testing methods like tensile or compression techniques canot be performed
+  under such circumstances, without a certain intervention in the organ.
+  <br/><br/>This has originated that indentation methods gets develops for in
+  vivo experiments. This experiments have been done in skin () and on internal
+  organs ()<br/><br/>The deformation of the tissue is measured by imaging
+  techniques like ultrasound ()or MR(). Additiotnally, an aspiration
+  technique() was also developed which describes the viscoelastic properties
+  and characterizes the deformation of the tissue.}
+    \field{pages}{275\bibrangedash 287}
+    \field{title}{Inverse finite element characterization of soft tissues}
+    \verb{url}
+    \verb www.elsevier.com/locate/media
+    \endverb
+    \field{volume}{6}
+    \field{journaltitle}{Medical Image Analysis}
+    \field{year}{2002}
+  \endentry
+\enddatalist
 \endinput
