@@ -66,5 +66,74 @@
     \field{journaltitle}{Medical Image Analysis}
     \field{year}{2002}
   \endentry
+
+  \entry{Liu2009}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LK}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Kaifeng},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=VMR}{%
+         family={VanLandingham},
+         familyi={V\bibinitperiod},
+         given={Mark\bibnamedelima R.},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=OTC}{%
+         family={Ovaert},
+         familyi={O\bibinitperiod},
+         given={Timothy\bibnamedelima C.},
+         giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LKVMROTC1}
+    \strng{fullhash}{LKVMROTC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    Polymer gels are widely accepted as candidate materials for tissue
+  engineering, drug delivery, and orthopedic load-bearing applications. In
+  addition, their mechanical and physical properties can be tailored to meet a
+  wide range of design requirements. For soft gels whose elastic modulus is in
+  the kPa range, mechanical characterization by bulk mechanical testing methods
+  presents challenges, for example, in sample preparation, fixture design,
+  gripping, and/or load measurement accuracy. Nanoindentation, however, has
+  advantages when characterizing the mechanical properties of soft materials.
+  This study was aimed at investigating the application of an inverse finite
+  element analysis technique to identify material parameters of polymer gels
+  via nanoindentation creep testing, optimization, and finite element
+  simulation. Nanoindentation experiments were conducted using a rigid circular
+  flat punch, and then simulated using the commercial software ABAQUS™. The
+  optimization (error minimization) procedure was integrated in the parameter
+  determination process using a Matlab™ shell program, which makes this
+  approach readily adaptable to other test geometries and material models. The
+  finite element results compare well with a derived analytical viscoelastic
+  solution for a rigid circular flat punch on a Kelvin-Voigt half-space. ©
+  2008 Elsevier Ltd.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.jmbbm.2008.12.001
+    \endverb
+    \field{issn}{17516161}
+    \field{issue}{4}
+    \field{note}{<u><b>Abstract</b></u><br/><br/>Polymer gels are widely
+  accepted as candidate materilas for tissue engineering, drug delivery, and
+  orthopedic load- bearing applications.<br/><br/>Soft gels elastic modulus are
+  in kPa range<br/><br/>Soft gels mechanical characterizations presents
+  challenges<br/>- sample preparation<br/>-fixture design<br/>-gripping, and or
+  load measurement accuracy<br/><br/>}
+    \field{pages}{355\bibrangedash 363}
+    \field{title}{Mechanical characterization of soft viscoelastic gels via
+  indentation and optimization-based inverse finite element analysis}
+    \field{volume}{2}
+    \field{journaltitle}{Journal of the Mechanical Behavior of Biomedical
+  Materials}
+    \field{month}{08}
+    \field{year}{2009}
+  \endentry
 \enddatalist
 \endinput
