@@ -17,6 +17,205 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{Chai2013}{article}{}
+    \name{author}{8}{}{%
+      {{hash=CCK}{%
+         family={Chai},
+         familyi={C\bibinitperiod},
+         given={Chen\bibnamedelima Ket},
+         giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=AAC}{%
+         family={Akyildiz},
+         familyi={A\bibinitperiod},
+         given={Ali\bibnamedelima C.},
+         giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Speelman},
+         familyi={S\bibinitperiod},
+         given={Lambert},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=GFJ}{%
+         family={Gijsen},
+         familyi={G\bibinitperiod},
+         given={Frank\bibnamedelima J.H.},
+         giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=OCW}{%
+         family={Oomens},
+         familyi={O\bibinitperiod},
+         given={Cees\bibnamedelima W.J.},
+         giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=vSMR}{%
+         prefix={van},
+         prefixi={v\bibinitperiod},
+         family={Sambeek},
+         familyi={S\bibinitperiod},
+         given={Marc\bibnamedelima R.H.M.},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=vdLA}{%
+         prefix={van\bibnamedelima der},
+         prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Lugt},
+         familyi={L\bibinitperiod},
+         given={Aad},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BFP}{%
+         family={Baaijens},
+         familyi={B\bibinitperiod},
+         given={Frank\bibnamedelima P.T.},
+         giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \keyw{Atherosclerosis,Carotid artery,Finite element
+  method,Indentation,Plaque rupture}
+    \strng{namehash}{CCK+1}
+    \strng{fullhash}{CCKAACSLGFJOCWSMRvLAvdBFP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    The fibrous cap of an atherosclerotic plaque may be prone to rupture if the
+  occurring stresses exceed the strength of the cap. Rupture can cause acute
+  thrombosis and subsequent ischaemic stroke or myocardial infarction. A
+  reliable prediction of the rupture probability is essential for the
+  appropriate treatment of atherosclerosis. Biomechanical models, which compute
+  stresses and strain, are promising to provide a more reliable rupture risk
+  prediction. However, these models require knowledge of the local
+  biomechanical properties of atherosclerotic plaque tissue. For this purpose,
+  we examined human carotid plaques using indentation experiments. The test
+  set-up was mounted on an inverted confocal microscope to visualise the
+  collagen fibre structure during the tests. By using an inverse finite element
+  (FE) approach, and assuming isotropic neo-Hookean behaviour, the
+  corresponding Young's moduli were found in the range from 6 to 891. kPa
+  (median 30. kPa). The results correspond to the values obtained by other
+  research groups who analysed the compressive Young's modulus of
+  atherosclerotic plaques. Collagen rich locations showed to be stiffer than
+  collagen poor locations. No significant differences were found between the
+  Young's moduli of structured and unstructured collagen architectures as
+  specified from confocal collagen data. Insignificant differences between the
+  middle of the fibrous cap, the shoulder regions, and remaining plaque tissue
+  locations indicate that axial, compressive mechanical properties of
+  atherosclerotic plaques are independent of location within the plaque. ©
+  2013 Elsevier Ltd.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.jbiomech.2013.03.017
+    \endverb
+    \field{issn}{00219290}
+    \field{issue}{10}
+    \field{note}{indentation test/experiment, biomechanical models (compute
+  stress and strain)<br/><br/>models requires knowlegde of local biomechanical
+  properties<br/><br/>using inverse FE and assuming isotropic neo-hookean
+  behaviour<br/> Young moduli is found from 6 to 891kPa median 30
+  kPa<br/><br/>Biomechanical models have shown to provide a better risk
+  assessmente for the tratment of atherosclerosis diseases but models depends
+  strongly on material properties of the plaque
+  components<br/><br/>Experimental data on the mechanical properties are scarce
+  and show large variability 30kPa (soft) to 1 MPa stiff<br/><br/>this
+  represents global stiffness -> therefore experimental technique fot micro
+  indentation test on soft biological materials to investigate the compressive
+  Youngs moduli of different plaque components<br/><br/>Cox 2005 indentation
+  set up<br/><br/>Data analysis: 3D fe model<br/><br/>local shear modulus G
+  estimated by fitting the model to force- indentation-depth
+  curve<br/><br/>least square method to fit experimental data to
+  simulated<br/><br/>E=3G<br/><br/>non Gaussian distribution<br/>standard
+  deviation<br/><br/>mean difference indentation test is
+  reproducible<br/><br/>}
+    \field{pages}{1759\bibrangedash 1766}
+    \field{title}{Local axial compressive mechanical properties of human
+  carotid atherosclerotic plaques-characterisation by indentation test and
+  inverse finite element analysis}
+    \field{volume}{46}
+    \field{journaltitle}{Journal of Biomechanics}
+    \field{month}{06}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Husain2004}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HA}{%
+         family={Husain},
+         familyi={H\bibinitperiod},
+         given={Asif},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SDK}{%
+         family={Sehgal},
+         familyi={S\bibinitperiod},
+         given={D.\bibnamedelima K.},
+         giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=PRK}{%
+         family={Pandey},
+         familyi={P\bibinitperiod},
+         given={R.\bibnamedelima K.},
+         giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \keyw{Constitutive tensile behavior,Inverse finite element procedure,Load
+  vs. displacement curve,Miniature specimen,Small punch test}
+    \strng{namehash}{HASDKPRK1}
+    \strng{fullhash}{HASDKPRK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    This paper contains the description of an experimental and a computational
+  study of small punch test using circular disk shaped miniature specimen,
+  through inverse finite element procedure. An inverse finite element procedure
+  is developed and clubbed with ABAQUS computer code for the determination of
+  constitutive tensile behavior of materials. The proposed inverse technique is
+  based on the small punch experimental load vs. displacement curve. Small
+  punch tests (SPT) are conducted on circular disk shaped specimen (10 mm
+  diameter, 0.5 mm thick) made from three different steels. By using the output
+  of experimental small punch test, constitutive stress-strain curves are
+  traced through inverse technique. The computed constitutive stress-strain
+  curves are compared with the curves obtained from a standard conventional
+  tensile test and the results obtained for all the three cases demonstrate the
+  effectiveness of the present inverse procedure. © 2004 Elsevier B.V. All
+  rights reserved.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.commatsci.2004.01.039
+    \endverb
+    \field{issn}{09270256}
+    \field{issue}{1-2}
+    \field{note}{<b>Abstract</b><br/>-Determination of constitutive tensile
+  behavior<br/>-Experimental load vs displacement curve<br/>-demonstrate the
+  effectiveness of the inverse
+  procedure<br/><br/><b>Introduction</b><br/><br/><b>Inverse problems involve
+  determining the unknown causes of known
+  consequences</b><br/><br/><b>Experimental procedure</b><br/>-specimen
+  material<br/>steel like materials, details<br/>-specimen geometry<br/>- extra
+  details of the samples polished...<br/>-set up<br/>specimen holder<br/>-punch
+  load <br/>-where is the specimen<br/>-which machine<br/>-speed<br/>-how many
+  times<br/>-result curves ya muestran resultado simulation y
+  exper<br/><br/><b>Inverse fe procedure</b><br/>-initial slope up to yielding
+  simulation and exp is matched to determine E<br/>-inputs: E and true stress
+  vs true plastic strain data<br/><br/>-first linear part find E and match P1
+  <br/>-max equivalent stress = yield stress<br/>-eq plastic strain =
+  0<br/>-uniaxial true stress vs. true plastic strain (calculated)<br/>-assumed
+  values data point<br/>until nth<br/><br/>mechanical behavior of the material
+  E, yield, and data points is known<br/><br/>Inverse finite element simulation
+  of disk shaped <br/><br/>rigid head<br/>-how many nodes, element type,
+  contact pair option}
+    \field{pages}{84\bibrangedash 92}
+    \field{title}{An inverse finite element procedure for the determination of
+  constitutive tensile behavior of materials using miniature specimen}
+    \field{volume}{31}
+    \field{journaltitle}{Computational Materials Science}
+    \field{month}{09}
+    \field{year}{2004}
+  \endentry
+
   \entry{Kauer2002}{article}{}
     \name{author}{5}{}{%
       {{hash=KM}{%

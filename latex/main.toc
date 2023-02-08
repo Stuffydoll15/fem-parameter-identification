@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {1.1.2}Material Modeling of Soft Tissues}{2}{subsection.11}%
 \contentsline {subsection}{\numberline {1.1.3}Inverse Finite Element Method for Parameter Identification}{2}{subsection.12}%
 \contentsline {subsubsection}{Synthetic soft materials}{3}{section*.13}%
-\contentsline {subsubsection}{Biomaterials}{3}{section*.14}%
+\contentsline {subsubsection}{Biomaterials}{4}{section*.14}%
 \contentsline {subsection}{\numberline {1.1.4}Standard Verification and Validation for computational solid mechanics (ASME)}{4}{subsection.15}%
 \contentsline {subsubsection}{VV40}{4}{section*.16}%
 \contentsline {chapter}{\numberline {2}Inverse Finite Element Method for Material Parameter Identification}{5}{chapter.17}%

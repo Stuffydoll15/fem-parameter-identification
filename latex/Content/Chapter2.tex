@@ -79,7 +79,7 @@ Indentation have being gaining popularity in the last decades and it is now one 
  the most spread experiments for material parameter identification.(?)
 
 Indentation possesses advantageous characteristics for the mechanical characterization
-of soft materials. (liu2008)
+of soft materials. \cite{Liu2009}
 
 As some materials do not allow the use of uniaxial or biaxial tensile testing, the
  use of identation testing is essential for this case. 
@@ -93,7 +93,15 @@ As some materials do not allow the use of uniaxial or biaxial tensile testing, t
 %---------------------------------------------------------------------------------
 \subsection{Material Modeling of Soft Tissues}
  
+Relevant papers tends to use hyperelastic models to represent soft materials as the viscoelasticity 
+is usually neglected. 
+% why do they use hyperelastic formulas? Why is it possible to neglect the viscoelasticity
 
+%viscoelastic example
+For example, in the Aspiration experiment conducted by Kauer the material they used to model the 
+polymer established in the experiment is:
+
+As derivative from this formula for the uteri metrial modeling the formula used was:
 
 %---------------------------------------------------------------------------------
 \subsection{Inverse Finite Element Method for Parameter Identification}
@@ -103,7 +111,7 @@ An inverse finite element (FE) approach requires usually a certain experimental 
 a verified computational model match the given data curve to obtain further information 
 of the material's behavior e. g., stress-strain curve.
 
-Specially for nonlinear cases (husain2004), where the complexity of the problems 
+Specially for nonlinear cases \cite{Husain2004}, where the complexity of the problems 
 increases, and the interest is focused to generate an action which results in a 
 certain output response, is where an inverse finite element approach can be helpful 
 to discover a certain variable going from an ouput data. Through an iterative process it is 
@@ -122,7 +130,7 @@ usable for multiple use-cases.
 Therefore, the importance of the inverse element method as relevant key for estimating 
 constantly changing parameters in soft materials.
 
-For biomechanical models, where the models require knowledge from local properties (chai 2013),
+For biomechanical models, where the models require knowledge from local properties \cite{Chai2013},
 as the biomaterial is not isotropic; it is possible to identify a parameter e.g. Young's Modulus 
 from a 3D model. The model can be matched to multiple experiments and multiple samples in different areas,
 which allows a better representation of the material for further analysis.
