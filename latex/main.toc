@@ -13,9 +13,14 @@
 \contentsline {subsubsection}{VV40}{4}{section*.16}%
 \contentsline {chapter}{\numberline {2}Inverse Finite Element Method for Material Parameter Identification}{5}{chapter.17}%
 \contentsline {section}{\numberline {2.1}Experimental model}{5}{section.18}%
-\contentsline {section}{\numberline {2.2}Material model framework assumptions}{5}{section.19}%
-\contentsline {section}{\numberline {2.3}Computational model}{5}{section.20}%
-\contentsline {section}{\numberline {2.4}Material model}{5}{section.21}%
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{7}{appendix.22}%
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{7}{section.23}%
-\contentsline {chapter}{Bibliography}{9}{appendix*.24}%
+\contentsline {subsection}{\numberline {2.1.1}First Experimental model}{5}{subsection.19}%
+\contentsline {subsection}{\numberline {2.1.2}Second Experimental model}{5}{subsection.20}%
+\contentsline {section}{\numberline {2.2}Material model framework assumptions}{6}{section.21}%
+\contentsline {subsection}{\numberline {2.2.1}First Material model}{6}{subsection.22}%
+\contentsline {subsubsection}{Linear elasticity}{6}{section*.23}%
+\contentsline {subsubsection}{Hyperelasticity}{6}{section*.24}%
+\contentsline {section}{\numberline {2.3}Computational model}{6}{section.25}%
+\contentsline {section}{\numberline {2.4}Material model}{6}{section.26}%
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{7}{appendix.27}%
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{7}{section.28}%
+\contentsline {chapter}{Bibliography}{9}{appendix*.29}%
