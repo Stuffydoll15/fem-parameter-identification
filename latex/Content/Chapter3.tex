@@ -10,16 +10,23 @@
 \subsection{First Experimental model}
 The chosen experimental technique for the inverse identification for this project was indentation. 
 The test specimen used for this experiment was a ultra-soft polyurethane resin. 
-In Fig.. the specimen possesses a ellipsoidal form with 
-with a minor radius \(r_1\) of 35 mm and a major radius \(r_2\) of 60 mm. This is positioned
- on a fixed platform that suits the ellipsoidal geometry of the 
- specimen. A pin with a rounded head made of structural steel, has a radius of \(r_3\) 3 mm is attached 
- by the holding grips followed by a force load cell. 
- The measured force data showed a very small number, so the 
- first 50 N load cell displayed a lot of noise in the measured data. 
+As shown in Fig.. the specimen possesses a ellipsoidal form with 
+with a minor radius \(r_1\) = 35 mm and a major radius \(r_2\) = 60 mm. This was positioned
+ on a fixed platform that suited the ellipsoidal geometry of the 
+ specimen to constrain its movement. 
+ The specimen was tested in a indentation test configuration with a tensile/compression machine.
+ To achieve this congiguration a pin with a rounded head made of structural steel, 
+ with a radius of \(r_3\) = 3 mm was attached 
+ to the holding grips followed by a force load cell. 
+The result of indentation test was a load-displacement points. The approximated 
+polynomial curve was used as a reference for the material modeling.
+
+ The measured force reation \(F_1\) data showed a very small number, so the 
+ first 50 N load cell displayed a lot of noise in the measurements. 
  Therefore, the load cell was change to 10N to reduce this interference. 
-The 10 N load cell displayed the initial contact between the indenter and the specimen
- in a finer way. In order to get the measurement of the load and unloading process of
+The 10 N load cell displayed the force-displacement curve of the indenter and the specimen
+ in a finer way. Furthermore, in order to get the measurement of the load and 
+ unloading process of
  the indentation a displacement sensor was attached to the tensile machine.
 
  The indentation depth \(h_1\) selected for the first model was 3,8 mm on the middle of the 
@@ -29,7 +36,7 @@ The 10 N load cell displayed the initial contact between the indenter and the sp
  Additionally, it was observed that in soft materials it is easier to capture 
  some parameters with a larger indentation. Some references also observe that with
  indentation depth lower than indenter radius has a lot of noise and do not describe
- th results accurately %reference?
+ th results accurately. %reference?
 
  From the first experimental model we can observe that the material shows a nonlinear 
  behavior and the maximum total force reaction \(F_1\) lies around 0.45 N. %poner el grafico
@@ -43,7 +50,7 @@ the first stages of the project.
 \subsection{Second Experimental model}
 The second experimental model was developed by Yokohama National University. Similar to 
 the first experimental model the test specimen and the platform were it lies, has the 
-same dimensions, minor radius \(r_1\) of 35 mm and a major radius \(r_2\) of 60 mm. The
+same dimensions, minor radius \(r_1\) = 35 mm and a major radius \(r_2\) of 60 mm. The
 test specimen is also made from the same material, ultra-soft polyurethane resin.
 
 The indenter on the other hand, is a sphere made of ruby, the sphere radius is also 
@@ -97,10 +104,21 @@ Neo Hookean and Mooney Rivlin comparison
 The quasi static nature of the indentation experiment allows the use of a static 
 structural analysis.
 
+For the creation of the computational model, the SOLID 187 elements were used. The mesh 
+for the whole model is formed from quad tetrahedral elemennts. The platform and 
+the specimen have an global element size of 5 mm. The indenter has an element size of
+0.5 mm. In the area of the indentation, there is finer mesh with an element size of
+1 mm and a radius of 8 mm. 
+
 Their a two main factors which increases the complexity of the validation of the simulation
 and those are, the contact nonlinearity, and the element distortion due to indentation
  experiment. These issues make the computational time expensive, as it requires to manual 
- solutions for the meshing in the area of importance, and small time steps.
+ solutions for the meshing in the area of importance, and small time steps. 
+ For that, 
+ the nonlinear adaptive meshing option in ANSYS Workbench was applied, which does a remeshing
+ process if the a certain parameter is exceeded.%Revisar explanation of nonlinear adaprive meshing
+Specially, for larger indentation cases, this option shows a more stable model with a 
+good mesh convergence analysis.
 
 A force-displacement curve, shown in Fig... is generated from the first assumption, 
 for this case 

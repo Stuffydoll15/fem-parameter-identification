@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.24)  21 FEB 2023 00:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.24)  22 FEB 2023 13:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1345,7 +1345,7 @@ Overfull \hbox (0.81552pt too wide) in paragraph at lines 137--141
  (Content/Chapter3.tex
 Chapter 2.
 
-Overfull \hbox (4.07181pt too wide) in paragraph at lines 11--24
+Overfull \hbox (4.07181pt too wide) in paragraph at lines 11--23
 \OT1/ppl/m/n/10.95 in-den-ta-tion. The test spec-i-men used for this ex-per-i-ment was a ultra-soft polyurethane
  []
 
@@ -1355,22 +1355,22 @@ Overfull \hbox (4.07181pt too wide) in paragraph at lines 11--24
 
 
 
-]) [6]
+] [6]) [7]
 \openout2 = `Appendix/AppendixA.aux'.
 
- (Appendix/AppendixA.tex
-Appendix A.
-)
-1: section
-[7
+ (Appendix/AppendixA.tex [8
 
 
 
 
 ]
+Appendix A.
+)
+1: section
+[9]
 \openout2 = `Bibliography/Bibliography.aux'.
 
- (Bibliography/Bibliography.tex [8
+ (Bibliography/Bibliography.tex [10
 
 
 
@@ -1426,12 +1426,12 @@ Overfull \hbox (7.70721pt too wide) in paragraph at lines 1--1
  []
 
 1: section
-[9]
+[11]
 Overfull \hbox (51.14565pt too wide) in paragraph at lines 1--1
 \OT1/ppl/m/n/10.95 are in kPa range<br/><br/>Soft gels me-chan-i-cal char-ac-ter-i-za-tions presents challenges<br/>-
  []
 
-) [10] (main.aux (FrontBackMatter/Titlepage.aux) (FrontBackMatter/Authorship.aux) (FrontBackMatter/ListOfContent.aux) (Content/Chapter2.aux) (Content/Chapter3.aux) (Appendix/AppendixA.aux) (Bibliography/Bibliography.aux))
+) [12] (main.aux (FrontBackMatter/Titlepage.aux) (FrontBackMatter/Authorship.aux) (FrontBackMatter/ListOfContent.aux) (Content/Chapter2.aux) (Content/Chapter3.aux) (Appendix/AppendixA.aux) (Bibliography/Bibliography.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1442,17 +1442,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37316 strings out of 475385
- 805551 string characters out of 2776906
- 1563812 words of memory out of 3000000
+ 37318 strings out of 475385
+ 805565 string characters out of 2776906
+ 1563813 words of memory out of 3000000
  58066 multiletter control sequences out of 15000+600000
  494097 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,20n,97p,2324b,2028s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (20 pages, 192497 bytes).
+Output written on main.pdf (22 pages, 194598 bytes).
 PDF statistics:
- 288 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
+ 297 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
  206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
