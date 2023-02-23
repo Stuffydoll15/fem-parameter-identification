@@ -2,7 +2,7 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.5}%
 \contentsline {section}{\numberline {1.1}State of the art}{2}{section.6}%
 \contentsline {subsection}{\numberline {1.1.1}Experimental techniques for soft materials}{2}{subsection.7}%
-\contentsline {subsubsection}{Uniaxial testing}{2}{section*.8}%
+\contentsline {subsubsection}{Uniaxial tension/compression testing}{2}{section*.8}%
 \contentsline {subsubsection}{Aspiration experiment}{2}{section*.9}%
 \contentsline {subsubsection}{Indentation}{2}{section*.10}%
 \contentsline {subsection}{\numberline {1.1.2}Material Modeling of Soft Tissues}{2}{subsection.11}%
