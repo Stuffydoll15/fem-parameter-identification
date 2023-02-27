@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.24)  24 FEB 2023 00:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.24)  27 FEB 2023 15:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1334,8 +1334,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--44
 [1
 
 
-] [2]
-Overfull \hbox (0.81552pt too wide) in paragraph at lines 147--151
+]
+Overfull \hbox (3.15276pt too wide) in paragraph at lines 109--115
+\OT1/ppl/m/n/10.95 displacement curve. The de-for-ma-tion can be mea-sured through an ca-pac-i-tance gauge
+ []
+
+[2]
+Overfull \hbox (0.81552pt too wide) in paragraph at lines 170--174
 []\OT1/ppl/m/n/10.95 For biome-chan-i-cal mod-els, where the mod-els re-quire knowl-edge from lo-cal prop-
  []
 
@@ -1444,15 +1449,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  37324 strings out of 475385
  805786 string characters out of 2776906
- 1561872 words of memory out of 3000000
+ 1561875 words of memory out of 3000000
  58071 multiletter control sequences out of 15000+600000
  494097 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,20n,97p,2324b,2028s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (22 pages, 195998 bytes).
+Output written on main.pdf (22 pages, 197771 bytes).
 PDF statistics:
- 299 PDF objects out of 1000 (max. 8388607)
+ 304 PDF objects out of 1000 (max. 8388607)
  57 named destinations out of 1000 (max. 500000)
  206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
