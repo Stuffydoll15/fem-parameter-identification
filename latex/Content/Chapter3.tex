@@ -49,6 +49,28 @@ This increasement shows that the material possesses a viscoelastic behavior, how
 as this increasement is not significantly, it is possible to neglect viscoelasticity for 
 the first stages of the project.
 
+\begin{figure}[th]
+    \centering
+    \begin{tikzpicture}
+        %\pgfplotsset{%legend outside the plot
+        %every axis legend/.append style={ at={(1.05,0.95)}, anchor=north west,legend columns = 1}}
+        \begin{axis}[
+            %axis lines=middle,
+            %x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+            %y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction in Z-Axis $F_z [N]$},
+            legend pos= north west]
+            
+            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/data1.dat};
+            %\addplot+[smooth] table [y=Force, x=$Def$]{Table/data2.dat};
+            \legend{Experimental data}%,$l_2$}
+        \end{axis}
+    \end{tikzpicture}
+    \caption[Expdata]{Experimental Load-displacement curve.}
+    \label{fig:testgraph}
+\end{figure}
+
 \subsection{Second Experimental model}
 The second experimental model was developed by Yokohama National University. Similar to 
 the first experimental model the test specimen and the platform were it lies, has the 
