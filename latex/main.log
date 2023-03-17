@@ -1,28 +1,28 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.24)  16 MAR 2023 01:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  17 MAR 2023 19:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **c:/git/fem-parameter-identification/latex/main.tex
 (c:/git/fem-parameter-identification/latex/main.tex
-LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-09-28> (MastersDoctoralThesis.cls
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2022-11-02> (MastersDoctoralThesis.cls
 Document Class: MastersDoctoralThesis 2017/08/27 v1.6 LaTeXTemplates.com
 (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count185
 ) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2022-09-28 L3 programming layer (loader) 
+Package: expl3 2022-11-02 L3 programming layer (loader) 
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count186
 \l__pdf_internal_box=\box51
 ))
 Package: xparse 2022-06-22 L3 Experimental document command parser
 ) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
-Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
+Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
 (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/base\bk11.clo
-File: bk11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+File: bk11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count187
 \c@chapter=\count188
@@ -33,13 +33,13 @@ File: bk11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count193
 \c@figure=\count194
 \c@table=\count195
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen138
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
 ) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2022/10/04 3.81 The Babel package
+Package: babel 2022/11/30 3.83 The Babel package
 \babel@savecnt=\count196
-\U@D=\dimen139
+\U@D=\dimen141
 \l@unhyphenated=\language79
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
@@ -82,19 +82,28 @@ Package: scrkbase 2022/10/12 v3.38 KOMA-Script package (KOMA-Script-dependent ba
 ) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 )) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
-Package: setspace 2011/12/19 v6.7a set line spacing
+Package: setspace 2022/12/04 v6.7b set line spacing
 )
 Package scrhack Info: loading setspace hack on input line 193.
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\setspace.hak
 File: setspace.hak 2022/10/12 v3.38 KOMA-Script scrhack part (hacking package setspace)
+
+
+Package scrhack Warning: unknown \onehalfspacing definition found!
+(scrhack)                Maybe you are using a unsupported setpace version on input line 96.
+
+
+Package scrhack Warning: unknown \doublespacing definition found!
+(scrhack)                Maybe you are using a unsupported setpace version on input line 118.
+
 ) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip49
-\LTright=\skip50
-\LTpre=\skip51
-\LTpost=\skip52
+\LTleft=\skip50
+\LTright=\skip51
+\LTpre=\skip52
+\LTpost=\skip53
 \LTchunksize=\count198
-\LTcapwidth=\dimen140
+\LTcapwidth=\dimen142
 \LT@head=\box52
 \LT@firsthead=\box53
 \LT@foot=\box54
@@ -106,8 +115,8 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \c@LT@chunks=\count268
 \LT@p@ftn=\toks17
 ) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
-Package: siunitx 2022-11-16 v3.1.10 A comprehensive (SI) units package
-\l__siunitx_angle_tmp_dim=\dimen141
+Package: siunitx 2022-12-05 v3.1.11 A comprehensive (SI) units package
+\l__siunitx_angle_tmp_dim=\dimen143
 \l__siunitx_angle_marker_box=\box57
 \l__siunitx_angle_unit_box=\box58
 \l__siunitx_compound_count_int=\count269
@@ -138,28 +147,28 @@ Package: amstext 2021/08/26 v2.01 AMS text
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
-\ex@=\dimen142
+\ex@=\dimen144
 ))
 \l__siunitx_table_tmp_box=\box59
-\l__siunitx_table_tmp_dim=\dimen143
-\l__siunitx_table_column_width_dim=\dimen144
+\l__siunitx_table_tmp_dim=\dimen145
+\l__siunitx_table_column_width_dim=\dimen146
 \l__siunitx_table_integer_box=\box60
 \l__siunitx_table_decimal_box=\box61
 \l__siunitx_table_before_box=\box62
 \l__siunitx_table_after_box=\box63
-\l__siunitx_table_before_dim=\dimen145
-\l__siunitx_table_carry_dim=\dimen146
+\l__siunitx_table_before_dim=\dimen147
+\l__siunitx_table_carry_dim=\dimen148
 \l__siunitx_unit_tmp_int=\count277
 \l__siunitx_unit_position_int=\count278
 \l__siunitx_unit_total_int=\count279
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen147
+\col@sep=\dimen149
 \ar@mcellbox=\box64
-\extrarowheight=\dimen148
+\extrarowheight=\dimen150
 \NC@list=\toks19
-\extratabsurround=\skip53
-\backup@length=\skip54
+\extratabsurround=\skip54
+\backup@length=\skip55
 \ar@cellbox=\box65
 )) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
@@ -173,8 +182,6 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 107.
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
-\stockwidth=\dimen149
-\stockheight=\dimen150
 ))
 \Gin@req@height=\dimen151
 \Gin@req@width=\dimen152
@@ -253,7 +260,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 Package: scrlayer-scrpage 2022/10/12 v3.38 KOMA-Script package (end user interface for scrlayer)
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlayer.sty
 Package: scrlayer 2022/10/12 v3.38 KOMA-Script package (defining layers and page styles)
-\footheight=\skip55
+\footheight=\skip56
 Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 2176.
 )
 Package scrbase Info: Unknown processing state.
@@ -339,14 +346,14 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@sectionciteorderinternal@0=\count330
 \blx@entrysetcounter=\count331
 \blx@biblioinstance=\count332
-\labelnumberwidth=\skip56
-\labelalphawidth=\skip57
-\biblabelsep=\skip58
-\bibitemsep=\skip59
-\bibnamesep=\skip60
-\bibinitsep=\skip61
-\bibparsep=\skip62
-\bibhang=\skip63
+\labelnumberwidth=\skip57
+\labelalphawidth=\skip58
+\biblabelsep=\skip59
+\bibitemsep=\skip60
+\bibnamesep=\skip61
+\bibinitsep=\skip62
+\bibparsep=\skip63
+\bibhang=\skip64
 \blx@bcfin=\read3
 \blx@bcfout=\write3
 \blx@langwohyphens=\language80
@@ -430,20 +437,20 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedoriglanguage=\count401
 \c@pageref=\count402
 \c@savedpageref=\count403
-\shorthandwidth=\skip64
-\shortjournalwidth=\skip65
-\shortserieswidth=\skip66
-\shorttitlewidth=\skip67
-\shortauthorwidth=\skip68
-\shorteditorwidth=\skip69
-\locallabelnumberwidth=\skip70
-\locallabelalphawidth=\skip71
-\localshorthandwidth=\skip72
-\localshortjournalwidth=\skip73
-\localshortserieswidth=\skip74
-\localshorttitlewidth=\skip75
-\localshortauthorwidth=\skip76
-\localshorteditorwidth=\skip77
+\shorthandwidth=\skip65
+\shortjournalwidth=\skip66
+\shortserieswidth=\skip67
+\shorttitlewidth=\skip68
+\shortauthorwidth=\skip69
+\shorteditorwidth=\skip70
+\locallabelnumberwidth=\skip71
+\locallabelalphawidth=\skip72
+\localshorthandwidth=\skip73
+\localshortjournalwidth=\skip74
+\localshortserieswidth=\skip75
+\localshorttitlewidth=\skip76
+\localshortauthorwidth=\skip77
+\localshorteditorwidth=\skip78
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
@@ -518,7 +525,7 @@ File: biblatex.cfg
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2022-09-28 L3 programming layer (loader) 
+(biblatex)             2022-11-02 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty
@@ -564,7 +571,7 @@ Package scrhack Info: loading float hack on input line 17.
 File: float.hak 2022/10/12 v3.38 KOMA-Script scrhack part (hacking package float)
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\tocbasic.sty
 Package: tocbasic 2022/10/12 v3.38 KOMA-Script package (handling toc-files)
-\scr@dte@tocline@numberwidth=\skip78
+\scr@dte@tocline@numberwidth=\skip79
 \scr@dte@tocline@numbox=\box68
 )
 Package scrhack Info: redefining \newfloat on input line 163.
@@ -575,7 +582,7 @@ Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
 \c@subfigure=\count422
 \c@subtable=\count423
 ) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2022-09-22 v7.00t Hypertext links for LaTeX
+Package: hyperref 2022-11-13 v7.00u Hypertext links for LaTeX
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
@@ -599,7 +606,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 \Hy@linkcounter=\count425
 \Hy@pagecounter=\count426
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2022-09-22 v7.00t Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2022-11-13 v7.00u Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 ) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
@@ -609,7 +616,7 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count427
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2022-09-22 v7.00t Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2022-11-13 v7.00u Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
@@ -651,7 +658,7 @@ Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             need that hack, on input line 20.
 Package hyperref Info: Driver (autodetected): hpdftex.
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2022-09-22 v7.00t Hyperref driver for pdfTeX
+File: hpdftex.def 2022-11-13 v7.00u Hyperref driver for pdfTeX
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
@@ -665,7 +672,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip79
+\Hy@SectionHShift=\skip80
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 26.
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
@@ -679,14 +686,14 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@ftn=\toks28
 ) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip80
+\multirow@colwidth=\skip81
 \multirow@cntb=\count436
-\multirow@dima=\skip81
+\multirow@dima=\skip82
 \bigstrutjot=\dimen191
 ) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
 \UL@box=\box69
 \UL@hyphenbox=\box70
-\UL@skip=\skip82
+\UL@skip=\skip83
 \UL@hook=\toks29
 \UL@height=\dimen192
 \UL@pe=\count437
@@ -702,12 +709,12 @@ Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count439
 \calc@Adimen=\dimen195
 \calc@Bdimen=\dimen196
-\calc@Askip=\skip83
-\calc@Bskip=\skip84
+\calc@Askip=\skip84
+\calc@Bskip=\skip85
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count440
-\calc@Cskip=\skip85
+\calc@Cskip=\skip86
 ) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \ESO@tempdima=\dimen197
@@ -758,7 +765,7 @@ Package: xfor 2009/02/05 v1.05 (NLCT)
 Package: datatool-base 2019/09/27 v2.32 (NLCT)
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip86
+\@mathmargin=\skip87
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
@@ -809,8 +816,8 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \totwidth@=\dimen264
 \lineht@=\dimen265
 \@envbody=\toks38
-\multlinegap=\skip87
-\multlinetaggap=\skip88
+\multlinegap=\skip88
+\multlinetaggap=\skip89
 \mathdisplay@stack=\toks39
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
@@ -857,7 +864,7 @@ Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks40
 \@dtl@tmpcount=\count469
-\dtl@tmplength=\skip89
+\dtl@tmplength=\skip90
 \dtl@sortresult=\count470
 \@dtl@numgrpsepcount=\count471
 \@dtl@datatype=\count472
@@ -873,7 +880,7 @@ File: glossaries-english.ldf 2014/11/23 v1.0
 )
 \gls@level=\count476
 \@gls@tmpb=\toks41
-\gls@tmplen=\skip90
+\gls@tmplen=\skip91
 \glskeylisttok=\toks42
 \glslabeltok=\toks43
 \glsshorttok=\toks44
@@ -882,20 +889,20 @@ File: glossaries-english.ldf 2014/11/23 v1.0
 Package: glossary-hypernav 2022/11/03 v4.52 (NLCT)
 ) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-list.sty
 Package: glossary-list 2022/11/03 v4.52 (NLCT)
-\glslistdottedwidth=\skip91
+\glslistdottedwidth=\skip92
 ) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-long.sty
 Package: glossary-long 2022/11/03 v4.52 (NLCT)
-\glsdescwidth=\skip92
-\glspagelistwidth=\skip93
+\glsdescwidth=\skip93
+\glspagelistwidth=\skip94
 ) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-super.sty
 Package: glossary-super 2022/11/03 v4.52 (NLCT)
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/supertabular\supertabular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
 \c@tracingst=\count477
 \ST@wd=\dimen266
-\ST@rightskip=\skip94
-\ST@leftskip=\skip95
-\ST@parfillskip=\skip96
+\ST@rightskip=\skip95
+\ST@leftskip=\skip96
+\ST@parfillskip=\skip97
 \ST@pageleft=\dimen267
 \ST@headht=\dimen268
 \ST@tailht=\dimen269
@@ -908,10 +915,10 @@ Package: supertabular 2020/02/02 v4.1g the supertabular environment
 \ST@pbox=\box76
 )) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-tree.sty
 Package: glossary-tree 2022/11/03 v4.52 (NLCT)
-\glstreeindent=\skip97
+\glstreeindent=\skip98
 )) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip98
+\labelindent=\skip99
 \enit@outerparindent=\dimen276
 \enit@toks=\toks46
 \enit@inbox=\box77
@@ -1152,7 +1159,35 @@ Package csquotes Info: ... found 'babel' package.
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 36.
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
-) (main.aux (FrontBackMatter/Titlepage.aux) (FrontBackMatter/Authorship.aux) (FrontBackMatter/ListOfContent.aux) (Content/Chapter2.aux) (Content/Chapter3.aux) (Appendix/AppendixA.aux) (Bibliography/Bibliography.aux))
+) (main.aux (FrontBackMatter/Titlepage.aux) (FrontBackMatter/Authorship.aux) (FrontBackMatter/ListOfContent.aux) (Content/Chapter2.aux) (Content/Chapter3.aux) (Content/Chapter4.aux
+
+LaTeX Warning: Label `Chapter3' multiply defined.
+
+
+LaTeX Warning: Label `fig:testgraph' multiply defined.
+
+) (Content/Chapter5.aux
+
+LaTeX Warning: Label `Chapter3' multiply defined.
+
+
+LaTeX Warning: Label `fig:testgraph' multiply defined.
+
+) (Content/Chapter6.aux
+
+LaTeX Warning: Label `Chapter3' multiply defined.
+
+
+LaTeX Warning: Label `fig:testgraph' multiply defined.
+
+) (Content/Chapter7.aux
+
+LaTeX Warning: Label `Chapter3' multiply defined.
+
+
+LaTeX Warning: Label `fig:testgraph' multiply defined.
+
+) (Appendix/AppendixA.aux) (Bibliography/Bibliography.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
@@ -1280,7 +1315,7 @@ Package scrhack Info: loading lscape hack on input line 77.
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\lscape.hak
 File: lscape.hak 2022/10/12 v3.38 KOMA-Script scrhack part (hacking package lscape)
 Package scrhack Info: \landscape patched to make \textheight change optional on input line 90.
-\scrh@LT@textheight=\skip99
+\scrh@LT@textheight=\skip100
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
@@ -1414,10 +1449,10 @@ Package pgfplots Warning: running in backwards compatibility mode (unsuitable ti
 
 (FrontBackMatter/Titlepage.tex
 Package epstopdf Info: Source file: <Style/rwth_km_logo_en.eps>
-(epstopdf)                    date: 2015-05-06 10:10:28
+(epstopdf)                    date: 2022-12-09 22:23:30
 (epstopdf)                    size: 440906 bytes
 (epstopdf)             Output file: <Style/rwth_km_logo_en-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-26 15:13:40
+(epstopdf)                    date: 2022-12-09 22:23:30
 (epstopdf)                    size: 38190 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=Style/rwth_km_logo_en-eps-converted-to.pdf Style/rwth_km_logo_en.eps>
 (epstopdf)             \includegraphics on input line 11.
@@ -1425,7 +1460,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Style/rwth_km_logo_en-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Style/rwth_km_logo_en-eps-converted-to.pdf, id=106, 341.275pt x 91.34125pt>
+<Style/rwth_km_logo_en-eps-converted-to.pdf, id=266, 341.275pt x 91.34125pt>
 File: Style/rwth_km_logo_en-eps-converted-to.pdf Graphic file (type pdf)
 <use Style/rwth_km_logo_en-eps-converted-to.pdf>
 Package pdftex.def Info: Style/rwth_km_logo_en-eps-converted-to.pdf  used on input line 11.
@@ -1492,26 +1527,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 ])
 \openout2 = `FrontBackMatter/ListOfContent.aux'.
 
- (FrontBackMatter/ListOfContent.tex (main.toc)
-\tf@toc=\write6
-\openout6 = `main.toc'.
-
-
+ (FrontBackMatter/ListOfContent.tex (main.toc
 1: section
 [5
 
 
 
 
-] [6
+])
+\tf@toc=\write6
+\openout6 = `main.toc'.
 
-] (main.lof)
+ [6] (main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
 
 1: section
-[7] [8
+[7
+
+] [8
 
 ] (main.lot)
 \tf@lot=\write8
@@ -1559,7 +1594,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--44
 
 
 ]
-<Images/Nanoindentationresize.png, id=205, 244.66406pt x 277.78781pt>
+<Images/Nanoindentationresize.png, id=413, 244.66406pt x 277.78781pt>
 File: Images/Nanoindentationresize.png Graphic file (type png)
 <use Images/Nanoindentationresize.png>
 Package pdftex.def Info: Images/Nanoindentationresize.png  used on input line 118.
@@ -1587,9 +1622,77 @@ Overfull \hbox (4.07181pt too wide) in paragraph at lines 11--23
 PGFPlots: reading {Table/data1.dat}
 1: section
 [7] [8]) [9]
+\openout2 = `Content/Chapter4.aux'.
+
+ (Content/Chapter4.tex [10
+
+
+
+
+]
+Chapter 3.
+
+Overfull \hbox (4.07181pt too wide) in paragraph at lines 11--23
+\OT1/ppl/m/n/10.95 in-den-ta-tion. The test spec-i-men used for this ex-per-i-ment was a ultra-soft polyurethane
+ []
+
+PGFPlots: reading {Table/data1.dat}
+1: section
+[11] [12]) [13]
+\openout2 = `Content/Chapter5.aux'.
+
+ (Content/Chapter5.tex [14
+
+
+
+
+]
+Chapter 4.
+
+Overfull \hbox (4.07181pt too wide) in paragraph at lines 11--23
+\OT1/ppl/m/n/10.95 in-den-ta-tion. The test spec-i-men used for this ex-per-i-ment was a ultra-soft polyurethane
+ []
+
+PGFPlots: reading {Table/data1.dat}
+1: section
+[15] [16]) [17]
+\openout2 = `Content/Chapter6.aux'.
+
+ (Content/Chapter6.tex [18
+
+
+
+
+]
+Chapter 5.
+
+Overfull \hbox (4.07181pt too wide) in paragraph at lines 11--23
+\OT1/ppl/m/n/10.95 in-den-ta-tion. The test spec-i-men used for this ex-per-i-ment was a ultra-soft polyurethane
+ []
+
+PGFPlots: reading {Table/data1.dat}
+1: section
+[19] [20]) [21]
+\openout2 = `Content/Chapter7.aux'.
+
+ (Content/Chapter7.tex [22
+
+
+
+
+]
+Chapter 6.
+
+Overfull \hbox (4.07181pt too wide) in paragraph at lines 11--23
+\OT1/ppl/m/n/10.95 in-den-ta-tion. The test spec-i-men used for this ex-per-i-ment was a ultra-soft polyurethane
+ []
+
+PGFPlots: reading {Table/data1.dat}
+1: section
+[23] [24]) [25]
 \openout2 = `Appendix/AppendixA.aux'.
 
- (Appendix/AppendixA.tex [10
+ (Appendix/AppendixA.tex [26
 
 
 
@@ -1598,10 +1701,10 @@ PGFPlots: reading {Table/data1.dat}
 Appendix A.
 )
 1: section
-[11]
+[27]
 \openout2 = `Bibliography/Bibliography.aux'.
 
- (Bibliography/Bibliography.tex [12
+ (Bibliography/Bibliography.tex [28
 
 
 
@@ -1657,33 +1760,36 @@ Overfull \hbox (7.70721pt too wide) in paragraph at lines 1--1
  []
 
 1: section
-[13]
+[29]
 Overfull \hbox (51.14565pt too wide) in paragraph at lines 1--1
 \OT1/ppl/m/n/10.95 are in kPa range<br/><br/>Soft gels me-chan-i-cal char-ac-ter-i-za-tions presents challenges<br/>-
  []
 
-) [14] (main.aux (FrontBackMatter/Titlepage.aux) (FrontBackMatter/Authorship.aux) (FrontBackMatter/ListOfContent.aux) (Content/Chapter2.aux) (Content/Chapter3.aux) (Appendix/AppendixA.aux) (Bibliography/Bibliography.aux))
+) [30] (main.aux (FrontBackMatter/Titlepage.aux) (FrontBackMatter/Authorship.aux) (FrontBackMatter/ListOfContent.aux) (Content/Chapter2.aux) (Content/Chapter3.aux) (Content/Chapter4.aux) (Content/Chapter5.aux) (Content/Chapter6.aux) (Content/Chapter7.aux) (Appendix/AppendixA.aux) (Bibliography/Bibliography.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 849F8A2FD32C68924926F9F9BAF5032B;4928.
+(rerunfilecheck)             Checksum: 1278796FD87F246DEFE1712BA954015E;12496.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58250 strings out of 475385
- 1400000 string characters out of 2776906
- 2215919 words of memory out of 3000000
- 78626 multiletter control sequences out of 15000+600000
+ 58516 strings out of 475281
+ 1406507 string characters out of 2774064
+ 2227965 words of memory out of 3000000
+ 78908 multiletter control sequences out of 15000+600000
  496568 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 107i,20n,100p,2324b,2300s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 107i,20n,100p,2324b,2736s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (24 pages, 241183 bytes).
+Output written on main.pdf (40 pages, 330796 bytes).
 PDF statistics:
- 338 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
- 223 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 631 PDF objects out of 1000 (max. 8388607)
+ 121 named destinations out of 1000 (max. 500000)
+ 543 words of extra memory for PDF output out of 10000 (max. 10000000)
 
