@@ -2020,8 +2020,13 @@ INPUT Content\Chapter2.tex
 INPUT .\Content\Chapter2.tex
 INPUT Content\Chapter2.tex
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb7t.tfm
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplb7t.vf
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr7t.tfm
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb7t.tfm
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplro7t.vf
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplro8r.tfm
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplb7t.vf
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb8r.tfm
 INPUT .\Images\Nanoindentationresize.png
 INPUT Images\Nanoindentationresize.png
 INPUT .\Images\Nanoindentationresize.png
@@ -2030,11 +2035,6 @@ INPUT .\Images\Nanoindentationresize.png
 INPUT .\Images\Nanoindentationresize.png
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr7t.tfm
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplrc7t.tfm
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplro7t.vf
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplro8r.tfm
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplb7t.vf
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplb7t.vf
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb8r.tfm
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplrc7t.vf
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplr7t.vf
@@ -2075,7 +2075,6 @@ INPUT .\Content\Chapter4.tex
 INPUT Content\Chapter4.tex
 INPUT .\Content\Chapter4.tex
 INPUT Content\Chapter4.tex
-INPUT Table\data1.dat
 INPUT .\Content\Chapter5.tex
 INPUT .\Content\Chapter5.tex
 INPUT .\Content\Chapter5.tex
@@ -2086,7 +2085,6 @@ INPUT .\Content\Chapter5.tex
 INPUT Content\Chapter5.tex
 INPUT .\Content\Chapter5.tex
 INPUT Content\Chapter5.tex
-INPUT Table\data1.dat
 INPUT .\Content\Chapter6.tex
 INPUT .\Content\Chapter6.tex
 INPUT .\Content\Chapter6.tex

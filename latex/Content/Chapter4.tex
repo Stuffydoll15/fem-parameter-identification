@@ -1,134 +1,11 @@
-% Chapter 2
+% Chapter 3
 
-\chapter{Inverse Finite Element Method for Material Parameter Identification} % Main chapter title
+\chapter{Computational model} % Main chapter title
 
-\label{Chapter3} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+\label{Chapter4} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
-%----------------------------------------------------------------------------------
-\section{Experimental model}
-
-\subsection{First Experimental model}
-The chosen experimental technique for the inverse identification for this project was indentation. 
-The test specimen used for this experiment was a ultra-soft polyurethane resin. 
-As shown in Fig.. the specimen possesses a ellipsoidal form with 
-with a minor radius \(r_1\) = 35 mm and a major radius \(r_2\) = 60 mm. This was positioned
- on a fixed platform that suited the ellipsoidal geometry of the 
- specimen to constrain its movement. 
- The specimen was tested in a indentation test configuration with a tensile/compression machine.
- To achieve this congiguration a pin with a rounded head made of structural steel, 
- with a radius of \(r_3\) = 3 mm was attached 
- to the holding grips followed by a force load cell. 
-The result of indentation test was a load-displacement points. The approximated 
-polynomial curve was used as a reference for the material modeling.
-
-%test specimen is loaded at a quasi-static rate
-
- The measured force reation \(F_1\) data showed a very small number, so the 
- first 50 N load cell displayed a lot of noise in the measurements. 
- Therefore, the load cell was change to 10N to reduce this interference. 
-The 10 N load cell displayed the force-displacement curve of the indenter and the specimen
- in a finer way. Furthermore, in order to get the measurement of the load and 
- unloading process of
- the indentation a displacement sensor was attached to the tensile machine.
-
- The indentation depth \(h_1\) selected for the first model was 3,8 mm on the middle of the 
- top surface of the specimen. This indentation depth surpasses the pin radius \(r_3\) and 
- was chose arbitriarily to analyze the behavior of the material on the defined position.
- %reference?
- Additionally, it was observed that in soft materials it is easier to capture 
- some parameters with a larger indentation. Some references also observe that with
- indentation depth lower than indenter radius has a lot of noise and do not describe
- th results accurately. %reference?
-
- From the first experimental model we can observe that the material shows a nonlinear 
- behavior and the maximum total force reaction \(F_1\) lies around 0.45 N. %poner el grafico
- Furthermore, when applying different speeds, as show in Fig. %add figure 
- it is also possible to observe that 
- the hysteresis increases. %poner los speeds
-This increasement shows that the material possesses a viscoelastic behavior, however
-as this increasement is not significantly, it is possible to neglect viscoelasticity for 
-the first stages of the project.
-
-\begin{figure}[th]
-    \centering
-    \begin{tikzpicture}
-        %\pgfplotsset{%legend outside the plot
-        %every axis legend/.append style={ at={(1.05,0.95)}, anchor=north west,legend columns = 1}}
-        \begin{axis}[
-            %axis lines=middle,
-            %x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
-            %y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
-            xlabel={Displacement $u [mm]$},
-            ylabel={Force reaction in Z-Axis $F_z [N]$},
-            legend pos= north west]
-            
-            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/data1.dat};
-            %\addplot+[smooth] table [y=Force, x=$Def$]{Table/data2.dat};
-            \legend{Experimental data}%,$l_2$}
-        \end{axis}
-    \end{tikzpicture}
-    \caption[Expdata]{Experimental Load-displacement curve.}
-    \label{fig:testgraph}
-\end{figure}
-
-\subsection{Second Experimental model}
-The second experimental model was developed by Yokohama National University. Similar to 
-the first experimental model the test specimen and the platform were it lies, has the 
-same dimensions, minor radius $r_1 = \SI{35}{\milli \m}$ and a major radius \(r_2\) of 60 mm. The
-test specimen is also made from the same material, ultra-soft polyurethane resin.
-
-The indenter on the other hand, is a sphere made of ruby, the sphere radius is also 
-equal to the radius of the pin \(r_s\) 3 mm and attached to it, is the force load cell.
-
-A laser is used to measure the displacement which results in a load-displacement curve.
-With this model it is possible to not only determine the toal force reaction, but also
-it's components \(F_x\),  \(F_y\) and \(F_z\). Furthermore, with the laser it is also
-possible to observe the deformation not only in one point but around the whole area. 
-This allows as to analyze the deformation of the whole structure.
-
-The indentation speed selcted was % ask for which speeed
-and with an indentation depth of \(h_s\) is 4 mm. With this experiment, 4 key points on 
-the sepcimen's surface were chosen: First, in the middle and three other points, one to right, 
-one down, and one diagonal to middle, forming a square with a distance between points 
-of \(d_s\) 20 mm. %add figure with points
-
-
-
-
-Similar to the previous model, Fig. % add 
-shows a nonlinear behavior with a maximum force reac
-
-
-%----------------------------------------------------------------------------------
-\section{Material model framework assumptions}
-
-The first point to be analyzed, which is used to build a material model is point No. 1,
-in the middle of the surface. The advantages from this case, is the less influence of
-external factors. For this case it is vaiable to assumed, that shear stresses can be 
-neglected and offers a simple model to focus on the material definition.
-
-For this project, there is a focus on the limitation of each material model, 
-departing from an ideal scenario. From this point on the material will be build 
-accordingly and for each model the influence of the material parameters is going
-to be assessed.
-
-\subsection{First Material model}
-
-\subsubsection{Linear elasticity}
-
-
-\subsubsection{Hyperelasticity}
-The strain energy density function for the Neo-Hookean material model is given with
-\begin{align*}
-            \Psi = C_1 (I_1 - 3) \, ,
-\end{align*}
-where $C_1$ is a material constant and $I_!$ is the first invariant of the right Cauchy-Green tensor. 
-Neo Hookean and Mooney Rivlin comparison
-
-%Crear chart
-
-%----------------------------------------------------------------------------------
-\section{Computational model}
+\section{Middle point}
+\subsection{Description}
 The quasi static nature of the indentation experiment allows the use of a static 
 structural analysis.
 
@@ -138,6 +15,7 @@ the specimen have an global element size of 5 mm. The indenter has an element si
 0.5 mm. In the area of the indentation, there is finer mesh with an element size of
 1 mm and a radius of 8 mm. 
 
+\subsection{Analysis and Complications}
 Their a two main factors which increases the complexity of the validation of the simulation
 and those are, the contact nonlinearity, and the element distortion due to indentation
  experiment. These issues make the computational time expensive, as it requires to manual 
@@ -153,20 +31,14 @@ for this case
 %Additionally due to these factors, the converge analysis   
 
 For both cases 
+
+\subsection{Verification of the Simulation Model}
+
+\subsubsection*{Mesh Convergence Analysis}
+\subsubsection*{Platform vs Fixed Support}
+
+
 %----------------------------------------------------------------------------------
-\section{Material model}
+\section{Nearby point}
 
-In an ideal and first scenario, this material can be assumed as linear, isotropic, 
-elastic and nearly imcompressible. For this case, there are two main variables, the Young's
-Modulus \(E\), and the Poisson's ratio $\nu$.
 
-%comentario sobre la influencia del bulk modulus y poissons ratio
-From the parametric analysis, it is possible to see that the bulk 
-modulus of this material does not possess a big impact in the FE 
-simulation results. This conclusion combined with the results 
-from the Poisson ratio in the first material model coincide with the 
-statements from Bergström, where it is no vital to know these parameters 
-to obtain accurate FE computational models, as these have limited
-influence on the mechanical response. \cite{Bergström2015} %pag64Bergströom
-
-%---------------------------------------------------------------------------------

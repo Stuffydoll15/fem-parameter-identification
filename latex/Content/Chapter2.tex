@@ -4,6 +4,8 @@
 
 \label{Chapter2} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
+\section{Background and Context}
+
 Precise knowledge about the biomechanical characterization of soft tissues has received attention
 in medical research, e.g., medical image analysis and visualization.
 For many years, the obtained medical diagnosis have come from assumptions of experts or 
@@ -14,6 +16,7 @@ to the tissues and perform in-vivo testing experiments. For organs, this procedu
 impossible to achieve, due to the involvement of an invasive procedure, and the lack of constant
 and reproducible external and internal factors. \\ 
 
+\section{Problem Statement}
 One of the complications associated with the extraction of the organ is that some material 
 properties may change despite examination of the same organ. Their biomechanical properties 
 depend on other factors, such as changes in blood pressure, changes in material properties 
@@ -36,7 +39,8 @@ element method becomes a common approach. The application of the finite element 
  facilitates the analysis of complex structures with complex material behavior, and aids in 
  solving of continuum mechanical problems. Nevertheless, in order to simulate a material with 
  this complexity also requires complex algorithms with high computational costs. \\
- 
+
+ \section{Objective and Scope of the Study} 
 One of the goals of this study to identify the key parameters of the soft materials, and their 
 influence in the construction of a material model. These key parameters the attempt to 
  approximate such a complex material will be done, and this simplified material model will be 
@@ -52,9 +56,9 @@ influence in the construction of a material model. These key parameters the atte
  %Due to the complexity of the polymer microstructure, the use of computer simulations is becoming
  %increasingly important when studying the behavior of solid polymers (Bergstrom)
 %----------------------------------------------------------------------------------
-\section{State of the art}
+\section{State of the Art}
 
-\subsection{Experimental Techniques for Soft Materials}
+\subsection{Experimental Characterization for Soft Materials}
 %material testing
 In order to characterize the mechanical behavior of a test specimen, the most common method
 method is to mechanically load the specimen and measure the response of the force against 
@@ -67,7 +71,7 @@ the displacement \cite{Bergström2015}.
 are commomly applied for tissue engineering applications. Nevertheless, due to their elastic 
 modulus range (kPa) present some challenges for the design of experimental testing\cite{Liu2009}.
 
-\subsubsection{Uniaxial Tension/Compression Testing}
+\subsubsection*{Uniaxial Tension/Compression Testing}
 
 This is one of the most common using methods to determine an stress-strain relationship.
 For uniaxial tension cases, the specimen is well loaded in a machine by gripping the ends and perfoming 
@@ -81,7 +85,7 @@ This method allows the validation of several computational models as it provides
 
 
 
-\subsubsection{Aspiration experiment}
+\subsubsection*{Aspiration Experiment}
 
 Tissue aspiration experiments introduces an aspiration tube which is put against the 
 soft tissue, generating a vacuum. An advantageous feature of this experiment is that 
@@ -93,7 +97,7 @@ aspiration pressure is captured through a sensor. Through this process the captu
 profile of the tissue is obtained and this can be used to characterize the deformation 
 and analyze the viscoelastic properties of the soft tissue\cite{Kauer2002}.
 
-\subsubsection{Indentation}
+\subsubsection*{Indentation}
 Indentation have being gaining popularity in the last decades and it is now one of
  the most spread experiments for material parameter identification.
  Indentation presents a bigger advantage in cases where it is not possible to load
@@ -129,7 +133,7 @@ or also optically (via laser measurements).
 -why is relevant for this project 
 
 %---------------------------------------------------------------------------------
-\subsection{Material Modeling of Soft Tissues}
+\subsection{Material Modeling of Soft Materials}
  
 Relevant papers tends to use hyperelastic models to represent soft materials as the viscoelasticity 
 is usually neglected. 
@@ -188,7 +192,7 @@ In next sections some of the experimental models and the material models for bio
 going to be explained to get a further understanding in how is possible to get a realiable computational 
 model for further reasearch
 
-\subsubsection{Synthetic soft materials}
+\subsubsection*{Synthetic Soft Materials}
 
 Synthetics materials are commonly used to validate an inverse parameter identification process. 
 Usually these synthetic, soft materials provide similar mechanical behavior to it's biomaterials 
@@ -207,7 +211,7 @@ was found: the material parameters \(\mu_i\) [N/m\textsuperscript{2}] and the bu
 \(\kappa\) [N/m\textsuperscript{2}]. This method showed good prediction quality of the mentioned 
 material parameters.
 
-\subsubsection{Biomaterials}
+\subsubsection*{Biomaterials}
 Biomaterials as mentioned before, represent a challenge due its difficult access and lesser replicability.
 Therefore these materials are usually used for the experimetnal validation of a methd applied previously in 
 synthetic materials. 
@@ -221,9 +225,10 @@ Through the same inverse method applied with the synthetic material, the obtaine
  singurality for each uterus.
 
 
-
-\subsection{Standard Verification and Validation for computational solid mechanics (ASME)}
-\subsubsection{VV40}
+\subsection{Standard Verification and Validation for Computational Solid Mechanics (ASME)}
+\subsubsection*{VV40}
 
 
 %---------------------------------------------------------------------------------
+
+\subsection{Overview}
