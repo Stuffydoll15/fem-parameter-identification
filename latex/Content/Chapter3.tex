@@ -2,16 +2,52 @@
 
 \chapter{Experimental Model} % Main chapter title
 
-\label{Chapter3} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+\label{Chapter3}
+ % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+ The design and selection of the experimental model is the first stage of this project.
+This stage is mainly relevant to gather all the necessary data from the material, from which
+the design parameters are searched.
+
+This first experimental model had the purpose to serve as a comparator for the experimental 
+model II (see section \ref{expmod2}). At the beginning of the project, the desired experimental 
+model to be analyzed was the second experimental model, which was developed and designed by Yokohama National 
+University. As this second experimental model was still undergoing some improvements and corrections, a similar 
+experiment was designed which could served the same purpose.
+
+The chosen experimental characterization for the inverse finite element method for 
+ the identification of material parameters for this project was indentation.
+The goal of these experiments was to observe the mechanical behavior of a soft material under 
+compression using a rounded indenter. The aim was to determine the material behavior and 
+observe the response under an indentation larger than the indenter radius. Additionally, 
+by performing the indentation tests, the obtained 
+data helped for a better understanding of the material's mechanical behavior for the chosen 
+use cases and the determination of the main assumptions for the material modeling.
+The main advantage of indentation is the noninvasive feature, which will mostly useful when 
+identificating a part which should not be modified, e. g. an organ.
+
+For both experimental setups the specimen was made from a two-component ultra-soft urethane resin.
+This material, a synthetic soft material, was chosen because its material properities 
+can simulate a biological tissue. %search reference
+%here urethane resin avantages. and that it is expected that the material shows a 
+\\ 
 
 %----------------------------------------------------------------------------------
 
 \section{Experimental Model I}
-%i.	Description of the experimental setup
+\label{expmod1}
+
 %ii.	Procedure for conducting the experiment
 %iii.	Analysis of different platforms
+    
+\subsection*{Description of the Experimental Setup}
 
-The chosen experimental technique for the inverse identification for this project was indentation. 
+The first indentation test configuration was done by adapting a tensile and compression 
+testing machine, model LTS-500 NB from MinebeaMitsumi.Inc. This 
+machine possess a maximum load capacity of \SI{500}{\newton}, and test speeds of
+ \SIlist{10;20;30;50;75;100}{\milli \metre \per \minute}.
+
+ 
 The test specimen used for this experiment was a ultra-soft polyurethane resin. 
 As shown in Fig.. the specimen possesses a ellipsoidal form with 
 with a minor radius \(r_1\) = 35 mm and a major radius \(r_2\) = 60 mm. This was positioned
@@ -76,6 +112,7 @@ the first stages of the project.
 \end{figure}
 
 \section{Experimental Model II}
+\label{expmod2}
 %i.	Description of the experimental setup
 %ii.	Procedure for conducting the experiment
 %iii.	Analysis of different platforms

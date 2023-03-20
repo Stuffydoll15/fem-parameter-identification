@@ -2056,6 +2056,9 @@ INPUT .\Content\Chapter3.tex
 INPUT Content\Chapter3.tex
 INPUT .\Content\Chapter3.tex
 INPUT Content\Chapter3.tex
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7y.vf
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmr.tfm
 INPUT Table\data1.dat
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7t.vf
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmr.tfm
@@ -2063,7 +2066,6 @@ INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7y.vf
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7t.vf
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmr.tfm
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT .\Content\Chapter4.tex
 INPUT .\Content\Chapter4.tex
@@ -2106,7 +2108,6 @@ INPUT .\Content\Chapter7.tex
 INPUT Content\Chapter7.tex
 INPUT .\Content\Chapter7.tex
 INPUT Content\Chapter7.tex
-INPUT Table\data1.dat
 INPUT .\Appendix\AppendixA.tex
 INPUT .\Appendix\AppendixA.tex
 INPUT .\Appendix\AppendixA.tex

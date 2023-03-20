@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.24)  18 MAR 2023 00:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.24)  19 MAR 2023 17:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1156,11 +1156,7 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 
 LaTeX Warning: Label `fig:testgraph' multiply defined.
 
-) (Content/Chapter7.aux
-
-LaTeX Warning: Label `fig:testgraph' multiply defined.
-
-) (Appendix/AppendixA.aux) (Bibliography/Bibliography.aux))
+) (Content/Chapter7.aux) (Appendix/AppendixA.aux) (Bibliography/Bibliography.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
@@ -1433,7 +1429,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Style/rwth_km_logo_en-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Style/rwth_km_logo_en-eps-converted-to.pdf, id=282, 341.275pt x 91.34125pt>
+<Style/rwth_km_logo_en-eps-converted-to.pdf, id=246, 341.275pt x 91.34125pt>
 File: Style/rwth_km_logo_en-eps-converted-to.pdf Graphic file (type pdf)
 <use Style/rwth_km_logo_en-eps-converted-to.pdf>
 Package pdftex.def Info: Style/rwth_km_logo_en-eps-converted-to.pdf  used on input line 11.
@@ -1562,7 +1558,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--48
 
 
 ] [2]
-<Images/Nanoindentationresize.png, id=439, 244.66406pt x 277.78781pt>
+<Images/Nanoindentationresize.png, id=392, 244.66406pt x 277.78781pt>
 File: Images/Nanoindentationresize.png Graphic file (type png)
 <use Images/Nanoindentationresize.png>
 Package pdftex.def Info: Images/Nanoindentationresize.png  used on input line 122.
@@ -1583,25 +1579,26 @@ Overfull \hbox (0.81552pt too wide) in paragraph at lines 179--183
 ]
 Chapter 2.
 
-Overfull \hbox (4.07181pt too wide) in paragraph at lines 14--26
-\OT1/ppl/m/n/10.95 in-den-ta-tion. The test spec-i-men used for this ex-per-i-ment was a ultra-soft polyurethane
+Underfull \hbox (badness 10000) in paragraph at lines 29--34
+
  []
 
-PGFPlots: reading {Table/data1.dat}
 1: section
-[7] [8]) [9]
+[7]
+PGFPlots: reading {Table/data1.dat}
+ [8] [9]) [10]
 \openout2 = `Content/Chapter4.aux'.
 
- (Content/Chapter4.tex [10
+ (Content/Chapter4.tex
+Chapter 3.
+)
+1: section
+[11
 
 
 
 
 ]
-Chapter 3.
-)
-1: section
-[11]
 \openout2 = `Content/Chapter5.aux'.
 
  (Content/Chapter5.tex [12
@@ -1640,17 +1637,12 @@ PGFPlots: reading {Table/data1.dat}
 
 ]
 Chapter 6.
-
-Overfull \hbox (4.07181pt too wide) in paragraph at lines 18--30
-\OT1/ppl/m/n/10.95 in-den-ta-tion. The test spec-i-men used for this ex-per-i-ment was a ultra-soft polyurethane
- []
-
-PGFPlots: reading {Table/data1.dat}
+)
 1: section
-[19] [20]) [21]
+[19]
 \openout2 = `Appendix/AppendixA.aux'.
 
- (Appendix/AppendixA.tex [22
+ (Appendix/AppendixA.tex [20
 
 
 
@@ -1659,10 +1651,10 @@ PGFPlots: reading {Table/data1.dat}
 Appendix A.
 )
 1: section
-[23]
+[21]
 \openout2 = `Bibliography/Bibliography.aux'.
 
- (Bibliography/Bibliography.tex [24
+ (Bibliography/Bibliography.tex [22
 
 
 
@@ -1718,12 +1710,12 @@ Overfull \hbox (7.70721pt too wide) in paragraph at lines 1--1
  []
 
 1: section
-[25]
+[23]
 Overfull \hbox (51.14565pt too wide) in paragraph at lines 1--1
 \OT1/ppl/m/n/10.95 are in kPa range<br/><br/>Soft gels me-chan-i-cal char-ac-ter-i-za-tions presents challenges<br/>-
  []
 
-) [26] (main.aux (FrontBackMatter/Titlepage.aux) (FrontBackMatter/Authorship.aux) (FrontBackMatter/ListOfContent.aux) (Content/Chapter2.aux) (Content/Chapter3.aux) (Content/Chapter4.aux) (Content/Chapter5.aux) (Content/Chapter6.aux) (Content/Chapter7.aux) (Appendix/AppendixA.aux) (Bibliography/Bibliography.aux))
+) [24] (main.aux (FrontBackMatter/Titlepage.aux) (FrontBackMatter/Authorship.aux) (FrontBackMatter/ListOfContent.aux) (Content/Chapter2.aux) (Content/Chapter3.aux) (Content/Chapter4.aux) (Content/Chapter5.aux) (Content/Chapter6.aux) (Content/Chapter7.aux) (Appendix/AppendixA.aux) (Bibliography/Bibliography.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1731,23 +1723,23 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B3055B691475FEE4D8F7B60F0F015CA4;12821.
+(rerunfilecheck)             Checksum: 317DFBECD8AB4E79037648ED852A9759;11330.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58506 strings out of 475385
- 1406230 string characters out of 2776906
- 2226532 words of memory out of 3000000
- 78786 multiletter control sequences out of 15000+600000
- 496568 words of font info for 95 fonts, out of 8000000 for 9000
+ 58477 strings out of 475385
+ 1405798 string characters out of 2776906
+ 2226627 words of memory out of 3000000
+ 78767 multiletter control sequences out of 15000+600000
+ 496825 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,20n,100p,2324b,2759s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (36 pages, 309250 bytes).
+Output written on main.pdf (34 pages, 292210 bytes).
 PDF statistics:
- 638 PDF objects out of 1000 (max. 8388607)
- 129 named destinations out of 1000 (max. 500000)
- 575 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 582 PDF objects out of 1000 (max. 8388607)
+ 118 named destinations out of 1000 (max. 500000)
+ 503 words of extra memory for PDF output out of 10000 (max. 10000000)
 
