@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {1.4}State of the Art}{2}{section.9}%
 \contentsline {subsection}{\numberline {1.4.1}Experimental Characterization for Soft Materials}{2}{subsection.10}%
 \contentsline {subsection}{\numberline {1.4.2}Material Modeling of Soft Materials}{3}{subsection.15}%
-\contentsline {subsection}{\numberline {1.4.3}Inverse Finite Element Method for Parameter Identification}{4}{subsection.16}%
+\contentsline {subsection}{\numberline {1.4.3}Inverse Finite Element Method for Parameter Identification}{3}{subsection.16}%
 \contentsline {subsection}{\numberline {1.4.4}Standard Verification and Validation for Computational Solid Mechanics (ASME)}{5}{subsection.19}%
 \contentsline {subsection}{\numberline {1.4.5}Overview}{5}{subsection.21}%
 \contentsline {chapter}{\numberline {2}Experimental Model}{7}{chapter.22}%
