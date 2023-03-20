@@ -1,16 +1,14 @@
 % Chapter 2
 
 \chapter{Experimental Model} % Main chapter title
-
 \label{Chapter3}
- % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
- The design and selection of the experimental model is the first stage of this project.
+The design and selection of the experimental model is the first stage of this project.
 This stage is mainly relevant to gather all the necessary data from the material, from which
 the design parameters are searched.
 
 This first experimental model had the purpose to serve as a comparator for the experimental 
-model II (see section \ref{expmod2}). At the beginning of the project, the desired experimental 
+model II (see section \ref{section:expmod2}). At the beginning of the project, the desired experimental 
 model to be analyzed was the second experimental model, which was developed and designed by Yokohama National 
 University. As this second experimental model was still undergoing some improvements and corrections, a similar 
 experiment was designed which could served the same purpose.
@@ -26,7 +24,7 @@ use cases and the determination of the main assumptions for the material modelin
 The main advantage of indentation is the noninvasive feature, which will mostly useful when 
 identificating a part which should not be modified, e. g. an organ.
 
-For both experimental setups the specimen was made from a two-component ultra-soft urethane resin.
+For both experimental setups the specimen, which was tested, was made from a two-component ultra-soft urethane resin.
 This material, a synthetic soft material, was chosen because its material properities 
 can simulate a biological tissue. %search reference
 %here urethane resin avantages. and that it is expected that the material shows a 
@@ -35,7 +33,7 @@ can simulate a biological tissue. %search reference
 %----------------------------------------------------------------------------------
 
 \section{Experimental Model I}
-\label{expmod1}
+\label{section:expmod1}
 
 %ii.	Procedure for conducting the experiment
 %iii.	Analysis of different platforms
@@ -43,11 +41,24 @@ can simulate a biological tissue. %search reference
 \subsection*{Description of the Experimental Setup}
 
 The first indentation test configuration was done by adapting a tensile and compression 
-testing machine, model LTS-500 NB from MinebeaMitsumi.Inc. This 
+testing machine, model LTS-500 NB from MinebeaMitsumi.Inc (Fig. \ref{fig:firstexperiment}). This 
 machine possess a maximum load capacity of \SI{500}{\newton}, and test speeds of
- \SIlist{10;20;30;50;75;100}{\milli \metre \per \minute}.
+\SIlist{10;20;30;50;75;100}{\milli \metre \per \minute}. To achieve an 
+indentation testing a pin was attached to the movable cross head holding grip, 
+as shown in Fig \ref{fig:firstexperiment}.
+The indentation pin has a rounded head made of stainless steel with a
+radius of $r_p = \SI{3}{\milli \m}$.
 
- 
+\begin{figure}%
+     \centering
+    \subfloat[\centering Indentation test configuration with a \SI{500}{\newton} load cell \label{fig:500loadcell}]{{\includegraphics[width=6.5cm]{Images/Experiment/firstexperiment}}}%
+    \qquad
+    \subfloat[\centering Indentation test configuration with a \SI{10}{\newton} load cell \label{fig:10loadcell}]{{\includegraphics[width=6.5cm]{Images/Experiment/firstexpotherload}}}%
+    \caption{First experimental model: Tensile and compression machine with an indenter with a rounded head. Test Specimen made from ultra-soft polyurethane resin positioned on a fixed platform with a similar shape for constraint.}%
+    \label{fig:firstexperiment}%
+\end{figure}
+
+
 The test specimen used for this experiment was a ultra-soft polyurethane resin. 
 As shown in Fig.. the specimen possesses a ellipsoidal form with 
 with a minor radius \(r_1\) = 35 mm and a major radius \(r_2\) = 60 mm. This was positioned
@@ -112,7 +123,7 @@ the first stages of the project.
 \end{figure}
 
 \section{Experimental Model II}
-\label{expmod2}
+\label{section:expmod2}
 %i.	Description of the experimental setup
 %ii.	Procedure for conducting the experiment
 %iii.	Analysis of different platforms
