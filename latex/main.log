@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.24)  20 MAR 2023 23:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.24)  21 MAR 2023 23:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1152,11 +1152,7 @@ Package csquotes Info: ... found 'babel' package.
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 36.
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
-) (main.aux (FrontBackMatter/Titlepage.aux) (FrontBackMatter/Authorship.aux) (FrontBackMatter/ListOfContent.aux) (Content/Chapter2.aux) (Content/Chapter3.aux) (Content/Chapter4.aux) (Content/Chapter5.aux) (Content/Chapter6.aux
-
-LaTeX Warning: Label `fig:testgraph' multiply defined.
-
-) (Content/Chapter7.aux) (Appendix/AppendixA.aux) (Bibliography/Bibliography.aux))
+) (main.aux (FrontBackMatter/Titlepage.aux) (FrontBackMatter/Authorship.aux) (FrontBackMatter/ListOfContent.aux) (Content/Chapter2.aux) (Content/Chapter3.aux) (Content/Chapter4.aux) (Content/Chapter5.aux) (Content/Chapter6.aux) (Content/Chapter7.aux) (Appendix/AppendixA.aux) (Bibliography/Bibliography.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
@@ -1744,27 +1740,24 @@ Overfull \hbox (51.14565pt too wide) in paragraph at lines 1--1
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: FFF6DF0E69C98AD9ED7A69E6ACCBDE51;11330.
+(rerunfilecheck)             Checksum: 67A4EB4DD5E76E1D5C7FD2AF6715ACC6;11330.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58546 strings out of 475385
- 1407541 string characters out of 2776906
- 2227250 words of memory out of 3000000
- 78822 multiletter control sequences out of 15000+600000
+ 58548 strings out of 475385
+ 1407568 string characters out of 2776906
+ 2227251 words of memory out of 3000000
+ 78823 multiletter control sequences out of 15000+600000
  504620 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,20n,100p,2324b,2759s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (36 pages, 3894961 bytes).
+Output written on main.pdf (36 pages, 3895331 bytes).
 PDF statistics:
- 600 PDF objects out of 1000 (max. 8388607)
- 121 named destinations out of 1000 (max. 500000)
+ 601 PDF objects out of 1000 (max. 8388607)
+ 122 named destinations out of 1000 (max. 500000)
  513 words of extra memory for PDF output out of 10000 (max. 10000000)
 

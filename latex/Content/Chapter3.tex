@@ -10,7 +10,7 @@ the design parameters are searched.
 This first experimental model had the purpose to serve as a comparator for the experimental 
 model II (see section \ref{section:expmod2}). At the beginning of the project, the desired experimental 
 model to be analyzed was the second experimental model, which was developed and designed by Yokohama National 
-University. As this second experimental model was still undergoing some improvements and corrections, a similar 
+University (YNU). As this second experimental model was still undergoing some improvements and corrections, a similar 
 experiment was designed which could served the same purpose.
 
 The chosen experimental characterization for the inverse finite element method for 
@@ -44,30 +44,32 @@ The first indentation test configuration was done by adapting a tensile and comp
 testing machine, model LTS-500 NB from MinebeaMitsumi.Inc (Fig. \ref{fig:firstexperiment}). This 
 machine possess a maximum load capacity of \SI{500}{\newton}, and test speeds of
 \SIlist{10;20;30;50;75;100}{\milli \metre \per \minute}. To achieve an 
-indentation testing a pin was attached to the movable cross head holding grip, 
-as shown in Fig \ref{fig:firstexperiment}.
+indentation testing configuration, a pin was attached to the movable cross head holding grip, 
+as shown in Fig \ref{fig:500loadcell}.
 The indentation pin has a rounded head made of stainless steel with a
 radius of $r_p = \SI{3}{\milli \m}$.
 
 \begin{figure}%
-     \centering
-    \subfloat[\centering Indentation test configuration with a \SI{500}{\newton} load cell \label{fig:500loadcell}]{{\includegraphics[width=6.5cm]{Images/Experiment/firstexperiment}}}%
-    \qquad
-    \subfloat[\centering Indentation test configuration with a \SI{10}{\newton} load cell \label{fig:10loadcell}]{{\includegraphics[width=6.5cm]{Images/Experiment/firstexpotherload}}}%
-    \caption{First experimental model: Tensile and compression machine with an indenter with a rounded head. Test Specimen made from ultra-soft polyurethane resin positioned on a fixed platform with a similar shape for constraint.}%
-    \label{fig:firstexperiment}%
+    \centering
+   \subfloat[\centering Indentation test configuration with a \SI{500}{\newton} load cell \label{fig:500loadcell}]{{\includegraphics[width=6.5cm]{Images/Experiment/firstexperiment}}}%
+   \qquad
+   \subfloat[\centering Indentation test configuration with a \SI{10}{\newton} load cell \label{fig:10loadcell}]{{\includegraphics[width=6.5cm]{Images/Experiment/firstexpotherload}}}%
+   \caption{First experimental model: Tensile and compression machine with an indenter with a rounded head. Test Specimen made from ultra-soft polyurethane resin positioned on a fixed platform with a similar shape for constraint.}%
+   \label{fig:firstexperiment}%
 \end{figure}
 
+The specimen possesses a ellipsoidal form with 
+with a minor radius $r_1 = \SI{35}{\milli \m}$ and a major radius $r_2 = \SI{60}{\milli \m}$. 
+This specimen geometry is supposed to simulate a kidney with an extracted tumor; therefore,
+on the lower part of the specimen an ellipsoid with a minor radius $r_{l1} = \SI{5}{\milli \m}$ 
+and a major radius $r_{l2} = \SI{10}{\milli \m}$ was removed (Fig. %make picture with removed). 
+The specimen was made from a YNU laboratory member, by 3D printing a mold with the wanted dimensions 
+and filling it with resin liquid. Additionally, it was left to cure for around \SI{30} hours. 
+Then, the specimen was positioned on a platform fixed to the base, which suited 
+the ellipsoidal geometry for properly constraint. 
 
-The test specimen used for this experiment was a ultra-soft polyurethane resin. 
-As shown in Fig.. the specimen possesses a ellipsoidal form with 
-with a minor radius \(r_1\) = 35 mm and a major radius \(r_2\) = 60 mm. This was positioned
- on a fixed platform that suited the ellipsoidal geometry of the 
- specimen to constrain its movement. 
- The specimen was tested in a indentation test configuration with a tensile/compression machine.
- To achieve this congiguration a pin with a rounded head made of structural steel, 
- with a radius of \(r_3\) = 3 mm was attached 
- to the holding grips followed by a force load cell. 
+\subsection*{Procedure for Conducting the Experiment}
+
 The result of indentation test was a load-displacement points. The approximated 
 polynomial curve was used as a reference for the material modeling.
 
