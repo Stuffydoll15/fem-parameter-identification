@@ -35,25 +35,24 @@ can simulate a biological tissue. %search reference
 \section{Experimental Model I}
 \label{section:expmod1}
 
-%ii.	Procedure for conducting the experiment
 %iii.	Analysis of different platforms
     
 \subsection*{Description of the Experimental Setup}
 
 The first indentation test configuration was done by adapting a tensile and compression 
-testing machine, model LTS-500 NB from MinebeaMitsumi.Inc (Fig. \ref{fig:firstexperiment}). This 
+testing machine, model LTS - 500 NB from MinebeaMitsumi.Inc (Fig. \ref{fig:firstexperiment}). This 
 machine possess a maximum load capacity of \SI{500}{\newton}, and test speeds of
-\SIlist{10;20;30;50;75;100}{\milli \metre \per \minute}. To achieve an 
-indentation testing configuration, a pin was attached to the movable cross head holding grip, 
+\SIlist[per-mode = symbol]{10;20;30;50;75;100}{\milli \metre \per \minute}. To achieve an 
+indentation testing configuration, a pin was attached to the movable crosshead holding grip, 
 as shown in Fig \ref{fig:500loadcell}.
-The indentation pin has a rounded head made of stainless steel with a
-radius of $r_p = \SI{3}{\milli \m}$.
+The indenter had a rounded head made of stainless steel with a
+radius of $r_p = \SI{3}{\milli \m}$ and a length of $l_p = \SI{11}{\milli \m}$.
 
 \begin{figure}%
     \centering
-   \subfloat[\centering Indentation test configuration with a \SI{500}{\newton} load cell \label{fig:500loadcell}]{{\includegraphics[width=6.5cm]{Images/Experiment/firstexperiment}}}%
+   \subfloat[\centering Indentation test configuration with a \SI{500}{\newton} load cell \label{fig:500loadcell}]{{\includegraphics[width=6.5cm]{Images/Experiment/firstexperimentwithtext.png}}}%
    \qquad
-   \subfloat[\centering Indentation test configuration with a \SI{10}{\newton} load cell \label{fig:10loadcell}]{{\includegraphics[width=6.5cm]{Images/Experiment/firstexpotherload}}}%
+   \subfloat[\centering Indentation test configuration with a \SI{10}{\newton} load cell \label{fig:10loadcell}]{{\includegraphics[width=6.5cm]{Images/Experiment/firstexpotherloadwithtext.png}}}%
    \caption{First experimental model: Tensile and compression machine with an indenter with a rounded head. Test Specimen made from ultra-soft polyurethane resin positioned on a fixed platform with a similar shape for constraint.}%
    \label{fig:firstexperiment}%
 \end{figure}
@@ -61,14 +60,46 @@ radius of $r_p = \SI{3}{\milli \m}$.
 The specimen possesses a ellipsoidal form with 
 with a minor radius $r_1 = \SI{35}{\milli \m}$ and a major radius $r_2 = \SI{60}{\milli \m}$. 
 This specimen geometry is supposed to simulate a kidney with an extracted tumor; therefore,
-on the lower part of the specimen an ellipsoid with a minor radius $r_{l1} = \SI{5}{\milli \m}$ 
-and a major radius $r_{l2} = \SI{10}{\milli \m}$ was removed (Fig. %make picture with removed). 
-The specimen was made from a YNU laboratory member, by 3D printing a mold with the wanted dimensions 
-and filling it with resin liquid. Additionally, it was left to cure for around \SI{30} hours. 
+on the lower part of the specimen a half ellipsoid with a minor radius $r_{l1} = \SI{10}{\milli \m}$ 
+and a major radius $r_{l2} = \SI{15}{\milli \m}$ was removed (Fig. \ref{fig:specimenhole}). 
+The specimen was prepared by a YNU laboratory member, by 3D printing a mold with the wanted dimensions
+ and a ellipsoidal shape, and filling it with liquid resin. 
+ Additionally, it was left to cure for around \SI{30} hours. 
 Then, the specimen was positioned on a platform fixed to the base, which suited 
 the ellipsoidal geometry for properly constraint. 
 
+\begin{figure}%
+    \centering
+   \subfloat[\centering Specimen dimensions bottom view \label{fig:specimenunder}]{{\includegraphics[width=6.5cm]{Images/Experiment/specimenhole.png}}}%
+   \qquad
+   \subfloat[\centering Specimen side view \label{fig:specimenside}]{{\includegraphics[width=6.5cm]{Images/Experiment/specimenholeside.png}}}%
+   \caption{First experimental model: Specimen dimensions made from ultra-soft polyurethane resin for indentation test.}%
+   \label{fig:specimenhole}%
+\end{figure}
+
 \subsection*{Procedure for Conducting the Experiment}
+For the indentation test after placing the specimen on the platform,
+the indenter was positioned slightly on the surface of the point of interest. 
+The test was conducted with a room temperature of approximately \SI{22}{\degreeCelsius}
+To perform the test the indenter was then lowered onto the surface of the specimen
+at a velocity of \SI[per-mode = symbol]{10}{\milli \m\per \minute}.
+The indentation depth was controlled by limiting the maximum depth, and the 
+test stopped once the inserted depth was reached. The indenter returned to its 
+original position after reaching the maximum depth with a rate of 
+\SI[per-mode = symbol]{100}{\milli \m\per \minute}. Due to the material properties,
+the specimen returned to its original shape.
+The result of the indentation test was a load-displacement data,
+which was recorded with a sampling rate of \SI{63}{\hertz} using a load 
+cell of \SI{\pm 500}{\newton} and a encoder to measure the displacement.
+
+The measurement accuracy according to the specification of the machine, has 
+a relative reading error of \SI{1.0}{\percent}. The indentation test 
+was repeated five times on the same sample to ensure and observe 
+reliability and repeatability. Furthermore, the raw data collected from the test 
+was processed and analyzed using Excel.
+
+
+
 
 The result of indentation test was a load-displacement points. The approximated 
 polynomial curve was used as a reference for the material modeling.
