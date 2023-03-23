@@ -98,19 +98,41 @@ was repeated five times on the same sample to ensure and observe
 reliability and repeatability. Furthermore, the raw data collected from the test 
 was processed and analyzed using Excel.
 
+During the initial indentation test using the \SI{500}{\newton} load cell, 
+the collected experimental data showed noise that could affect the accuracy 
+and reliability of the results. The noise was likely caused by sensitivity 
+of the lead cell. The ultra-soft polyurethane material showed force readings, which 
+were near the lower limit of the load cell's range, which adding any other external factors, 
+results in noisy measurements. To address this issue, a load cell of \SI{10}{\newton}
+was installed (Fig. \ref{fig:10loadcell}). This change improved the quality of 
+the measurements and reduced the noise in the data. The change to the load cell had some 
+implication to the experimental setup, such as removing the holding grip, and designing 
+a part which could connect the indenter with the new load cell. In addition to changing 
+the load cell, a simple filtering method was used to improve the experimental data. After 
+applying the filter, the noise in the data was reduced, resulting in more smoother 
+force reaction readings. 
+
+Overall, the applications of the combinations helped to improved the quality and acuracy 
+of the data and gave important information about possible measurement errors to 
+take into consideration for of the experimental model 
+designed by YNU. At last, The filtered data was used for subsequent analysis and 
+interpretation for the inverse finite element method approach for the material parameter 
+identification.
 
 
 
-The result of indentation test was a load-displacement points. The approximated 
-polynomial curve was used as a reference for the material modeling.
+% The approximated polynomial curve was used as a reference for the material modeling.
 
 %test specimen is loaded at a quasi-static rate
 
- The measured force reation \(F_1\) data showed a very small number, so the 
- first 50 N load cell displayed a lot of noise in the measurements. 
- Therefore, the load cell was change to 10N to reduce this interference. 
-The 10 N load cell displayed the force-displacement curve of the indenter and the specimen
- in a finer way. Furthermore, in order to get the measurement of the load and 
+% The measured force reation \(F_1\) data showed a very small number, so the 
+% first 50 N load cell displayed a lot of noise in the measurements. 
+% Therefore, the load cell was change to 10N to reduce this interference. 
+%The 10 N load cell displayed the force-displacement curve of the indenter and the specimen
+% in a finer way. 
+
+%load unloading
+Furthermore, in order to get the measurement of the load and 
  unloading process of
  the indentation a displacement sensor was attached to the tensile machine.
 

@@ -20,9 +20,9 @@
 \contentsline {subsection}{\numberline {2.4.1}Overview of the Data and Results}{10}{subsection.35}%
 \contentsline {subsection}{\numberline {2.4.2}Main Assumptions for Material Modeling}{10}{subsection.36}%
 \contentsline {section}{\numberline {2.5}Material model framework assumptions}{10}{section.37}%
-\contentsline {subsection}{\numberline {2.5.1}First Material model}{10}{subsection.38}%
-\contentsline {subsubsection}{Linear elasticity}{10}{section*.39}%
-\contentsline {subsubsection}{Hyperelasticity}{10}{section*.40}%
+\contentsline {subsection}{\numberline {2.5.1}First Material model}{11}{subsection.38}%
+\contentsline {subsubsection}{Linear elasticity}{11}{section*.39}%
+\contentsline {subsubsection}{Hyperelasticity}{11}{section*.40}%
 \contentsline {section}{\numberline {2.6}Computational model}{11}{section.41}%
 \contentsline {section}{\numberline {2.7}Material model}{11}{section.42}%
 \contentsline {chapter}{\numberline {3}Computational model}{13}{chapter.43}%
