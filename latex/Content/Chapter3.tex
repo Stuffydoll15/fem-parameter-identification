@@ -119,6 +119,78 @@ identification.
 
 %iii.	Analysis of different platforms? maybe dont because not enough fotos or info
 
+
+\section{Experimental Model II}
+\label{section:expmod2}
+%i.	Description of the experimental setup
+%ii.	Procedure for conducting the experiment
+%iii.	Analysis of different platforms
+
+The second experimental model was developed by Yokohama National University. Similar to 
+the first experimental model the test specimen and the platform were it lies, has the 
+same dimensions, minor radius $r_1 = \SI{35}{\milli \m}$ and a major radius \(r_2\) of 60 mm. The
+test specimen is also made from the same material, ultra-soft polyurethane resin.
+
+The indenter on the other hand, is a sphere made of ruby, the sphere radius is also 
+equal to the radius of the pin \(r_s\) 3 mm and attached to it, is the force load cell.
+
+A laser is used to measure the displacement which results in a load-displacement curve.
+With this model it is possible to not only determine the toal force reaction, but also
+it's components \(F_x\),  \(F_y\) and \(F_z\). Furthermore, with the laser it is also
+possible to observe the deformation not only in one point but around the whole area. 
+This allows as to analyze the deformation of the whole structure.
+
+The indentation speed selcted was % ask for which speeed
+and with an indentation depth of \(h_s\) is 4 mm. With this experiment, 4 key points on 
+the sepcimen's surface were chosen: First, in the middle and three other points, one to right, 
+one down, and one diagonal to middle, forming a square with a distance between points 
+of \(d_s\) 20 mm. %add figure with points
+
+
+
+
+Similar to the previous model, Fig. % add 
+shows a nonlinear behavior with a maximum force reac
+
+\section{Experimental Tests Description}
+
+\subsection{Middle Point}
+\subsection{Load Unloading}
+\subsection{Nearby Point}
+
+
+\section{Analysis and Comparison of Experimental Techniques}
+
+\subsection{Overview of the Data and Results}
+
+\subsection{Main Assumptions for Material Modeling}
+
+The first point to be analyzed, which is used to build a material model is point No. 1,
+in the middle of the surface. The advantages from this case, is the less influence of
+external factors. For this case it is vaiable to assumed, that shear stresses can be 
+neglected and offers a simple model to focus on the material definition.
+
+For this project, there is a focus on the limitation of each material model, 
+departing from an ideal scenario. From this point on the material will be build 
+accordingly and for each model the influence of the material parameters is going
+to be assessed.
+
+\subsection{First Material model}
+
+\subsubsection{Linear elasticity}
+
+
+\subsubsection{Hyperelasticity}
+The strain energy density function for the Neo-Hookean material model is given with
+\begin{align*}
+            \Psi = C_1 (I_1 - 3) \, ,
+\end{align*}
+where $C_1$ is a material constant and $I_!$ is the first invariant of the right Cauchy-Green tensor. 
+Neo Hookean and Mooney Rivlin comparison
+
+%Crear chart
+
+
 % The approximated polynomial curve was used as a reference for the material modeling.
 
 %test specimen is loaded at a quasi-static rate
@@ -175,121 +247,3 @@ the first stages of the project.
     \label{fig:testgraph}
 \end{figure}
 
-\section{Experimental Model II}
-\label{section:expmod2}
-%i.	Description of the experimental setup
-%ii.	Procedure for conducting the experiment
-%iii.	Analysis of different platforms
-
-The second experimental model was developed by Yokohama National University. Similar to 
-the first experimental model the test specimen and the platform were it lies, has the 
-same dimensions, minor radius $r_1 = \SI{35}{\milli \m}$ and a major radius \(r_2\) of 60 mm. The
-test specimen is also made from the same material, ultra-soft polyurethane resin.
-
-The indenter on the other hand, is a sphere made of ruby, the sphere radius is also 
-equal to the radius of the pin \(r_s\) 3 mm and attached to it, is the force load cell.
-
-A laser is used to measure the displacement which results in a load-displacement curve.
-With this model it is possible to not only determine the toal force reaction, but also
-it's components \(F_x\),  \(F_y\) and \(F_z\). Furthermore, with the laser it is also
-possible to observe the deformation not only in one point but around the whole area. 
-This allows as to analyze the deformation of the whole structure.
-
-The indentation speed selcted was % ask for which speeed
-and with an indentation depth of \(h_s\) is 4 mm. With this experiment, 4 key points on 
-the sepcimen's surface were chosen: First, in the middle and three other points, one to right, 
-one down, and one diagonal to middle, forming a square with a distance between points 
-of \(d_s\) 20 mm. %add figure with points
-
-
-
-
-Similar to the previous model, Fig. % add 
-shows a nonlinear behavior with a maximum force reac
-
-\section{Experimental Tests Description}
-
-\subsection{Middle Point}
-\subsection{Load Unloading}
-\subsection{Nearby Point}
-
-
-\section{Analysis and Comparison of Experimental Techniques}
-
-\subsection{Overview of the Data and Results}
-
-\subsection{Main Assumptions for Material Modeling}
-
-
-
-%----------------------------------------------------------------------------------
-\section{Material model framework assumptions}
-
-The first point to be analyzed, which is used to build a material model is point No. 1,
-in the middle of the surface. The advantages from this case, is the less influence of
-external factors. For this case it is vaiable to assumed, that shear stresses can be 
-neglected and offers a simple model to focus on the material definition.
-
-For this project, there is a focus on the limitation of each material model, 
-departing from an ideal scenario. From this point on the material will be build 
-accordingly and for each model the influence of the material parameters is going
-to be assessed.
-
-\subsection{First Material model}
-
-\subsubsection{Linear elasticity}
-
-
-\subsubsection{Hyperelasticity}
-The strain energy density function for the Neo-Hookean material model is given with
-\begin{align*}
-            \Psi = C_1 (I_1 - 3) \, ,
-\end{align*}
-where $C_1$ is a material constant and $I_!$ is the first invariant of the right Cauchy-Green tensor. 
-Neo Hookean and Mooney Rivlin comparison
-
-%Crear chart
-
-%----------------------------------------------------------------------------------
-\section{Computational model}
-The quasi static nature of the indentation experiment allows the use of a static 
-structural analysis.
-
-For the creation of the computational model, the SOLID 187 elements were used. The mesh 
-for the whole model is formed from quad tetrahedral elemennts. The platform and 
-the specimen have an global element size of 5 mm. The indenter has an element size of
-0.5 mm. In the area of the indentation, there is finer mesh with an element size of
-1 mm and a radius of 8 mm. 
-
-Their a two main factors which increases the complexity of the validation of the simulation
-and those are, the contact nonlinearity, and the element distortion due to indentation
- experiment. These issues make the computational time expensive, as it requires to manual 
- solutions for the meshing in the area of importance, and small time steps. 
- For that, 
- the nonlinear adaptive meshing option in ANSYS Workbench was applied, which does a remeshing
- process if the a certain parameter is exceeded.%Revisar explanation of nonlinear adaprive meshing
-Specially, for larger indentation cases, this option shows a more stable model with a 
-good mesh convergence analysis.
-
-A force-displacement curve, shown in Fig... is generated from the first assumption, 
-for this case 
-%Additionally due to these factors, the converge analysis   
-
-For both cases 
-%----------------------------------------------------------------------------------
-\section{Material model}
-
-In an ideal and first scenario, this material can be assumed as linear, isotropic, 
-elastic and nearly imcompressible. For this case, there are two main variables, the Young's
-Modulus \(E\), and the Poisson's ratio $\nu$.
-
-%comentario sobre la influencia del bulk modulus y poissons ratio
-From the parametric analysis, it is possible to see that the bulk 
-modulus of this material does not possess a big impact in the FE 
-simulation results. This conclusion combined with the results 
-from the Poisson ratio in the first material model coincide with the 
-statements from Bergström, where it is no vital to know these parameters 
-to obtain accurate FE computational models, as these have limited
-influence on the mechanical response. \cite{Bergström2015} %pag64Bergströom
-
-%---------------------------------------------------------------------------------
