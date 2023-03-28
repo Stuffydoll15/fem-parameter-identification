@@ -130,24 +130,6 @@
     \endverb
     \field{issn}{00219290}
     \field{issue}{10}
-    \field{note}{indentation test/experiment, biomechanical models (compute
-  stress and strain)<br/><br/>models requires knowlegde of local biomechanical
-  properties<br/><br/>using inverse FE and assuming isotropic neo-hookean
-  behaviour<br/> Young moduli is found from 6 to 891kPa median 30
-  kPa<br/><br/>Biomechanical models have shown to provide a better risk
-  assessmente for the tratment of atherosclerosis diseases but models depends
-  strongly on material properties of the plaque
-  components<br/><br/>Experimental data on the mechanical properties are scarce
-  and show large variability 30kPa (soft) to 1 MPa stiff<br/><br/>this
-  represents global stiffness -> therefore experimental technique fot micro
-  indentation test on soft biological materials to investigate the compressive
-  Youngs moduli of different plaque components<br/><br/>Cox 2005 indentation
-  set up<br/><br/>Data analysis: 3D fe model<br/><br/>local shear modulus G
-  estimated by fitting the model to force- indentation-depth
-  curve<br/><br/>least square method to fit experimental data to
-  simulated<br/><br/>E=3G<br/><br/>non Gaussian distribution<br/>standard
-  deviation<br/><br/>mean difference indentation test is
-  reproducible<br/><br/>}
     \field{pages}{1759\bibrangedash 1766}
     \field{title}{Local axial compressive mechanical properties of human
   carotid atherosclerotic plaques-characterisation by indentation test and
@@ -208,25 +190,6 @@
     \endverb
     \field{issn}{09270256}
     \field{issue}{1-2}
-    \field{note}{<b>Abstract</b><br/>-Determination of constitutive tensile
-  behavior<br/>-Experimental load vs displacement curve<br/>-demonstrate the
-  effectiveness of the inverse
-  procedure<br/><br/><b>Introduction</b><br/><br/><b>Inverse problems involve
-  determining the unknown causes of known
-  consequences</b><br/><br/><b>Experimental procedure</b><br/>-specimen
-  material<br/>steel like materials, details<br/>-specimen geometry<br/>- extra
-  details of the samples polished...<br/>-set up<br/>specimen holder<br/>-punch
-  load <br/>-where is the specimen<br/>-which machine<br/>-speed<br/>-how many
-  times<br/>-result curves ya muestran resultado simulation y
-  exper<br/><br/><b>Inverse fe procedure</b><br/>-initial slope up to yielding
-  simulation and exp is matched to determine E<br/>-inputs: E and true stress
-  vs true plastic strain data<br/><br/>-first linear part find E and match P1
-  <br/>-max equivalent stress = yield stress<br/>-eq plastic strain =
-  0<br/>-uniaxial true stress vs. true plastic strain (calculated)<br/>-assumed
-  values data point<br/>until nth<br/><br/>mechanical behavior of the material
-  E, yield, and data points is known<br/><br/>Inverse finite element simulation
-  of disk shaped <br/><br/>rigid head<br/>-how many nodes, element type,
-  contact pair option}
     \field{pages}{84\bibrangedash 92}
     \field{title}{An inverse finite element procedure for the determination of
   constitutive tensile behavior of materials using miniature specimen}
@@ -262,10 +225,6 @@
          given={J.\bibnamedelima R.},
          giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
       }}%
-    }
-    \list{publisher}{2}{%
-      {Taylor}%
-      {Francis Ltd.}%
     }
     \keyw{Polyurethane,applications,biomedical,coatings,drug
   delivery,medical,polymers,tissue engineering,vascular grafts}
@@ -405,12 +364,6 @@
     \endverb
     \field{issn}{17516161}
     \field{issue}{4}
-    \field{note}{<u><b>Abstract</b></u><br/><br/>Polymer gels are widely
-  accepted as candidate materilas for tissue engineering, drug delivery, and
-  orthopedic load- bearing applications.<br/><br/>Soft gels elastic modulus are
-  in kPa range<br/><br/>Soft gels mechanical characterizations presents
-  challenges<br/>- sample preparation<br/>-fixture design<br/>-gripping, and or
-  load measurement accuracy<br/><br/>}
     \field{pages}{355\bibrangedash 363}
     \field{title}{Mechanical characterization of soft viscoelastic gels via
   indentation and optimization-based inverse finite element analysis}
@@ -419,6 +372,30 @@
   Materials}
     \field{month}{08}
     \field{year}{2009}
+  \endentry
+
+  \entry{Mori2022}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MY}{%
+         family={Mori},
+         familyi={M\bibinitperiod},
+         given={Yuta},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Yamada Laboratory Yokohama National University}%
+    }
+    \strng{namehash}{MY1}
+    \strng{fullhash}{MY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Development of a method for identifying the physical
+  properties of post-extraction organs}
+    \field{month}{02}
+    \field{year}{2022}
   \endentry
 
   \entry{Wang2012}{book}{}

@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {1.4.2}Material Modeling of Soft Materials}{3}{subsection.15}%
 \contentsline {subsection}{\numberline {1.4.3}Inverse Finite Element Method for Parameter Identification}{3}{subsection.16}%
 \contentsline {subsection}{\numberline {1.4.4}Standard Verification and Validation for Computational Solid Mechanics (ASME)}{5}{subsection.19}%
-\contentsline {subsection}{\numberline {1.4.5}Overview}{5}{subsection.21}%
+\contentsline {section}{\numberline {1.5}Overview}{5}{section.21}%
 \contentsline {chapter}{\numberline {2}Experimental Model}{7}{chapter.22}%
 \contentsline {section}{\numberline {2.1}Experimental Model I}{8}{section.23}%
 \contentsline {section}{\numberline {2.2}Experimental Model II}{9}{section.28}%
@@ -19,9 +19,9 @@
 \contentsline {section}{\numberline {2.4}Analysis and Comparison of Experimental Techniques}{10}{section.34}%
 \contentsline {subsection}{\numberline {2.4.1}Overview of the Data and Results}{10}{subsection.35}%
 \contentsline {subsection}{\numberline {2.4.2}Main Assumptions for Material Modeling}{10}{subsection.36}%
-\contentsline {subsection}{\numberline {2.4.3}First Material model}{10}{subsection.37}%
-\contentsline {subsubsection}{Linear elasticity}{10}{section*.38}%
-\contentsline {subsubsection}{Hyperelasticity}{10}{section*.39}%
+\contentsline {subsection}{\numberline {2.4.3}First Material model}{11}{subsection.37}%
+\contentsline {subsubsection}{Linear elasticity}{11}{section*.38}%
+\contentsline {subsubsection}{Hyperelasticity}{11}{section*.39}%
 \contentsline {chapter}{\numberline {3}Computational model}{13}{chapter.41}%
 \contentsline {section}{\numberline {3.1}Middle point}{13}{section.42}%
 \contentsline {subsection}{\numberline {3.1.1}Description}{13}{subsection.43}%
