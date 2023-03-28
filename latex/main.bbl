@@ -236,6 +236,72 @@
     \field{year}{2004}
   \endentry
 
+  \entry{Joseph2018}{misc}{}
+    \name{author}{4}{}{%
+      {{hash=JJ}{%
+         family={Joseph},
+         familyi={J\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PRM}{%
+         family={Patel},
+         familyi={P\bibinitperiod},
+         given={R.\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=WA}{%
+         family={Wenham},
+         familyi={W\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SJR}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={J.\bibnamedelima R.},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Taylor}%
+      {Francis Ltd.}%
+    }
+    \keyw{Polyurethane,applications,biomedical,coatings,drug
+  delivery,medical,polymers,tissue engineering,vascular grafts}
+    \strng{namehash}{JJ+1}
+    \strng{fullhash}{JJPRMWASJR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{abstract}{%
+    Polyurethanes (PUs), formed by the reaction of diisocyanates with polyols
+  (or equivalent) in the presence of a catalyst, have a wide variety of
+  industrial uses. Much recent attention has focused on their biomedical
+  applications, owing to their biocompatibility, biodegradability and
+  tailorable chemical and physical forms. Examples of such application areas
+  include antibacterial surfaces and catheters, drug delivery vehicles, stents,
+  surgical dressings/pressure sensitive adhesives, tissue engineering scaffolds
+  and electrospinning, nerve generation, cardiac patches and PU coatings for
+  breast implants. Following a brief introduction to PUs, this review surveys
+  selected articles, mostly from 2014 to 2017, that highlight this diverse
+  range of biomedical applications offered by PU materials and coatings.%
+    }
+    \verb{doi}
+    \verb 10.1080/00202967.2018.1450209
+    \endverb
+    \field{issn}{17459192}
+    \field{issue}{3}
+    \field{pages}{121\bibrangedash 129}
+    \field{title}{Biomedical applications of polyurethane materials and
+  coatings}
+    \field{volume}{96}
+    \field{journaltitle}{Transactions of the Institute of Metal Finishing}
+    \field{month}{05}
+    \field{year}{2018}
+  \endentry
+
   \entry{Kauer2002}{article}{}
     \name{author}{5}{}{%
       {{hash=KM}{%
@@ -353,6 +419,48 @@
   Materials}
     \field{month}{08}
     \field{year}{2009}
+  \endentry
+
+  \entry{Wang2012}{book}{}
+    \name{author}{2}{}{%
+      {{hash=WW}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Wenshou},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Chun},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{WWWC1}
+    \strng{fullhash}{WWWC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    Abstract: Polyurethane is a very important polymeric biomaterial, widely
+  used in the preparation of implants and medical devices. This chapter
+  highlights recent research developments in polyurethanes for biomedical
+  applications, including biocompatibility and biostability evaluation, for
+  drug-controlled release carriers, for cardiovascular implants and for medical
+  supplies. We conclude with an outlook of the future of polyurethane.%
+    }
+    \verb{doi}
+    \verb 10.1533/9781908818188.115
+    \endverb
+    \field{pages}{115\bibrangedash 151}
+    \field{title}{Polyurethane for biomedical applications: A review of recent
+  developments}
+    \field{journaltitle}{The Design and Manufacture of Medical Devices}
+    \field{year}{2012}
   \endentry
 \enddatalist
 \endinput
