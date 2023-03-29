@@ -137,12 +137,10 @@ identification.
 
 %iii.	Analysis of different platforms? maybe dont because not enough fotos or info
 
-
+%----------------------------------------------------------------------------------
 \section{Experimental Model II}
 \label{section:expmod2}
-%i.	Description of the experimental setup
-%ii.	Procedure for conducting the experiment
-%iii.	Analysis of different platforms
+
 The second experimental model was developed and designed by Yuta Mori, a 
 member of the Yamada Laboratory from the Mechanical Engineering department of 
  Yokohama National University. 
@@ -177,12 +175,12 @@ The experimental device consists of an 6-axis force sensor, a laser displacement
  coordinate system of each camera. Fig.\ref{fig:secondexperiment} shows the overall setup of the 
  experiment. For our project, the 6-axis force sensor and the laser displacement were mainly used.
 The loading system is operated by specifiying de movement of the loading rod in advance, and the 
-indentation is performed in the direction normal to the contact surface to prevent slippage (Fig. \ref{fig:loadingdiag}).
+indentation is performed in the direction normal to the contact surface to prevent slippage (Fig. \ref{fig:loadingdiag}).\\
 
 
  \begin{figure}%
     \centering
-   \subfloat[\centering Indentation test configuration front view \label{fig:frontexp2}]{{\includegraphics[width=6.5cm]{Images/Experiment/secondexp1.jpg}}}%
+   \subfloat[\centering Indentation test configuration front view \label{fig:frontexp2}]{{\includegraphics[width=6.5cm]{Images/Experiment/secondexp1}}}%
    \qquad
    \subfloat[\centering Indentation test configuration top view \label{fig:topexp2}]{{\includegraphics[width=6.5cm]{Images/Experiment/secondexp2.jpg}}}%
    \caption{YNU experimental model: 6-axis sensor Test Specimen made from ultra-soft polyurethane resin positioned on a fixed platform with a similar shape for constraint.}%
@@ -198,45 +196,36 @@ indentation is performed in the direction normal to the contact surface to preve
 \end{figure}
 
 
-The specimen same as in the first experimental model (Section \ref{section:expmod1}) possessed the 
-same dimensions, a minor radius $r_1 = \SI{35}{\milli \m}$ and a major radius $r_2 = \SI{60}{\milli \m}$, and was
+The specimen, same as in the first experimental model (Section \ref{section:expmod1}),
+ possessed the same dimensions, a minor radius $r_1 = \SI{35}{\milli \m}$ and a major 
+ radius $r_2 = \SI{60}{\milli \m}$, and was
 made from ultra-soft polyurethane resin. Consequently, the platform is also 
 bowl-shaped. For this experiment, the platform base was made from transparent 
 acrylic resin to record the contact status of the bottom surface \cite{Mori2022}. 
 The maximum load capacity of the load cell is 
 and the indenter is a sphere with radius of $r_s = \SI{3}{\milli \m}$. The indenter 
-was made from ruby with high rigidity.
+was made from ruby with the following specifications; 
+a Young's Modulus of $E_r = \SI{35}{\milli \m}$.
 
 The indentation test was conducted under room temperature conditions. Also, 
 the sample was placed on acrylic platform and the indenter was 
 lowered at constant velocity of \SI[per-mode = symbol]{30}{\milli \m\per \minute}. 
 The indentation were conducted for each loading points 5 times on the same sample 
-and the average of the results were calculated.
+and the average of the results were calculated. 
 
-%write about the advantage of recording
+Furthermore, to minimize the friction during the indentation processs, the indenter 
+and the loading surface on the specimen were covered with a thin layer of lotion. 
+This was done due to inaccuracies shown in the measurements. Therefore, to reduce 
+this measurement error, the application of lubricant was employed, ensuring a 
+smoother and more controlled indentation process.
 
-The indenter on the other hand, is a sphere made of ruby, the sphere radius is also 
-equal to the radius of the pin \(r_s\) 3 mm and attached to it, is the force load cell.
 
-A laser is used to measure the displacement which results in a load-displacement curve.
-With this model it is possible to not only determine the toal force reaction, but also
-it's components \(F_x\),  \(F_y\) and \(F_z\). Furthermore, with the laser it is also
-possible to observe the deformation not only in one point but around the whole area. 
-This allows as to analyze the deformation of the whole structure.
-
+\section{Experimental Tests Description}
 The indentation speed selcted was % ask for which speeed
 and with an indentation depth of \(h_s\) is 4 mm. With this experiment, 4 key points on 
 the sepcimen's surface were chosen: First, in the middle and three other points, one to right, 
 one down, and one diagonal to middle, forming a square with a distance between points 
 of \(d_s\) 20 mm. %add figure with points
-
-
-
-
-Similar to the previous model, Fig. % add 
-shows a nonlinear behavior with a maximum force reac
-
-\section{Experimental Tests Description}
 
 \subsection{Middle Point}
 \subsection{Load Unloading}
@@ -245,7 +234,37 @@ shows a nonlinear behavior with a maximum force reac
 
 \section{Analysis and Comparison of Experimental Techniques}
 
+%write about the advantage and comparison
+The second experimental model offers some advantages over the first model. Specifically, 
+it enables not only the measurement of the total force reaction, but also the analysis 
+of the force reaction components $F_x$, $F_y$ and $F_z$. This allows for a better 
+understanding of the material's mechanical behavior, as it allows the identification 
+of a specific contribution of the force components and it contributes to identify other 
+mechanisms such as viscoelasticity, plasticity, and creep. 
+
+In addition, the second model allowed for the measurement of the deformation in other 
+points near the tested loading point. This provides additional information of the 
+material parameters, as it facilitates the characterization of the deformation behavior beyond the 
+direct vicinity of the indentation point.
+
+
+
+%For example, in a viscoelastic material, the initial loading response may be dominated by elastic behavior, followed by a time-dependent relaxation behavior as the material responds to the applied load. In contrast, a plastic material may exhibit a more gradual force response with continued loading, indicating the progressive deformation and flow of the material.
+%By analyzing the force components during an indentation experiment, it is possible to separate out the contributions of different deformation mechanisms and gain a more nuanced understanding of the material's mechanical behavior. This can be achieved through various analytical techniques such as numerical simulations or mathematical models that take into account the material's constitutive behavior and mechanical properties.
+%Overall, the observation of force components in an indentation experiment can provide important information about the underlying mechanisms contributing to the material's deformation behavior, which can be useful in a variety of engineering and scientific applications.
+
+
+
+A laser is used to measure the displacement which results in a load-displacement curve.
+With this model it is possible to not only determine the toal force reaction, but also
+it's components \(F_x\),  \(F_y\) and \(F_z\). Furthermore, with the laser it is also
+possible to observe the deformation not only in one point but around the whole area. 
+This allows as to analyze the deformation of the whole structure.
+
 \subsection{Overview of the Data and Results}
+
+Similar to the previous model, Fig. % add 
+shows a nonlinear behavior with a maximum force reac
 
 \subsection{Main Assumptions for Material Modeling}
 
