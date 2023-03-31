@@ -205,7 +205,7 @@ acrylic resin to record the contact status of the bottom surface \cite{Mori2022}
 The maximum load capacity of the load cell is \SI{200}{\newton} and a theoretical 
 force resolution of \SI{0.001}{\newton}. In addition, the resolution of the 
 laser displacement sensor is \SI{0.05}{\milli \m}.
-The indenter is sphere-shaped with a radius of $r_{i2}  = \SI{3}{\milli \m}$ and
+The indenter is sphere-shaped with a radius of $r_{i2} = \SI{3}{\milli \m}$ and
 was made from ruby with the following specifications; 
 a Young's Modulus of $E_{i2}  = \SI{440}{\giga \pascal}$ and a Poisson's ratio of 
 $\nu_{i2} = \SI{0.3}{\milli \m}$.
@@ -213,7 +213,7 @@ $\nu_{i2} = \SI{0.3}{\milli \m}$.
 The indentation test was conducted under room temperature conditions. Also, 
 the sample was placed on acrylic platform and the indenter was 
 lowered at constant velocity of \SI[per-mode = symbol]{30}{\milli \m\per \minute}. 
-The indentation were conducted for each loading points 5 times on the same sample 
+The experiments were conducted for each loading point five times on the same sample, 
 and the average of the results were calculated.
 
 Furthermore, to minimize the friction during the indentation processs, the indenter 
@@ -225,13 +225,26 @@ was also processed and assessed using Excel.
 
 
 \section{Experimental Tests Description}
-The indentation speed selcted was % ask for which speeed
-and with an indentation depth of \(h_s\) is 4 mm. With this experiment, 4 key points on 
-the sepcimen's surface were chosen: First, in the middle and three other points, one to right, 
-one down, and one diagonal to middle, forming a square with a distance between points 
-of \(d_s\) 20 mm. %add figure with points
 
 \subsection{Middle Point}
+The first use case for the indentation test was performed at the midpoint 
+of the major and minor axis of the ellipsoid (Fig. create fig showing testing points). This point was selected 
+to ensure that the indentation was normal to the surface, thereby avoiding 
+the influence of potential shear forces which could influence the 
+measurements.
+
+Additionally, the first indentation depth was chosen arbitriarily, for the first 
+experimental model was $h_{i1} = \SI{3.8}{\milli \m}$, and for the second 
+experimental model was $h_{i2} = \SI{4}{\milli \m}$. This depth was considered 
+to be an appropiate compromise that would allow to capture the nonlinear 
+behavior of the material, while also remaining a simple use case to 
+reproduce in a computational model in ANSYS.
+
+As the main objective is to find a path, which lets identify the material 
+ parameters, the most basic use case was selected and from this point 
+the complexity was gradually built on. Through this approach, it was possible 
+to establish a solid foundation for the subsequent experiments and data analysis.
+
 \subsection{Load Unloading}
 \subsection{Nearby Point}
 
@@ -267,11 +280,6 @@ Similar to the previous model, Fig. % add
 shows a nonlinear behavior with a maximum force reac
 
 \subsection{Main Assumptions for Material Modeling}
-
-The first point to be analyzed, which is used to build a material model is point No. 1,
-in the middle of the surface. The advantages from this case, is the less influence of
-external factors. For this case it is vaiable to assumed, that shear stresses can be 
-neglected and offers a simple model to focus on the material definition.
 
 For this project, there is a focus on the limitation of each material model, 
 departing from an ideal scenario. From this point on the material will be build 

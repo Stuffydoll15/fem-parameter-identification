@@ -2135,9 +2135,9 @@ INPUT .\Images\Experiment\Loadingdiagram.png
 INPUT .\Images\Experiment\Loadingdiagram.png
 INPUT .\Images\Experiment\Loadingdiagram.png
 INPUT .\Images\Experiment\Loadingdiagram.png
-INPUT Table\data1.dat
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7t.vf
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
+INPUT Table\data1.dat
 INPUT .\Content\Chapter4.tex
 INPUT .\Content\Chapter4.tex
 INPUT .\Content\Chapter4.tex
