@@ -218,15 +218,36 @@ and the average of the results were calculated.
 
 Furthermore, to minimize the friction during the indentation processs, the indenter 
 and the loading surface on the specimen were covered with a thin layer of lotion. 
-This was done due to inaccuracies shown in the measurements. Therefore, to reduce 
+This was done due to inaccuracies and step-like data shown in the measurements. Therefore, to reduce 
 this measurement error, the application of lubricant was employed, ensuring a 
 smoother and more controlled indentation process. Finally, the data 
 was also processed and assessed using Excel.
+
+\subsection*{Analysis and Comparison of Experimental Techniques}
+
+%write about the advantage and comparison
+The second experimental model offers some advantages over the first model. 
+Firstly, it enables not only the measurement of the total force reaction, but also the analysis 
+of the force reaction components $F_x$, $F_y$ and $F_z$. This allows for a better 
+understanding of the material's mechanical behavior, as it allows the identification 
+of a specific contribution of the force components and it contributes to identify other 
+mechanisms such as viscoelasticity, plasticity, and creep. 
+In addition, the second model allowed for the measurement of the deformation in other 
+points near the tested loading point. This provides additional information of the 
+material parameters, as it facilitates the characterization of the deformation behavior beyond the 
+direct vicinity of the indentation point.
+
+In contrast, the first experimental model only measures the total force reaction 
+against the indentation depth, without providing any information about the contribution 
+of each component. While the first model allows the data 
+gathering in simpler and more straightforward way, it may not capture 
+the whole complexity of the material.
 
 
 \section{Experimental Tests Description}
 
 \subsection{Middle Point}
+\label{subsection:midpoint}
 The first use case for the indentation test was performed at the midpoint 
 of the major and minor axis of the ellipsoid (Fig. \ref{fig:midpoint}). This point was selected 
 to ensure that the indentation was normal to the surface, thereby avoiding 
@@ -253,36 +274,27 @@ As the main objective is to find a path, which lets identify the material
 the complexity was gradually built on. Through this approach, it was possible 
 to establish a solid foundation for the subsequent experiments and data analysis.
 
+
+
 \subsection{Load Unloading}
+\label{subsection:loadunload}
+%chatgptBuilding on the results of the previous section, we conducted an indentation test at the same point on the surface of the ellipsoid specimen, but this time in a loading-unloading case. During this test, we observed a hysteresis phenomenon, which is indicative of a nonlinear and time-dependent mechanical behavior in the material. In this section, we will discuss the details of this loading-unloading test and analyze the implications of the observed hysteresis.
+%speak about why this usecase was chosen
+%for experimental model 1
+%change in the experiment setup
+%change in speeds
+%  experimental results of loading and unloading at loading speeds 10, 20, 30, 50, 75, and 100 [mm/min].
+%for experimental model 2
+
 \subsection{Nearby Point}
-
-
-\section{Analysis and Comparison of Experimental Techniques}
-
-%write about the advantage and comparison
-The second experimental model offers some advantages over the first model. 
-Firstly, it enables not only the measurement of the total force reaction, but also the analysis 
-of the force reaction components $F_x$, $F_y$ and $F_z$. This allows for a better 
-understanding of the material's mechanical behavior, as it allows the identification 
-of a specific contribution of the force components and it contributes to identify other 
-mechanisms such as viscoelasticity, plasticity, and creep. 
-In addition, the second model allowed for the measurement of the deformation in other 
-points near the tested loading point. This provides additional information of the 
-material parameters, as it facilitates the characterization of the deformation behavior beyond the 
-direct vicinity of the indentation point.
-
-In contrast, the first experimental model only measures the total force reaction 
-against the indentation depth, without providing any information about the contribution 
-of each component. While the first model allows the data 
-gathering in simpler and more straightforward way, it may not capture 
-the whole complexity of the material.
+\label{subsection:nearbypoint}
 
 %For example, in a viscoelastic material, the initial loading response may be dominated by elastic behavior, followed by a time-dependent relaxation behavior as the material responds to the applied load. In contrast, a plastic material may exhibit a more gradual force response with continued loading, indicating the progressive deformation and flow of the material.
 %By analyzing the force components during an indentation experiment, it is possible to separate out the contributions of different deformation mechanisms and gain a more nuanced understanding of the material's mechanical behavior. This can be achieved through various analytical techniques such as numerical simulations or mathematical models that take into account the material's constitutive behavior and mechanical properties.
 %Overall, the observation of force components in an indentation experiment can provide important information about the underlying mechanisms contributing to the material's deformation behavior, which can be useful in a variety of engineering and scientific applications.
 
 
-\subsection{Overview of the Data and Results}
+\section{Analysis and Overview of the Data and Results}
 
 Similar to the previous model, Fig. % add 
 shows a nonlinear behavior with a maximum force reac
