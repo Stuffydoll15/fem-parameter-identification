@@ -323,17 +323,26 @@ e.g., indentation depth and indentation
 speed, was employed as described in sections \ref{section:expmod1} and \ref{section:expmod2}.
 
 For the first experimental model, only one nearby point located $p_{I1} = \SI{5}{\milli \m}$ 
-to the right of the middle point was selected (Fig. crear una figura con nearby points para exp1 y exp2).
+to the right of the middle point was selected as shown in Figure \ref{fig:nbdiagexp1}.
 
 For the second experimental model, three additional nearby points were tested. 
 These points were located at distance of $p_{II1} = \SI{20}{\milli \m}$ to the 
 right, $p_{II2} = \SI{20}{\milli \m}$ downwards, and a third point $p_{II3} = \SI{28.3}{\milli \m}$ 
-diagonally from the middle point forming a square (Fig.). \\
+diagonally from the middle point forming a square (Fig. \ref{fig:nbdiagexp2}). \\
 
 The objective of these testing points was to gain a deeper understanding of the effect of 
 the shear stresses on the indentation response. Furthermore, 
 the results of these points allowed for the validation of the 
 computational model and the selected material model.
+
+\begin{figure}%
+    \centering
+   \subfloat[\centering Nearby point location for Experimental model I \label{fig:nbdiagexp1}]{{\includegraphics[width=6.5cm]{Images/Experiment/nbexp1.png}}}%
+   \qquad
+   \subfloat[\centering Nearby points location for Experimental model II \label{fig:nbdiagexp2}]{{\includegraphics[width=6.5cm]{Images/Experiment/nbexp2.png}}}%
+   \caption{Nearby test point: Loading points for each experimental model to analyze shear stresses and to vbe employed for the validation of the computation models.}%
+   \label{fig:nbexp}%
+\end{figure}
 
 %For example, in a viscoelastic material, the initial loading response may be dominated by elastic behavior, followed by a time-dependent relaxation behavior as the material responds to the applied load. In contrast, a plastic material may exhibit a more gradual force response with continued loading, indicating the progressive deformation and flow of the material.
 %By analyzing the force components during an indentation experiment, it is possible to separate out the contributions of different deformation mechanisms and gain a more nuanced understanding of the material's mechanical behavior. This can be achieved through various analytical techniques such as numerical simulations or mathematical models that take into account the material's constitutive behavior and mechanical properties.
