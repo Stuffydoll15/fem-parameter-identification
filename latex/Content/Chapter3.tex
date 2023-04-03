@@ -8,7 +8,7 @@ experimental model. This was essential to gather the necessary data from the
 tested material. This data will be used to determine the design parameters 
 that can help to characterize the material's mechanical behavior. \\
 
-The first experimental model had the purpose of serving as a comparator for the experimental 
+The experimental model I had the purpose of serving as a comparator for the experimental 
 model II (see section \ref{section:expmod2}). At the beginning of the project, the desired experimental 
 model to be analyzed was the second experimental model, which was developed and designed by Yokohama National 
 University (YNU). As this second experimental model was still undergoing some improvements and corrections, a similar 
@@ -235,7 +235,8 @@ mechanisms such as viscoelasticity, plasticity, and creep.
 In addition, the second model allowed for the measurement of the deformation in other 
 points near the tested loading point. This provides additional information of the 
 material parameters, as it facilitates the characterization of the deformation behavior beyond the 
-direct vicinity of the indentation point.
+direct vicinity of the indentation point. Furthermore, only this test configuration makes 
+use of a lubricant, as this experimental setup could show some inaccuracies in the first data sample.
 
 In contrast, the first experimental model only measures the total force reaction 
 against the indentation depth, without providing any information about the contribution 
@@ -243,7 +244,7 @@ of each component. While the first model allows the data
 gathering in simpler and more straightforward way, it may not capture 
 the whole complexity of the material.
 
-
+%----------------------------------------------------------------------------------
 \section{Experimental Tests Description}
 
 \subsection{Middle Point}
@@ -263,8 +264,8 @@ measurements.
 \end{figure}
 
 Additionally, the first indentation depth was chosen arbitriarily, for the first 
-experimental model was $h_{i1} = \SI{3.8}{\milli \m}$, and for the second 
-experimental model was $h_{i2} = \SI{4}{\milli \m}$. This depth was considered 
+experimental model was $h_{I} = \SI{3.8}{\milli \m}$, and for the second 
+experimental model was $h_{II} = \SI{4}{\milli \m}$. This depth was considered 
 to be an appropiate compromise that would allow to capture the nonlinear 
 behavior of the material, while also remaining a simple use case to 
 reproduce in a computational model in ANSYS.\\
@@ -325,6 +326,15 @@ speed, was employed as described in sections \ref{section:expmod1} and \ref{sect
 For the first experimental model, only one nearby point located $p_{I1} = \SI{5}{\milli \m}$ 
 to the right of the middle point was selected as shown in Figure \ref{fig:nbdiagexp1}.
 
+\begin{figure}%
+    \centering
+   \subfloat[\centering Nearby point location for Experimental model I \label{fig:nbdiagexp1}]{{\includegraphics[width=6.5cm]{Images/Experiment/nbexp1.png}}}%
+   \qquad
+   \subfloat[\centering Nearby points location for Experimental model II \label{fig:nbdiagexp2}]{{\includegraphics[width=6.5cm]{Images/Experiment/nbexp2.png}}}%
+   \caption{Nearby test point: Loading points for each experimental model to analyze shear stresses and to vbe employed for the validation of the computation models.}%
+   \label{fig:nbexp}%
+\end{figure}
+
 For the second experimental model, three additional nearby points were tested. 
 These points were located at distance of $p_{II1} = \SI{20}{\milli \m}$ to the 
 right, $p_{II2} = \SI{20}{\milli \m}$ downwards, and a third point $p_{II3} = \SI{28.3}{\milli \m}$ 
@@ -335,24 +345,85 @@ the shear stresses on the indentation response. Furthermore,
 the results of these points allowed for the validation of the 
 computational model and the selected material model.
 
-\begin{figure}%
-    \centering
-   \subfloat[\centering Nearby point location for Experimental model I \label{fig:nbdiagexp1}]{{\includegraphics[width=6.5cm]{Images/Experiment/nbexp1.png}}}%
-   \qquad
-   \subfloat[\centering Nearby points location for Experimental model II \label{fig:nbdiagexp2}]{{\includegraphics[width=6.5cm]{Images/Experiment/nbexp2.png}}}%
-   \caption{Nearby test point: Loading points for each experimental model to analyze shear stresses and to vbe employed for the validation of the computation models.}%
-   \label{fig:nbexp}%
-\end{figure}
+
 
 %For example, in a viscoelastic material, the initial loading response may be dominated by elastic behavior, followed by a time-dependent relaxation behavior as the material responds to the applied load. In contrast, a plastic material may exhibit a more gradual force response with continued loading, indicating the progressive deformation and flow of the material.
 %By analyzing the force components during an indentation experiment, it is possible to separate out the contributions of different deformation mechanisms and gain a more nuanced understanding of the material's mechanical behavior. This can be achieved through various analytical techniques such as numerical simulations or mathematical models that take into account the material's constitutive behavior and mechanical properties.
 %Overall, the observation of force components in an indentation experiment can provide important information about the underlying mechanisms contributing to the material's deformation behavior, which can be useful in a variety of engineering and scientific applications.
 
-
+%----------------------------------------------------------------------------------
 \section{Analysis and Overview of the Data and Results}
+\label{section:expresult}
+%Summary of the experimental models
+%Results of the indentation test
+%Discussion of the results
+%conclusion
+
+In this section, the results of the experimental models described in the previous 
+sections will be presented and analyzed. The objective is to understand the behavior 
+of this ultra-soft polyurethane material under indentation and establish the first 
+assumptions for the development of the computational model, as well as the material model.
+The section will start with a brief summary of the tests, followed by the analysis of the 
+force-stroke curves gathered throughout the experiments.
+
+The experimental model I served mainly as a comparator and a quick way to gain an idea of the 
+mechanical behavior under indentation, for this model three differents use cases were measured. 
+An indentation in the middle point of the surface with and indentation depth of $h_{I} = \SI{3.8}{\milli \m}$. 
+Subsequently, the load-unload case was observed under an indentation depth of  $h_{I2} = \SI{4}{\milli \m}$, and 
+with seven different speeds ranging from \SI[per-mode = symbol]{10}{\milli \m\per \minute} to 
+\SI[per-mode = symbol]{100}{\milli \m\per \minute}. 
+Finally, a nearby point was selected near the middle point, $p_{I1} = \SI{5}{\milli \m}$ to the right,
+ to use it as a validation point for the selected material model. 
+
+A similar process was followed for the experimental model II, the middle point indentation was 
+performed with an indentation depth of $h_{II} = \SI{4}{\milli \m}$ and a indentation 
+speed of \SI[per-mode = symbol]{30}{\milli \m\per \minute}, where the force components 
+could be observed. Similarly, the load-unload scenario was tested under the same conditions, and three 
+nearby points were measured.
+
 
 \subsection*{Middle Point}
 \label{subsection:midpointresult}
+The results of the indentation test at the middle point for both experimental showed a clear 
+nonlinear behavior. Figure \ref{fig:midpointgraph} shows
+
+\begin{figure}%
+    \centering
+   \subfloat[\centering Experimental model I: Total force reaction - indentation depth graph \label{fig:test23}]{{
+        \begin{tikzpicture}[scale=0.75]
+            \begin{axis}[
+                xmax=4.2,xmin=0,
+                ymin= 0,ymax=0.6,
+                ytick={0,0.1,0.2,...,0.6},
+                xlabel={Displacement $u [mm]$},
+                ylabel={Force reaction $F_{I_{MP}}[N]$},
+                grid = major,
+                legend pos= north west]
+                \addplot[gray,only marks, mark = x, opacity=0.2] table[x = Def, y = $Force$] {Table/Middle Point/MPI38all.dat};
+                \addplot+[color=blue, smooth, thick, mark size = 1pt, mark options={fill=blue}] table [y=$Force$, x=Def]{Table/Middle Point/MPI38mm.dat};
+                \legend{Measurement, Total force reaction,test}
+        \end{axis}
+        \end{tikzpicture}}}%
+   \qquad
+   \subfloat[\centering Experimental model II: Force reaction components - indentation depth graph \label{fig:test24}]{{
+    \begin{tikzpicture}[scale=0.75]
+        \begin{axis}[
+            xmax=4.2,xmin=0,
+            ymin= 0,ymax=0.6,
+            ytick={0,0.1,0.2,...,0.6},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction $F_{II_{MP}} [N]$},
+            grid = major,
+            legend pos= north west]
+            \addplot+[smooth, mark size = 1pt] table [y=$F_z$, x=Def]{Table/Middle Point/MPII4mm.dat};
+            \addplot+[smooth, mark size = 1pt] table [y=$F_y$, x=Def]{Table/Middle Point/MPII4mm.dat};
+            \addplot+[smooth, mark size = 1pt] table [y=$F_x$, x=Def]{Table/Middle Point/MPII4mm.dat};
+            \legend{$F_z$,$F_y$,$F_x$}
+        \end{axis}
+    \end{tikzpicture}}}%
+   \caption{Load-displacement curve experimental data for Middle Point use case for both experimental models.}%
+   \label{fig:midpointgraph}%
+\end{figure}
 
 \subsection*{Load-Unloading}
 \label{subsection:loadunloadresult}
@@ -438,6 +509,52 @@ the first stages of the project.
         \end{axis}
     \end{tikzpicture}
     \caption[Expdata]{Experimental Load-displacement curve.}
-    \label{fig:testgraph}
+    \label{fig:testgraph1}
 \end{figure}
 
+
+%test with two figures
+%\begin{figure}[ht]
+%    \centering   
+%        \begin{subfigure}{0.5\textwidth}
+%            \centering 
+%            \begin{tikzpicture}
+%                %\pgfplotsset{%legend outside the plot
+%                %every axis legend/.append style={ at={(1.05,0.95)}, anchor=north west,legend columns = 1}}
+%                \begin{axis}[
+%                    xlabel={Displacement $u [mm]$},
+%                    ylabel={Force reaction $F_{IMP1} [N]$},
+%                    legend pos= north west]
+%                
+%                    \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Middle Point/MPI38mm.dat};
+%                    %\addplot+[smooth] table [y=Force, x=$Def$]{Table/data2.dat};
+%                    \legend{Total force reaction I}%,$l_2$}
+%               \end{axis}
+%           \end{tikzpicture}
+%           \caption{Experimental model I: Total force reaction - indentation depth graph.}
+%       \end{subfigure}%
+%       \hspace{10pt} 
+%       \begin{subfigure}{0.5\textwidth}
+%            \centering 
+%            \begin{tikzpicture}
+%               %\pgfplotsset{%legend outside the plot
+%               %every axis legend/.append style={ at={(1.05,0.95)}, anchor=north west,legend columns = 1}}
+%                \begin{axis}[
+%                    %axis lines=middle,
+%                    %x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+%                    %y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
+%                    xlabel={Displacement $u [mm]$},
+%                    ylabel={Force reaction $F_{IIMP} [N]$},
+%                    legend pos= north west]
+%                
+%                    \addplot+[smooth, mark size = 1pt] table [y=$F_z$, x=Def]{Table/Middle Point/MPII4mm.dat};
+%                    \addplot+[smooth, mark size = 1pt] table [y=$F_y$, x=Def]{Table/Middle Point/MPII4mm.dat};
+%                    \addplot+[smooth, mark size = 1pt] table [y=$F_x$, x=Def]{Table/Middle Point/MPII4mm.dat};
+%                    \legend{$F_z$,$F_y$,$F_x$}
+%               \end{axis}
+%           \end{tikzpicture}
+%           \caption{Experimental model II: Force reaction components - indentation depth graph.}
+%       \end{subfigure}%
+%       \caption{Load-displacement curve experimental data for Middle point use case for both experimental models.}
+%       \label{fig:midpointgraph}
+%   \end{figure}
