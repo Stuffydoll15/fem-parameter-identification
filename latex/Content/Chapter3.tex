@@ -370,7 +370,7 @@ The experimental model I served mainly as a comparator and a quick way to gain a
 mechanical behavior under indentation, for this model three differents use cases were measured. 
 An indentation in the middle point of the surface with and indentation depth of $h_{I} = \SI{3.8}{\milli \m}$. 
 Subsequently, the load-unload case was observed under an indentation depth of  $h_{I2} = \SI{4}{\milli \m}$, and 
-with seven different speeds ranging from \SI[per-mode = symbol]{10}{\milli \m\per \minute} to 
+with six different speeds ranging from \SI[per-mode = symbol]{10}{\milli \m\per \minute} to 
 \SI[per-mode = symbol]{100}{\milli \m\per \minute}. 
 Finally, a nearby point was selected near the middle point, $p_{I1} = \SI{5}{\milli \m}$ to the right,
  to use it as a validation point for the selected material model. 
@@ -381,15 +381,16 @@ speed of \SI[per-mode = symbol]{30}{\milli \m\per \minute}, where the force comp
 could be observed. Similarly, the load-unload scenario was tested under the same conditions, and three 
 nearby points were measured.
 
-
+%----------------------------------------------------------------------------------
 \subsection*{Middle Point}
 \label{subsection:midpointresult}
+%EXPII:20230301_Progress_Report_'3_4mm/Average_Force-Stroke
 The results of the indentation test at the middle point for both experimental showed a clear 
 nonlinear behavior. Figure \ref{fig:midpointgraph} shows
 
 \begin{figure}%
     \centering
-   \subfloat[\centering Experimental model I: Total force reaction - indentation depth graph \label{fig:test23}]{{
+   \subfloat[\centering Experimental model I: Total force reaction - indentation depth graph \label{fig:mpIexp}]{{
         \begin{tikzpicture}[scale=0.75]
             \begin{axis}[
                 xmax=4.2,xmin=0,
@@ -405,7 +406,7 @@ nonlinear behavior. Figure \ref{fig:midpointgraph} shows
         \end{axis}
         \end{tikzpicture}}}%
    \qquad
-   \subfloat[\centering Experimental model II: Force reaction components - indentation depth graph \label{fig:test24}]{{
+   \subfloat[\centering Experimental model II: Force reaction components - indentation depth graph \label{fig:mpIIexp}]{{
     \begin{tikzpicture}[scale=0.75]
         \begin{axis}[
             xmax=4.2,xmin=0,
@@ -425,14 +426,101 @@ nonlinear behavior. Figure \ref{fig:midpointgraph} shows
    \label{fig:midpointgraph}%
 \end{figure}
 
+
+%----------------------------------------------------------------------------------
 \subsection*{Load-Unloading}
 \label{subsection:loadunloadresult}
+%EXPII:20230203_Datasummary_4mmindentation/Average_Force-Stroke_0302
+%EXPI:20221025_DataSharing_pptdocument/processeddata
+\begin{figure}%
+    \centering
+   \subfloat[\centering Experimental model I: Total force reaction - indentation depth graph \label{fig:luIexp}]{{
+        \begin{tikzpicture}[scale=0.75]
+            \begin{axis}[
+                xmax=4.2,xmin=0,
+                ymin= 0,ymax=0.6,
+                ytick={0,0.1,0.2,...,0.6},
+                xlabel={Displacement $u [mm]$},
+                ylabel={Force reaction $F_{I_{LU}} [N]$},
+                grid = major,
+                legend pos= north west]
+                \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Loadunload/LI4mm.dat};
+                \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Loadunload/UI4mm.dat};
+                \legend{Load I, Unload I}
+            \end{axis}
+        \end{tikzpicture}}}%
+   \qquad
+   \subfloat[\centering Experimental model II: Force reaction components - indentation depth graph \label{fig:luIIexp}]{{
+    \begin{tikzpicture}[scale=0.75]
+        \begin{axis}[
+            xmax=4.2,xmin=0,
+            ymin= 0,ymax=0.6,
+            ytick={0,0.1,0.2,...,0.6},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction $F_{II_{LU}} [N]$},
+            grid = major,
+            legend pos= north west]
+            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Loadunload/LII4mm.dat};
+            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Loadunload/UII4mm.dat};
+            \legend{Load II, Unload II}
+        \end{axis}
+    \end{tikzpicture}}}%
+   \caption{Load-displacement curve experimental data for Load-Unload use case for both experimental models.}%
+   \label{fig:loadunloadgraph}%
+\end{figure}
 
+
+%different speeds buscar como poner differentes esquemasLoading_Speed_Experiment_220926.ppt and processed data
+
+
+%----------------------------------------------------------------------------------
 \subsection*{Nearby Point}
 \label{subsection:nearbypointresult}
 Similar to the previous model, Fig. % add 
 shows a nonlinear behavior with a maximum force reac
 
+\begin{figure}%
+    \centering
+   \subfloat[\centering Experimental model I: Total force reaction - indentation depth graph \label{fig:nbIexp}]{{
+        \begin{tikzpicture}[scale=0.75]
+            \begin{axis}[
+                xmax=4.2,xmin=0,
+                ymin= 0,ymax=0.6,
+                ytick={0,0.1,0.2,...,0.6},
+                xlabel={Displacement $u [mm]$},
+                ylabel={Force reaction $F_{I_{LU}} [N]$},
+                grid = major,
+                legend pos= north west]
+                \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Loadunload/LI4mm.dat};
+                \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Loadunload/UI4mm.dat};
+                \legend{Load I, Unload I}
+            \end{axis}
+        \end{tikzpicture}}}%
+   \qquad
+   \subfloat[\centering Experimental model II: Force reaction components - indentation depth graph \label{fig:nbIIexp}]{{
+    \begin{tikzpicture}[scale=0.75]
+        \begin{axis}[
+            xmax=4.2,xmin=0,
+            ymin= 0,ymax=0.6,
+            ytick={0,0.1,0.2,...,0.6},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction $F_{II_{LU}} [N]$},
+            grid = major,
+            legend pos= north west]
+            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Loadunload/LII4mm.dat};
+            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Loadunload/UII4mm.dat};
+            \legend{Load II, Unload II}
+        \end{axis}
+    \end{tikzpicture}}}%
+   \caption{Load-displacement curve experimental data for Load-Unload use case for both experimental models.}%
+   \label{fig:nearbypointgraph}%
+\end{figure}
+
+
+
+
+
+%----------------------------------------------------------------------------------
 \subsection{Main Assumptions for Material Modeling}
 
 For this project, there is a focus on the limitation of each material model, 
