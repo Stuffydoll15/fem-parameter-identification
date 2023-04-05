@@ -140,6 +140,50 @@
     \field{year}{2013}
   \endentry
 
+  \entry{Goharian2017}{book}{}
+    \name{author}{3}{}{%
+      {{hash=GA}{%
+         family={Goharian},
+         familyi={G\bibinitperiod},
+         given={Amirhossein},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KSS}{%
+         family={Koloor},
+         familyi={K\bibinitperiod},
+         given={Seyed\bibnamedelima S.R.},
+         giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=AMR}{%
+         family={Abdullah},
+         familyi={A\bibinitperiod},
+         given={Mohamed\bibnamedelima R.},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Inc.}%
+    }
+    \keyw{Biomechanical evaluation,Cyclic test,Experimental testing,Finite
+  element analysis,Load-to-failure test,Loading and boundary conditions}
+    \strng{namehash}{GAKSSAMR1}
+    \strng{fullhash}{GAKSSAMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.1016/B978-0-12-804634-0.00005-7
+    \endverb
+    \field{isbn}{9780128047583}
+    \field{pages}{65\bibrangedash 87}
+    \field{title}{Biomechanical Evaluation Methods}
+    \field{journaltitle}{Trauma Plating Systems: Biomechanical, Material,
+  Biological, and Clinical Aspects}
+    \field{month}{03}
+    \field{year}{2017}
+  \endentry
+
   \entry{Husain2004}{article}{}
     \name{author}{3}{}{%
       {{hash=HA}{%
@@ -199,7 +243,7 @@
     \field{year}{2004}
   \endentry
 
-  \entry{Joseph2018}{misc}{}
+  \entry{Joseph2018}{article}{}
     \name{author}{4}{}{%
       {{hash=JJ}{%
          family={Joseph},
@@ -234,19 +278,6 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{J}
     \field{sortinithash}{J}
-    \field{abstract}{%
-    Polyurethanes (PUs), formed by the reaction of diisocyanates with polyols
-  (or equivalent) in the presence of a catalyst, have a wide variety of
-  industrial uses. Much recent attention has focused on their biomedical
-  applications, owing to their biocompatibility, biodegradability and
-  tailorable chemical and physical forms. Examples of such application areas
-  include antibacterial surfaces and catheters, drug delivery vehicles, stents,
-  surgical dressings/pressure sensitive adhesives, tissue engineering scaffolds
-  and electrospinning, nerve generation, cardiac patches and PU coatings for
-  breast implants. Following a brief introduction to PUs, this review surveys
-  selected articles, mostly from 2014 to 2017, that highlight this diverse
-  range of biomedical applications offered by PU materials and coatings.%
-    }
     \verb{doi}
     \verb 10.1080/00202967.2018.1450209
     \endverb
@@ -422,14 +453,6 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{W}
     \field{sortinithash}{W}
-    \field{abstract}{%
-    Abstract: Polyurethane is a very important polymeric biomaterial, widely
-  used in the preparation of implants and medical devices. This chapter
-  highlights recent research developments in polyurethanes for biomedical
-  applications, including biocompatibility and biostability evaluation, for
-  drug-controlled release carriers, for cardiovascular implants and for medical
-  supplies. We conclude with an outlook of the future of polyurethane.%
-    }
     \verb{doi}
     \verb 10.1533/9781908818188.115
     \endverb

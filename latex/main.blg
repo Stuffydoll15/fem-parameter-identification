@@ -44,50 +44,47 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: main-blx.bib
 Database file #2: Bibliography/bibliography.bib
-Warning--entry type for "Joseph2018" isn't style-file defined
---line 163 of file Bibliography/bibliography.bib
 Biblatex version: 3.18
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 9 entries,
+You've used 10 entries,
             6399 wiz_defined-function locations,
-            1293 strings with 16765 characters,
-and the built_in function-call counts, 86190 in all, are:
-= -- 7374
-> -- 1052
-< -- 292
-+ -- 2527
-- -- 402
-* -- 6448
-:= -- 10361
+            1302 strings with 15928 characters,
+and the built_in function-call counts, 97260 in all, are:
+= -- 8316
+> -- 1212
+< -- 343
++ -- 2816
+- -- 467
+* -- 7332
+:= -- 11614
 add.period$ -- 0
-call.type$ -- 9
-change.case$ -- 132
-chr.to.int$ -- 57
-cite$ -- 16
-duplicate$ -- 8460
-empty$ -- 7391
-format.name$ -- 634
-if$ -- 17171
+call.type$ -- 10
+change.case$ -- 154
+chr.to.int$ -- 60
+cite$ -- 18
+duplicate$ -- 9440
+empty$ -- 8351
+format.name$ -- 722
+if$ -- 19439
 int.to.chr$ -- 0
-int.to.str$ -- 18
+int.to.str$ -- 21
 missing$ -- 0
-newline$ -- 363
-num.names$ -- 388
-pop$ -- 3073
+newline$ -- 399
+num.names$ -- 444
+pop$ -- 3448
 preamble$ -- 1
-purify$ -- 191
+purify$ -- 221
 quote$ -- 0
-skip$ -- 1631
+skip$ -- 1860
 stack$ -- 0
-substring$ -- 14550
-swap$ -- 1481
-text.length$ -- 271
-text.prefix$ -- 8
+substring$ -- 16495
+swap$ -- 1666
+text.length$ -- 311
+text.prefix$ -- 9
 top$ -- 1
-type$ -- 293
+type$ -- 328
 warning$ -- 0
-while$ -- 1240
+while$ -- 1372
 width$ -- 0
-write$ -- 355
-(There was 1 warning)
+write$ -- 390

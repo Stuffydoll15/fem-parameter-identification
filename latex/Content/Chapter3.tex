@@ -9,7 +9,7 @@ tested material. This data will be used to determine the design parameters
 that can help to characterize the material's mechanical behavior. \\
 
 The experimental model I had the purpose of serving as a comparator for the experimental 
-model II (see section \ref{section:expmod2}). At the beginning of the project, the desired experimental 
+model II (see Section \ref{section:expmod2}). At the beginning of the project, the desired experimental 
 model to be analyzed was the second experimental model, which was developed and designed by Yokohama National 
 University (YNU). As this second experimental model was still undergoing some improvements and corrections, a similar 
 experiment was designed which could fulfill the same purpose.
@@ -80,7 +80,9 @@ on the lower part of the specimen a half ellipsoid with a minor radius $r_{l1} =
 and a major radius $r_{l2} = \SI{15}{\milli \m}$ was removed (Fig. \ref{fig:specimenhole}). 
 The specimen was prepared by a YNU laboratory member, by 3D printing a mold with the wanted dimensions
  and a ellipsoidal shape, and filling it with liquid resin. 
- Additionally, it was left to cure for around \SI{30} hours. 
+ Additionally, it was left to cure for around \SI{30} hours. It is relevant to clarify, that this 
+ sample had been created couple of months before the development of this experimental setup and 
+ had been utilized in other projects conducted from the laboratory.
 Then, the specimen was positioned on a platform fixed to the base, which suited 
 the ellipsoidal geometry for properly constraint. 
 
@@ -150,6 +152,10 @@ Additionally, this model seeked two achieve two objectives: firstly, to develop 
 loading system to acquire the data required for an inverse analysis, and secondly, 
 to establish a measurement process in case of a total nephrectomy \cite{Mori2022}. 
 
+Furthermore, for the present experimental setup a new sample was prepared using 
+the same material as the previous one, i.e., human skin gel made from ultra-soft 
+polyurethane resin, and following the same 
+manufacturing processs as decribe in Section \ref{section:expmod1}. 
 %evtl. speak about ehical use of the experimental model : To ensure the ethical use of the experimental model and data provided by the other master student, I obtained permission from them to use their data in my research. Additionally, I made sure that any ethical considerations related to the data, such as informed consent from participants or privacy concerns, 
 %had been appropriately addressed in the original study. As an extra precaution, I also ensured that any identifiable information about the participants had been removed from the data provided by the other master student before incorporating it into my own research. By taking these steps, I ensured that the data was used in a responsible and ethical manner, and that the original research was respected and properly attributed
 
@@ -283,7 +289,7 @@ Building on the previous test point (Fig. \ref{fig:midpoint}), an indentation
  test was condunted on the same point, with the an indentation depth of 
  \SI{4}{\milli \m}, but this time in a loading-unloading case.
 
-The first experimental model setup, as describe in section \ref{section:expmod1},
+The first experimental model setup, as describe in Section \ref{section:expmod1},
 was unable to measure the displacement and force reaction during the unloading 
 of the specimen. As a result, certain modifications were made to the experimental 
 setup. Due to time constraints, the modification of experimental model I 
@@ -302,7 +308,7 @@ as shown in Figure \ref{fig:unloadingexp1}.
  
 The aim of this use case, was the observation of a possible hysteresis
 behavior, as well as to investigate the viscoelastic properties of the material.
-The load-unload test was performed at seven different loading speeds, namely, 
+The load-unload test was performed at six different loading speeds, namely, 
 \SIlist[per-mode = symbol]{10;20;30;50;75;100}{\milli \metre \per \minute} on the 
 same specimen.
 Each speed configuration was reapeated five times, and te results were average to 
@@ -321,7 +327,7 @@ In addition to the indentation performed on the middle point of the surface, fur
 indentations were conducted on nearby points. From these indentation tests, force-displacement 
 curves were recorded. For each indentation the same experiment configuration, 
 e.g., indentation depth and indentation 
-speed, was employed as described in sections \ref{section:expmod1} and \ref{section:expmod2}.
+speed, was employed as described in Sections \ref{section:expmod1} and \ref{section:expmod2}.
 
 For the first experimental model, only one nearby point located $p_{I1} = \SI{5}{\milli \m}$ 
 to the right of the middle point was selected as shown in Figure \ref{fig:nbdiagexp1}.
@@ -386,7 +392,33 @@ nearby points were measured.
 \label{subsection:midpointresult}
 %EXPII:20230301_Progress_Report_'3_4mm/Average_Force-Stroke
 The results of the indentation test at the middle point for both experimental showed a clear 
-nonlinear behavior. Figure \ref{fig:midpointgraph} shows
+nonlinear behavior.  It is assumed that this material 
+possess a elastic-plastic behavior, which in a typical load-displacement curves has four known stages \cite{Goharian2017}:
+
+\begin{enumerate}
+    \item Nonlinear elastic (self-adjusting): In this stage, the material adjusts itself to the loading conditions, and the deformation is elastic and reversible.
+    \item Linear elastic: The material is bearing the external load in this stage, the deformation is still elastic and reversible 
+    \item Nonlinear plastic (failing): With the increase of the external load, the material reaches its yield point and undergoes permament deformation
+    \item Failure: The material fails leading to permanent damage.
+\end{enumerate}
+
+
+Figure \ref{fig:midpointgraph} shows the results of the two indentations at the middle point 
+ of the specimen surface.
+The load-displacement curves showed nearly identical material behavior for both 
+experimental models. This use case demonstrate the nonlinear-elastic behavior of the material, 
+as there was no evidence of a yield point or plastic behavior. 
+Both curves began at zero, and the force increased gradually with increasing,
+resulting in a slightly concave shape. 
+
+Figure \ref{fig:mpIexp} displays all the measurements points obtained from experimental model I and its 
+polynomial approximation. This approximation was used for the subsequent steps of the iFEM approach.
+
+The maximum total force for experimental model I at a maximun indentation depth of 
+$u_{I_{MP}} = \SI{3.8}{\milli \m}$ was $F_{I_{MP}} = \SI{0.4218}{\newton}$. For experimental 
+model II, at an indentation depth of 
+$u_{II_{MP}} = \SI{4}{\milli \m}$, the maximum forces for each component were
+ $F_{Z_{II,MP}} = \SI{0.5386}{\newton}$, $F_{Y_{II,MP}} = \SI{0.0124}{\newton}$, and $F_{X_{II,MP}} = \SI{0.0093}{\newton}$.
 
 \begin{figure}%
     \centering
@@ -426,12 +458,21 @@ nonlinear behavior. Figure \ref{fig:midpointgraph} shows
    \label{fig:midpointgraph}%
 \end{figure}
 
+From load-displacement curve of experimental model II (Fig. \ref{fig:mpIIexp}) it was evident that the
+force reactions in the X and Y directions could be disregard, as these were considerably lower than
+the force reaction in Z direction. Therefore, the focus in further analysis was mainly 
+on the force reaction in Z direction. Additionally, this case revealed that shear stresses were minimal, 
+which is consistent with the purpose on performing the indentation with the least influence of external factors.
 
+%the difference between a and b graph can also be the that one sample is older as the other
+%conclusion and limitation of MP:to appreciate a all the aspects of the material behaviour would be important to perform higher indentation 
 %----------------------------------------------------------------------------------
 \subsection*{Load-Unloading}
 \label{subsection:loadunloadresult}
 %EXPII:20230203_Datasummary_4mmindentation/Average_Force-Stroke_0302
 %EXPI:20221025_DataSharing_pptdocument/processeddata
+
+
 \begin{figure}%
     \centering
    \subfloat[\centering Experimental model I: Total force reaction - indentation depth graph \label{fig:luIexp}]{{
