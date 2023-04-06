@@ -458,6 +458,27 @@ $u_{II_{MP}} = \SI{4}{\milli \m}$, the maximum forces for each component were
    \label{fig:midpointgraph}%
 \end{figure}
 
+\begin{figure}%
+    \centering
+   \qquad
+    \begin{tikzpicture}[scale=1]
+        \begin{axis}[
+            xmax=4.2,xmin=0,
+            ymin= 0,ymax=0.6,
+            ytick={0,0.1,0.2,...,0.6},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction $F_{MP} [N]$},
+            grid = major,
+            legend pos= north west]
+            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Middle Point/MPI38mm.dat};
+            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Middle Point/MPII4mmtotalap.dat};
+            \legend{Experiment I,Experiment II}
+        \end{axis}
+    \end{tikzpicture}%
+   \caption{Total Force Reaction-Displacement curve: Comparison between experimental data for Middle Point use case from both models.}%
+   \label{fig:midpointexpIvsexpII}%
+\end{figure}
+
 From load-displacement curve of experimental model II (Fig. \ref{fig:mpIIexp}) it was evident that the
 force reactions in the X and Y directions could be disregard, as these were considerably lower than
 the force reaction in Z direction. Therefore, the focus in further analysis was mainly 
