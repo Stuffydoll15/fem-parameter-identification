@@ -81,9 +81,9 @@ and a major radius $r_{l2} = \SI{15}{\milli \m}$ was removed (Fig. \ref{fig:spec
 The specimen was prepared by a YNU laboratory member, by 3D printing a mold with the wanted dimensions
  and a ellipsoidal shape, and filling it with liquid resin. 
  Additionally, it was left to cure for around \SI{30} hours. It is relevant to clarify, that this 
- sample had been created couple of months before the development of this experimental setup and 
+ sample had been created months before the development of this experimental setup and 
  had been utilized in other projects conducted from the laboratory.
-Then, the specimen was positioned on a platform fixed to the base, which suited 
+This available specimen was positioned on a platform fixed to the base, which suited 
 the ellipsoidal geometry for properly constraint. 
 
 \begin{figure}%
@@ -183,7 +183,6 @@ The experimental device consists of an 6-axis force sensor, a laser displacement
 The loading system is operated by specifiying de movement of the loading rod in advance, and the 
 indentation is performed in the direction normal to the contact surface to prevent slippage (Fig. \ref{fig:loadingdiag}).\\
 
-
  \begin{figure}%
     \centering
    \subfloat[\centering Indentation test configuration front view \label{fig:frontexp2}]{{\includegraphics[width=6.5cm]{Images/Experiment/secondexp1}}}%
@@ -201,7 +200,6 @@ indentation is performed in the direction normal to the contact surface to preve
    \label{fig:loadingdiag}%
 \end{figure}
 
-
 The specimen, same as in the first experimental model (Section \ref{section:expmod1}),
  possessed the same dimensions, a minor radius $r_1 = \SI{35}{\milli \m}$ and a major 
  radius $r_2 = \SI{60}{\milli \m}$, and was
@@ -214,7 +212,7 @@ laser displacement sensor is \SI{0.05}{\milli \m}.
 The indenter is sphere-shaped with a radius of $r_{i2} = \SI{3}{\milli \m}$ and
 was made from ruby with the following specifications; 
 a Young's Modulus of $E_{i2} = \SI{440}{\giga \pascal}$ and a Poisson's ratio of 
-$\nu_{i2} = \SI{0.3}{\milli \m}$.
+$\nu_{i2} = \SI{0.3}{\milli \m}$.\\
 
 The indentation test was conducted under room temperature conditions. Also, 
 the sample was placed on acrylic platform and the indenter was 
@@ -388,7 +386,7 @@ could be observed. Similarly, the load-unload scenario was tested under the same
 nearby points were measured.
 
 %----------------------------------------------------------------------------------
-\subsection*{Middle Point}
+\subsection{Middle Point}
 \label{subsection:midpointresult}
 %EXPII:20230301_Progress_Report_'3_4mm/Average_Force-Stroke
 The results of the indentation test at the middle point for both experimental showed a clear 
@@ -418,7 +416,7 @@ The maximum total force for experimental model I at a maximun indentation depth 
 $u_{I_{MP}} = \SI{3.8}{\milli \m}$ was $F_{I_{MP}} = \SI{0.4218}{\newton}$. For experimental 
 model II, at an indentation depth of 
 $u_{II_{MP}} = \SI{4}{\milli \m}$, the maximum forces for each component were
- $F_{Z_{II,MP}} = \SI{0.5386}{\newton}$, $F_{Y_{II,MP}} = \SI{0.0124}{\newton}$, and $F_{X_{II,MP}} = \SI{0.0093}{\newton}$.
+ $F_{Z_{II,MP}} = \SI{0.546}{\newton}$, $F_{Y_{II,MP}} = \SI{0.0124}{\newton}$, and $F_{X_{II,MP}} = \SI{0.0093}{\newton}$.\\
 
 \begin{figure}%
     \centering
@@ -470,8 +468,8 @@ $u_{II_{MP}} = \SI{4}{\milli \m}$, the maximum forces for each component were
             ylabel={Force reaction $F_{MP} [N]$},
             grid = major,
             legend pos= north west]
-            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Middle Point/MPI38mm.dat};
-            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Middle Point/MPII4mmtotalap.dat};
+            \addplot+[smooth, no markers] table [y=$Force$, x=Def]{Table/Middle Point/MPI38mm.dat};
+            \addplot+[smooth, no markers] table [y=$Force$, x=Def]{Table/Middle Point/MPII4mmtotalap.dat};
             \legend{Experiment I,Experiment II}
         \end{axis}
     \end{tikzpicture}%
@@ -483,17 +481,34 @@ From load-displacement curve of experimental model II (Fig. \ref{fig:mpIIexp}) i
 force reactions in the X and Y directions could be disregard, as these were considerably lower than
 the force reaction in Z direction. Therefore, the focus in further analysis was mainly 
 on the force reaction in Z direction. Additionally, this case revealed that shear stresses were minimal, 
-which is consistent with the purpose on performing the indentation with the least influence of external factors.
+which is consistent with the purpose on performing the indentation with the least influence of external factors.\\
+
+Figure \ref{fig:midpointexpIvsexpII}, shows that the load-displacement curve
+of experimental model I has a similar initial behavior to that of experimental model II.
+However, as the indentation depth increases, the curve of experimental model I is positioned 
+lower than that of the second model. One possible explanation for this difference could be the effect of aging 
+on the material properties of the specimen used in the first model. Since the specimen used in this 
+configuration was manufactured months before (\ref{section:expmod1}), it is possible that the aging 
+had led to a decrease in its mechanical properties, resulting in a lower resistance to deformation
+and therefore, lower stiffness than the newly manufactured sample.
+Another possible explanation could be the presence of external factors during the conduction of 
+the experiments or the configuration of these. Nevertheless, as the main purpose of this Middle Point 
+use case was to minimize the influence of these factors, this explanation seems less probable.
 
 %the difference between a and b graph can also be the that one sample is older as the other
 %conclusion and limitation of MP:to appreciate a all the aspects of the material behaviour would be important to perform higher indentation 
 %----------------------------------------------------------------------------------
-\subsection*{Load-Unloading}
+\subsection{Load-Unloading}
 \label{subsection:loadunloadresult}
-%EXPII:20230203_Datasummary_4mmindentation/Average_Force-Stroke_0302
+%EXPII:20230203_Datasummary_4mmindentation/Average_Force-Stroke_0226
 %EXPI:20221025_DataSharing_pptdocument/processeddata
-
-
+Following the Middle Point use case, in addition to the loading data, the unloading was 
+also captured for both experiments as explained in Section \ref{subsection:loadunload}.
+Figure \ref{fig:loadunloadgraph} shows the load-displacement curve for experimental model 
+I and next to it experimental model II. Both results exhibited during the unloading some 
+degree of hysteresis, as there was a sligth difference in the force reaction measured.
+However, overall the material displayed good elastic behavior, as it returned to its 
+original shape once the indenter was removed.\\
 \begin{figure}%
     \centering
    \subfloat[\centering Experimental model I: Total force reaction - indentation depth graph \label{fig:luIexp}]{{
@@ -506,8 +521,8 @@ which is consistent with the purpose on performing the indentation with the leas
                 ylabel={Force reaction $F_{I_{LU}} [N]$},
                 grid = major,
                 legend pos= north west]
-                \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Loadunload/LI4mm.dat};
-                \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Loadunload/UI4mm.dat};
+                \addplot+[smooth, no markers] table [y=$Force$, x=Def]{Table/Loadunload/LI4mm.dat};
+                \addplot+[smooth, no markers] table [y=$Force$, x=Def]{Table/Loadunload/UI4mm.dat};
                 \legend{Load I, Unload I}
             \end{axis}
         \end{tikzpicture}}}%
@@ -522,8 +537,8 @@ which is consistent with the purpose on performing the indentation with the leas
             ylabel={Force reaction $F_{II_{LU}} [N]$},
             grid = major,
             legend pos= north west]
-            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Loadunload/LII4mm.dat};
-            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Loadunload/UII4mm.dat};
+            \addplot+[smooth, no markers] table [y=$Force$, x=Def]{Table/Loadunload/LII4mm.dat};
+            \addplot+[smooth, no markers] table [y=$Force$, x=Def]{Table/Loadunload/UII4mm.dat};
             \legend{Load II, Unload II}
         \end{axis}
     \end{tikzpicture}}}%
@@ -531,12 +546,26 @@ which is consistent with the purpose on performing the indentation with the leas
    \label{fig:loadunloadgraph}%
 \end{figure}
 
+The hysteresis displayed for both configurations could have occured due to several reasons, such 
+as viscoelastic behavior of the material, or external factors, like friction 
+between the indenter and the specimen, surface roughness of the indenter, test configuration, and so on.
+To examine closer the main reason for the hysteresis, only with first experimental setup,
+a series of indentations tests were performed with different speeds.
+
+Figure %crear graph de los speeds
+
+%conclusion for this section!
+In the case of ultra-soft polyurethane, it is likely that the hysteresis is 
+primarily due to the viscoelastic behavior of the material. Nevertheless, for the 
+tests done in the middle of the surface, it was decided that the viscoelastic properties 
+could be neglected for the material modeling seeing that the difference between the curves 
+is not impactful for the first level of the determination of the material parameters 
 
 %different speeds buscar como poner differentes esquemasLoading_Speed_Experiment_220926.ppt and processed data
 
 
 %----------------------------------------------------------------------------------
-\subsection*{Nearby Point}
+\subsection{Nearby Point}
 \label{subsection:nearbypointresult}
 Similar to the previous model, Fig. % add 
 shows a nonlinear behavior with a maximum force reac
