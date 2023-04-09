@@ -421,7 +421,7 @@ $u_{II_{MP}} = \SI{4}{\milli \m}$, the maximum forces for each component were
 \begin{figure}%
     \centering
    \subfloat[\centering Experimental model I: Total force reaction - indentation depth graph \label{fig:mpIexp}]{{
-        \begin{tikzpicture}[scale=0.75]
+        \begin{tikzpicture}[scale=1]
             \begin{axis}[
                 xmax=4.2,xmin=0,
                 ymin= 0,ymax=0.6,
@@ -431,13 +431,13 @@ $u_{II_{MP}} = \SI{4}{\milli \m}$, the maximum forces for each component were
                 grid = major,
                 legend pos= north west]
                 \addplot[gray,only marks, mark = x, opacity=0.2] table[x = Def, y = $Force$] {Table/Middle Point/MPI38all.dat};
-                \addplot+[color=blue, smooth, thick, mark size = 1pt, mark options={fill=blue}] table [y=$Force$, x=Def]{Table/Middle Point/MPI38mm.dat};
+                \addplot+[color=blue, smooth, very thick, no markers] table [y=$Force$, x=Def]{Table/Middle Point/MPI38mm.dat};
                 \legend{Measurement, Total force reaction,test}
         \end{axis}
         \end{tikzpicture}}}%
    \qquad
    \subfloat[\centering Experimental model II: Force reaction components - indentation depth graph \label{fig:mpIIexp}]{{
-    \begin{tikzpicture}[scale=0.75]
+    \begin{tikzpicture}[scale=1]
         \begin{axis}[
             xmax=4.2,xmin=0,
             ymin= 0,ymax=0.6,
@@ -446,9 +446,9 @@ $u_{II_{MP}} = \SI{4}{\milli \m}$, the maximum forces for each component were
             ylabel={Force reaction $F_{II_{MP}} [N]$},
             grid = major,
             legend pos= north west]
-            \addplot+[smooth, mark size = 1pt] table [y=$F_z$, x=Def]{Table/Middle Point/MPII4mm.dat};
-            \addplot+[smooth, mark size = 1pt] table [y=$F_y$, x=Def]{Table/Middle Point/MPII4mm.dat};
-            \addplot+[smooth, mark size = 1pt] table [y=$F_x$, x=Def]{Table/Middle Point/MPII4mm.dat};
+            \addplot+[smooth, no markers, thick] table [y=$F_z$, x=Def]{Table/Middle Point/MPII4mm.dat};
+            \addplot+[smooth, no markers, thick] table [y=$F_y$, x=Def]{Table/Middle Point/MPII4mm.dat};
+            \addplot+[smooth, no markers, thick] table [y=$F_x$, x=Def]{Table/Middle Point/MPII4mm.dat};
             \legend{$F_z$,$F_y$,$F_x$}
         \end{axis}
     \end{tikzpicture}}}%
@@ -468,8 +468,8 @@ $u_{II_{MP}} = \SI{4}{\milli \m}$, the maximum forces for each component were
             ylabel={Force reaction $F_{MP} [N]$},
             grid = major,
             legend pos= north west]
-            \addplot+[smooth, no markers] table [y=$Force$, x=Def]{Table/Middle Point/MPI38mm.dat};
-            \addplot+[smooth, no markers] table [y=$Force$, x=Def]{Table/Middle Point/MPII4mmtotalap.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Middle Point/MPI38mm.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Middle Point/MPII4mmtotalap.dat};
             \legend{Experiment I,Experiment II}
         \end{axis}
     \end{tikzpicture}%
@@ -509,6 +509,8 @@ I and next to it experimental model II. Both results exhibited during the unload
 degree of hysteresis, as there was a sligth difference in the force reaction measured.
 However, overall the material displayed good elastic behavior, as it returned to its 
 original shape once the indenter was removed.\\
+
+%Different Load Unload
 \begin{figure}%
     \centering
    \subfloat[\centering Experimental model I: Total force reaction - indentation depth graph \label{fig:luIexp}]{{
@@ -521,8 +523,8 @@ original shape once the indenter was removed.\\
                 ylabel={Force reaction $F_{I_{LU}} [N]$},
                 grid = major,
                 legend pos= north west]
-                \addplot+[smooth, no markers] table [y=$Force$, x=Def]{Table/Loadunload/LI4mm.dat};
-                \addplot+[smooth, no markers] table [y=$Force$, x=Def]{Table/Loadunload/UI4mm.dat};
+                \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/LI4mm.dat};
+                \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/UI4mm.dat};
                 \legend{Load I, Unload I}
             \end{axis}
         \end{tikzpicture}}}%
@@ -537,8 +539,8 @@ original shape once the indenter was removed.\\
             ylabel={Force reaction $F_{II_{LU}} [N]$},
             grid = major,
             legend pos= north west]
-            \addplot+[smooth, no markers] table [y=$Force$, x=Def]{Table/Loadunload/LII4mm.dat};
-            \addplot+[smooth, no markers] table [y=$Force$, x=Def]{Table/Loadunload/UII4mm.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/LII4mm.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/UII4mm.dat};
             \legend{Load II, Unload II}
         \end{axis}
     \end{tikzpicture}}}%
@@ -553,6 +555,126 @@ To examine closer the main reason for the hysteresis, only with first experiment
 a series of indentations tests were performed with different speeds.
 
 Figure %crear graph de los speeds
+
+%Different Speeds Graph
+\begin{figure}[htbp]
+    \centering
+
+    \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=0.75]
+        \begin{axis}[
+            xmax=4.2,xmin=0,
+            ymin= 0,ymax=0.6,
+            ytick={0,0.1,0.2,...,0.6},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction $F_{I_{LU}} [N]$},
+            grid = major,
+            legend pos= north west]
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L10.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U10.dat};
+            \legend{Load \SI[per-mode = symbol]{10}{\milli \m\per \minute}, Unload \SI[per-mode = symbol]{10}{\milli \m\per \minute}}
+        \end{axis}
+    \end{tikzpicture}
+    \caption{\SI[per-mode = symbol]{10}{\milli \m\per \minute}}
+    \end{subfigure}
+    \hspace{0.3cm}
+    \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=0.75]
+        \begin{axis}[
+            xmax=4.2,xmin=0,
+            ymin= 0,ymax=0.6,
+            ytick={0,0.1,0.2,...,0.6},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction $F_{I_{LU}} [N]$},
+            grid = major,
+            legend pos= north west]
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L20.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U20.dat};
+            \legend{Load \SI[per-mode = symbol]{20}{\milli \m\per \minute}, Unload \SI[per-mode = symbol]{20}{\milli \m\per \minute}}
+        \end{axis}
+    \end{tikzpicture}
+    \caption{\SI[per-mode = symbol]{20}{\milli \m\per \minute}}
+    \end{subfigure}
+    \vspace{0.5cm}
+    \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=0.75]
+        \begin{axis}[
+            xmax=4.2,xmin=0,
+            ymin= 0,ymax=0.6,
+            ytick={0,0.1,0.2,...,0.6},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction $F_{I_{LU}} [N]$},
+            grid = major,
+            legend pos= north west]
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L30.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U30.dat};
+            \legend{Load \SI[per-mode = symbol]{30}{\milli \m\per \minute}, Unload \SI[per-mode = symbol]{30}{\milli \m\per \minute}}
+        \end{axis}
+    \end{tikzpicture}
+    \caption{\SI[per-mode = symbol]{30}{\milli \m\per \minute}}
+    \end{subfigure}  
+    \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=0.75]
+        \begin{axis}[
+            xmax=4.2,xmin=0,
+            ymin= 0,ymax=0.6,
+            ytick={0,0.1,0.2,...,0.6},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction $F_{I_{LU}} [N]$},
+            grid = major,
+            legend pos= north west]
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L50.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U50.dat};
+            \legend{Load \SI[per-mode = symbol]{50}{\milli \m\per \minute}, Unload \SI[per-mode = symbol]{50}{\milli \m\per \minute}}
+        \end{axis}
+    \end{tikzpicture}
+    \caption{\SI[per-mode = symbol]{50}{\milli \m\per \minute}}
+    \end{subfigure}
+    \vspace{0.5cm}
+    \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=0.75]
+        \begin{axis}[
+            xmax=4.2,xmin=0,
+            ymin= 0,ymax=0.6,
+            ytick={0,0.1,0.2,...,0.6},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction $F_{I_{LU}} [N]$},
+            grid = major,
+            legend pos= north west]
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L75.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U75.dat};
+            \legend{Load \SI[per-mode = symbol]{75}{\milli \m\per \minute}, Unload \SI[per-mode = symbol]{75}{\milli \m\per \minute}}
+        \end{axis}
+    \end{tikzpicture}
+    \caption{\SI[per-mode = symbol]{75}{\milli \m\per \minute}}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=0.75]
+        \begin{axis}[
+            xmax=4.2,xmin=0,
+            ymin= 0,ymax=0.6,
+            ytick={0,0.1,0.2,...,0.6},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction $F_{I_{LU}} [N]$},
+            grid = major,
+            legend pos= north west]
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L100.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U100.dat};
+            \legend{Load \SI[per-mode = symbol]{100}{\milli \m\per \minute}, Unload \SI[per-mode = symbol]{100}{\milli \m\per \minute}}
+        \end{axis}
+    \end{tikzpicture}
+    \caption{\SI[per-mode = symbol]{100}{\milli \m\per \minute}}
+    \end{subfigure}
+    
+    \caption{Load-Unload Use Case: Analysis of Viscoelastic material properties by using six different indentation speeds. Load-Displacement curves were obtained from the first experimental test configuration.}
+    \label{fig:subfigures}
+    \end{figure}
 
 %conclusion for this section!
 In the case of ultra-soft polyurethane, it is likely that the hysteresis is 
