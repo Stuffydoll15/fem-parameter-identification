@@ -554,7 +554,15 @@ between the indenter and the specimen, surface roughness of the indenter, test c
 To examine closer the main reason for the hysteresis, only with first experimental setup,
 a series of indentations tests were performed with different speeds.
 
-Figure %crear graph de los speeds
+Figure \ref{fig:ludifspeed} shows the result of the load-unload indentation tests from the lowest to 
+highest value for the indentation speed. It could be observed, 
+that the curves exhibit a similar material behavior. A slight 
+increase in the hysteresis was observed when the indentation 
+speed was increased. Specifically, during the loading, the 
+force reaction were slightly higher as the speed and indentation depth increased.
+During the unloading, the only notable difference was observed with 
+\SI[per-mode = symbol]{100}{\milli \m\per \minute}, where the unloading curve
+had the lowest values.\\
 
 %Different Speeds Graph
 \begin{figure}[htbp]
@@ -562,7 +570,7 @@ Figure %crear graph de los speeds
 
     \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \begin{tikzpicture}[scale=0.75]
+    \begin{tikzpicture}[scale=0.78]
         \begin{axis}[
             xmax=4.2,xmin=0,
             ymin= 0,ymax=0.6,
@@ -573,7 +581,7 @@ Figure %crear graph de los speeds
             legend pos= north west]
             \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L10.dat};
             \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U10.dat};
-            \legend{Load \SI[per-mode = symbol]{10}{\milli \m\per \minute}, Unload \SI[per-mode = symbol]{10}{\milli \m\per \minute}}
+            \legend{Load, Unload}
         \end{axis}
     \end{tikzpicture}
     \caption{\SI[per-mode = symbol]{10}{\milli \m\per \minute}}
@@ -581,7 +589,7 @@ Figure %crear graph de los speeds
     \hspace{0.3cm}
     \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \begin{tikzpicture}[scale=0.75]
+    \begin{tikzpicture}[scale=0.78]
         \begin{axis}[
             xmax=4.2,xmin=0,
             ymin= 0,ymax=0.6,
@@ -592,7 +600,7 @@ Figure %crear graph de los speeds
             legend pos= north west]
             \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L20.dat};
             \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U20.dat};
-            \legend{Load \SI[per-mode = symbol]{20}{\milli \m\per \minute}, Unload \SI[per-mode = symbol]{20}{\milli \m\per \minute}}
+            \legend{Load, Unload}
         \end{axis}
     \end{tikzpicture}
     \caption{\SI[per-mode = symbol]{20}{\milli \m\per \minute}}
@@ -600,7 +608,7 @@ Figure %crear graph de los speeds
     \vspace{0.5cm}
     \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \begin{tikzpicture}[scale=0.75]
+    \begin{tikzpicture}[scale=0.78]
         \begin{axis}[
             xmax=4.2,xmin=0,
             ymin= 0,ymax=0.6,
@@ -611,14 +619,15 @@ Figure %crear graph de los speeds
             legend pos= north west]
             \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L30.dat};
             \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U30.dat};
-            \legend{Load \SI[per-mode = symbol]{30}{\milli \m\per \minute}, Unload \SI[per-mode = symbol]{30}{\milli \m\per \minute}}
+            \legend{Load, Unload}
         \end{axis}
     \end{tikzpicture}
     \caption{\SI[per-mode = symbol]{30}{\milli \m\per \minute}}
     \end{subfigure}  
+    \hspace{0.3cm}
     \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \begin{tikzpicture}[scale=0.75]
+    \begin{tikzpicture}[scale=0.78]
         \begin{axis}[
             xmax=4.2,xmin=0,
             ymin= 0,ymax=0.6,
@@ -629,7 +638,7 @@ Figure %crear graph de los speeds
             legend pos= north west]
             \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L50.dat};
             \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U50.dat};
-            \legend{Load \SI[per-mode = symbol]{50}{\milli \m\per \minute}, Unload \SI[per-mode = symbol]{50}{\milli \m\per \minute}}
+            \legend{Load, Unload}
         \end{axis}
     \end{tikzpicture}
     \caption{\SI[per-mode = symbol]{50}{\milli \m\per \minute}}
@@ -637,7 +646,7 @@ Figure %crear graph de los speeds
     \vspace{0.5cm}
     \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \begin{tikzpicture}[scale=0.75]
+    \begin{tikzpicture}[scale=0.78]
         \begin{axis}[
             xmax=4.2,xmin=0,
             ymin= 0,ymax=0.6,
@@ -648,14 +657,15 @@ Figure %crear graph de los speeds
             legend pos= north west]
             \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L75.dat};
             \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U75.dat};
-            \legend{Load \SI[per-mode = symbol]{75}{\milli \m\per \minute}, Unload \SI[per-mode = symbol]{75}{\milli \m\per \minute}}
+            \legend{Load, Unload}
         \end{axis}
     \end{tikzpicture}
     \caption{\SI[per-mode = symbol]{75}{\milli \m\per \minute}}
     \end{subfigure}
+    \hspace{0.3cm}
     \begin{subfigure}[b]{0.45\textwidth}
     \centering
-    \begin{tikzpicture}[scale=0.75]
+    \begin{tikzpicture}[scale=0.78]
         \begin{axis}[
             xmax=4.2,xmin=0,
             ymin= 0,ymax=0.6,
@@ -666,22 +676,22 @@ Figure %crear graph de los speeds
             legend pos= north west]
             \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L100.dat};
             \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U100.dat};
-            \legend{Load \SI[per-mode = symbol]{100}{\milli \m\per \minute}, Unload \SI[per-mode = symbol]{100}{\milli \m\per \minute}}
+            \legend{Load, Unload}
         \end{axis}
     \end{tikzpicture}
     \caption{\SI[per-mode = symbol]{100}{\milli \m\per \minute}}
     \end{subfigure}
     
     \caption{Load-Unload Use Case: Analysis of Viscoelastic material properties by using six different indentation speeds. Load-Displacement curves were obtained from the first experimental test configuration.}
-    \label{fig:subfigures}
+    \label{fig:ludifspeed}
     \end{figure}
 
 %conclusion for this section!
-In the case of ultra-soft polyurethane, it is likely that the hysteresis is 
+From the results and in the case of ultra-soft polyurethane, it is likely that the hysteresis is 
 primarily due to the viscoelastic behavior of the material. Nevertheless, for the 
 tests done in the middle of the surface, it was decided that the viscoelastic properties 
 could be neglected for the material modeling seeing that the difference between the curves 
-is not impactful for the first level of the determination of the material parameters 
+is not impactful for the first stage of the identification of the material parameters.
 
 %different speeds buscar como poner differentes esquemasLoading_Speed_Experiment_220926.ppt and processed data
 
@@ -813,7 +823,56 @@ the first stages of the project.
     \label{fig:testgraph1}
 \end{figure}
 
+%loading and unloading comparison
+\begin{figure}%
+    \centering
+   \quad
+    \begin{tikzpicture}[scale=2]
+        \begin{axis}[
+            xmax=4.2,xmin=0,
+            ymin= 0,ymax=0.6,
+            ytick={0,0.1,0.2,...,0.6},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction $F_{LU} [N]$},
+            grid = major,
+            legend pos= north west]
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L10.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L20.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L30.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L50.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L75.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L100.dat};
+            \legend{10,20,30,50,75,100}
+        \end{axis}
+    \end{tikzpicture}%
+   \caption{Total Force Reaction-Displacement curve: Comparison between experimental data for Middle Point use case from both models.}%
+   \label{fig:loadingcomp}%
+\end{figure}
 
+\begin{figure}%
+    \centering
+   \quad
+    \begin{tikzpicture}[scale=2]
+        \begin{axis}[
+            xmax=4.2,xmin=0,
+            ymin= 0,ymax=0.6,
+            ytick={0,0.1,0.2,...,0.6},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction $F_{LU} [N]$},
+            grid = major,
+            legend pos= north west]
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U10.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U20.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U30.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U50.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U75.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U100.dat};
+            \legend{10,20,30,50,75,100}
+        \end{axis}
+    \end{tikzpicture}%
+   \caption{Total Force Reaction-Displacement curve: Comparison between experimental data for Middle Point use case from both models.}%
+   \label{fig:unloadingcomp}%
+\end{figure}
 %test with two figures
 %\begin{figure}[ht]
 %    \centering   
