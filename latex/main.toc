@@ -21,9 +21,9 @@
 \contentsline {subsection}{\numberline {2.4.2}Load-Unloading}{17}{subsection.48}%
 \contentsline {subsection}{\numberline {2.4.3}Nearby Point}{18}{subsection.51}%
 \contentsline {subsection}{\numberline {2.4.4}Main Assumptions for Material Modeling}{18}{subsection.53}%
-\contentsline {subsection}{\numberline {2.4.5}First Material model}{18}{subsection.54}%
-\contentsline {subsubsection}{Linear elasticity}{18}{section*.55}%
-\contentsline {subsubsection}{Hyperelasticity}{18}{section*.56}%
+\contentsline {subsection}{\numberline {2.4.5}First Material model}{20}{subsection.54}%
+\contentsline {subsubsection}{Linear elasticity}{20}{section*.55}%
+\contentsline {subsubsection}{Hyperelasticity}{20}{section*.56}%
 \contentsline {chapter}{\numberline {3}Computational model}{23}{chapter.60}%
 \contentsline {section}{\numberline {3.1}Middle point}{23}{section.61}%
 \contentsline {subsection}{\numberline {3.1.1}Description}{23}{subsection.62}%

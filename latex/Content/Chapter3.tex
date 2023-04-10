@@ -699,46 +699,47 @@ is not impactful for the first stage of the identification of the material param
 %----------------------------------------------------------------------------------
 \subsection{Nearby Point}
 \label{subsection:nearbypointresult}
-Similar to the previous model, Fig. % add 
-shows a nonlinear behavior with a maximum force reac
+To complement the analysis of the viscoelastic behavior of the material,
+a nearby point located $p_{I1} = \SI{5}{\milli \m}$ to the side of the midpoint,
+following the minor axis of the ellipsoid (see Subsection \ref{subsection:nearbypoint}). 
+This location was chosen to investigate if the mechanical response of the material 
+is uniform across the surface and if any variations could be detected within 
+a short distance. Figure \ref{fig:midpointIvsnbpointI} shows the results of the 
+Middle Point use case vs. the selected Nearby Point case for Experimental Model I. 
+
+The new load-displacement shows nearly identical behavior to that of the 
+first case, except for the last part of the curve, where the Nearby Point curve goes 
+slightly lower. The maximum force obtained for the Nearby Point case was $F_{I_{NBP}} = \SI{0.4134}{\newton}$, 
+which is lower than the one obtained before, which was $F_{I_{MP}} = \SI{0.4218}{\newton}$.\\
 
 \begin{figure}%
     \centering
-   \subfloat[\centering Experimental model I: Total force reaction - indentation depth graph \label{fig:nbIexp}]{{
-        \begin{tikzpicture}[scale=0.75]
-            \begin{axis}[
-                xmax=4.2,xmin=0,
-                ymin= 0,ymax=0.6,
-                ytick={0,0.1,0.2,...,0.6},
-                xlabel={Displacement $u [mm]$},
-                ylabel={Force reaction $F_{I_{LU}} [N]$},
-                grid = major,
-                legend pos= north west]
-                \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Loadunload/LI4mm.dat};
-                \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Loadunload/UI4mm.dat};
-                \legend{Load I, Unload I}
-            \end{axis}
-        \end{tikzpicture}}}%
-   \qquad
-   \subfloat[\centering Experimental model II: Force reaction components - indentation depth graph \label{fig:nbIIexp}]{{
-    \begin{tikzpicture}[scale=0.75]
+   \quad
+    \begin{tikzpicture}[scale=1]
         \begin{axis}[
             xmax=4.2,xmin=0,
             ymin= 0,ymax=0.6,
-            ytick={0,0.1,0.2,...,0.6},
+            ytick={0,0.1,0.2,...,0.5},
             xlabel={Displacement $u [mm]$},
-            ylabel={Force reaction $F_{II_{LU}} [N]$},
+            ylabel={Force reaction $F_{MP} [N]$},
             grid = major,
             legend pos= north west]
-            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Loadunload/LII4mm.dat};
-            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/Loadunload/UII4mm.dat};
-            \legend{Load II, Unload II}
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Middle Point/MPI38mm.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Nearby Point/nbexpI.dat};
+            \legend{Middle Point,Nearby Point}
         \end{axis}
-    \end{tikzpicture}}}%
-   \caption{Load-displacement curve experimental data for Load-Unload use case for both experimental models.}%
-   \label{fig:nearbypointgraph}%
+    \end{tikzpicture}%
+   \caption{Total Force Reaction-Displacement curve: Comparison between experimental data for Middle Point and Nearby Point. This point was located 5 mm right from the midpoint, following the minor axis of the ellipsoid.}%
+   \label{fig:midpointIvsnbpointI}%
 \end{figure}
 
+It can be conlcuded, that the results from this nearby point support the 
+findings from the Middle point test, indicating that the material behavior is 
+homogeneous in the region of interest. The small difference in the maximum force values could 
+be due to the variations in the experimental conditions, e.g. the increment of the 
+gradient of the contact surface due to the curvature of the specimen. This change 
+could potentially affect the distribution of the stress and strains within the material.
+Nonetheless, these differences are not significant enough to affect the overall conclusions.\\
 
 
 
