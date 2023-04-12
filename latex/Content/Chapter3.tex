@@ -404,15 +404,14 @@ possess a elastic-plastic behavior, which in a typical load-displacement curves 
 Figure \ref{fig:midpointgraph} shows the results of the two indentations at the middle point 
  of the specimen surface.
 The load-displacement curves showed nearly identical material behavior for both 
-experimental models. This use case demonstrate the nonlinear-elastic behavior of the material, 
+experimental configurations. This use case demonstrate the nonlinear-elastic behavior of the material, 
 as there was no evidence of a yield point or plastic behavior. 
 Both curves began at zero, and the force increased gradually with increasing,
 resulting in a slightly concave shape. 
 
 Figure \ref{fig:mpIexp} displays all the measurements points obtained from experimental model I and its 
-polynomial approximation. This approximation was used for the subsequent steps of the iFEM approach.
-
-The maximum total force for experimental model I at a maximun indentation depth of 
+polynomial approximation. This approximation was used for the subsequent steps of the iFEM approach. The 
+maximum total force for experimental model I at a maximun indentation depth of 
 $u_{I_{MP}} = \SI{3.8}{\milli \m}$ was $F_{I_{MP}} = \SI{0.4218}{\newton}$. For experimental 
 model II, at an indentation depth of 
 $u_{II_{MP}} = \SI{4}{\milli \m}$, the maximum forces for each component were
@@ -421,7 +420,7 @@ $u_{II_{MP}} = \SI{4}{\milli \m}$, the maximum forces for each component were
 \begin{figure}%
     \centering
    \subfloat[\centering Experimental model I: Total force reaction - indentation depth graph \label{fig:mpIexp}]{{
-        \begin{tikzpicture}[scale=1]
+        \begin{tikzpicture}[scale=0.76]
             \begin{axis}[
                 xmax=4.2,xmin=0,
                 ymin= 0,ymax=0.6,
@@ -437,7 +436,7 @@ $u_{II_{MP}} = \SI{4}{\milli \m}$, the maximum forces for each component were
         \end{tikzpicture}}}%
    \qquad
    \subfloat[\centering Experimental model II: Force reaction components - indentation depth graph \label{fig:mpIIexp}]{{
-    \begin{tikzpicture}[scale=1]
+    \begin{tikzpicture}[scale=0.76]
         \begin{axis}[
             xmax=4.2,xmin=0,
             ymin= 0,ymax=0.6,
@@ -458,7 +457,7 @@ $u_{II_{MP}} = \SI{4}{\milli \m}$, the maximum forces for each component were
 
 \begin{figure}%
     \centering
-   \qquad
+   \quad
     \begin{tikzpicture}[scale=1]
         \begin{axis}[
             xmax=4.2,xmin=0,
@@ -488,7 +487,7 @@ of experimental model I has a similar initial behavior to that of experimental m
 However, as the indentation depth increases, the curve of experimental model I is positioned 
 lower than that of the second model. One possible explanation for this difference could be the effect of aging 
 on the material properties of the specimen used in the first model. Since the specimen used in this 
-configuration was manufactured months before (\ref{section:expmod1}), it is possible that the aging 
+configuration was manufactured months before (Section \ref{section:expmod1}), it is possible that the aging 
 had led to a decrease in its mechanical properties, resulting in a lower resistance to deformation
 and therefore, lower stiffness than the newly manufactured sample.
 Another possible explanation could be the presence of external factors during the conduction of 
@@ -705,7 +704,7 @@ following the minor axis of the ellipsoid (see Subsection \ref{subsection:nearby
 This location was chosen to investigate if the mechanical response of the material 
 is uniform across the surface and if any variations could be detected within 
 a short distance. Figure \ref{fig:midpointIvsnbpointI} shows the results of the 
-Middle Point use case vs. the selected Nearby Point case for Experimental Model I. 
+Middle Point use case vs. the selected Nearby Point case for experimental model I. 
 
 The new load-displacement shows nearly identical behavior to that of the 
 first case, except for the last part of the curve, where the Nearby Point curve goes 
@@ -733,14 +732,106 @@ which is lower than the one obtained before, which was $F_{I_{MP}} = \SI{0.4218}
    \label{fig:midpointIvsnbpointI}%
 \end{figure}
 
-It can be conlcuded, that the results from this nearby point support the 
-findings from the Middle point test, indicating that the material behavior is 
+It can be concluded, that the results from this nearby point support the 
+findings from the Middle point test, indicating that the material behavior was
 homogeneous in the region of interest. The small difference in the maximum force values could 
 be due to the variations in the experimental conditions, e.g. the increment of the 
 gradient of the contact surface due to the curvature of the specimen. This change 
 could potentially affect the distribution of the stress and strains within the material.
-Nonetheless, these differences are not significant enough to affect the overall conclusions.\\
+Nonetheless, these differences were not significant enough to affect the overall conclusions.\\
 
+With the measurements taken in the additional nearby points for experimental model II (Subsection \ref{subsection:nearbypoint}), 
+it was possible to investigate whether the small variations in the results obtained with 
+experimental model I could be attributed to the difference in the gradient of the contact surface.
+Figure \ref{fig:nbpexpIIgraph} shows the result for each force reaction component for all four 
+tested points. In X-direction, the maximum force was observe for point 2, which had the smallest gradient 
+contact surface, followed by point 3. These points were \SI{20}{\milli \m} down along the X-axis, in contrast 
+to the other two points, which were at the origin of the X-axis.
+For the middle point and point 1, which had the largest contact surface gradient, the 
+X-component force reaction was almost \SI{0}{\newton}. 
+
+Similarly, in Y-direction, the maximum force was observed for point 3, followed closely by point 1. For 
+the middle point and point 2 the Y-component force reaction was almost \SI{0}{\newton}.  Point 3 and point 1 were 
+\SI{20}{\milli \m} right along the Y-axis, and the middle point and point 2 were at the origin of the Y-axis.
+As for the Z-direction, the maximum force was observed at the middle point, followed by point 2, and consequently with 
+similar results point 1 and point 3. For all the points the results in Z-direction are more significant than 
+in the other directions.\\
+
+These results suggested that variation in the gradient of the contact surface may have contributed
+to the small differences in the results obtained with experimental model I. Specifically, it was observed, 
+that with a smaller contact surface gradient the higher the X-component the same for the Y-component 
+with the larger contact surface gradient. In conclusion it is possible to confirm that the material behavior was 
+homogeneous, and that the larger the contact surface gradient became, the lower the total force reaction.
+
+%Nearby Point Exp II
+\begin{figure}[htbp]
+    \centering
+
+    \begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=0.53]
+        \begin{axis}[
+            xmax=4.2,xmin=0,
+            ymin= 0,ymax=0.1,
+            ytick={0,0.02,0.04,...,0.1},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction $F_{II_{NB}} [N]$},
+            grid = major,
+            legend pos= north west]
+            \addplot+[smooth, no markers, thick] table [y=$F_x$, x=Def]{Table/Middle Point/MPII4mm.dat};
+            \addplot+[smooth, no markers, thick] table [y=$F_x$, x=Def]{Table/Nearby Point/nbP1expII.dat};
+            \addplot+[smooth, no markers, thick] table [y=$F_x$, x=Def]{Table/Nearby Point/nbP2expII.dat};
+            \addplot+[smooth, no markers, thick] table [y=$F_x$, x=Def]{Table/Nearby Point/nbP3expII.dat};
+            \legend{MP, Point 1, Point 2, Point 3}
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Force in X-direction}
+    \end{subfigure}
+    \hspace{0.3cm}
+    \begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=0.53]
+        \begin{axis}[
+            xmax=4.2,xmin=0,
+            ymin= 0,ymax=0.2,
+            ytick={0,0.05,0.1,...,0.2},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction $F_{II_{NB}} [N]$},
+            grid = major,
+            legend pos= north west]
+            \addplot+[smooth, no markers, thick] table [y=$F_y$, x=Def]{Table/Middle Point/MPII4mm.dat};
+            \addplot+[smooth, no markers, thick] table [y=$F_y$, x=Def]{Table/Nearby Point/nbP1expII.dat};
+            \addplot+[smooth, no markers, thick] table [y=$F_y$, x=Def]{Table/Nearby Point/nbP2expII.dat};
+            \addplot+[smooth, no markers, thick] table [y=$F_y$, x=Def]{Table/Nearby Point/nbP3expII.dat};
+            \legend{MP, Point 1, Point 2, Point 3}
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Force in Y-direction}
+    \end{subfigure}
+    \hspace{0.3cm}
+    \begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \begin{tikzpicture}[scale=0.53]
+        \begin{axis}[
+            xmax=4.2,xmin=0,
+            ymin= 0,ymax=0.6,
+            ytick={0,0.1,0.2,...,0.6},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction $F_{II_{NB}} [N]$},
+            grid = major,
+            legend pos= north west]
+            \addplot+[smooth, no markers, thick] table [y=$F_z$, x=Def]{Table/Middle Point/MPII4mm.dat};
+            \addplot+[smooth, no markers, thick] table [y=$F_z$, x=Def]{Table/Nearby Point/nbP1expII.dat};
+            \addplot+[smooth, no markers, thick] table [y=$F_z$, x=Def]{Table/Nearby Point/nbP2expII.dat};
+            \addplot+[smooth, no markers, thick] table [y=$F_z$, x=Def]{Table/Nearby Point/nbP3expII.dat};
+            \legend{MP, Point 1, Point 2, Point 3}
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Force in Z-direction}
+    \end{subfigure}  
+    \caption{Nearby Point Use Case: Analysis of shear stresses by observing three different nearby points on the specimens surface. Load-Displacement curves were gathered from Experimental Model II showing each force component.}
+    \label{fig:nbpexpIIgraph}
+    \end{figure}
 
 
 
@@ -828,7 +919,7 @@ the first stages of the project.
 \begin{figure}%
     \centering
    \quad
-    \begin{tikzpicture}[scale=2]
+    \begin{tikzpicture}[scale=1]
         \begin{axis}[
             xmax=4.2,xmin=0,
             ymin= 0,ymax=0.6,
@@ -853,7 +944,7 @@ the first stages of the project.
 \begin{figure}%
     \centering
    \quad
-    \begin{tikzpicture}[scale=2]
+    \begin{tikzpicture}[scale=1]
         \begin{axis}[
             xmax=4.2,xmin=0,
             ymin= 0,ymax=0.6,

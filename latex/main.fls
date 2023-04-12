@@ -2195,10 +2195,24 @@ INPUT Table\Loadunload\Speed\L75.dat
 INPUT Table\Loadunload\Speed\U75.dat
 INPUT Table\Loadunload\Speed\L100.dat
 INPUT Table\Loadunload\Speed\U100.dat
-INPUT Table\Middle Point\MPI38mm.dat
-INPUT Table\Nearby Point\nbexpI.dat
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7t.vf
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmr.tfm
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
+INPUT Table\Middle Point\MPI38mm.dat
+INPUT Table\Nearby Point\nbexpI.dat
+INPUT Table\Middle Point\MPII4mm.dat
+INPUT Table\Nearby Point\nbP1expII.dat
+INPUT Table\Nearby Point\nbP2expII.dat
+INPUT Table\Nearby Point\nbP3expII.dat
+INPUT Table\Middle Point\MPII4mm.dat
+INPUT Table\Nearby Point\nbP1expII.dat
+INPUT Table\Nearby Point\nbP2expII.dat
+INPUT Table\Nearby Point\nbP3expII.dat
+INPUT Table\Middle Point\MPII4mm.dat
+INPUT Table\Nearby Point\nbP1expII.dat
+INPUT Table\Nearby Point\nbP2expII.dat
+INPUT Table\Nearby Point\nbP3expII.dat
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7t.vf
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT Table\data1.dat
 INPUT Table\Loadunload\Speed\L10.dat
@@ -2213,8 +2227,6 @@ INPUT Table\Loadunload\Speed\U30.dat
 INPUT Table\Loadunload\Speed\U50.dat
 INPUT Table\Loadunload\Speed\U75.dat
 INPUT Table\Loadunload\Speed\U100.dat
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7t.vf
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT .\Content\Chapter4.tex
 INPUT .\Content\Chapter4.tex
 INPUT .\Content\Chapter4.tex
