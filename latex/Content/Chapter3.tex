@@ -720,7 +720,7 @@ which is lower than the one obtained before, which was $F_{I_{MP}} = \SI{0.4218}
             ymin= 0,ymax=0.6,
             ytick={0,0.1,0.2,...,0.5},
             xlabel={Displacement $u [mm]$},
-            ylabel={Force reaction $F_{MP} [N]$},
+            ylabel={Force reaction $F_I [N]$},
             grid = major,
             legend pos= north west]
             \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Middle Point/MPI38mm.dat};
@@ -833,26 +833,60 @@ homogeneous, and that the larger the contact surface gradient became, the lower 
     \label{fig:nbpexpIIgraph}
     \end{figure}
 
+%----------------------------------------------------------------------------------
+\section{Main Assumptions for Material Modeling}
+
+In this section, the main assumptions based on the results obtained from 
+the indentation tests will be summarized. These assumptions will be used for the 
+development of the material models. As previously mentioned, one of the goals of this project 
+was to develop the material model from an ideal scenario, while considering the limitations 
+at each level. The complexity of the material model was incrementally increased until a set 
+of material parameters that provided a proper compromise to the experimental results was obtained.
+Defining these levels allowed the assessment of the impact of each parameter on the development of the 
+material model.\\
+
+Based on the presented experimental data and previous discussion, the following assumptions could be made:
+\begin{enumerate}
+    \item The material can be assumed to be homogeneous in the region of interest for the Middle Point Case, as the results from the nearby points support the findings from midpoint test.
+    \item Nonlinear elasticity is observed and hysteresis can be neglected, as the changes observed with the different loading speeds were not significant enough to affect the initial results.
+    \item The viscoelasticity of the material can be ignored for the first design of the material model, as the material returns to its original shape and almost no energy is lost during deformation. 
+    \item Friction and shear stresses will be neglected, as in the Middle Point case the observed force components in x and y directions are non-relevant.
+\end{enumerate}
+
+It is important to mention, that it was noted that the main assumptions made may not hold for different 
+experiment settings, such as higher loads, longer loading times, higher temperatures, high shear stresses, and so on. 
+Therefore, it was important to keep these assumptions in mind when using the chosen material model in a validation case.  
+%Maybe for computational model validation
+%until a set of material parameters delivers a proper compromise to be used for the validation of the 
+%computational model. By defining these levels, it is possible to assess the impact of each 
+%parameter in the development of the material model.
+
+\subsection{Level 1: Linear elasticity}
+The first level a linear elastic model was used. This model assumed that the material behaves linearly, 
+i.e., the deformation is linearly proportional to the applied load and the material returns to its original 
+shape after the load is removed. This model is based on Hooke's law, where the stress-strain relationship is 
+\begin{align*}
+    \sigma = E\varepsilon \, ,
+\end{align*}
+where $\sigma$ is the stress, $E$ is the elastic modulus, and $\varepsilon$ is the strain. The elastic modulus 
+serve to measure the stiffness of the material.
+For the Middle Point Case, the material is assumed homogeneous and isotropic, thus the elastic modulus is the 
+same in all directions. 
+For an indenter with a spherical tip, the contact area between the indenter and the material, 
+\begin{align*}
+    A = \pi r_i^2 \, ,
+\end{align*}
+where $r_i$ is the radius of the indenter, can be calculated.
+using the Hertzian contact theory, 
 
 
 %----------------------------------------------------------------------------------
-\subsection{Main Assumptions for Material Modeling}
-
-For this project, there is a focus on the limitation of each material model, 
-departing from an ideal scenario. From this point on the material will be build 
-accordingly and for each model the influence of the material parameters is going
-to be assessed.
-
-\subsection{First Material model}
-
-\subsubsection{Linear elasticity}
-
-
-\subsubsection{Hyperelasticity}
+\subsection{Hyperelasticity}
+The second level introduces the use of more material parameters.
 The strain energy density function for the Neo-Hookean material model is given with
-\begin{align*}
+\begin{align}
             \Psi = C_1 (I_1 - 3) \, ,
-\end{align*}
+\end{align}
 where $C_1$ is a material constant and $I_!$ is the first invariant of the right Cauchy-Green tensor. 
 Neo Hookean and Mooney Rivlin comparison
 
@@ -869,102 +903,89 @@ Neo Hookean and Mooney Rivlin comparison
 %The 10 N load cell displayed the force-displacement curve of the indenter and the specimen
 % in a finer way. 
 
-%load unloading
-Furthermore, in order to get the measurement of the load and 
- unloading process of
- the indentation a displacement sensor was attached to the tensile machine.
 
- The indentation depth \(h_1\) selected for the first model was 3,8 mm on the middle of the 
- top surface of the specimen. This indentation depth surpasses the pin radius \(r_3\) and 
- was chose arbitriarily to analyze the behavior of the material on the defined position.
- %reference?
- Additionally, it was observed that in soft materials it is easier to capture 
- some parameters with a larger indentation. Some references also observe that with
- indentation depth lower than indenter radius has a lot of noise and do not describe
- th results accurately. %reference?
+ %reference?larger indentation is better?
+ %Additionally, it was observed that in soft materials it is easier to capture 
+ %some parameters with a larger indentation. Some references also observe that with
+ %indentation depth lower than indenter radius has a lot of noise and do not describe
+ %th results accurately. %reference?
 
- %results
- From the first experimental model we can observe that the material shows a nonlinear 
- behavior and the maximum total force reaction \(F_1\) lies around 0.45 N. %poner el grafico
- Furthermore, when applying different speeds, as show in Fig. %add figure 
- it is also possible to observe that 
- the hysteresis increases. %poner los speeds
-This increasement shows that the material possesses a viscoelastic behavior, however
-as this increasement is not significantly, it is possible to neglect viscoelasticity for 
-the first stages of the project.
-
-\begin{figure}[th]
-    \centering
-    \begin{tikzpicture}
-        %\pgfplotsset{%legend outside the plot
-        %every axis legend/.append style={ at={(1.05,0.95)}, anchor=north west,legend columns = 1}}
-        \begin{axis}[
-            %axis lines=middle,
-            %x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
-            %y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
-            xlabel={Displacement $u [mm]$},
-            ylabel={Force reaction in Z-Axis $F_z [N]$},
-            legend pos= north west]
-            
-            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/data1.dat};
-            %\addplot+[smooth] table [y=Force, x=$Def$]{Table/data2.dat};
-            \legend{Experimental data}%,$l_2$}
-        \end{axis}
-    \end{tikzpicture}
-    \caption[Expdata]{Experimental Load-displacement curve.}
-    \label{fig:testgraph1}
-\end{figure}
+%First graph example
+%\begin{figure}[th]
+%    \centering
+%    \begin{tikzpicture}
+%        %\pgfplotsset{%legend outside the plot
+%        %every axis legend/.append style={ at={(1.05,0.95)}, anchor=north west,legend columns = 1}}
+%        \begin{axis}[
+%            %axis lines=middle,
+%            %x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+%            %y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
+%            xlabel={Displacement $u [mm]$},
+%            ylabel={Force reaction in Z-Axis $F_z [N]$},
+%            legend pos= north west]
+%            
+%            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/data1.dat};
+%            %\addplot+[smooth] table [y=Force, x=$Def$]{Table/data2.dat};
+%            \legend{Experimental data}%,$l_2$}
+%        \end{axis}
+%    \end{tikzpicture}
+%    \caption[Expdata]{Experimental Load-displacement curve.}
+%    \label{fig:testgraph1}
+%\end{figure}
 
 %loading and unloading comparison
-\begin{figure}%
-    \centering
-   \quad
-    \begin{tikzpicture}[scale=1]
-        \begin{axis}[
-            xmax=4.2,xmin=0,
-            ymin= 0,ymax=0.6,
-            ytick={0,0.1,0.2,...,0.6},
-            xlabel={Displacement $u [mm]$},
-            ylabel={Force reaction $F_{LU} [N]$},
-            grid = major,
-            legend pos= north west]
-            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L10.dat};
-            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L20.dat};
-            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L30.dat};
-            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L50.dat};
-            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L75.dat};
-            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L100.dat};
-            \legend{10,20,30,50,75,100}
-        \end{axis}
-    \end{tikzpicture}%
-   \caption{Total Force Reaction-Displacement curve: Comparison between experimental data for Middle Point use case from both models.}%
-   \label{fig:loadingcomp}%
-\end{figure}
+%All loading curves dif speeds
+%\begin{figure}%
+%    \centering
+%   \quad
+%    \begin{tikzpicture}[scale=1]
+%        \begin{axis}[
+%            xmax=4.2,xmin=0,
+%            ymin= 0,ymax=0.6,
+%            ytick={0,0.1,0.2,...,0.6},
+%            xlabel={Displacement $u [mm]$},
+%            ylabel={Force reaction $F_{LU} [N]$},
+%            grid = major,
+%            legend pos= north west]
+%            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L10.dat};
+%            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L20.dat};
+%            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L30.dat};
+%            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L50.dat};
+%            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L75.dat};
+%            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/L100.dat};
+%            \legend{10,20,30,50,75,100}
+%        \end{axis}
+%    \end{tikzpicture}%
+%   \caption{Total Force Reaction-Displacement curve: Comparison between experimental data for Middle Point use case from both models.}%
+%   \label{fig:loadingcomp}%
+%\end{figure}
 
-\begin{figure}%
-    \centering
-   \quad
-    \begin{tikzpicture}[scale=1]
-        \begin{axis}[
-            xmax=4.2,xmin=0,
-            ymin= 0,ymax=0.6,
-            ytick={0,0.1,0.2,...,0.6},
-            xlabel={Displacement $u [mm]$},
-            ylabel={Force reaction $F_{LU} [N]$},
-            grid = major,
-            legend pos= north west]
-            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U10.dat};
-            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U20.dat};
-            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U30.dat};
-            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U50.dat};
-            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U75.dat};
-            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U100.dat};
-            \legend{10,20,30,50,75,100}
-        \end{axis}
-    \end{tikzpicture}%
-   \caption{Total Force Reaction-Displacement curve: Comparison between experimental data for Middle Point use case from both models.}%
-   \label{fig:unloadingcomp}%
-\end{figure}
+%All unloading curves with dif speeds
+%\begin{figure}%
+%    \centering
+%   \quad
+%    \begin{tikzpicture}[scale=1]
+%        \begin{axis}[
+%            xmax=4.2,xmin=0,
+%            ymin= 0,ymax=0.6,
+%            ytick={0,0.1,0.2,...,0.6},
+%            xlabel={Displacement $u [mm]$},
+%            ylabel={Force reaction $F_{LU} [N]$},
+%            grid = major,
+%            legend pos= north west]
+%            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U10.dat};
+%            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U20.dat};
+%            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U30.dat};
+%            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U50.dat};
+%            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U75.dat};
+%            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Loadunload/Speed/U100.dat};
+%            \legend{10,20,30,50,75,100}
+%        \end{axis}
+%    \end{tikzpicture}%
+%   \caption{Total Force Reaction-Displacement curve: Comparison between experimental data for Middle Point use case from both models.}%
+%   \label{fig:unloadingcomp}%
+%\end{figure}
+
 %test with two figures
 %\begin{figure}[ht]
 %    \centering   
