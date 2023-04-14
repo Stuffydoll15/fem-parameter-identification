@@ -868,26 +868,66 @@ shape after the load is removed. This model is based on Hooke's law, where the s
 \begin{align*}
     \sigma = E\varepsilon \, ,
 \end{align*}
-where $\sigma$ is the stress, $E$ is the elastic modulus, and $\varepsilon$ is the strain. The elastic modulus 
-serve to measure the stiffness of the material.
+where $\sigma$ is the stress, $E$ is the elastic modulus, and $\varepsilon$ is the strain. 
+%The elastic modulus served to measure the stiffness of the material.
 For the Middle Point Case, the material is assumed homogeneous and isotropic, thus the elastic modulus is the 
 same in all directions. 
-For an indenter with a spherical tip, the contact area between the indenter and the material, 
+For an indenter with a spherical tip, the contact area $A$ between the indenter and the specimen can be approximated as, 
 \begin{align*}
-    A = \pi r_i^2 \, ,
+    A = r_i^{\frac{1}{2}} h^{\frac{1}{2}} \, ,
 \end{align*}
-where $r_i$ is the radius of the indenter, can be calculated.
-using the Hertzian contact theory, 
+where $r_i$ is the radius of the indenter, and $h$ is the indentation depth.
+For a spherical indentation assuming the Hertzian contact theory, the Hertzian relationship 
+between the applied force $F$ and the indentation depth $h$ is \cite{Lin2009}, 
+\begin{align}
+    F = \frac{4E{r_i}^{\frac{1}{2}} {h}^{\frac{3}{2}}}{3(1-\nu^2)} \, ,
+\end{align}
+where $E$ and $\nu$ are the Young's modulus and Poisson's ratio of the indented material.
+This Hertzian relationship is used as the analytical basis on the contact of ellipsoid bodies in 
+indentation experiments \cite{Lin2009}.
+%Comments chat gpt:You can consider adding a figure or illustration to explain the Hertzian contact theory and the contact area better.
+%If you have already defined some terms in the previous sections, you can consider referring to them instead of redefining them. This can make your text more concise.
+This model provided a simple and straightforwards approach to describe the material behavior under 
+small deformations. The elastic modulus and the Poisson's ratio are the two main parameters 
+that will be used for this model. Additionally it was assumed that the material is near incompressible,
+therefore, a fixed Poisson's ratio was chosen, 
+\begin{align}
+    \nu = 0.49 \, ,
+\end{align}
+leaving the analysis of one parameter, the elastic modulus. The linear elastic model served as a basis for the more 
+complex material models developed in the subsequent levels, and it provided a reference point for 
+the identification of other material parameters.
 
 
 %----------------------------------------------------------------------------------
-\subsection{Hyperelasticity}
-The second level introduces the use of more material parameters.
-The strain energy density function for the Neo-Hookean material model is given with
+\subsection{Level 2: Hyperelasticity}
+The second level introduces the use of more material parameters. For this level a 
+Neo-Hookean model was used to describe the material behavior.
+
+The elastic strain energy potential function for the Neo-Hookean material model is given with
 \begin{align}
-            \Psi = C_1 (I_1 - 3) \, ,
+            W = C_1 (I_1 - 3) + \frac{1}{D_1} (J-1)^2 \, ,
 \end{align}
-where $C_1$ is a material constant and $I_!$ is the first invariant of the right Cauchy-Green tensor. 
+where $C_1$ is a material constant, $D_1$ the material incompressibility parameter, $J$ the determinant 
+of the elastic deformation gradiant, and $I_1$ is the first invariant of the right Cauchy-Green deformation tensor, i.e. 
+\begin{align*}
+    I_1 = {\lambda_1}^2 + {\lambda_3}^2 + {\lambda_3}^2 \, ,
+\end{align*} 
+where $\lambda$ are the principal stretches \cite{Ogden2013}. To maintain conformity with linear elasticity, the material constant 
+\begin{align}
+    C_1 = \frac{\mu}{2} \, ,
+\end{align}
+where $\mu$ is the shear modulus or the second Lamé parameter. If the material is assumed to be incompressible,
+\begin{align*}
+    J = 1 \, ,
+\end{align*} 
+and the second term in strain energy potential $W$ becomes zero \cite{Pence2015}. Additionally, related to the incompressibility parameter 
+$D_1$ the initial bulk modulus 
+\begin{align}
+    K = \frac{2}{D_1} \, ,
+\end{align}
+can be defined. 
+
 Neo Hookean and Mooney Rivlin comparison
 
 %Crear chart

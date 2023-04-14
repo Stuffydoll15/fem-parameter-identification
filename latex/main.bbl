@@ -342,6 +342,54 @@
     \field{year}{2002}
   \endentry
 
+  \entry{Lin2009}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LDC}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={David\bibnamedelima C.},
+         giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=SDI}{%
+         family={Shreiber},
+         familyi={S\bibinitperiod},
+         given={David\bibnamedelima I.},
+         giveni={D\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=DEK}{%
+         family={Dimitriadis},
+         familyi={D\bibinitperiod},
+         given={Emilios\bibnamedelima K.},
+         giveni={E\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=HF}{%
+         family={Horkay},
+         familyi={H\bibinitperiod},
+         given={Ferenc},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \keyw{Elasticity,Hyperelasticity,Indentation,Mechanical properties}
+    \strng{namehash}{LDC+1}
+    \strng{fullhash}{LDCSDIDEKHF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1007/s10237-008-0139-9
+    \endverb
+    \field{issn}{16177959}
+    \field{issue}{5}
+    \field{pages}{345\bibrangedash 358}
+    \field{title}{Spherical indentation of soft matter beyond the Hertzian
+  regime: Numerical and experimental validation of hyperelastic models}
+    \field{volume}{8}
+    \field{journaltitle}{Biomechanics and Modeling in Mechanobiology}
+    \field{month}{10}
+    \field{year}{2009}
+  \endentry
+
   \entry{Liu2009}{article}{}
     \name{author}{3}{}{%
       {{hash=LK}{%
@@ -427,6 +475,68 @@
   properties of post-extraction organs}
     \field{month}{02}
     \field{year}{2022}
+  \endentry
+
+  \entry{Ogden2013}{book}{}
+    \name{author}{1}{}{%
+      {{hash=OR}{%
+         family={Ogden},
+         familyi={O\bibinitperiod},
+         given={R.W.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Dover Publications}%
+    }
+    \strng{namehash}{OR1}
+    \strng{fullhash}{OR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{isbn}{9780486318714}
+    \field{series}{Dover Civil and Mechanical Engineering}
+    \field{title}{Non-Linear Elastic Deformations}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Pence2015}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PTJ}{%
+         family={Pence},
+         familyi={P\bibinitperiod},
+         given={Thomas\bibnamedelima J.},
+         giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=GK}{%
+         family={Gou},
+         familyi={G\bibinitperiod},
+         given={Kun},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SAGE Publications Inc.}%
+    }
+    \strng{namehash}{PTJGK1}
+    \strng{fullhash}{PTJGK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \verb{doi}
+    \verb 10.1177/1081286514544258
+    \endverb
+    \field{issn}{17413028}
+    \field{issue}{2}
+    \field{pages}{157\bibrangedash 182}
+    \field{title}{On compressible versions of the incompressible neo-Hookean
+  material}
+    \field{volume}{20}
+    \field{journaltitle}{Mathematics and Mechanics of Solids}
+    \field{month}{02}
+    \field{year}{2015}
   \endentry
 
   \entry{Wang2012}{book}{}
