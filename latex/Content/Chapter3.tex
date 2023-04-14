@@ -901,10 +901,9 @@ the identification of other material parameters.
 
 %----------------------------------------------------------------------------------
 \subsection{Level 2: Hyperelasticity}
-The second level introduces the use of more material parameters. For this level a 
-Neo-Hookean model was used to describe the material behavior.
-
-The elastic strain energy potential function for the Neo-Hookean material model is given with
+The second level introduces a higher complexity, as more material parameters are analyzed. For this level a 
+Neo-Hookean model was used to describe the material behavior based in the strain energy potential function.
+The elastic strain energy potential function for the Neo-Hookean material model is given by
 \begin{align}
             W = C_1 (I_1 - 3) + \frac{1}{D_1} (J-1)^2 \, ,
 \end{align}
@@ -921,14 +920,27 @@ where $\mu$ is the shear modulus or the second Lamé parameter. If the material 
 \begin{align*}
     J = 1 \, ,
 \end{align*} 
-and the second term in strain energy potential $W$ becomes zero \cite{Pence2015}. Additionally, related to the incompressibility parameter 
-$D_1$ the initial bulk modulus 
+and the second term in strain energy potential $W$ becomes zero \cite{Pence2015}. 
+
+The Neo-Hookean model requires two main parameters to be identified; the shear modulus $\mu$ and 
+the incompressibility parameter $D_1$. The incompressibility parameter relationship with the initial bulk modulus
 \begin{align}
     K = \frac{2}{D_1} \, ,
 \end{align}
-can be defined. 
+ can be defined \cite{Ansys2010}. The relationship between the shear modulus, the elastic modulus, and the Poisson's ratio
+\begin{align}
+    \mu = \frac{E}{2(1+\nu)} \, ,
+\end{align}
+can be calculated, as well as for the bulk modulus 
+\begin{align}
+    K = \frac{E}{3(1-2\nu)} \, .
+\end{align}
+Using the results of the first level with $E$ and $\nu$ it is possible to establish a possible range for $\mu$ 
+and $D_1$. This targeted range helped in the reduction of computational time for simulations.
+The hyperelastic model provides a more accurate description of the material behavior in comparison to linear 
+elastic model, as this model takes into account the nonlinear behavior of the material. 
 
-Neo Hookean and Mooney Rivlin comparison
+%Neo Hookean and Mooney Rivlin comparison
 
 %Crear chart
 

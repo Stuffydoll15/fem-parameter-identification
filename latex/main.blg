@@ -44,52 +44,47 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: main-blx.bib
 Database file #2: Bibliography/bibliography.bib
-"%" immediately follows a field name---line 307 of file Bibliography/bibliography.bib
- : T
- :  %   title = {Ansys Mechanical APDL Element Reference},
-I'm skipping whatever remains of this entry
 Biblatex version: 3.18
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 13 entries,
+You've used 14 entries,
             6399 wiz_defined-function locations,
-            1328 strings with 16630 characters,
-and the built_in function-call counts, 122922 in all, are:
-= -- 10432
-> -- 1561
-< -- 464
-+ -- 3476
-- -- 581
-* -- 9232
-:= -- 14387
+            1318 strings with 13498 characters,
+and the built_in function-call counts, 124551 in all, are:
+= -- 10505
+> -- 1583
+< -- 494
++ -- 3491
+- -- 582
+* -- 9205
+:= -- 14435
 add.period$ -- 0
-call.type$ -- 13
-change.case$ -- 224
-chr.to.int$ -- 69
-cite$ -- 24
-duplicate$ -- 11952
-empty$ -- 10654
-format.name$ -- 918
-if$ -- 24701
+call.type$ -- 14
+change.case$ -- 237
+chr.to.int$ -- 75
+cite$ -- 26
+duplicate$ -- 12169
+empty$ -- 10889
+format.name$ -- 919
+if$ -- 25114
 int.to.chr$ -- 0
-int.to.str$ -- 29
+int.to.str$ -- 31
 missing$ -- 0
-newline$ -- 507
-num.names$ -- 612
-pop$ -- 4506
+newline$ -- 495
+num.names$ -- 624
+pop$ -- 4857
 preamble$ -- 1
-purify$ -- 306
+purify$ -- 318
 quote$ -- 0
-skip$ -- 2480
+skip$ -- 2578
 stack$ -- 0
-substring$ -- 20577
-swap$ -- 2195
-text.length$ -- 394
-text.prefix$ -- 12
+substring$ -- 20636
+swap$ -- 2205
+text.length$ -- 412
+text.prefix$ -- 13
 top$ -- 1
-type$ -- 430
+type$ -- 464
 warning$ -- 0
-while$ -- 1689
+while$ -- 1696
 width$ -- 0
-write$ -- 495
-(There was 1 error message)
+write$ -- 482
