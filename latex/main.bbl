@@ -250,6 +250,41 @@
     \field{year}{2018}
   \endentry
 
+  \entry{Kanyanta2010}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KV}{%
+         family={Kanyanta},
+         familyi={K\bibinitperiod},
+         given={Valentine},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=IA}{%
+         family={Ivankovic},
+         familyi={I\bibinitperiod},
+         given={Alojz},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KVIA1}
+    \strng{fullhash}{KVIA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1016/j.jmbbm.2009.03.005
+    \endverb
+    \field{issn}{17516161}
+    \field{pages}{51\bibrangedash 62}
+    \field{title}{Mechanical characterisation of polyurethane elastomer for
+  biomedical applications}
+    \field{volume}{3}
+    \field{journaltitle}{Journal of the Mechanical Behavior of Biomedical
+  Materials}
+    \field{month}{01}
+    \field{year}{2010}
+  \endentry
+
   \entry{Kauer2002}{article}{}
     \name{author}{5}{}{%
       {{hash=KM}{%

@@ -71,21 +71,39 @@ developed to use an iFEM approach to identify the key material parameters of the
 With this method, it was possible to match the results of the computational model to the experimental 
 data, and validate the model with additional data points. 
 
-This study aims to establish a framwork for identifying the key parameters of any soft material, providing 
-faster results for future experiments or use cases. By contibuting to this framework, it will be 
-possible to accelerate the development of material models for practical applications in medical research and development.
-
-%----------------------------------------------------------------------------------
+The objective of this study is to develop a framework that identifies the essential material parameters of soft materials 
+and evaluates their limitations and impact on a validated model, which can describe nonlinear material behavior.
+By contributing to this framework, the study aims to accelerate the development of material models for practical 
+applications in medical research and development.
+%---------------------------------------------------------------------------------
 \section{State of the Art}
 
+Thi section reviews the state of the art relevant to this study. First, the experimental characterization 
+techniques are reviwed, including methods for obtaining mechanical and viscoelastic properties.
+This is followed by the description of different approaches to describe the material model for different soft 
+materials. Then, the iFEM, which is one method to identify material parameters from experimental data, 
+will be explained. Finally, the standard verification and validation process used in computational 
+solid mechanics for medical devices based on the American Society of Mechanical Engineering (ASME) guidelines 
+will be discussed. The goal of this chapter is to provide a comprehensive overview of the current methods use in 
+the field and the identification of limitations and gaps in the current state of knowledge. %maybe take out?
+
+
 \subsection{Experimental Characterization for Soft Materials}
+%In this section, you can discuss the various experimental techniques that have been used to characterize 
+%the mechanical properties of soft materials. You can talk about traditional mechanical testing methods such 
+%as tensile and compressive testing, as well as more specialized techniques such as indentation testing, 
+%shear testing, and dynamic mechanical analysis. You can also discuss the advantages and limitations of 
+%each technique, and highlight any recent advancements in experimental characterization.
 %material testing
+Experimental testing is a key approach to obtaining information about the mechanical behavior of soft materials.
 In order to characterize the mechanical behavior of a test specimen, the most common method
 method is to mechanically load the specimen and measure the response of the force against 
-the displacement \cite{Bergström2015}. 
+the displacement \cite{Bergström2015}. \\
+
 
 %Soft materials challenges in experimental deign
-
+-Soft synthetics materials like soft gels are often used for tissue engineering applications.
+However, due to their 
 
 - Soft synthetics materials like soft gels are one example for soft synthetic materials. These
 are commomly applied for tissue engineering applications. Nevertheless, due to their elastic 
@@ -93,12 +111,18 @@ modulus range (kPa) present some challenges for the design of experimental testi
 
 \subsubsection*{Uniaxial Tension/Compression Testing}
 
-This is one of the most common using methods to determine an stress-strain relationship.
-For uniaxial tension cases, the specimen is well loaded in a machine by gripping the ends and perfoming 
-tension tests. Then, the deformation is usually measured with a strain gauge. \cite{Bergström2015}
-
+Uniaxial tension or compression testing are one of the most common using methods to determine an stress-strain relationship.
+For uniaxial tension cases, usually the specimen is well loaded in a machine by gripping the ends and perfoming 
+tension tests. Then, the deformation is usually measured with a strain gauge \cite{Bergström2015}.
 As for compression test, the specimen is loaded by placing it inbetween from two plates 
-and compressing the material. \cite{Bergström2015}
+and compressing the material \cite{Bergström2015}.\\
+
+In a study made by Kayanta and Ivankovic (2010), the authors investigated the behavior of an ether-based polyurethane 
+elastomer for the production of mock arteries \cite{Kanyanta2010}. Polyurethane possesses excellent mechanical 
+properties, like high elasticity and resilience and can be shaped in various shapes and sizes, making it a versatile
+material for the development of large arteries.
+
+For soft materials 
 
 This method allows the validation of several computational models as it provides with
  searched parameters done with other experimental procedure. 
