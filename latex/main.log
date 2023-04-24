@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  24 APR 2023 19:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  25 APR 2023 00:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1602,14 +1602,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--119
 <Images/nanoindentationbigletter.png, id=459, 221.32687pt x 217.93922pt>
 File: Images/nanoindentationbigletter.png Graphic file (type png)
 <use Images/nanoindentationbigletter.png>
-Package pdftex.def Info: Images/nanoindentationbigletter.png  used on input line 166.
+Package pdftex.def Info: Images/nanoindentationbigletter.png  used on input line 174.
 (pdftex.def)             Requested size: 227.62204pt x 224.15067pt.
- [3]
-Overfull \hbox (0.81552pt too wide) in paragraph at lines 223--227
+ [3] [4 <./Images/nanoindentationbigletter.png>]
+Overfull \hbox (0.81552pt too wide) in paragraph at lines 231--235
 []\OT1/ppl/m/n/10.95 For biome-chan-i-cal mod-els, where the mod-els re-quire knowl-edge from lo-cal prop-
  []
 
-[4 <./Images/nanoindentationbigletter.png>]) [5] [6]
+) [5] [6]
 \openout2 = `Content/Chapter3.aux'.
 
  (Content/Chapter3.tex
@@ -1943,13 +1943,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  59056 strings out of 475281
  1419085 string characters out of 2774064
- 2431740 words of memory out of 3000000
+ 2430738 words of memory out of 3000000
  79302 multiletter control sequences out of 15000+600000
  507121 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,21n,100p,2324b,3004s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (52 pages, 25271040 bytes).
+Output written on main.pdf (52 pages, 25271598 bytes).
 PDF statistics:
  804 PDF objects out of 1000 (max. 8388607)
  178 named destinations out of 1000 (max. 500000)
