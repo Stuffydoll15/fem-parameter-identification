@@ -6,16 +6,16 @@
 
 \section{Background and Problem Statement}
 The biomechanical characterization of soft tissues has gained attention
-in medical research, e.g., in areas such as medical image analysis and visualization.
-For many years, the obtained medical diagnosis were often based on the assumptions of experts or 
-their accumulated experience. While this information have proven to be useful for systems like
-medical diagnosis, therapy, and training, these methods have limitations 
-in cases where quantifiable data is necessary, specifically for computer-assisted systems \cite{Kauer2002}.
-To gather this data, e.g., material data, such as stress-strain, it is required 
+in medical research, in areas such as medical image analysis and visualization.
+For many years, the obtained medical diagnoses were often based on the assumptions of experts or 
+their accumulated experience. While this information have proven to be useful in general, 
+these methods have limitations in cases where quantifiable data is necessary, specifically for computer-assisted systems, e.g,
+medical diagnosis, therapy, and training \cite{Kauer2002}.
+To gather the material data, e.g., elasticity, stiffness, response under deformation and temperature, it is required 
 to gain access to the soft tissues and perform in-vivo testing experiments. 
-However, to obtain accurate biomechanical data is often difficult 
-due to the invasive nature of the procedures and the lack of constant and reproducible internal or external factors for 
-experimental configurations.\\
+However, obtaining accurate biomechanical data can be challenging
+due to the invasive nature of the procedures and the difficulty in maintaining constant and reproducible internal or external factors  
+in experimental configurations.\\
 
 %Precise knowledge about the biomechanical characterization of soft tissues has received attention
 %in medical research, e.g., medical image analysis and visualization.
@@ -26,75 +26,55 @@ experimental configurations.\\
 %to the tissues and perform in-vivo testing experiments. For organs, this procedure is nearly 
 %impossible to achieve, due to the involvement of an invasive procedure, and the lack of constant
 %and reproducible external and internal factors. \\ 
+Especially, when it comes to internal organs, obtaining reliable data for examination after their 
+extraction is difficult because the material properties can vary between samples or testing 
+locations on the same organ. This is due to the influence of various factors such as changes in blood pressure, changes in material properties 
+over time, symptoms of disease, and more. In addition, another problem is the lack 
+of replication, due to the use of different individuals' organs, which introduces more external
+factors into the equation. Moreover, given a tissue sample, it is difficult to properly 
+characterize the material due to its anisotropic property, which can lead potentially
+ to inaccuracies in the result.
 
-In addition, particularly for the case of internal organs, one of the challenges associated with their extraction 
-is that some material properties may change despite examination of the same sample. Their biomechanical properties 
-depend on other factors, such as changes in blood pressure, changes in material properties 
-over time, symptoms from diseases, etc. Furthermore, another encountered issue is the lack 
-of replication, due to the use of different individuals organs, which includes more external
- factors to add to the equation. Moreover, given a tissue sample, it is difficult to 
- characterize the organ's material properly due to its anisotropy property. The material 
- properties change, resulting in an inaccurate result.
-%not only due to the lack of a tissue sample, but also because the time-dependent material properties. 
-\\
+%Particularly in the case of internal organs, one of the challenges associated with their extraction 
+%is that some material properties may change despite examination of the same sample. Their biomechanical properties 
+%depend on other factors, such as changes in blood pressure, changes in material properties 
+%over time, symptoms of disease, and more. In addition, another problem is the lack 
+%of replication, due to the use of different individuals' organs, which introduces more external
+% factors into the equation. Moreover, given a tissue sample, it is difficult to properly 
+% characterize the material due to its anisotropic property, which can lead to inaccuracies in the result.\\
 
-In the situation where the soft material's data can be gather in a constant, fast and reliable
-process, the data enables the system to predict the behavior of soft tissues and give pre-operative
- calculations. This shows that material models represent a vital part for medical research, 
- specially for the use of computational models, as their help to increase the accuracy of the 
- simulation and its applications in other systems.\\
+In the situation where the material data can be collected in a constant, fast and reliable
+process, a material model can be established and the computer-aided systems can predict 
+the mechanical behavior of soft tissues, providing preoperative calculations. 
+This demonstrates the importance of material data collection and material model development, 
+especially in the context of computational models such as engineering simulation models created finite 
+element analysis (FEA) software and their medical applications in medical devices, surgical 
+procedures, and training softwares. By using accurate material models, the accuracy of the simulation 
+can be improved, aiding in a better understanding and predicting a soft tissue response 
+to external stimuli, making them more useful in medical research and other related applications.\\
 
-In soft materials analyses, a nonlinear situation is mostly encountered, for which a finite 
-element method becomes a common approach. The application of the finite element method
- facilitates the analysis of complex structures with complex material behavior, and aids in 
- solving of continuum mechanical problems. Nevertheless, in order to simulate a material with 
- this complexity also requires complex algorithms with high computational costs. \\
+\section{Objective and Scope of the Study} 
 
- \section{Objective and Scope of the Study} 
-One of the goals of this study to identify the key parameters of soft materials, and their 
-influence in the development of a material model. With key parameters an attempt to 
- approximate a complex material will be done, and this simplified material model will be 
- validated for its future applications in medical research.\\
- 
- With the application of experiment testing, and the finite element method it is possible 
- to identify some key material parameters through an inverse finite element method approach. With this 
- method a framework can be established and the results of computational model can be matched 
- to the experimental data, and afterwards be validated with other validation point data.
+Soft materials often exhibit nonlinearity, making the finite element method (FEM) a common approach 
+for their analysis and solving continuum mechanical problems. 
+Although FEM facilitates the analysis of complex structures with complex material 
+behavior, simulating such materials requires high computational costs.\\
 
- \section{cgt}
- %wechsel
- %Due to the complexity of the polymer microstructure, the use of computer simulations is becoming
- %increasingly important when studying the behavior of solid polymers (Bergstrom)
-%----------------------------------------------------------------------------------
-1.1 Background and Context:
-"Precise knowledge about the biomechanical characterization of soft tissues has received attention in medical research, e.g., medical image analysis and visualization." - This sentence is a bit vague. You could specify what kind of medical research has been done in this area and what the potential benefits are.
-"This information, although proven to be useful, has its limitations when computed-assisted systems like, medical diagnosis, therapy, and training, rely on more quantifiable data[7]." - This sentence is a bit confusing. It might be clearer if you rephrased it as follows: "While expert assumptions and accumulated experience have been useful for medical diagnosis, therapy, and training, these methods have limitations in cases where quantifiable data is necessary, particularly for computer-assisted systems."
-"To gather this data, it is important to gain access to the tissues and perform in-vivo testing experiments." - This sentence could be more specific. What kind of data are you referring to, and why is it important to gather it?
-"For organs, this procedure is nearly impossible to achieve, due to the involvement of an invasive procedure, and the lack of constant and reproducible external and internal factors." - This sentence is a bit unclear. It might be clearer if you said something like: "In the case of organs, it is difficult to obtain accurate biomechanical data due to the invasive nature of the procedure and the variability of external and internal factors."\\
-1.2 Problem Statement:
+The main objective of this study is to identify the key parameters of soft materials and their 
+influence on the development of a material model based on inverse finite element method (iFEM) approach. 
+By identifying these key parameters, an attempt is made to approximate the behavior of 
+complex materials through a simplified material model and
+assess its potential future applications in medical research and its use with organs.\\
 
-"One of the complications associated with the extraction of the organ is that some material properties may change despite examination of the same organ." - This sentence is a bit confusing. It might be clearer if you said something like: "One of the challenges in obtaining accurate biomechanical data from organs is that their material properties can change over time, even when examined under similar conditions."
-"Furthermore, another encountered issue is the lack of replication, due to the use of different individuals organs, which includes more external factors to add to the equation." - This sentence is a bit convoluted. It might be clearer if you said something like: "Another challenge is the difficulty in replicating experiments due to the use of organs from different individuals, which introduces additional external factors."
-"Moreover, given a tissue sample, it is difficult to characterize the organ’s material properly due to its anisotropy property. The material properties change, resulting in an inaccurate result." - This sentence is a bit unclear. It might be clearer if you said something like: "Additionally, the anisotropic nature of soft tissues makes it difficult to accurately characterize their material properties, which can lead to inaccurate results."\\
-1.3 Objective and Scope of the Study:
+To achieve this goal, an experimental configuration will be selected, and a computational model will be 
+developed to use an iFEM approach to identify the key material parameters of the given soft material. 
+With this method, it was possible to match the results of the computational model to the experimental 
+data, and validate the model with additional data points. 
 
-"One of the goals of this study to identify the key parameters of the soft materials, and their influence in the construction of a material model." - This sentence is a bit awkwardly phrased. It might be clearer if you said something like: "The objective of this study is to identify key parameters of soft tissue material behavior and their influence on the construction of a material model."
-"These key parameters the attempt to approximate such a complex material will be done, and this simplified material model will be validated for its future applications in medical research." - This sentence is a bit unclear. It might be clearer if you said something like: "This study will attempt to identify key parameters that can be used to construct a simplified material model for soft tissues. The accuracy of this model will be validated for its potential future applications in medical research."\\
-Sure, here's the rest of the analysis:
+This study aims to establish a framwork for identifying the key parameters of any soft material, providing 
+faster results for future experiments or use cases. By contibuting to this framework, it will be 
+possible to accelerate the development of material models for practical applications in medical research and development.
 
-In addition to identifying the key parameters of soft materials, this study aims to provide a better understanding of the behavior of soft tissues in complex situations. The development of accurate material models can assist in the design and optimization of medical devices, surgical procedures, and rehabilitation protocols. It can also aid in the simulation of tissue growth and repair, as well as the prediction of tissue response to external stimuli such as mechanical loading or drug delivery.
-
-The scope of this study includes the characterization of the material properties of soft tissues using experimental testing and numerical simulations. The focus will be on the development of a material model that can accurately predict the nonlinear behavior of soft materials under different loading conditions. The experimental data will be obtained from mechanical testing of soft tissue samples, while the numerical simulations will be performed using finite element analysis.
-
-The study will also investigate the effect of different factors, such as strain rate, hydration, and anisotropy, on the material behavior of soft tissues. The results of this study can be applied to a wide range of medical applications, including the design of prosthetic devices, the optimization of surgical procedures, and the development of tissue engineering strategies.
-
-Overall, the objective and scope of this study is to develop a better understanding of the biomechanical behavior of soft tissues and to provide accurate material models that can assist in medical research and clinical practice.\\
-1.1 Background and Context:
-The biomechanical characterization of soft tissues has gained attention in medical research, particularly in the areas of medical image analysis and visualization. In the past, medical diagnoses were often based on assumptions of experts or accumulated experience. However, with the rise of computer-assisted systems such as medical diagnosis, therapy, and training, there is a growing need for more quantifiable data. In-vivo testing experiments are one way to gather this data, but for organs, this is often difficult due to the invasive nature of the procedures and the lack of constant and reproducible internal and external factors.\\
-1.2 Problem Statement:
-One of the challenges associated with the extraction of organs is that some material properties may change even when examining the same organ. These biomechanical properties can be influenced by factors such as changes in blood pressure, changes in material properties over time, symptoms from diseases, and more. Additionally, it can be difficult to replicate results when using different individuals' organs, as this introduces additional external factors. Finally, characterizing organ material properties can be challenging due to their anisotropy property, which can lead to inaccuracies in results.\\
-1.3 Objective and Scope of the Study:
-The goal of this study is to identify the key parameters of soft materials and their influence in the construction of a material model. This will involve attempting to approximate the complex behavior of soft materials using a simplified material model, which can then be validated for future applications in medical research. To accomplish this, the study will use experimental testing and the finite element method to identify key material parameters through an inverse finite element method approach. This framework can then be used to match the results of computational models to experimental data and validate the material model with additional experiments.
 %----------------------------------------------------------------------------------
 \section{State of the Art}
 
