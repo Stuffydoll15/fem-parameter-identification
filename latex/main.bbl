@@ -124,6 +124,57 @@
     \field{year}{2013}
   \endentry
 
+  \entry{Drass2018}{article}{}
+    \name{author}{4}{}{%
+      {{hash=DM}{%
+         family={Drass},
+         familyi={D\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Schwind},
+         familyi={S\bibinitperiod},
+         given={Gregor},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Schneider},
+         familyi={S\bibinitperiod},
+         given={Jens},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kolling},
+         familyi={K\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Springer Science}%
+      {Business Media Deutschland GmbH}%
+    }
+    \strng{namehash}{DM+1}
+    \strng{fullhash}{DMSGSJKS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb 10.1007/s40940-017-0046-5
+    \endverb
+    \field{issn}{23635150}
+    \field{issue}{1}
+    \field{pages}{39\bibrangedash 54}
+    \field{title}{Adhesive connections in glass structures—part I:
+  experiments and analytics on thin structural silicone}
+    \field{volume}{3}
+    \field{journaltitle}{Glass Structures and Engineering}
+    \field{month}{03}
+    \field{year}{2018}
+  \endentry
+
   \entry{Goharian2017}{book}{}
     \name{author}{3}{}{%
       {{hash=GA}{%
@@ -163,6 +214,60 @@
   Biological, and Clinical Aspects}
     \field{month}{03}
     \field{year}{2017}
+  \endentry
+
+  \entry{Griffin2016}{article}{}
+    \name{author}{5}{}{%
+      {{hash=GM}{%
+         family={Griffin},
+         familyi={G\bibinitperiod},
+         given={Michelle},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PY}{%
+         family={Premakumar},
+         familyi={P\bibinitperiod},
+         given={Yaami},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Seifalian},
+         familyi={S\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BPE}{%
+         family={Butler},
+         familyi={B\bibinitperiod},
+         given={Peter\bibnamedelima Edward},
+         giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Szarko},
+         familyi={S\bibinitperiod},
+         given={Matthew},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Journal of Visualized Experiments}%
+    }
+    \strng{namehash}{GM+1}
+    \strng{fullhash}{GMPYSABPESM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.3791/54872
+    \endverb
+    \field{issn}{1940087X}
+    \field{issue}{118}
+    \field{title}{Biomechanical characterization of human soft tissues using
+  indentation and tensile testing}
+    \field{journaltitle}{Journal of Visualized Experiments}
+    \field{month}{12}
+    \field{year}{2016}
   \endentry
 
   \entry{Husain2004}{article}{}
@@ -521,6 +626,41 @@
     \field{journaltitle}{Mathematics and Mechanics of Solids}
     \field{month}{02}
     \field{year}{2015}
+  \endentry
+
+  \entry{Seshaiyer2003}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SP}{%
+         family={Seshaiyer},
+         familyi={S\bibinitperiod},
+         given={Padmanabhan},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=HJD}{%
+         family={Humphrey},
+         familyi={H\bibinitperiod},
+         given={Jay\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SPHJD1}
+    \strng{fullhash}{SPHJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1115/1.1574333
+    \endverb
+    \field{issn}{01480731}
+    \field{issue}{3}
+    \field{pages}{363\bibrangedash 371}
+    \field{title}{A sub-domain inverse finite element characterization of
+  hyperelastic membranes including soft tissues}
+    \field{volume}{125}
+    \field{journaltitle}{Journal of Biomechanical Engineering}
+    \field{month}{06}
+    \field{year}{2003}
   \endentry
 
   \entry{Wang2012}{book}{}
