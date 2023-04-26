@@ -87,8 +87,9 @@ solid mechanics for medical devices based on the American Society of Mechanical 
 will be discussed. The goal of this chapter is to provide a comprehensive overview of the current methods use in 
 the field and the identification of limitations and gaps in the current state of knowledge. %maybe take out?
 
-
+%--------------------------------------------------------------------------------------------------
 \subsection{Experimental Characterization for Soft Materials}
+\label{subsection:experimentalcharacterization}
 %In this section, you can discuss the various experimental techniques that have been used to characterize 
 %the mechanical properties of soft materials. You can talk about traditional mechanical testing methods such 
 %as tensile and compressive testing, as well as more specialized techniques such as indentation testing, 
@@ -111,32 +112,87 @@ modulus range (kPa) present some challenges for the design of experimental testi
 
 \subsubsection*{Uniaxial Tension/Compression Testing}
 
-Uniaxial tension or compression testing are one of the most common using methods to determine an stress-strain relationship.
-For uniaxial tension cases, usually the specimen is well loaded in a machine by gripping the ends and perfoming 
-tension tests. Then, the deformation is usually measured with a strain gauge \cite{Bergström2015}.
-As for compression test, the specimen is loaded by placing it inbetween from two plates 
+Uniaxial tension or compression testing are widely employed to determine an stress-strain relationship.
+For uniaxial tension cases, a specimen is typically loaded by gripping the ends while applying 
+tension, and the deformation is usually measured with a strain gauge \cite{Bergström2015}.
+Conversely, compression tests involve placing the specimen in between two plates 
 and compressing the material \cite{Bergström2015}.\\
 
 In a study made by Kayanta and Ivankovic (2010), the authors investigated the behavior of an ether-based polyurethane 
-elastomer for the production of mock arteries \cite{Kanyanta2010}. Polyurethane possesses excellent mechanical 
-properties, like high elasticity and resilience and can be shaped in various shapes and sizes, making it a versatile
-material for the development of large arteries. For this material the uniaxial tests were performed using 
-dumbbell-shaped specimens, and were divided into three groups based on the strain rates used (low, intermediate, and high).
+elastomer for the creation of mock arteries \cite{Kanyanta2010}. Polyurethane was ideal for this application due to 
+its high elasticity and resilience and adaptability to various shapes and sizes. Uniaxial tensile tests on 
+dumbbell-shaped specimens were conducted, divided into three groups based on the strain rate.\\
 
-Low strain rate tests were performed under a dry room temperature, wet room temperature, wet at \SI{37}{\degreeCelsius} using a 
-standard Instron machine %add Figure.
+\begin{figure}
+        \centering
+    
+        \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/chapter1/uniaxialtension.png}
+        \caption{Low strain rate test with a standard tensile machine}
+        \label{fig:subfiglow}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/chapter1/uniaxialintermediate.png}
+        \caption{Intermediate strain rate test with a falling weight impact tester}
+        \label{fig:subfiginter}
+        \end{subfigure}
+        \vspace{0.5cm}
+        \begin{subfigure}[b]{0.7\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/chapter1/uniaxialhigh.png}
+        \caption{High strain rate test with a split Hopkinson pressure bar in tension}
+        \label{fig:subfighigh}
+        \end{subfigure}  
+        \hspace{0.3cm}
 
+        \caption{Uniaxial testing: Diagram of three tensile testing of an ether-based polyurethane elastomer specimen done with three different experiment configurations for different strain rate analysis. Diagrams are based on the study of made by Kayanta and Ivankovic (2010) \cite{Kanyanta2010}.}
+        \label{fig:uniaxialkan}
+\end{figure}
 
+For the low strain rate tensile tests (\SI[per-mode = symbol]{<1}{\per \second}), a standard Instron machine was utilized, as illustrated in Figure 
+\ref{fig:subfiglow}. Intermediate strain rate tensile tests (between \SI[per-mode = symbol]{1}{\per \second} and \SI[per-mode = symbol]{100}{\per \second}) 
+were performed using a drop-weight tester (Fig. \ref{fig:subfiginter}). Load measurements were recorded with a calibrated strain gauge, 
+with the zero position established at the striker and impact plate's initial contact point.
+High strain rate tests (\SI[per-mode = symbol]{>100}{\per \second}) were conducted with a split Hopkinson pressure bar in tension, as shown in Figure \ref{fig:subfighigh}.
+A swinging pendulum generated a tensile pulse, propagating along the bar into the specimen. Utilizing 
+the transmitted and reflected strain signals and using the classical Kolsky analysis the specimen stress
 
+ \begin{align*}
+        \sigma(t) = E\frac{A_b}{A_s}\epsilon_t(t) \, ,
+\end{align*}
 
-The uniaxial tension test was conducted using a custom-built apparatus that allowed for 
-precise control of the applied load and measurement of the resulting deformation. The results 
-of the test showed that the hydrogel material exhibited a nonlinear stress-strain behavior, with a 
-rapid increase in stress at low strains followed by a more gradual increase at higher strains. 
-These findings provide valuable insights into the mechanical behavior of hydrogels under uniaxial tension, 
-which is important for understanding their behavior in various biomedical applications.
+and the strain
+\begin{align*}
+        \epsilon(t) = \frac{-2C_b}{l_s} \int_{0}^{t} \epsilon_r(t) dt \, ,
+\end{align*}
 
+were calculated. Here, $A_b$ is bar's cross-sectional area, $A_s$ the specimen's cross-sectional area,
+$\epsilon_t$ refers to the transmitted strain signal, $\epsilon_r$ is the reflected strain signal,
+$l_s$ is the specimen gauge length, and $C_b$ is the wave speed through the bar.
+Low strain rate tests were conducted under dry-room temperature, wet-room temperature, and wet at \SI{37}{\degreeCelsius}. 
+Intermediate and high strain rate tests were performed exclusively under dry-room temperature conditions.\\
 
+Test results demonstrated that ether-based polyurethane elastomer specimens were highly sensitive to 
+temperature and humidity, as the material softened with increased levels of these factors. Young's 
+modulus values for dry-room temperature setup \SI{7.4}{\mega \pascal}, decreasing to \SI{5.3}{\mega \pascal} 
+and \SI{4.7}{\mega \pascal} for the wet-room temperature and wet conditions, respectively.
+Moreover, the polyurethane exhibit varying Young's modulus values under dry-room temperature, depending 
+on the elastomer's composition, with values ranging from \SI{3.6}{\mega \pascal} to \SI{14.8}{\mega \pascal}.
+
+The material displayed minimal strain rate dependency at low strain rates, but exhibited moderate 
+strain rate sensitivity at intermediate and high strain rates, where the Young's modulus ranged between 
+\SI{8}{\mega \pascal} and \SI{12}{\mega \pascal}. However, for strains below \SI{20}{\percent}, the 
+outcomes showed repeatability across all strain rates tests. 
+
+For strain rates found in arteries around \SI[per-mode = symbol]{<2}{\per \second}, the variation of the
+Young's modulus was insignificant and this could be assumed to be constant. This study demonstrated 
+that it is important to measure the properties of the elastomer under similar condition to the
+intended application, as properties varies under different conditions.
+
+%-------------------------------------------------------------------------------------------------
 \subsubsection*{Aspiration Experiment}
 
 Tissue aspiration experiments introduces an aspiration tube which is put against the 
@@ -153,7 +209,7 @@ and analyze the viscoelastic properties of the soft tissue\cite{Kauer2002}.
 Indentation have being gaining popularity in the last decades and it is now one of
  the most spread experiments for material parameter identification.
  Indentation presents a bigger advantage in cases where it is not possible to load
- test specimens in a more conventional way.\cite{Bergström2015} As some materials, e.g. biomaterials do not always 
+ test specimens in a more conventional way \cite{Bergström2015}.   As some materials, e.g. biomaterials do not always 
  allow the use of uniaxial or biaxial tensile testing, the
  use of identation testing is essential.  
 
