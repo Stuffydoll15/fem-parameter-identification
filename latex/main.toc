@@ -4,7 +4,7 @@
 \contentsline {section}{\numberline {1.2}Objective and Scope of the Study}{1}{section.13}%
 \contentsline {section}{\numberline {1.3}State of the Art}{2}{section.14}%
 \contentsline {subsection}{\numberline {1.3.1}Experimental Characterization for Soft Materials}{2}{subsection.15}%
-\contentsline {subsection}{\numberline {1.3.2}Material Modeling of Soft Materials}{7}{subsection.24}%
+\contentsline {subsection}{\numberline {1.3.2}Material Modeling of Soft Materials}{8}{subsection.24}%
 \contentsline {subsection}{\numberline {1.3.3}Inverse Finite Element Method for Parameter Identification}{8}{subsection.25}%
 \contentsline {subsection}{\numberline {1.3.4}Standard Verification and Validation for Computational Solid Mechanics (ASME)}{9}{subsection.28}%
 \contentsline {section}{\numberline {1.4}Overview}{9}{section.30}%

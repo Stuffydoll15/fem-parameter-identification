@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  28 APR 2023 20:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  29 APR 2023 01:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1655,13 +1655,18 @@ File: Images/nanoindentationbigletter.png Graphic file (type png)
 <use Images/nanoindentationbigletter.png>
 Package pdftex.def Info: Images/nanoindentationbigletter.png  used on input line 283.
 (pdftex.def)             Requested size: 199.16928pt x 196.13017pt.
- [7 <./Images/nanoindentationbigletter.png>]
-Overfull \hbox (2.01959pt too wide) in paragraph at lines 330--336
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--305
+
+ []
+
+[7 <./Images/nanoindentationbigletter.png>]
+Overfull \hbox (2.01959pt too wide) in paragraph at lines 350--356
 []\OT1/ppl/m/n/10.95 Specially for non-lin-ear cases [[][]10[][]], where the com-plex-ity of the prob-lems in-creases,
  []
 
 
-Overfull \hbox (0.81552pt too wide) in paragraph at lines 349--353
+Overfull \hbox (0.81552pt too wide) in paragraph at lines 369--373
 []\OT1/ppl/m/n/10.95 For biome-chan-i-cal mod-els, where the mod-els re-quire knowl-edge from lo-cal prop-
  []
 
@@ -1697,22 +1702,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--50
 
 1: section
 [11]
-<Images/Experiment/firstexperimentwithtext.png, id=584, 2240.37pt x 2987.16pt>
+<Images/Experiment/firstexperimentwithtext.png, id=588, 2240.37pt x 2987.16pt>
 File: Images/Experiment/firstexperimentwithtext.png Graphic file (type png)
 <use Images/Experiment/firstexperimentwithtext.png>
 Package pdftex.def Info: Images/Experiment/firstexperimentwithtext.png  used on input line 69.
 (pdftex.def)             Requested size: 184.9429pt x 246.5896pt.
-<Images/Experiment/firstexpotherloadwithtext.png, id=585, 1271.5003pt x 1717.16531pt>
+<Images/Experiment/firstexpotherloadwithtext.png, id=589, 1271.5003pt x 1717.16531pt>
 File: Images/Experiment/firstexpotherloadwithtext.png Graphic file (type png)
 <use Images/Experiment/firstexpotherloadwithtext.png>
 Package pdftex.def Info: Images/Experiment/firstexpotherloadwithtext.png  used on input line 71.
 (pdftex.def)             Requested size: 184.9429pt x 249.75554pt.
-<Images/Experiment/specimenhole.png, id=587, 185.0112pt x 99.4917pt>
+<Images/Experiment/specimenhole.png, id=591, 185.0112pt x 99.4917pt>
 File: Images/Experiment/specimenhole.png Graphic file (type png)
 <use Images/Experiment/specimenhole.png>
 Package pdftex.def Info: Images/Experiment/specimenhole.png  used on input line 91.
 (pdftex.def)             Requested size: 184.9429pt x 99.45955pt.
-<Images/Experiment/specimenholeside.png, id=588, 185.0112pt x 99.4917pt>
+<Images/Experiment/specimenholeside.png, id=592, 185.0112pt x 99.4917pt>
 File: Images/Experiment/specimenholeside.png Graphic file (type png)
 <use Images/Experiment/specimenholeside.png>
 Package pdftex.def Info: Images/Experiment/specimenholeside.png  used on input line 93.
@@ -1727,17 +1732,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--185
 
  []
 
-<Images/Experiment/secondexp1.png, id=608, 1113.40968pt x 1484.54625pt>
+<Images/Experiment/secondexp1.png, id=612, 1113.40968pt x 1484.54625pt>
 File: Images/Experiment/secondexp1.png Graphic file (type png)
 <use Images/Experiment/secondexp1.png>
 Package pdftex.def Info: Images/Experiment/secondexp1.png  used on input line 188.
 (pdftex.def)             Requested size: 184.9429pt x 246.57053pt.
-<Images/Experiment/secondexp2.jpg, id=609, 1113.15875pt x 1484.54625pt>
+<Images/Experiment/secondexp2.jpg, id=613, 1113.15875pt x 1484.54625pt>
 File: Images/Experiment/secondexp2.jpg Graphic file (type jpg)
 <use Images/Experiment/secondexp2.jpg>
 Package pdftex.def Info: Images/Experiment/secondexp2.jpg  used on input line 190.
 (pdftex.def)             Requested size: 184.9429pt x 246.63849pt.
-<Images/Experiment/Loadingdiagram.png, id=610, 176.15813pt x 124.96687pt>
+<Images/Experiment/Loadingdiagram.png, id=614, 176.15813pt x 124.96687pt>
 File: Images/Experiment/Loadingdiagram.png Graphic file (type png)
 <use Images/Experiment/Loadingdiagram.png>
 Package pdftex.def Info: Images/Experiment/Loadingdiagram.png  used on input line 198.
@@ -1748,7 +1753,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--216
  []
 
 [14] [15 <./Images/Experiment/secondexp1.png> <./Images/Experiment/secondexp2.jpg> <./Images/Experiment/Loadingdiagram.png>]
-<Images/Experiment/specimenmidp.png, id=628, 184.7703pt x 100.9371pt>
+<Images/Experiment/specimenmidp.png, id=632, 184.7703pt x 100.9371pt>
 File: Images/Experiment/specimenmidp.png Graphic file (type png)
 <use Images/Experiment/specimenmidp.png>
 Package pdftex.def Info: Images/Experiment/specimenmidp.png  used on input line 265.
@@ -1759,7 +1764,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 270--276
  []
 
 [16 <./Images/Experiment/specimenmidp.png>]
-<Images/Experiment/unloading.png, id=638, 500.62032pt x 666.99188pt>
+<Images/Experiment/unloading.png, id=642, 500.62032pt x 666.99188pt>
 File: Images/Experiment/unloading.png Graphic file (type png)
 <use Images/Experiment/unloading.png>
 Package pdftex.def Info: Images/Experiment/unloading.png  used on input line 302.
@@ -1770,12 +1775,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 307--314
  []
 
 [17 <./Images/Experiment/unloading.png>]
-<Images/Experiment/nbexp1.png, id=647, 185.0112pt x 99.4917pt>
+<Images/Experiment/nbexp1.png, id=651, 185.0112pt x 99.4917pt>
 File: Images/Experiment/nbexp1.png Graphic file (type png)
 <use Images/Experiment/nbexp1.png>
 Package pdftex.def Info: Images/Experiment/nbexp1.png  used on input line 335.
 (pdftex.def)             Requested size: 184.9429pt x 99.45955pt.
-<Images/Experiment/nbexp2.png, id=648, 185.0112pt x 99.4917pt>
+<Images/Experiment/nbexp2.png, id=652, 185.0112pt x 99.4917pt>
 File: Images/Experiment/nbexp2.png Graphic file (type png)
 <use Images/Experiment/nbexp2.png>
 Package pdftex.def Info: Images/Experiment/nbexp2.png  used on input line 337.
@@ -1999,15 +2004,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  59160 strings out of 475281
  1422338 string characters out of 2774064
- 2441084 words of memory out of 3000000
+ 2441083 words of memory out of 3000000
  79379 multiletter control sequences out of 15000+600000
  508034 words of font info for 127 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,21n,100p,2324b,3004s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (56 pages, 25460384 bytes).
+Output written on main.pdf (56 pages, 25462188 bytes).
 PDF statistics:
- 913 PDF objects out of 1000 (max. 8388607)
+ 917 PDF objects out of 1000 (max. 8388607)
  195 named destinations out of 1000 (max. 500000)
  559 words of extra memory for PDF output out of 10000 (max. 10000000)
 
