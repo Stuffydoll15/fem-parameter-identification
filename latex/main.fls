@@ -2084,6 +2084,11 @@ INPUT .\Images\chapter1\uniaxialhigh.png
 INPUT .\Images\chapter1\uniaxialhigh.png
 INPUT .\Images\chapter1\uniaxialhigh.png
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplrc7t.tfm
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7v.vf
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmr.tfm
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplrc7t.vf
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
@@ -2098,11 +2103,6 @@ INPUT .\Images\chapter1\compressiondiag.png
 INPUT .\Images\chapter1\compressiondiag.png
 INPUT .\Images\chapter1\compressiondiag.png
 INPUT .\Images\chapter1\compressiondiag.png
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7v.vf
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmr.tfm
 INPUT .\Images\chapter1\compressiontypes.png
 INPUT .\Images\chapter1\compressiontypes.png
 INPUT Images\chapter1\compressiontypes.png

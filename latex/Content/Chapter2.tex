@@ -6,16 +6,16 @@
 
 \section{Background and Problem Statement}
 The biomechanical characterization of soft tissues has gained attention
-in medical research, in areas such as medical image analysis and visualization.
+in medical research \cite{Cox2006}, in areas such as medical image analysis and visualization.
 For many years, the obtained medical diagnoses were often based on the assumptions of experts or 
 their accumulated experience. While this information have proven to be useful in general, 
 these methods have limitations in cases where quantifiable data is necessary, specifically for computer-assisted systems, e.g,
 medical diagnosis, therapy, and training \cite{Kauer2002}.
 To gather the material data, e.g., elasticity, stiffness, response under deformation and temperature, it is required 
 to gain access to the soft tissues and perform in-vivo testing experiments. 
-However, obtaining accurate biomechanical data can be challenging
+However, obtaining accurate biomechanical data can be challenging 
 due to the invasive nature of the procedures and the difficulty in maintaining constant and reproducible internal or external factors  
-in experimental configurations.\\
+in experimental configurations \cite{Carter2001}.\\
 
 %Precise knowledge about the biomechanical characterization of soft tissues has received attention
 %in medical research, e.g., medical image analysis and visualization.
@@ -28,12 +28,12 @@ in experimental configurations.\\
 %and reproducible external and internal factors. \\ 
 Especially, when it comes to internal organs, obtaining reliable data for examination after their 
 extraction is difficult because the material properties can vary between samples or testing 
-locations on the same organ. This is due to the influence of various factors such as changes in blood pressure, changes in material properties 
+locations on the same organ \cite{Chai2013}. This is due to the influence of various factors such as changes in blood pressure, changes in material properties 
 over time, symptoms of disease, and more. In addition, another problem is the lack 
 of replication, due to the use of different individuals' organs, which introduces more external
 factors into the equation. Moreover, given a tissue sample, it is difficult to properly 
 characterize the material due to its anisotropic property, which can lead potentially
- to inaccuracies in the result.
+ to inaccuracies in the result \cite{Cox2006}.
 
 %Particularly in the case of internal organs, one of the challenges associated with their extraction 
 %is that some material properties may change despite examination of the same sample. Their biomechanical properties 
@@ -49,14 +49,15 @@ the mechanical behavior of soft tissues, providing preoperative calculations.
 This demonstrates the importance of material data collection and material model development, 
 especially in the context of computational models such as engineering simulation models created finite 
 element analysis (FEA) software and their medical applications in medical devices, surgical 
-procedures, and training softwares. By using accurate material models, the accuracy of the simulation 
+procedures, and training softwares \cite{Carter2001}. By using accurate material models, the accuracy of the simulation 
 can be improved, aiding in a better understanding and predicting a soft tissue response 
-to external stimuli, making them more useful in medical research and other related applications.\\
+to external stimuli \cite{Zhang2014}, making them more useful in medical research and other related applications.\\
 
 \section{Objective and Scope of the Study} 
 
-Soft materials often exhibit nonlinearity, making the finite element method (FEM) a common approach 
-for their analysis and solving continuum mechanical problems. 
+Soft materials, characterized by low elastic moduli and high sensitivity to external stimuli,
+frequently experience large deformation and display nonlinear responses \cite{Zhang2014}, making 
+the finite element method (FEM) a common approach for analyzing these materials and solving continuum mechanical problems. 
 Although FEM facilitates the analysis of complex structures with complex material 
 behavior, simulating such materials requires high computational costs.\\
 
@@ -79,7 +80,7 @@ applications in medical research and development.
 \section{State of the Art}
 
 Thi section reviews the state of the art relevant to this study. First, the experimental characterization 
-techniques are reviwed, including methods for obtaining mechanical and viscoelastic properties.
+techniques are reviewed, including methods for obtaining mechanical and viscoelastic properties.
 This is followed by the description of different approaches to describe the material model for different soft 
 materials. Then, the iFEM, which is one method to identify material parameters from experimental data, 
 will be explained. Finally, the standard verification and validation process used in computational 
@@ -118,8 +119,10 @@ tension, and the deformation is usually measured with a strain gauge \cite{Bergs
 This kind of testing focuses on the central region of the specimen to evade complication arising from 
 "edge effects". An homogeneous deformation in the central region is usually expected for this kind of testing, 
 which simplifies the boundary problem and ensures that the measurements represents valid stress-strain values.
-However, one of the limitations arise when it is not possible to control the experimental conditions, therefore, 
-the uniaxial testing may not be suitable or effective for complex boundary conditions \cite{Seshaiyer2003}.\\
+However, there are two key limitations for uniaxial testing when testing soft materials; first, 
+it may not be suitable when complex boundary conditions arise and is not possible to contro the 
+experimental condition entirely \cite{Seshaiyer2003}. Second, these tests are inadequate to 
+fully characterize the anisotropic behavior of these materials \cite{Cox2006}.\\
 
 In a study made by Kayanta and Ivankovic (2010), the authors investigated the behavior of an ether-based polyurethane 
 elastomer for the creation of mock arteries \cite{Kanyanta2010}. Polyurethane was ideal for this application due to 
@@ -253,43 +256,36 @@ of the sample \cite{Griffin2016}.
 
 %------------------------------------------------------------------------
 \subsubsection*{Indentation}
-Indentation have being gaining popularity in the last decades and it is now one of
-the most spread experiments for material parameter identification.
-Moreover, indentation presents a bigger advantage in cases where it is not possible to load
-test specimens in a more conventional way \cite{Bergström2015}.   
+Indentation testing, icluding micro and nanoindentation, is a popular method for characterizing 
+the mechanical properties of soft materials \cite{Wu2016}. One of the main advantages of 
+indentation testing is that it requires minimal sample preparation and it is often a 
+nondestructive technique, which allows the preservation of the geometry and tissue's architecture \cite{Shi2019}.
+Furthermore, indentation is useful where more traditional testing techniques such as 
+uniaxial or biaxial testing, are not possible to employ, 
+and can also be utilized to evaluate nonlinear properties, e.g., viscoplastic responses\cite{Bergström2015}.\\
+
+Despite these advantages, there are some challenges when using indentation to 
+characterize soft materials. First, a stress-strain response is difficult to
+obtain due to the complex boundary conditions, which introduces an inverse problem 
+for the identification of material parameters \cite{Shi2019}. Second, many of the current 
+indentation configurations assume material isotropy, which may not be the case for biomaterials \cite{Feng2017}.
+In addition, determining the mechanical properties of soft materials locally or at small scales is still difficult to achieve \cite{Zhang2014}.
 
 
-
-As some materials, e.g. biomaterials do not always 
- allow the use of uniaxial or biaxial tensile testing, the
- use of identation testing is essential.  
-
-Indentation possesses advantageous characteristics for the mechanical characterization
-of soft materials. \cite{Liu2009}
-Nanoindentation or microindentation it is useful for the evaluation of
-nonlinear viscoplastic responses. \cite{Bergström2015}
-
-The indentation testing setup is described as followed: As shown in Fig. \ref{fig:Nanoindentation} 
-A system applies a certain force to an attached indenter rod where and specific 
+The usual indentation testing setup is shown in Figure \ref{fig:Nanoindentation}, in this case a 
+system applies a certain force to an attached indenter rod where and specific 
 indenter tip. After the indenter tip goes to a determined displacement, 
-it is possible to obtain a Load-displacement curve.
-The deformation can be measured through an capacitance gauge \cite{Bergström2015}
-or also optically (via laser measurements).
+it is possible to obtain a load-displacement curve.
+The deformation can be measured through an capacitance gauge or also optically, via laser measurements \cite{Bergström2015}.
 
- \begin{figure}[th]
+\begin{figure}[th]
         \centering
-        \includegraphics[width=8cm]{Images/nanoindentationbigletter}
-        \decoRule
-        \caption[Nanoindentation]{Nanoindentation experiment setup.}
+        \includegraphics[width=7cm]{Images/nanoindentationbigletter}
+        \caption[Nanoindentation]{Nanoindentation experiment setup diagram with an indenter tip attached to a rod and a polymer as specimen \cite{Bergström2015}.}
         \label{fig:Nanoindentation}
-        \end{figure}
+\end{figure}
 
-
--identation in materials
-- Identation in soft materials (organs)
-- Why is identation relevant in organs
--what advantages and disadvantges does identation provides
--why is relevant for this project 
+In a study made by 
 
 %-------------------------------------------------------------------------------------------------
 \subsubsection*{Aspiration Experiment}

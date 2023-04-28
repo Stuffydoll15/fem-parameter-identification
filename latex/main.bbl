@@ -49,6 +49,55 @@
   Modeling}
   \endentry
 
+  \entry{Carter2001}{report}{}
+    \name{author}{5}{}{%
+      {{hash=CFJ}{%
+         family={Carter},
+         familyi={C\bibinitperiod},
+         given={F\bibnamedelima J},
+         giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=FTG}{%
+         family={Frank},
+         familyi={F\bibinitperiod},
+         given={T\bibnamedelima G},
+         giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=DPJ}{%
+         family={Davies},
+         familyi={D\bibinitperiod},
+         given={P\bibnamedelima J},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Mclean},
+         familyi={M\bibinitperiod},
+         given={D},
+         giveni={D},
+      }}%
+      {{hash=CA}{%
+         family={Cuschieri},
+         familyi={C\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+    }
+    \strng{namehash}{CFJ+1}
+    \strng{fullhash}{CFJFTGDPJMDCA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{pages}{231\bibrangedash 236}
+    \field{title}{Measurements and modelling of the compliance of human and
+  porcine organs}
+    \verb{url}
+    \verb www.elsevier.com/locate/media
+    \endverb
+    \field{journaltitle}{Medical Image Analysis}
+    \field{year}{2001}
+  \endentry
+
   \entry{Chai2013}{article}{}
     \name{author}{8}{}{%
       {{hash=CCK}{%
@@ -124,6 +173,51 @@
     \field{year}{2013}
   \endentry
 
+  \entry{Cox2006}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CMA}{%
+         family={Cox},
+         familyi={C\bibinitperiod},
+         given={Martijn\bibnamedelima A.J.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=DNJ}{%
+         family={Driessen},
+         familyi={D\bibinitperiod},
+         given={Niels\bibnamedelima J.B.},
+         giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=BCV}{%
+         family={Bouten},
+         familyi={B\bibinitperiod},
+         given={Carlijn\bibnamedelima V.C.},
+         giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=BFP}{%
+         family={Baaijens},
+         familyi={B\bibinitperiod},
+         given={Frank\bibnamedelima P.T.},
+         giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CMA+1}
+    \strng{fullhash}{CMADNJBCVBFP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1115/1.2187040
+    \endverb
+    \field{issue}{3}
+    \field{pages}{428\bibrangedash 436}
+    \field{title}{Mechanical characterization of anisotropic planar biological
+  soft tissues using large indentation: A computational feasibility study}
+    \field{journaltitle}{Journal of Biomechanical Engineering}
+    \field{month}{06}
+    \field{year}{2006}
+  \endentry
+
   \entry{Drass2018}{article}{}
     \name{author}{4}{}{%
       {{hash=DM}{%
@@ -173,6 +267,59 @@
     \field{journaltitle}{Glass Structures and Engineering}
     \field{month}{03}
     \field{year}{2018}
+  \endentry
+
+  \entry{Feng2017}{article}{}
+    \name{author}{5}{}{%
+      {{hash=FY}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Yuan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LCH}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Chung\bibnamedelima Hao},
+         giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Lining},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=JS}{%
+         family={Ji},
+         familyi={J\bibinitperiod},
+         given={Songbai},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Xuefeng},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Ltd}%
+    }
+    \strng{namehash}{FY+1}
+    \strng{fullhash}{FYLCHSLJSZX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \verb{doi}
+    \verb 10.1016/j.jmbbm.2016.09.020
+    \endverb
+    \field{pages}{490\bibrangedash 501}
+    \field{title}{Characterizing white matter tissue in large strain via
+  asymmetric indentation and inverse finite element modeling}
+    \field{journaltitle}{Journal of the Mechanical Behavior of Biomedical
+  Materials}
+    \field{year}{2017}
   \endentry
 
   \entry{Goharian2017}{book}{}
@@ -663,6 +810,82 @@
     \field{year}{2003}
   \endentry
 
+  \entry{Shi2019}{article}{}
+    \name{author}{9}{}{%
+      {{hash=SL}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Lei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=YW}{%
+         family={Yao},
+         familyi={Y\bibinitperiod},
+         given={Wang},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Gan},
+         familyi={G\bibinitperiod},
+         given={Yu},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ZLY}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Lily\bibnamedelima Y.},
+         giveni={L\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+      {{hash=MWE}{%
+         family={McKee},
+         familyi={M\bibinitperiod},
+         given={W.\bibnamedelima Eugene},
+         giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=VJ}{%
+         family={Vink},
+         familyi={V\bibinitperiod},
+         given={Joy},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WRJ}{%
+         family={Wapner},
+         familyi={W\bibinitperiod},
+         given={Ronald\bibnamedelima J.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=HCP}{%
+         family={Hendon},
+         familyi={H\bibinitperiod},
+         given={Christine\bibnamedelima P.},
+         giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Myers},
+         familyi={M\bibinitperiod},
+         given={Kristin},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Mechanical Engineers (ASME)}%
+    }
+    \strng{namehash}{SL+1}
+    \strng{fullhash}{SLYWGYZLYMWEVJWRJHCPMK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1115/1.4043977
+    \endverb
+    \field{title}{Anisotropic Material Characterization of Human Cervix Tissue
+  Based on Indentation and Inverse Finite Element Analysis}
+    \field{journaltitle}{Journal of Biomechanical Engineering}
+    \field{month}{09}
+    \field{year}{2019}
+  \endentry
+
   \entry{Wang2012}{book}{}
     \name{author}{2}{}{%
       {{hash=WW}{%
@@ -695,6 +918,92 @@
   developments}
     \field{journaltitle}{The Design and Manufacture of Medical Devices}
     \field{year}{2012}
+  \endentry
+
+  \entry{Wu2016}{article}{}
+    \name{author}{3}{}{%
+      {{hash=WCE}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Chen\bibnamedelima En},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=LKH}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={Keng\bibnamedelima Hui},
+         giveni={K\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=JJY}{%
+         family={Juang},
+         familyi={J\bibinitperiod},
+         given={Jia\bibnamedelima Yang},
+         giveni={J\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Ltd}%
+    }
+    \strng{namehash}{WCELKHJJY1}
+    \strng{fullhash}{WCELKHJJY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1016/j.triboint.2015.12.034
+    \endverb
+    \field{pages}{71\bibrangedash 76}
+    \field{title}{Hertzian load-displacement relation holds for spherical
+  indentation on soft elastic solids undergoing large deformations}
+    \field{journaltitle}{Tribology International}
+    \field{month}{05}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Zhang2014}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ZMG}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Man\bibnamedelima Gong},
+         giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=CYP}{%
+         family={Cao},
+         familyi={C\bibinitperiod},
+         given={Yan\bibnamedelima Ping},
+         giveni={Y\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=LGY}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Guo\bibnamedelima Yang},
+         giveni={G\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+      {{hash=FXQ}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Xi\bibnamedelima Qiao},
+         giveni={X\bibinitperiod\bibinitdelim Q\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZMG+1}
+    \strng{fullhash}{ZMGCYPLGYFXQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \verb{doi}
+    \verb 10.1007/s10237-013-0481-4
+    \endverb
+    \field{issn}{16177959}
+    \field{issue}{1}
+    \field{pages}{1\bibrangedash 11}
+    \field{title}{Spherical indentation method for determining the constitutive
+  parameters of hyperelastic soft materials}
+    \field{journaltitle}{Biomechanics and Modeling in Mechanobiology}
+    \field{year}{2014}
   \endentry
 \enddatalist
 \endinput
