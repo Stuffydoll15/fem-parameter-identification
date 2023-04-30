@@ -414,32 +414,63 @@ This model is the most basic approach to represent the small strain of the mecha
 of solid polymers, with isotropic elasticity being its most elementary form \cite{Bergström2015}.
 In isotropic elasticity, stress is proportional to the applied strain and indenpent of the material's 
 orientation. Hooke's law is frequently the constitutive equation for an elastic material, and one form 
- 
 \begin{align}
         \epsilon_{ij} &= \frac{1 + \nu}{E} \sigma_{ij} - \frac{\nu}{E} \sigma_{kk} \delta_{ij} \, ,
-\end{align}
-        
+        \label{eq:linearelasberg}
+\end{align}  
 was presented by Bergström to define a strain-stress relationship, where the indices $i$ and $j$ take the values of 
-\SI{1}{}, \SI{2}{}, and \SI{3}{}. Key parameters
+\SI{1}{}, \SI{2}{}, and \SI{3}{}, $\epsilon_{ij}$ and $\sigma_{ij}$ are the strain and stress tensors, and
+\begin{align}
+        \delta_{ij} = \begin{cases} 
+                        1, & \text{if } i=j, \\
+                        0, & \text{otherwise},
+                      \end{cases}
+\label{eq:kronecker}
+\end{align}
+is the Kronecker delta function. Similarly, the stress 
+\begin{align}
+        \sigma_{ij} = 2\mu\epsilon_{ij} + \lambda\epsilon_{kk}\delta_{ij} \, ,
+        \label{eq:sigmalinearberg}
+\end{align}
+can be determined in terms of the strain using Hooke's Law. Key parameters in Equations \ref{eq:linearelasberg}
+and \ref{eq:sigmalinearberg} include the Young's Modulus $E$, Poisson's ratio $\nu$, the shear modulus $\mu$, 
+and the Lame's constant $\lambda$. 
+The linear elastic constitutive theory can be formulated with the identification of two material parameters,
+which can be determined through experimental data. After identifying these two parameters it is possible to  
+calculate any other constants. A typical experimental method to identify and calibrate a pair of parameters is the uniaxial tension 
+test, where the stress-strain response identifies $E$ and $\nu$.
+A significant drawback of using a linear elastic model to predict the mechanical behavior of soft polymers is 
+that these materials exhibit linear behavior only within small strains and limited range of strain-rates and 
+temperatures \cite{Bergström2015}. 
+
+\subsubsection*{Anisotropic Elasticity}
+Anisotropic elasticity is an extension of linear elasticity theory that considers the anisotropic 
+behavior of the material, as is usually the case for biopolymers. The strain and stress 
+\begin{align}
+        \epsilon_{ij} &= S_{ijkl} \sigma_{kl}, \label{eq:strainanisotropic}\\
+        \sigma_{ij} &= C_{ijkl} \epsilon_{kl}, \label{eq:stressanisotropic}
+\end{align}
+can be written using Hooke's Law for an anisotropic material. These equations 
+shows that the stress and strain tensor are linearly dependant on each other by a linear stiffness $C_{ijkl}$ 
+or compliance tensor $S_{ijkl}$. The stiffness and compliance tensors possess \SI{81}{} components and 
+since the stress and strain tensors are symmetrical the independant components of $S$ and $C$ can be then reduced 
+to \SI{36}{}. Depending on the degree of anisotropy, these matrices can be further simplified. 
 
 
 
 
-
-
-Relevant papers tends to use hyperelastic models to represent soft materials as the viscoelasticity 
-is usually neglected. 
+%Relevant papers tends to use hyperelastic models to represent soft materials as the viscoelasticity is usually neglected. 
 % why do they use hyperelastic formulas? Why is it possible to neglect the viscoelasticity
 %Revisar
-Material model are very relevant for the simulation model (Kauer2002).
-Soft tissues are approximated as near incompressible due to their highly water content.  
+%Material model are very relevant for the simulation model (Kauer2002).
+%Soft tissues are approximated as near incompressible due to their highly water content.  
 %viscoelastic example
-For the aspiration experiment conducted by Kauer they used the following strain energy
-function based on the model of Susanne and Bathe (SusanneandBAthe1987)
+%For the aspiration experiment conducted by Kauer they used the following strain energy
+%function based on the model of Susanne and Bathe (SusanneandBAthe1987)
 %Revisar
 
 
-As derivative from this formula for the uteri metrial modeling the formula used was:
+%As derivative from this formula for the uteri metrial modeling the formula used was:
 
 %---------------------------------------------------------------------------------
 \subsection{Inverse Finite Element Method for Parameter Identification}
