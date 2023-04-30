@@ -392,7 +392,41 @@ their mechanical behavior and make advance in medical research.
 
 %---------------------------------------------------------------------------------
 \subsection{Material Modeling of Soft Materials}
+
+Material models, such as linear elasticity and hyperelasticity play a crucial role for the characterization 
+of material properties, specially for the case of soft materials, hyperelastic models are usually 
+useful candidates, as these models can often predict the behaviour of complex materials under certain limitations.
+Moreover, hyperelastic models can be used as a foundation for more advance models like 
+viscoelastic and viscoplastic models \cite{Bergström2015}. 
+
+Hyperelastic models are useful due to their ease of use and calibration, accesibility in major commercial FE softwares, 
+and computational efficiency. However, these models possess some limitations, such as being 
+accurate for monotonic loading, and not capturing rate effects, i.e., viscoelasticity, or 
+hysteresis during cyclic loading \cite{Bergström2015}.
+
+In this subsection linear elasticity and hyperelasticity constitutive models will be presented 
+based on the overview made by Bergström (2015), followed by some of the models used in the research 
+papers from the Subsection \ref{subsection:experimentalcharacterization} to confirm the relevance of these 
+models for medical research.
+
+\subsubsection*{Linear Elasticity}
+This model is the most basic approach to represent the small strain of the mechanical behavior 
+of solid polymers, with isotropic elasticity being its most elementary form \cite{Bergström2015}.
+In isotropic elasticity, stress is proportional to the applied strain and indenpent of the material's 
+orientation. Hooke's law is frequently the constitutive equation for an elastic material, and one form 
  
+\begin{align}
+        \epsilon_{ij} &= \frac{1 + \nu}{E} \sigma_{ij} - \frac{\nu}{E} \sigma_{kk} \delta_{ij} \, ,
+\end{align}
+        
+was presented by Bergström to define a strain-stress relationship, where the indices $i$ and $j$ take the values of 
+\SI{1}{}, \SI{2}{}, and \SI{3}{}. Key parameters
+
+
+
+
+
+
 Relevant papers tends to use hyperelastic models to represent soft materials as the viscoelasticity 
 is usually neglected. 
 % why do they use hyperelastic formulas? Why is it possible to neglect the viscoelasticity
