@@ -12,7 +12,7 @@ their accumulated experience. While this information have proven to be useful in
 these methods have limitations in cases where quantifiable data is necessary, specifically for computer-assisted systems, e.g,
 medical diagnosis, therapy, and training \cite{Kauer2002}.
 To gather the material data, e.g., elasticity, stiffness, response under deformation and temperature, it is required 
-to gain access to the soft tissues and perform in-vivo testing experiments. 
+to gain access to the soft tissues and perform in vivo testing experiments. 
 However, obtaining accurate biomechanical data can be challenging 
 due to the invasive nature of the procedures and the difficulty in maintaining constant and reproducible internal or external factors  
 in experimental configurations \cite{Carter2001}.\\
@@ -23,7 +23,7 @@ in experimental configurations \cite{Carter2001}.\\
 %accumulated experience. This information, although proven to be useful, has its limitations 
 %when computed-assisted systems like, medical diagnosis, therapy, and training, rely on 
 %more quantifiable data \cite{Kauer2002}. To gather this data, it is important to gain access
-%to the tissues and perform in-vivo testing experiments. For organs, this procedure is nearly 
+%to the tissues and perform in vivo testing experiments. For organs, this procedure is nearly 
 %impossible to achieve, due to the involvement of an invasive procedure, and the lack of constant
 %and reproducible external and internal factors. \\ 
 Especially, when it comes to internal organs, obtaining reliable data for examination after their 
@@ -79,7 +79,7 @@ applications in medical research and development.
 %---------------------------------------------------------------------------------
 \section{State of the Art}
 
-Thi section reviews the state of the art relevant to this study. First, the experimental characterization 
+This section reviews the state of the art relevant to this study. First, the experimental characterization 
 techniques are reviewed, including methods for obtaining mechanical and viscoelastic properties.
 This is followed by the description of different approaches to describe the material model for different soft 
 materials. Then, the iFEM, which is one method to identify material parameters from experimental data, 
@@ -100,16 +100,18 @@ the field and the identification of limitations and gaps in the current state of
 Experimental testing is a key approach to obtaining information about the mechanical behavior of soft materials.
 In order to characterize the mechanical behavior of a test specimen, the most common method
 method is to mechanically load the specimen and measure the response of the force against 
-the displacement \cite{Bergström2015}. \\
-
+the displacement \cite{Bergström2015}. Soft materials are commonly applied 
+for tissue engineering applications, however, some challenges arise for the 
+design of experimental design due to their elastic modulus range (\SI{}{\kilo \pascal}) and complex
+mechanical properties \cite{Liu2009}.\\
 
 %Soft materials challenges in experimental deign
--Soft synthetics materials like soft gels are often used for tissue engineering applications.
-However, due to their 
+%-Soft synthetics materials like soft gels are often used for tissue engineering applications.
+%However, due to their 
 
-- Soft synthetics materials like soft gels are one example for soft synthetic materials. These
-are commomly applied for tissue engineering applications. Nevertheless, due to their elastic 
-modulus range (kPa) present some challenges for the design of experimental testing \cite{Liu2009}.
+%- Soft synthetics materials like soft gels are one example for soft synthetic materials. These
+%are commomly applied for tissue engineering applications. Nevertheless, due to their elastic 
+%modulus range (kPa) present some challenges for the design of experimental testing \cite{Liu2009}.
 
 \subsubsection*{Uniaxial Tension Testing}
 
@@ -276,7 +278,7 @@ The usual indentation testing setup is shown in Figure \ref{fig:Nanoindentation}
 system applies a certain force to an attached indenter rod where and specific 
 indenter tip. After the indenter tip goes to a determined displacement, 
 it is possible to obtain a load-displacement curve.
-The deformation can be measured through an capacitance gauge or also optically, via laser measurements \cite{Bergström2015}.
+The deformation can be measured through an capacitance gauge or also optically, via laser measurements \cite{Bergström2015}.\\
 
 \begin{figure}[th]
         \centering
@@ -286,7 +288,7 @@ The deformation can be measured through an capacitance gauge or also optically, 
 \end{figure}
 
 In a study made by Zhang et al. an investigation of spherical indentation on hyperelastic 
-soft materials was conducted. The material utilized in the experiments was polydimethahylsiloxane (PDMS),
+soft materials was conducted. The material utilized in the experiments was polydimethylsiloxane (PDMS),
 with was prepared and cured in a cylindrical mold and cured at \SI{60}{\degreeCelsius} for 8 hours. 
 The ElectroForce 3100 was used to measuring the mechanical properties of PDMS for tensile and 
 indentation tests. Tensile tests were performed to identify the initial shear modulus and 
@@ -304,23 +306,89 @@ certain depth depence coudl be observed. However, a locking stretch could not be
 sensitivity of these parameters to experimental data noise \cite{Zhang2014}.\\
 
 For an application with biological tissues Carter et al. performed indentation experiments on 
-human and porcine organs \cite{Carter2001}.
+human and porcine organs for its application in realistic computer-based simulators 
+for minimal access surgery (MAS) training \cite{Carter2001}. 
+This study investigated the stress-strain data pig spleen and liver for ex vivo experiments, 
+along with human liver for in vivo experiments from volunteers patients undergoing a minor 
+surgery. For the ex vivo experiment a static indentation setup was used as shown in Figure 
+\ref{fig:carter1}, where the specimens were placed on a flat surface. A force was applied 
+manually with a winding mechanism at constant rate of \SI[per-mode = symbol]{1}{\milli \m\per \second} 
+with a rounded indenter with a diameter of \SI{4.5}{\milli \m}. Ten measurements were 
+carried out on each tissue sample and the load-displacement measurements were 
+gathered with a computerized system with a sampling rate of \SI{15}{\hertz}.\\
 
+\begin{figure}
+        \centering
+        \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/chapter1/indentation1carter.png}
+        \caption{Static indentation configuration used for ex vivo indentations tests. Indenter advances against the tissue by rotating the wheel}
+        \label{fig:carter1}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/chapter1/indentation2carter.png}
+        \caption{Mobile indentation configuration with outer ring case attached for stabilization of the indentation test.}
+        \label{fig:carter2}
+        \end{subfigure}
+        \hspace{0.3cm}
+        \caption{Indentation testing: Diagram of static and mobile indentation tests, indenters were attached to a load cell, which was connected to a displacement transducer. Diagrams are based on the study of made by Carter (2001) \cite{Carter2001}.}
+        \label{fig:indentationcarter}
+\end{figure}
 
+The in vivo experiments were carried out using a hand-held compliance probe. To achieve 
+an overall consistency of the measurements the same surgeon performed the experiments. 
+In addition to maintain consistent indentation depth of \SI{5}{\milli \m} the indenter was 
+surrounded with a reference ring to provide stability in the measurements (Fig. \ref{fig:carter2}). The force 
+exerted by the weight of the ring was around \SI{0.5}{\newton}, while the friction force 
+between the ring and the surface tissue was below \SI{0.05}{\newton}, making it a negligible 
+effect. The probe was positioned on the tissue and when the desired indentation depth was 
+indicated with an audible signal. The indentation rate for this configuration ranged 
+from \SI[per-mode = symbol]{3}{\milli \m\per \second} to \SI[per-mode = symbol]{4}{\milli \m\per \second} and 
+six measurements were carried out on each patient.
+
+The results were analyzed using MATLAB and showed highly nonlinear stress-strain behavior and large variances. 
+For the reduction of these variances due to the inhomogeneity of the materials and changes over time, 
+the average of the repeated measured was calculated. The measured elastic moduli of pig 
+spleen and liver was \SI{0.11}{\mega \pascal} and \SI{4}{\mega \pascal} respectively, and 
+for the human liver about \SI{0.27}{\mega \pascal} was measured. However, a 
+diseased liver showed a higher elastic modulus of \SI{0.74}{\mega \pascal} \cite{Carter2001}.
 %-------------------------------------------------------------------------------------------------
 \subsubsection*{Aspiration Experiment}
 
-Tissue aspiration experiments introduces an aspiration tube which is put against the 
-soft tissue, generating a vacuum. An advantageous feature of this experiment is that 
-it can be perfomed in-vivo and ex-vivo.
-With the help of a mirror placed next to aspiration 
-hole, the reflection of the side-view of the tissue can be captured with a video camera.
+Tissue aspiration experiments was a method introduced by Kauer (2002) for determining 
+the material parameters of biological soft tissues in vivo.
+In this study the method was validated with a synthetic material, Silgel, a very 
+soft gel-like material with similar properties to biological soft tissues. 
+This material was ideal to use it for the validation of the 
+aspiration method before applying it to human tissues \cite{Kauer2002}.
+
+The biological sof tissue used in this paper was human uterus. This tissue was selected 
+because it possesses a complex, multilayered structure with anisotropic properties. 
+Moreover, hysterectomy (removal of the uterus) is common surgical procedure, which 
+provides a good chance to perform measurements before and after the removal of the organ.\\
+
+This method introduced an aspiration tube which is put against the 
+soft tissue, generating a vacuum a causing the deformation of the tissue (Fig. ). 
+An advantageous feature of this experimental technique is that 
+it can be perfomed in vivo and ex vivo.
+With the help of a mirror placed next to aspiration hole, the reflection 
+of the side-view of the tissue can be captured with a video camera.
 This camera captures the images of the iluminated surface of the material and the 
 aspiration pressure is captured through a sensor. Through this process the captured 
 profile of the tissue is obtained and this can be used to characterize the deformation 
-and analyze the viscoelastic properties of the soft tissue\cite{Kauer2002}.
+and analyze the viscoelastic properties of the soft tissue \cite{Kauer2002}.
 
+The main benefits in comparison to more traditional experimental techniques are, 
+the well-defined mechanical boundary conditions during the experiment are executed, 
+large deformation experiments can be assessed, and the viscoelastic
+properties of the tissue can be analyzed for real surgical procedures due to 
+the time dependent resolution of the deformation.
 
+The results from these experiments corroborates that the development of experimental designs for
+biological soft tissues and its application in real-world scenarios is essential to understand 
+their mechanical behavior and make advance in medical research.
 
 %---------------------------------------------------------------------------------
 \subsection{Material Modeling of Soft Materials}
@@ -388,7 +456,7 @@ Synthetics materials are commonly used to validate an inverse parameter identifi
 Usually these synthetic, soft materials provide similar mechanical behavior to it's biomaterials 
 counterparts. This characterization allows to validate a proposed inverse finite element approach process
 before its applicatoin with a biomaterial, where the measurements to gather the experimental data are 
-some in-vivo, and more challenging to recreate.
+some in vivo, and more challenging to recreate.
 
 
 For example, Silgel, a very soft gel-like material \cite{Kauer2002} was used for the experimental 
