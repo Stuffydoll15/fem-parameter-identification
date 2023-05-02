@@ -392,9 +392,12 @@ their mechanical behavior and make advance in medical research.
 
 %---------------------------------------------------------------------------------
 \subsection{Material Modeling of Soft Materials}
+\label{subsection:materialmodeling} 
 
 Material models, such as linear elasticity and hyperelasticity play a crucial role for the characterization 
-of material properties, specially for the case of soft materials, hyperelastic models are usually 
+of material properties, as these describe a relationship that respresents how a material behaves, e.g, 
+the stress response for an applied strain, or the heat transfer for a defined temperature gradient.
+For the case of soft materials, hyperelastic models are usually 
 useful candidates, as these models can often predict the behaviour of complex materials under certain limitations.
 Moreover, hyperelastic models can be used as a foundation for more advance models like 
 viscoelastic and viscoplastic models \cite{Bergström2015}. 
@@ -456,7 +459,83 @@ or compliance tensor $S_{ijkl}$. The stiffness and compliance tensors possess \S
 since the stress and strain tensors are symmetrical the independant components of $S$ and $C$ can be then reduced 
 to \SI{36}{}. Depending on the degree of anisotropy, these matrices can be further simplified. 
 
+\subsubsection*{Hyperelasticity}
+Hyperelastic models are an extension of linear elasticity that accounts for nonlinearity 
+and large strain predictions. These models have been widely develop over the years and 
+are available in various FE softwares. Hyperelastic models are very important in modeling 
+soft tissues as they can be sometimes connected to the micromechanisms driving the 
+deformation behavior of the material \cite{Bergström2015}. Some common hyperelastic models include the 
+Neo-Hookean, Mooney-Rivlin and Ogden models.\\
 
+\textbf{Neo-Hookean Model}\\
+
+The Neo-Hookean (NH) model is a simple hyperelastic model based on the shear 
+modulus $\mu$ and the bulk modulus $\kappa$. This model can be used for compressible 
+and incompresible deformations, with the compressible version often being more 
+practical for finite element simulations. The NH model is primarily used for 
+solid, rubber-like materualas characterized by an almost incompressible behavior. 
+Because of this characteristic, the actual value has very small effect on the response 
+of the observed material \cite{Bergström2015}.
+
+The NH model is like other hyperelastic models specified by its Helmholtz free energy per unit 
+reference volume
+\begin{align}
+        \psi(I_1^*,J) = \frac{\mu}{2}(I_1^* - 3) + \frac{\kappa}{2}(J - 1)^2 \, ,
+        \label{eq:helmholtzNH}
+\end{align}
+where $I_1^*$ is the distortional first invariant, and $J$ the Jacobian of the deformation gradient \cite{Youssef2022}.
+This equation is not adequate for the accurate description of large-strain nonlinear responses. 
+In addition, this equation is not dependant from the second invariant $I_2^*$, which limits the 
+stress prediction for biaxial loading.
+
+The Cauchy stress for compressible NH model can be expressed as \cite{Youssef2022}
+\begin{align}
+        \sigma = \frac{\mu}{J}\text{dev}[\boldsymbol{b}^*] + \kappa(J-1)\boldsymbol{I} \, ,
+        \label{eq:cauchystressNHcomp}
+\end{align}
+where $\boldsymbol{b}^*$ left Cauchy-Green strain tensor and $\boldsymbol{I}$ is the identity matrix. 
+The Cauchy stress expressions for uniaxial, planar and biaxial deformations for incompressible NH models are
+\begin{align}
+        \sigma_{\text{uniax}} &= \mu(\lambda^2 - 1/\lambda), \label{eq:uniaxNH} \\
+        \sigma_{\text{planar}} &= \mu(\lambda^2 - 1/\lambda^2), \label{eq:planarNH} \\
+        \sigma_{\text{biaxial}} &= \mu(\lambda^2 - 1/\lambda^4), \label{eq:biaxialNH}
+\end{align}
+respectively. In these equations $\lambda$ represents the stretches of the deformation \cite{Youssef2022}.
+An alternative formulation of the NH model, where the stress is not divided into deviatoric and volumetric 
+parts, is given by
+\begin{align}
+        \sigma = \frac{\mu}{J}(\boldsymbol{b}-\boldsymbol{I}) + \kappa(J-1)\boldsymbol{I}. \label{eq:stressNHalt}
+\end{align}
+The predictions from the standard NH model (Eq. \ref{eq:cauchystressNHcomp}) and this alternative formulation 
+(Eq. \ref{eq:stressNHalt}) becomes different with the decrease of the bulk modulus.
+The main advantage NH model lies in its simplicity; with shear modulus known, the response of most any loading 
+mode can be determined in a robust, and computationally efficient way. However, the limitations of the model lies 
+in capturing large-strains or when the loading is primarily biaxial \cite{Bergström2015}.\\
+
+\textbf{Mooney-Rivlin}\\
+
+The Mooney-Rivlin (MR) mode is a model that builds upon the NH model by incorporating a linear dependence on the 
+second invariant $I_2^*$ in the Helmholtz free energy per unit reference volume equation 
+\begin{align}
+        \psi(C_{10}, C_{01}, \kappa) = C_{10}(I_1^* - 3) + C_{01}(I_2^* - 3) + \frac{\kappa}{2}(J-1)^2 \, ,
+        \label{eq:helmholtzMR}
+\end{align}
+where $C_{10}$, $C_{01}$, $\kappa$ are the necessary material parameters for the compressible MR model \cite{Bergström2015}.
+These parameters are defined based on the experimental data and in case of small strain the shear modulus can be represented as
+\begin{align}
+        \mu = C_{10} + C_{01} .
+        \label{eq:constantsMR}
+\end{align}
+The Cauchy stress for the MR model can be expressed as 
+\begin{align}
+        \sigma = \frac{2}{J}(C_{10} + C_{01}I_1^*)\boldsymbol{b}^* - \frac{2C_{01}}{J}(\boldsymbol{b}^*)^2 + [\kappa(J-1) - \frac{2I_1^* C_{10}}{3J} - \frac{4I_2^* C_{01}}{3J}]\boldsymbol{I} \, .
+        \label{eq:cauchystressMR}
+\end{align}
+
+The Mooney-Rivlin model often enhances the accuracy of the predictions of the Neo-Hookean model.
+However, certain loading modes can cause instability in the case of a negative $C_{01}$ term \cite{Bergström2015}.\\
+
+\textbf{Yeoh-Model}\\
 
 
 %Relevant papers tends to use hyperelastic models to represent soft materials as the viscoelasticity is usually neglected. 

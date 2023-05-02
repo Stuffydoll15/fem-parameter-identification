@@ -961,6 +961,30 @@
     \field{year}{2016}
   \endentry
 
+  \entry{Youssef2022}{book}{}
+    \name{author}{1}{}{%
+      {{hash=YG}{%
+         family={Youssef},
+         familyi={Y\bibinitperiod},
+         given={George},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YG1}
+    \strng{fullhash}{YG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \verb{doi}
+    \verb 10.1016/b978-0-12-821078-9.00002-8
+    \endverb
+    \field{pages}{117\bibrangedash 144}
+    \field{title}{Hyperelastic behavior of polymers}
+    \field{journaltitle}{Applied Mechanics of Polymers}
+    \field{year}{2022}
+  \endentry
+
   \entry{Zhang2014}{article}{}
     \name{author}{4}{}{%
       {{hash=ZMG}{%
