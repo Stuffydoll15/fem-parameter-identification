@@ -11,9 +11,6 @@
 \contentsline {section}{\numberline {2.1}Experimental Model I}{18}{section.65}%
 \contentsline {section}{\numberline {2.2}Experimental Model II}{20}{section.70}%
 \contentsline {section}{\numberline {2.3}Experimental Tests Description}{22}{section.75}%
-\contentsline {subsection}{\numberline {2.3.1}Middle Point}{22}{subsection.76}%
-\contentsline {subsection}{\numberline {2.3.2}Load-Unloading}{23}{subsection.78}%
-\contentsline {subsection}{\numberline {2.3.3}Nearby Point}{24}{subsection.80}%
 \contentsline {section}{\numberline {2.4}Analysis and Overview of the Data and Results}{24}{section.82}%
 \contentsline {subsection}{\numberline {2.4.1}Middle Point}{25}{subsection.83}%
 \contentsline {subsection}{\numberline {2.4.2}Load-Unloading}{27}{subsection.90}%
