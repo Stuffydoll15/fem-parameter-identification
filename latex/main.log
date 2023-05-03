@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  3 MAY 2023 03:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  3 MAY 2023 16:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1710,11 +1710,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 508--514
  []
 
 
-Overfull \hbox (9.30656pt too wide) in paragraph at lines 515--519
-\OT1/ppl/m/n/10.95 char-ac-ter-ize soft tis-sue be-hav-ior. For in-stance, in a study from Kanyanta and Ivankovic
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 524--527
 
  []
@@ -1726,6 +1721,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 528--529
 
 [11]
 Underfull \hbox (badness 10000) in paragraph at lines 552--555
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 561--564
 
  []
 
@@ -1750,24 +1750,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 638--642
  []
 
 
-Overfull \hbox (2.01959pt too wide) in paragraph at lines 667--673
+Underfull \hbox (badness 10000) in paragraph at lines 643--647
+
+ []
+
+
+Overfull \hbox (2.01959pt too wide) in paragraph at lines 672--678
 []\OT1/ppl/m/n/10.95 Specially for non-lin-ear cases [[][]11[][]], where the com-plex-ity of the prob-lems in-creases,
  []
 
-
-Overfull \hbox (0.81552pt too wide) in paragraph at lines 686--690
+[14]
+Overfull \hbox (0.81552pt too wide) in paragraph at lines 691--695
 []\OT1/ppl/m/n/10.95 For biome-chan-i-cal mod-els, where the mod-els re-quire knowl-edge from lo-cal prop-
  []
 
-[14]) [15]
+[15]) [16]
 \openout2 = `Content/Chapter3.aux'.
 
- (Content/Chapter3.tex [16
-
-
-
-
-]
+ (Content/Chapter3.tex
 Chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--10
@@ -1790,7 +1790,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--50
  []
 
 1: section
-[17]
+[17
+
+
+
+
+]
 <Images/Experiment/firstexperimentwithtext.png, id=683, 2240.37pt x 2987.16pt>
 File: Images/Experiment/firstexperimentwithtext.png Graphic file (type png)
 <use Images/Experiment/firstexperimentwithtext.png>
@@ -2096,15 +2101,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59281 strings out of 475281
- 1424767 string characters out of 2774064
- 2448391 words of memory out of 3000000
- 79447 multiletter control sequences out of 15000+600000
+ 59282 strings out of 475281
+ 1424796 string characters out of 2774064
+ 2448482 words of memory out of 3000000
+ 79448 multiletter control sequences out of 15000+600000
  513771 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,21n,100p,2324b,3004s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (63 pages, 25571416 bytes).
+Output written on main.pdf (63 pages, 25572560 bytes).
 PDF statistics:
  1037 PDF objects out of 1200 (max. 8388607)
  239 named destinations out of 1000 (max. 500000)

@@ -395,19 +395,19 @@ their mechanical behavior and make advance in medical research.
 \label{subsection:materialmodeling} 
 
 Material models, such as linear elasticity and hyperelasticity play a crucial role for the characterization 
-of material properties, as these describe a relationship that respresents how a material behaves, e.g, 
+of material properties, as these describe a relationship that represents how a material behaves, e.g, 
 the stress response for an applied strain, or the heat transfer for a defined temperature gradient.
 For the case of soft materials, hyperelastic models are usually 
-useful candidates, as these models can often predict the behaviour of complex materials under certain limitations.
+useful candidates, as these models can often predict the behavior of complex materials under certain limitations.
 Moreover, hyperelastic models can be used as a foundation for more advance models like 
 viscoelastic and viscoplastic models \cite{Bergström2015}. 
 
-Hyperelastic models are useful due to their ease of use and calibration, accesibility in major commercial FE softwares, 
+Hyperelastic models are useful due to their ease of use and calibration, accessibility in major commercial FE softwares, 
 and computational efficiency. However, these models possess some limitations, such as being 
 accurate for monotonic loading, and not capturing rate effects, i.e., viscoelasticity, or 
 hysteresis during cyclic loading \cite{Bergström2015}.
 
-In this subsection linear elasticity and hyperelasticity constitutive models will be presented 
+In this subsection, linear elasticity and hyperelasticity constitutive models will be presented 
 based on the overview made by Bergström (2015), followed by some examples from the research 
 papers from the Subsection \ref{subsection:experimentalcharacterization} to confirm the relevance of these 
 models for medical research.
@@ -415,7 +415,7 @@ models for medical research.
 \subsubsection*{Linear Elasticity}
 This model is the most basic approach to represent the small strain of the mechanical behavior 
 of solid polymers, with isotropic elasticity being its most elementary form \cite{Bergström2015}.
-In isotropic elasticity, stress is proportional to the applied strain and indenpent of the material's 
+In isotropic elasticity, stress is proportional to the applied strain and independent of the material's 
 orientation. Hooke's law is frequently the constitutive equation for an elastic material, and one form 
 \begin{align}
         \epsilon_{ij} &= \frac{1 + \nu}{E} \sigma_{ij} - \frac{\nu}{E} \sigma_{kk} \delta_{ij} \, ,
@@ -439,11 +439,11 @@ can be determined in terms of the strain using Hooke's Law. Key parameters in Eq
 and \ref{eq:sigmalinearberg} include the Young's Modulus $E$, Poisson's ratio $\nu$, the shear modulus $\mu$, 
 and the Lame's constant $\lambda$. 
 The linear elastic constitutive theory can be formulated with the identification of two material parameters,
-which can be determined through experimental data. After identifying these two parameters it is possible to  
+which can be determined through experimental data. After identifying these two parameters, it is possible to  
 calculate any other constants. A typical experimental method to identify and calibrate a pair of parameters is the uniaxial tension 
 test, where the stress-strain response identifies $E$ and $\nu$.
 A significant drawback of using a linear elastic model to predict the mechanical behavior of soft polymers is 
-that these materials exhibit linear behavior only within small strains and limited range of strain-rates and 
+that these materials exhibit linear behavior only within small strains and a limited range of strain-rates and 
 temperatures \cite{Bergström2015}. 
 
 \subsubsection*{Anisotropic Elasticity}
@@ -454,14 +454,14 @@ behavior of the material, as is usually the case for biopolymers. The strain and
         \sigma_{ij} &= C_{ijkl} \epsilon_{kl}, \label{eq:stressanisotropic}
 \end{align}
 can be written using Hooke's Law for an anisotropic material. These equations 
-shows that the stress and strain tensor are linearly dependant on each other by a linear stiffness $C_{ijkl}$ 
+show that the stress and strain tensor are linearly dependent on each other by a linear stiffness $C_{ijkl}$ 
 or compliance tensor $S_{ijkl}$. The stiffness and compliance tensors possess \SI{81}{} components and 
-since the stress and strain tensors are symmetrical the independant components of $S$ and $C$ can be then reduced 
+since the stress and strain tensors are symmetrical the independent components of $S$ and $C$ can be then reduced 
 to \SI{36}{}. Depending on the degree of anisotropy, these matrices can be further simplified. 
 
 \subsubsection*{Hyperelasticity}
 Hyperelastic models are an extension of linear elasticity that accounts for nonlinearity 
-and large strain predictions. These models have been widely develop over the years and 
+and large strain predictions. These models have been widely developed over the years and 
 are available in various FE softwares. Hyperelastic models are very important in modeling 
 soft tissues as they can be sometimes connected to the micromechanisms driving the 
 deformation behavior of the material \cite{Bergström2015}. Some common hyperelastic models include the 
@@ -473,8 +473,8 @@ The Neo-Hookean (NH) model is a simple hyperelastic model based on the shear
 modulus $\mu$ and the bulk modulus $\kappa$. This model can be used for compressible 
 and incompresible deformations, with the compressible version often being more 
 practical for finite element simulations. The NH model is primarily used for 
-solid, rubber-like materualas characterized by an almost incompressible behavior. 
-Because of this characteristic, the actual value has very small effect on the response 
+solid, rubber-like materials characterized by an almost incompressible behavior. 
+Because of this characteristic, the actual value has a very small effect on the response 
 of the observed material \cite{Bergström2015}.
 
 The NH model is like other hyperelastic models specified by its Helmholtz free energy per unit 
@@ -484,8 +484,8 @@ reference volume
         \label{eq:helmholtzNH}
 \end{align}
 where $I_1^*$ is the distortional first invariant, and $J$ the Jacobian of the deformation gradient \cite{Youssef2022}.
-This equation is not adequate for the accurate description of large-strain nonlinear responses. 
-In addition, this equation is not dependant from the second invariant $I_2^*$, which limits the 
+This equation is inadequate for the accurate description of large-strain nonlinear responses. 
+In addition, this equation is not dependent on the second invariant $I_2^*$, which limits the 
 stress prediction for biaxial loading.
 
 The Cauchy stress for compressible NH model can be expressed as \cite{Youssef2022}
@@ -500,28 +500,28 @@ The Cauchy stress expressions for uniaxial, planar and biaxial deformations for 
         \sigma_{\text{planar}} &= \mu(\lambda^2 - 1/\lambda^2), \label{eq:planarNH} \\
         \sigma_{\text{biaxial}} &= \mu(\lambda^2 - 1/\lambda^4), \label{eq:biaxialNH}
 \end{align}
-respectively. In these equations $\lambda$ represents the stretches of the deformation \cite{Youssef2022}.
+respectively. In these equations, $\lambda$ represents the stretches of the deformation \cite{Youssef2022}.
 An alternative formulation of the NH model, where the stress is not divided into deviatoric and volumetric 
 parts, is given by
 \begin{align}
         \sigma = \frac{\mu}{J}(\boldsymbol{b}-\boldsymbol{I}) + \kappa(J-1)\boldsymbol{I}. \label{eq:stressNHalt}
 \end{align}
 The predictions from the standard NH model (Eq. \ref{eq:cauchystressNHcomp}) and this alternative formulation 
-(Eq. \ref{eq:stressNHalt}) becomes different with the decrease of the bulk modulus.
-The main advantage NH model lies in its simplicity; with shear modulus known, the response of most any loading 
+(Eq. \ref{eq:stressNHalt}) becomes different with the decrease in the bulk modulus.
+The main advantage NH model lies in its simplicity; with the shear modulus known, the response of most any loading 
 mode can be determined in a robust, and computationally efficient way. However, the limitations of the model lies 
 in capturing large-strains or when the loading is primarily biaxial \cite{Bergström2015}.\\
 
-The Neo-Hookean model have been employed in various research papers to characterize soft tissue behavior. 
-For instance, in a study from Kanyanta and Ivankovic (2010) used and compare different hyperelastic models to characterize different loadings
+The Neo-Hookean model has been employed in various research papers to characterize soft tissue behavior. 
+For instance, in a study from Kanyanta and Ivankovic (2010) used and compared different hyperelastic models to characterize different loading 
 of an ether-based polyurethane (see Subsection \ref{subsection:experimentalcharacterization}). Here the elastomer was assumed to 
 be an isotropic, incompressible material for the description of the behavior of polyurethane \cite{Kanyanta2010}.
 
 Furthermore, Chai et al. (2013) utilized the Neo-Hookean model to calculate the Young's modulus of human carotid plaques
-assumin an isotropic, incompressible model. This knowledge contributes to the identification of local biomechanical properties 
+assuming an isotropic, incompressible model. This knowledge contributes to the identification of local biomechanical properties 
 of atherosclerotic plaque tissue for more reliable rupture risk prediction \cite{Chai2013}.
 
-In another study made by Shi et al. (2019) a compressible NH model was used to describe the ground substance of the 
+In another study made by Shi et al. (2019), a compressible NH model was used to describe the ground substance of the 
 fiber network of the cervical stroma, to identify the $\mu$ and $\lambda$ and then calculate the Young's modulus and 
 Poisson's ratio \cite{Shi2019}.\\
 
@@ -558,14 +558,14 @@ model to describe the behavior of silicone and identify the hyperelastic paramet
 showed adequate results for the fitting of four different experimental methods; uniaxial tension and compression test, 
 biaxial tension, and shear pancake test \cite{Drass2018}.
 
-Likewise, this model proved to be appropiate to simulate the nonlinear properties of breast soft tissues deformation 
-during a leaning forward position and running movement. By identifying the breast properties the bra-breast contact mechanism 
-could be analyzed \cite{Sun2019}. 
+Likewise, this model proved to be appropriate to simulate the nonlinear properties of breast soft tissues' deformation 
+during a leaning forward position and running movement. By identifying the breast material properties, the bra-breast contact mechanism 
+could be analyzed \cite{Sun2019}.\\
 
 \textbf{Yeoh Model}\\
 
 The Yeoh model (YM) is another hyperelastic model that utilizes a Helmholtz free energy 
-in a third-order polynomial in $I_1^*$ and independent of $I_2^*$. This allows the the model to provide 
+in a third-order polynomial in $I_1^*$ and independent of $I_2^*$. This allows the model to provide 
 more accurate predictions than the NH model while potentially avoiding the stability issues of the 
 MR model \cite{Bergström2015}. The Helmholtz free energy per unit reference volume for a compressible YM can be written as
 \begin{align}
@@ -578,9 +578,9 @@ for the YM can be derived as
         \sigma = \frac{2}{J}(C_{10} + 2C_{20}(I_1^* - 3) + 3C_{30}(I_1^* - 3)^2)\text{dev}[\boldsymbol{b}^*] + \kappa(J - 1)\boldsymbol{I}\, .
         \label{eq:cauchystressYM}
 \end{align}
-The indenpendence from the $I_2^*$ term is the main motivation for the Yeoh model. Due to the difficulty of experimentally 
-determining the dependence of this term with the Helmholtz free energy, the neglection of this term in the YM makes is easier that 
-that the hyperelastic model is Drucker stable and therefore, facilitates its use \cite{Bergström2015}.
+The independence from the $I_2^*$ term is the main motivation for the Yeoh model. Due to the difficulty of experimentally 
+determining the dependence of this term with the Helmholtz free energy, the neglection of this term in the YM makes 
+it easier to apply. Moreover, the hyperelastic model is Drucker stable, which another factor that facilitates the use of this model \cite{Bergström2015}.
 For the incompressible version of the Yeoh model, the Cauchy stresses in uniaxial, planar, and equibiaxial deformations can be written as
 \begin{align}
         \sigma_{\text{uniax}} &= 2[C_{10} + 2C_{20}(I_1 - 3) + 3C_{30}(I_1 - 3)^2](\lambda^2 - 1/\lambda) \, , \label{eq:uniaxYM} \\
@@ -596,7 +596,7 @@ can be calculated as
 \end{align}
 
 In the research of Kayanta and Ivankovic (2010), several constitutive models were compared for the description 
-of polyurethane under different loadings. The results the Yeoh model showed the best fit to the variety of experimental data, however, 
+of polyurethane under different loading. The results the Yeoh model showed the best fit to the variety of experimental data, however, 
 the Neo-Hookean model showed to be adequate with small strain deformations \cite{Kanyanta2010}.
 Additionally, Łagan et al. (2017) used the Yeoh model to analyze the accuracy of model fitting 
 to the experimental data and estimate the mechanical properties of swine skin tissue in the abdominal region under uniaxial testing \cite{Lagan2017}.\\
@@ -604,8 +604,8 @@ to the experimental data and estimate the mechanical properties of swine skin ti
        
 \textbf{Ogden Model}\\
 
-The Ogden model (OM) is a highly general hyperelastic model that is determined in term of the applied principal stretches \cite{Bergström2015}.
-Similar to the previous models, the Helmholtz free energy per volume can written in various ways, 
+The Ogden model (OM) is a highly general hyperelastic model that is determined in terms of the applied principal stretches \cite{Bergström2015}.
+Similar to the previous models, the Helmholtz free energy per volume can be written in various ways, 
 \begin{align}
         \begin{split}
         \psi(\lambda_1^*, \lambda_2^*, \lambda_3^*) &= \sum_{k=1}^N \frac{2\mu_k}{\alpha_k^2}((\lambda_1^*)^{\alpha_k} + (\lambda_2^*)^{\alpha_k} + (\lambda_3^*)^{\alpha_k} - 3) \\
@@ -614,7 +614,7 @@ Similar to the previous models, the Helmholtz free energy per volume can written
         \label{eq:helmholtzOM}
 \end{align}
 being this equation, one of the most common for a compressible Ogden Model. Different from the previous presented models, is that 
-the volumentric response is not defined by the bulk modulus, but instead $D_k$ parameters. In this equation
+the volumetric response is not defined by the bulk modulus, but instead $D_k$ parameters. In this equation
 $\mu_k$, $\alpha_k$, $\lambda_i^*$ are material parameters \cite{Youssef2022}. $\lambda_i^*$ are the deviatoric principal stretches defined as
 \begin{align}
         \lambda_i^* = \frac{\lambda_i}{J^{1/3}} \,,
@@ -624,7 +624,7 @@ can be defined from the incompressibility parameter $D_1$ as
 \begin{align}
         \kappa = \frac{2}{D_1} \,.
 \end{align}
-Equation \ref{eq:helmholtzOM} make the Ogden model versatile but can be complicated when selecting an appropiate 
+Equation \ref{eq:helmholtzOM} makes the Ogden model versatile, but can be complicated when selecting an appropriate 
 set of material parameters that give stable predictions for the deformation states \cite{Bergström2015}. 
 The principal $\sigma_i$ stresses can be expressed as
 \begin{align}
@@ -637,27 +637,32 @@ and the stresses for incompressible OM in unixial, planar and biaxial loading ar
         \sigma_{\text{biax}} &= \sum_{k=1}^N \frac{2\mu_k}{\alpha_k}[\lambda^{\alpha_k} - (1/\lambda^2)^{\alpha_k}] \,.
 \end{align}
 The Ogden model turns equal to the Neo-Hookean model when $N = \SI{1}{}$ and $\alpha_2 = \SI{1}{}$.  
-Moreover, the OM shows often a better prediction than the Neo-Hookean and Mooney Rivlin models but is not accurate as the 
+Moreover, the OM often shows a better prediction than the Neo-Hookean and Mooney Rivlin models but is not accurate as the 
 Yeoh model \cite{Bergström2015}.\\
 
 Ahanchian et al. (2017) applied the first-order Ogden model to investigate the biomechanical behavior of 
-human skin, particularly for the plantar heel pad tissue. This reasearch led to a better understanding 
+human skin, particularly for the plantar heel pad tissue. This research led to a deeper understanding of 
 the transfer of the load during walking when the foot impacts the floor,
-and it implication in the design of shoe soles \cite{Ahanchian2017}.
+and its implication in the design of shoe soles \cite{Ahanchian2017}.\\
 
-%Relevant papers tends to use hyperelastic models to represent soft materials as the viscoelasticity is usually neglected. 
-% why do they use hyperelastic formulas? Why is it possible to neglect the viscoelasticity
-%Revisar
-%Material model are very relevant for the simulation model (Kauer2002).
-%Soft tissues are approximated as near incompressible due to their highly water content.  
-%viscoelastic example
-%For the aspiration experiment conducted by Kauer they used the following strain energy
-%function based on the model of Susanne and Bathe (SusanneandBAthe1987)
-%Revisar
-%As derivative from this formula for the uteri metrial modeling the formula used was:
+In conclusion, the material modeling of soft materials is crucial for understanding their mechanical 
+behavior and predicting their response to different loading conditions. Hyperelastic models, such as 
+Neo-Hookean, Mooney-Rivlin, Yeoh and Ogden models, have been widely used to characterize synthetic and biomaterials 
+due to their direct application and capacity to describe nonlinear behavior for small and large strain.
+While these models have their respective advantages and limitations, they provide a basis knowledge of 
+complex material behavior and serve as foundation for more advance models. The selection of the models 
+will depend on the specific intended use and the desired level of accuracy. 
 
 %---------------------------------------------------------------------------------
 \subsection{Inverse Finite Element Method for Parameter Identification}
+\label{subsection:inverseFEMtheory}
+
+The Inverse Finite Element Method (iFEM) has become an increasingly popular approach for the identification of material
+parameters for both synthetic and biological materials.
+
+
+
+
 
 An inverse finite element (FE) approach requires usually a certain experimental model,
  which generates certain information e. g. load-displacement curve, and through 
