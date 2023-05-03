@@ -17,6 +17,59 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{Ahanchian2017}{article}{}
+    \name{author}{5}{}{%
+      {{hash=AN}{%
+         family={Ahanchian},
+         familyi={A\bibinitperiod},
+         given={Nafiseh},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=NCJ}{%
+         family={Nester},
+         familyi={N\bibinitperiod},
+         given={Christopher\bibnamedelima J.},
+         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Howard},
+         familyi={H\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=RL}{%
+         family={Ren},
+         familyi={R\bibinitperiod},
+         given={Lei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Parker},
+         familyi={P\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Ltd}%
+    }
+    \strng{namehash}{AN+1}
+    \strng{fullhash}{ANNCJHDRLPD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb 10.1016/j.medengphy.2016.11.003
+    \endverb
+    \field{pages}{11\bibrangedash 19}
+    \field{title}{Estimating the material properties of heel pad sub-layers
+  using inverse Finite Element Analysis}
+    \field{volume}{40}
+    \field{journaltitle}{Medical Engineering and Physics}
+    \field{year}{2017}
+  \endentry
+
   \entry{Ansys2010}{article}{}
     \list{publisher}{1}{%
       {ANSYS Inc.}%
@@ -886,6 +939,66 @@
     \field{year}{2019}
   \endentry
 
+  \entry{Sun2019}{article}{}
+    \name{author}{6}{}{%
+      {{hash=SY}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Yue},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Lihua},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=lYK}{%
+         prefix={lun},
+         prefixi={l\bibinitperiod},
+         family={Yick},
+         familyi={Y\bibinitperiod},
+         given={Kit},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=YW}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Winnie},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=LN}{%
+         family={Lau},
+         familyi={L\bibinitperiod},
+         given={Newman},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=JW}{%
+         family={Jiao},
+         familyi={J\bibinitperiod},
+         given={Wanzhong},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SY+1}
+    \strng{fullhash}{SYCLYKlYWLNJW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1016/j.jmbbm.2018.11.016
+    \endverb
+    \field{pages}{615\bibrangedash 625}
+    \field{title}{Optimization method for the determination of Mooney-Rivlin
+  material coefficients of the human breasts in-vivo using static and dynamic
+  finite element models}
+    \field{volume}{90}
+    \field{journaltitle}{Journal of the Mechanical Behavior of Biomedical
+  Materials}
+    \field{year}{2019}
+  \endentry
+
   \entry{Wang2012}{book}{}
     \name{author}{2}{}{%
       {{hash=WW}{%
@@ -1028,6 +1141,41 @@
   parameters of hyperelastic soft materials}
     \field{journaltitle}{Biomechanics and Modeling in Mechanobiology}
     \field{year}{2014}
+  \endentry
+
+  \entry{Lagan2017}{article}{}
+    \name{author}{2}{}{%
+      {{hash=≈SD}{%
+         family={≈Åagan},
+         familyi={≈\bibinitperiod},
+         given={Sylwia\bibnamedelima D.},
+         giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=LKA}{%
+         family={Liber-Kneƒá},
+         familyi={L\bibinithyphendelim K\bibinitperiod},
+         given={Aneta},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Machine Design}%
+      {Operation}%
+    }
+    \strng{namehash}{≈SDLKA1}
+    \strng{fullhash}{≈SDLKA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{≈}
+    \field{sortinithash}{≈}
+    \verb{doi}
+    \verb 10.5277/ABB-00755-2016-02
+    \endverb
+    \field{title}{Experimental testing and constitutive modeling of the
+  mechanical properties of the swine skin tissue}
+    \field{volume}{19}
+    \field{journaltitle}{Acta of Bioengineering and Biomechanics}
+    \field{year}{2017}
   \endentry
 \enddatalist
 \endinput

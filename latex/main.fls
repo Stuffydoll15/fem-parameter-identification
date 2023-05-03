@@ -2146,6 +2146,13 @@ INPUT .\Images\chapter1\indentation2carter.png
 INPUT .\Images\chapter1\indentation2carter.png
 INPUT .\Images\chapter1\indentation2carter.png
 INPUT .\Images\chapter1\indentation2carter.png
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7t.vf
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7m.vf
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmri.tfm
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplri8r.tfm
 INPUT .\Content\Chapter3.tex
 INPUT .\Content\Chapter3.tex
 INPUT .\Content\Chapter3.tex
@@ -2256,11 +2263,6 @@ INPUT Table\Middle Point\MPII4mm.dat
 INPUT Table\Middle Point\MPII4mm.dat
 INPUT Table\Middle Point\MPI38mm.dat
 INPUT Table\Middle Point\MPII4mmtotalap.dat
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7m.vf
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmri.tfm
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplri8r.tfm
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplr7t.vf
 INPUT Table\Loadunload\LI4mm.dat
 INPUT Table\Loadunload\UI4mm.dat
@@ -2326,8 +2328,6 @@ INPUT Content\Chapter6.tex
 INPUT .\Content\Chapter6.tex
 INPUT Content\Chapter6.tex
 INPUT Table\data1.dat
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7t.vf
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT .\Content\Chapter7.tex
 INPUT .\Content\Chapter7.tex
 INPUT .\Content\Chapter7.tex

@@ -408,7 +408,7 @@ accurate for monotonic loading, and not capturing rate effects, i.e., viscoelast
 hysteresis during cyclic loading \cite{Bergström2015}.
 
 In this subsection linear elasticity and hyperelasticity constitutive models will be presented 
-based on the overview made by Bergström (2015), followed by some of the models used in the research 
+based on the overview made by Bergström (2015), followed by some examples from the research 
 papers from the Subsection \ref{subsection:experimentalcharacterization} to confirm the relevance of these 
 models for medical research.
 
@@ -512,6 +512,19 @@ The main advantage NH model lies in its simplicity; with shear modulus known, th
 mode can be determined in a robust, and computationally efficient way. However, the limitations of the model lies 
 in capturing large-strains or when the loading is primarily biaxial \cite{Bergström2015}.\\
 
+The Neo-Hookean model have been employed in various research papers to characterize soft tissue behavior. 
+For instance, in a study from Kanyanta and Ivankovic (2010) used and compare different hyperelastic models to characterize different loadings
+of an ether-based polyurethane (see Subsection \ref{subsection:experimentalcharacterization}). Here the elastomer was assumed to 
+be an isotropic, incompressible material for the description of the behavior of polyurethane \cite{Kanyanta2010}.
+
+Furthermore, Chai et al. (2013) utilized the Neo-Hookean model to calculate the Young's modulus of human carotid plaques
+assumin an isotropic, incompressible model. This knowledge contributes to the identification of local biomechanical properties 
+of atherosclerotic plaque tissue for more reliable rupture risk prediction \cite{Chai2013}.
+
+In another study made by Shi et al. (2019) a compressible NH model was used to describe the ground substance of the 
+fiber network of the cervical stroma, to identify the $\mu$ and $\lambda$ and then calculate the Young's modulus and 
+Poisson's ratio \cite{Shi2019}.\\
+
 \textbf{Mooney-Rivlin}\\
 
 The Mooney-Rivlin (MR) mode is a model that builds upon the NH model by incorporating a linear dependence on the 
@@ -521,9 +534,9 @@ second invariant $I_2^*$ in the Helmholtz free energy per unit reference volume 
         \label{eq:helmholtzMR}
 \end{align}
 where $C_{10}$, $C_{01}$, $\kappa$ are the necessary material parameters for the compressible MR model \cite{Bergström2015}.
-These parameters are defined based on the experimental data and in case of small strain the shear modulus can be represented as
+These parameters are defined based on the experimental data and in case of small strain the shear modulus can be represented as \cite{Youssef2022}
 \begin{align}
-        \mu = C_{10} + C_{01} .
+        \mu = C_{10} + C_{01} \, .
         \label{eq:constantsMR}
 \end{align}
 The Cauchy stress for the MR model can be expressed as 
@@ -531,12 +544,106 @@ The Cauchy stress for the MR model can be expressed as
         \sigma = \frac{2}{J}(C_{10} + C_{01}I_1^*)\boldsymbol{b}^* - \frac{2C_{01}}{J}(\boldsymbol{b}^*)^2 + [\kappa(J-1) - \frac{2I_1^* C_{10}}{3J} - \frac{4I_2^* C_{01}}{3J}]\boldsymbol{I} \, .
         \label{eq:cauchystressMR}
 \end{align}
-
+For the incompressible version of the MR model, the Cauchy stresses in uniaxial, planar and equibiaxial deformations are 
+\begin{align}
+        \sigma_{\text{uniax}} &= 2(\lambda^2 - 1/\lambda)[C_{10} + C_{01}/\lambda] \, , \label{eq:uniaxMR} \\
+        \sigma_{\text{planar}} &= 2(\lambda^2 - 1/\lambda^2)[C_{10} + C_{01}] \, , \label{eq:planarMR} \\
+        \sigma_{\text{biaxial}} &= 2C_{10}(\lambda^2 - 1/\lambda^4) + 2C_{01}(\lambda^4 - 1/\lambda^2) \, . \label{eq:biaxialMR}
+\end{align}
 The Mooney-Rivlin model often enhances the accuracy of the predictions of the Neo-Hookean model.
 However, certain loading modes can cause instability in the case of a negative $C_{01}$ term \cite{Bergström2015}.\\
 
-\textbf{Yeoh-Model}\\
+Some of the research papers, which used the Mooney-Rivlin model are, e.g., Drass et al. (2018) utilized the MR 
+model to describe the behavior of silicone and identify the hyperelastic parameters through inverse methods. This model 
+showed adequate results for the fitting of four different experimental methods; uniaxial tension and compression test, 
+biaxial tension, and shear pancake test \cite{Drass2018}.
 
+Likewise, this model proved to be appropiate to simulate the nonlinear properties of breast soft tissues deformation 
+during a leaning forward position and running movement. By identifying the breast properties the bra-breast contact mechanism 
+could be analyzed \cite{Sun2019}. 
+
+\textbf{Yeoh Model}\\
+
+The Yeoh model (YM) is another hyperelastic model that utilizes a Helmholtz free energy 
+in a third-order polynomial in $I_1^*$ and independent of $I_2^*$. This allows the the model to provide 
+more accurate predictions than the NH model while potentially avoiding the stability issues of the 
+MR model \cite{Bergström2015}. The Helmholtz free energy per unit reference volume for a compressible YM can be written as
+\begin{align}
+        \psi(C_{10}, C_{20}, C_{30}, \kappa) = C_{10}(I_1^* - 3) + C_{20}(I_1^* - 3)^2 + C_{30}(I_1^* - 3)^3 + \frac{\kappa}{2}(J - 1)^2 \, ,
+        \label{eq:helmholtzYM}
+\end{align}
+where $C_{10}$, $C_{20}$, $C_{30}$, and $\kappa$ are the material parameters to describe this model. The Cauchy stress 
+for the YM can be derived as 
+\begin{align}
+        \sigma = \frac{2}{J}(C_{10} + 2C_{20}(I_1^* - 3) + 3C_{30}(I_1^* - 3)^2)\text{dev}[\boldsymbol{b}^*] + \kappa(J - 1)\boldsymbol{I}\, .
+        \label{eq:cauchystressYM}
+\end{align}
+The indenpendence from the $I_2^*$ term is the main motivation for the Yeoh model. Due to the difficulty of experimentally 
+determining the dependence of this term with the Helmholtz free energy, the neglection of this term in the YM makes is easier that 
+that the hyperelastic model is Drucker stable and therefore, facilitates its use \cite{Bergström2015}.
+For the incompressible version of the Yeoh model, the Cauchy stresses in uniaxial, planar, and equibiaxial deformations can be written as
+\begin{align}
+        \sigma_{\text{uniax}} &= 2[C_{10} + 2C_{20}(I_1 - 3) + 3C_{30}(I_1 - 3)^2](\lambda^2 - 1/\lambda) \, , \label{eq:uniaxYM} \\
+        \sigma_{\text{planar}} &= 2[C_{10} + 2C_{20}(I_1 - 3) + 3C_{30}(I_1 - 3)^2](\lambda^2 - 1/\lambda^2) \, , \label{eq:planarYM} \\
+        \sigma_{\text{biax}} &= 2[C_{10} + 2C_{20}(I_1 - 3) + 3C_{30}(I_1 - 3)^2](\lambda^2 - 1/\lambda^4) \, . \label{eq:biaxyM}
+\end{align}
+The Yeoh model has been proven to improve the prediction of the Neo-Hookean model in various loading modes, specially in large strain scenarios.
+Bergström also mentions, that for the identification of the material parameters $C_{10}$ should be positive and $C_{20}$, and $C_{30}$ 
+can be calculated as
+\begin{align}
+        C_{20} \approx -0.01C_{10} \,, \\
+        C_{30} \approx -0.01C_{20} \, .
+\end{align}
+
+In the research of Kayanta and Ivankovic (2010), several constitutive models were compared for the description 
+of polyurethane under different loadings. The results the Yeoh model showed the best fit to the variety of experimental data, however, 
+the Neo-Hookean model showed to be adequate with small strain deformations \cite{Kanyanta2010}.
+Additionally, Łagan et al. (2017) used the Yeoh model to analyze the accuracy of model fitting 
+to the experimental data and estimate the mechanical properties of swine skin tissue in the abdominal region under uniaxial testing \cite{Lagan2017}.\\
+
+       
+\textbf{Ogden Model}\\
+
+The Ogden model (OM) is a highly general hyperelastic model that is determined in term of the applied principal stretches \cite{Bergström2015}.
+Similar to the previous models, the Helmholtz free energy per volume can written in various ways, 
+\begin{align}
+        \begin{split}
+        \psi(\lambda_1^*, \lambda_2^*, \lambda_3^*) &= \sum_{k=1}^N \frac{2\mu_k}{\alpha_k^2}((\lambda_1^*)^{\alpha_k} + (\lambda_2^*)^{\alpha_k} + (\lambda_3^*)^{\alpha_k} - 3) \\
+        &\quad+ \sum_{k=1}^N \frac{1}{D_k}(J - 1)^{2k} \,,
+        \end{split}
+        \label{eq:helmholtzOM}
+\end{align}
+being this equation, one of the most common for a compressible Ogden Model. Different from the previous presented models, is that 
+the volumentric response is not defined by the bulk modulus, but instead $D_k$ parameters. In this equation
+$\mu_k$, $\alpha_k$, $\lambda_i^*$ are material parameters \cite{Youssef2022}. $\lambda_i^*$ are the deviatoric principal stretches defined as
+\begin{align}
+        \lambda_i^* = \frac{\lambda_i}{J^{1/3}} \,,
+\end{align}
+where, $\lambda_i$ are the principal stretches of the left Cauchy-Green tensor \cite{Ansys2010}. In addition, the initial bulk modulus 
+can be defined from the incompressibility parameter $D_1$ as 
+\begin{align}
+        \kappa = \frac{2}{D_1} \,.
+\end{align}
+Equation \ref{eq:helmholtzOM} make the Ogden model versatile but can be complicated when selecting an appropiate 
+set of material parameters that give stable predictions for the deformation states \cite{Bergström2015}. 
+The principal $\sigma_i$ stresses can be expressed as
+\begin{align}
+        \sigma_i = \frac{2}{J}\sum_{k=1}^N \frac{\mu_k}{\alpha_k}((\lambda_i^*)^{\alpha_k} - \frac{1}{3}[(\lambda_1^*)^{\alpha_k} + (\lambda_2^*)^{\alpha_k} + (\lambda_3^*)^{\alpha_k}]) + \sum_{k=1}^N \frac{2k}{D_k}(J - 1)^{2k - 1} \,,
+\end{align}
+and the stresses for incompressible OM in unixial, planar and biaxial loading are given by
+\begin{align}
+        \sigma_{\text{uniax}} &= \sum_{k=1}^N \frac{2\mu_k}{\alpha_k}[\lambda^{\alpha_k} - (1/\sqrt{\lambda})^{\alpha_k}] \,,\\
+        \sigma_{\text{planar}} &= \sum_{k=1}^N \frac{2\mu_k}{\alpha_k}[\lambda^{\alpha_k} - (1/\lambda)^{\alpha_k}] \,,\\
+        \sigma_{\text{biax}} &= \sum_{k=1}^N \frac{2\mu_k}{\alpha_k}[\lambda^{\alpha_k} - (1/\lambda^2)^{\alpha_k}] \,.
+\end{align}
+The Ogden model turns equal to the Neo-Hookean model when $N = \SI{1}{}$ and $\alpha_2 = \SI{1}{}$.  
+Moreover, the OM shows often a better prediction than the Neo-Hookean and Mooney Rivlin models but is not accurate as the 
+Yeoh model \cite{Bergström2015}.\\
+
+Ahanchian et al. (2017) applied the first-order Ogden model to investigate the biomechanical behavior of 
+human skin, particularly for the plantar heel pad tissue. This reasearch led to a better understanding 
+the transfer of the load during walking when the foot impacts the floor,
+and it implication in the design of shoe soles \cite{Ahanchian2017}.
 
 %Relevant papers tends to use hyperelastic models to represent soft materials as the viscoelasticity is usually neglected. 
 % why do they use hyperelastic formulas? Why is it possible to neglect the viscoelasticity
@@ -547,8 +654,6 @@ However, certain loading modes can cause instability in the case of a negative $
 %For the aspiration experiment conducted by Kauer they used the following strain energy
 %function based on the model of Susanne and Bathe (SusanneandBAthe1987)
 %Revisar
-
-
 %As derivative from this formula for the uteri metrial modeling the formula used was:
 
 %---------------------------------------------------------------------------------
@@ -627,8 +732,8 @@ Through the same inverse method applied with the synthetic material, the obtaine
  singurality for each uterus.
 
 
-\subsection{Standard Verification and Validation for Computational Solid Mechanics (ASME)}
-\subsubsection*{VV40}
+%\subsection{Standard Verification and Validation for Computational Solid Mechanics (ASME)}
+%\subsubsection*{VV40}
 
 
 %---------------------------------------------------------------------------------
