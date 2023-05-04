@@ -16,20 +16,26 @@
 \textbf{MR} & \textbf{M}ooney-\textbf{R}ivlin\\
 \textbf{YM} & \textbf{Y}eoh \textbf{M}odel\\
 \textbf{OM} & \textbf{O}gden \textbf{M}odel\\
+\textbf{RMSE} & \textbf{R}oot \textbf{M}ean \textbf{S}quare \textbf{E}rror\\
+\textbf{EPI} & \textbf{E}xperimental \textbf{M}odel \textbf{I} \\
+\textbf{EPI} & \textbf{E}xperimental \textbf{M}odel \textbf{II} \\
+\textbf{MP} & \textbf{M}iddle \textbf{P}oint\\
+\textbf{LU} & \textbf{L}oad \textbf{U}nloading (Case)\\
+\textbf{NBP} & \textbf{N}ear\textbf{b}y \textbf{P}oint\\
 \end{abbreviations}
 
 %----------------------------------------------------------------------------------------
 %	PHYSICAL CONSTANTS/OTHER DEFINITIONS
 %----------------------------------------------------------------------------------------
 
-\begin{constants}{lr@{${}={}$}l} % The list of physical constants is a three column table
+%\begin{constants}{lr@{${}={}$}l} % The list of physical constants is a three column table
 
 % The \SI{}{} command is provided by the siunitx package, see its documentation for instructions on how to use it
 
-Speed of Light & $c_{0}$ & \SI{2.99792458e8}{\meter\per\second} (exact)\\
+%Speed of Light & $c_{0}$ & \SI{2.99792458e8}{\meter\per\second} (exact)\\
 %Constant Name & $Symbol$ & $Constant Value$ with units\\
 
-\end{constants}
+%\end{constants}
 
 %----------------------------------------------------------------------------------------
 %	SYMBOLS
@@ -42,7 +48,7 @@ $A_s$ & cross-sectional area of the specimen & \si{\meter}\\
 $l_s$ & specimen gauge length & \si{\meter}\\
 $C_b$ & wave speed through the bar & \si{\meter\per\second}\\
 $v_{UC}$ & testing speed for compression test & \si{\meter\per\second}\\
-$E$ & Young's Modulus & \si{\mega\pascal} (\si{\newton\per\square\milli\meter})\\
+$E$ & Young's Modulus & $\si{\mega\pascal}$\\
 $S_{ijkl}$ & compliance tensor\\
 $C_{ijkl}$ & stiffness tensor\\
 $I_1^*$ & distortional first invariant\\
@@ -52,6 +58,50 @@ $\boldsymbol{b}^*$ & left Cauchy-Green strain tensor\\
 $\boldsymbol{I}$ & identity matrix\\
 $C_{10}$,$C_{01}$ & Mooney-Rivlin material parameter constants\\
 $C_{10}$,$C_{20}$,$C_{30}$ & Yeoh model material parameter constants\\
+$D_k$ & volumetric D-parameter\\
+$F_s$ & simulated force\\
+$F_e$ & experimental force\\
+$n$ & number of data points\\
+\addlinespace % Gap to separate chapter
+
+$r_{i1}$ & indenter head radius of experimental model I\\
+$l_{i1}$ & indenter length of EPI\\
+$r_1$ & specimen minor radius\\
+$r_2$ & specimen major radius\\
+$r_{t1}$ & specime tumor minor radius\\
+$r_{t2}$ & specimen tumor major radius\\
+$r_{i2}$ & indenter head radius of experimental model II\\
+$E_{i2}$ & Young's Modulus of indenter of EPII\\
+$F_x$ & force reaction in X-direction of EPII\\
+$F_y$ & force reaction in Y-direction of EPII\\
+$F_z$ & force reaction in Z-direction of EPII\\
+$h_{I}$ & indentation depth of EPI\\
+$h_{II}$ & indentation depth of EPII\\
+$p_{I1}$ & nearby point of EPI\\
+$p_{II1}$ & first nearby point of EPII\\
+$p_{II2}$ & second nearby point of EPII\\
+$p_{II3}$ & third nearby point of EPII\\
+$u_{I_{MP}}$ & maximum displacement of the middle point of EPI\\
+$F_{I_{MP}}$ & maximum force of the middle point of EPI\\
+$u_{II_{MP}}$ & maximum displacement of the middle point of EPII\\
+$F_{Z_{II,MP}}$ & maximum force component in X-direction\\
+$F_{Y_{II,MP}}$ & maximum force component in Y-direction\\
+$F_{X_{II,MP}}$ & maximum force component in Z-direction\\
+$F_{I_{LU}}$ & force of the loading-unloading case of EPI\\
+$F_{II_{LU}}$ & force of the loading-unloading case of EPII\\
+$F_{I_{NBP}}$ & maximum force component of nearby point of EPI\\
+$F_{II_{NB}}$ & force component of nearby point of EPII\\
+$A$ & contact area between specimen and indenter\\
+$r_i$ & radius of the indenter\\
+$F$ & applied indented force\\
+$h$ & indentation depth\\
+$C_1$ & material constant of hyperelastic model\\
+$D_1$ & material incompressibility parameter\\
+$J$ & determinant of the elastic deformation gradient\\
+$I_1$ & first invariant of the right Cauchy-Green deformation tensor\\
+$W$ & elastic strain energy potential function for the NH material\\
+$K$ & initial bulk modulus\\
+
 
 %Symbol & Name & Unit \\
 
@@ -69,5 +119,12 @@ $\lambda$ & Lame's constant\\
 $\kappa$ & bulk modulus & \si{\mega\pascal} (\si{\newton\per\square\milli\meter})\\
 $\psi$ & Helmholtz free energy per unit reference volume\\
 $\sigma$ & Cauchy stress\\
-$\lambda$ & stretches of the deformation\\
+$\lambda_i$ & stretches of the deformation\\
+$\alpha_k$ & alpha-parameters\\
+\addlinespace % Gap to separate chapter
+$\nu_{i2}$ & Poisson's ratio of indenter of experimental model II\\
+$\sigma$ & stress of linear elastic model\\
+$\varepsilon$ & strain of linear elastic model\\
+$\lambda$ & principal stretches\\
+$\mu$ & shear modulus or the second Lamé parameter\\
 \end{symbols}

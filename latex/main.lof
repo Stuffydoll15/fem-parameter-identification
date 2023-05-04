@@ -1,28 +1,26 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Uniaxial testing: Diagram of three tensile testing of an ether-based polyurethane elastomer specimen done with three different experiment configurations for different strain rate analysis. Diagrams are based on the experiments of made by Kayanta and Ivankovic (2010) \blx@tocontentsinit {0}\cite {Kanyanta2010}.\relax }}{3}{figure.caption.17}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Uniaxial compression testing: Diagram of typical compression setup and influence of interface friction on the deformed specimen shape. Illustration is based on the "Mechanics of Solid Polymers" by Bergström \blx@tocontentsinit {0}\cite {Bergström2015}.\relax }}{5}{figure.caption.19}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Uniaxial compression testing: Illustration of different compression methodologies for a cartilage specimen. Unconfined compression, confined compression and Indentation. Diagrams are based on the methodologies showed by Griffin (2016) \blx@tocontentsinit {0}\cite {Griffin2016}.\relax }}{6}{figure.caption.20}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Uniaxial tensile testing of ether-based polyurethane, \citet {Kanyanta2010}}}{3}{figure.caption.15}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Uniaxial compression testing setup based on the book by \citet {Bergström2015}}}{5}{figure.caption.19}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Uniaxial compression testing methodologies showed by \citet {Griffin2016}}}{6}{figure.caption.20}%
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Nanoindentation}}{7}{figure.caption.22}%
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Indentation testing: Diagram of static and mobile indentation tests, indenters were attached to a load cell, which was connected to a displacement transducer. Diagrams are based on the study of made by Carter (2001) \blx@tocontentsinit {0}\cite {Carter2001}.\relax }}{8}{figure.caption.23}%
-\contentsline {figure}{\numberline {1.6}{\ignorespaces aspiration}}{9}{figure.caption.25}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces First experimental model: Tensile and compression machine with an indenter with a rounded head. Test Specimen made from ultra-soft polyurethane resin positioned on a fixed platform with a similar shape for constraint.\relax }}{20}{figure.caption.73}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces First experimental model: Specimen dimensions made from ultra-soft polyurethane resin for indentation test.\relax }}{21}{figure.caption.74}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces YNU experimental model: 6-axis sensor Test Specimen made from ultra-soft polyurethane resin positioned on a fixed platform with a similar shape for constraint.\relax }}{23}{figure.caption.78}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces YNU experimental model: Loading diagram showing initial position of the indenter in normal position \blx@tocontentsinit {0}\cite {Mori2022}.\relax }}{23}{figure.caption.79}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Middle test point: Loading point (Red point) on the top surface of the specimen.\relax }}{24}{figure.caption.83}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Load-Unload Case: Experimental model I with modified configuration setup, on top of the movable crosshead a displacement transducer was equipped to capture unloading data.\relax }}{25}{figure.caption.85}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Nearby test point: Loading points for each experimental model to analyze shear stresses and to vbe employed for the validation of the computation models.\relax }}{26}{figure.caption.87}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Load-displacement curve experimental data for Middle Point use case for both experimental models.\relax }}{28}{figure.caption.94}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Total Force Reaction-Displacement curve: Comparison between experimental data for Middle Point use case from both models.\relax }}{28}{figure.caption.95}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Load-displacement curve experimental data for Load-Unload use case for both experimental models.\relax }}{29}{figure.caption.97}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Load-Unload Use Case: Analysis of Viscoelastic material properties by using six different indentation speeds. Load-Displacement curves were obtained from the first experimental test configuration.\relax }}{30}{figure.caption.98}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Total Force Reaction-Displacement curve: Comparison between experimental data for Middle Point and Nearby Point. This point was located 5 mm right from the midpoint, following the minor axis of the ellipsoid.\relax }}{31}{figure.caption.100}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Nearby Point Use Case: Analysis of shear stresses by observing three different nearby points on the specimens surface. Load-Displacement curves were gathered from Experimental Model II showing each force component.\relax }}{32}{figure.caption.101}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces First experimental model: Tensile and compression machine with an indenter with a rounded head. Test Specimen made from ultra-soft polyurethane resin positioned on a fixed platform with a similar shape for constraint.\relax }}{10}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces First experimental model: Specimen dimensions made from ultra-soft polyurethane resin for indentation test.\relax }}{11}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces YNU experimental model: 6-axis sensor Test Specimen made from ultra-soft polyurethane resin positioned on a fixed platform with a similar shape for constraint.\relax }}{13}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces YNU experimental model: Loading diagram showing initial position of the indenter in normal position \blx@tocontentsinit {0}\cite {Mori2022}.\relax }}{13}{figure.caption.32}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Middle test point: Loading point (Red point) on the top surface of the specimen.\relax }}{14}{figure.caption.36}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Load-Unload Case: Experimental model I with modified configuration setup, on top of the movable crosshead a displacement transducer was equipped to capture unloading data.\relax }}{15}{figure.caption.38}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Nearby test point: Loading points for each experimental model to analyze shear stresses and to vbe employed for the validation of the computation models.\relax }}{16}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Load-displacement curve experimental data for Middle Point use case for both experimental models.\relax }}{17}{figure.caption.47}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Total Force Reaction-Displacement curve: Comparison between experimental data for Middle Point use case from both models.\relax }}{18}{figure.caption.48}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Load-displacement curve experimental data for Load-Unload use case for both experimental models.\relax }}{19}{figure.caption.50}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Load-Unload Use Case: Analysis of Viscoelastic material properties by using six different indentation speeds. Load-Displacement curves were obtained from the first experimental test configuration.\relax }}{20}{figure.caption.51}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Total Force Reaction-Displacement curve: Comparison between experimental data for Middle Point and Nearby Point. This point was located 5 mm right from the midpoint, following the minor axis of the ellipsoid.\relax }}{21}{figure.caption.53}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Nearby Point Use Case: Analysis of shear stresses by observing three different nearby points on the specimens surface. Load-Displacement curves were gathered from Experimental Model II showing each force component.\relax }}{22}{figure.caption.54}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Expdata}}{40}{figure.caption.140}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Expdata}}{30}{figure.caption.97}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
