@@ -156,7 +156,7 @@ dumbbell-shaped specimens were conducted, divided into three groups based on the
         \end{subfigure}  
         \hspace{0.3cm}
 
-        \caption{Uniaxial testing: Diagram of three tensile testing of an ether-based polyurethane elastomer specimen done with three different experiment configurations for different strain rate analysis. Diagrams are based on the study of made by Kayanta and Ivankovic (2010) \cite{Kanyanta2010}.}
+        \caption{Uniaxial testing: Diagram of three tensile testing of an ether-based polyurethane elastomer specimen done with three different experiment configurations for different strain rate analysis. Diagrams are based on the experiments of made by Kayanta and Ivankovic (2010) \cite{Kanyanta2010}.}
         \label{fig:uniaxialkan}
 \end{figure}
 
@@ -210,7 +210,7 @@ the loading plates, leading to a nonhomogeneous deformation state, e.g., barrell
         \centering
        \quad
        \includegraphics[width=10cm]{Images/chapter1/compressiondiag.png}%
-       \caption{Uniaxial compression testing: Diagram of typical compression setup and influence of interface friction on the deformed specimen shape \cite{Bergström2015}.}%
+       \caption{Uniaxial compression testing: Diagram of typical compression setup and influence of interface friction on the deformed specimen shape. Illustration is based on the "Mechanics of Solid Polymers" by Bergström \cite{Bergström2015}.}%
        \label{fig:compressiondiag}%
 \end{figure}
 
@@ -252,7 +252,7 @@ of the sample \cite{Griffin2016}.
         \centering
        \quad
        \includegraphics[width=10cm]{Images/chapter1/compressiontypes.png}%
-       \caption{Uniaxial compression testing: Illustration of different compression methodologies for a cartilage specimen. Unconfined compression, confined compression and Indentation. \cite{Griffin2016}.}%
+       \caption{Uniaxial compression testing: Illustration of different compression methodologies for a cartilage specimen. Unconfined compression, confined compression and Indentation. Diagrams are based on the methodologies showed by Griffin (2016) \cite{Griffin2016}.}%
        \label{fig:compressiontypes}%
 \end{figure}
 
@@ -283,7 +283,7 @@ The deformation can be measured through an capacitance gauge or also optically, 
 \begin{figure}[th]
         \centering
         \includegraphics[width=7cm]{Images/nanoindentationbigletter}
-        \caption[Nanoindentation]{Nanoindentation experiment setup diagram with an indenter tip attached to a rod and a polymer as specimen \cite{Bergström2015}.}
+        \caption[Nanoindentation]{Nanoindentation experiment setup diagram with an indenter tip attached to a rod and a polymer as specimen. Diagram is based on the "Mechanics of Solid Polymers" by Bergström \cite{Bergström2015}.}
         \label{fig:Nanoindentation}
 \end{figure}
 
@@ -379,6 +379,13 @@ This camera captures the images of the iluminated surface of the material and th
 aspiration pressure is captured through a sensor. Through this process the captured 
 profile of the tissue is obtained and this can be used to characterize the deformation 
 and analyze the viscoelastic properties of the soft tissue \cite{Kauer2002}.
+
+\begin{figure}[th]
+        \centering
+        \includegraphics[width=7cm]{Images/chapter1/aspirationkauer.png}
+        \caption[aspiration]{Aspiration experiment setup: Diagram showing aspiration tissue vertically positioned to the target tissue, inside of the tube a mirror reflects the side view of the tissue to the video camera on top. Diagram based on the research of Kauer (2002) \cite{Kauer2002}.}
+        \label{fig:aspiration}
+\end{figure}
 
 The main benefits in comparison to more traditional experimental techniques are, 
 the well-defined mechanical boundary conditions during the experiment are executed, 
@@ -657,90 +664,108 @@ will depend on the specific intended use and the desired level of accuracy.
 \subsection{Inverse Finite Element Method for Parameter Identification}
 \label{subsection:inverseFEMtheory}
 
-The Inverse Finite Element Method (iFEM) has become an increasingly popular approach for the identification of material
-parameters for both synthetic and biological materials.
+The Inverse Finite Element Method (iFEM) has become a powerful technique and an increasingly 
+popular approach for the identification of material parameters for both synthetic and biological materials \cite{Liu2009}. 
+This method involves utilizing experimental data and numerical simulations to iteratively calibrate 
+the material parameters until the computational model matches the experimental data. 
+Furthermore, this approach aims to predict further experimental results with a validated computational model 
+with an optimized set of material parameters, and extract and analyze more informatio about the material's behavior \cite{Kauer2002}.
+In nonlinear cases, where the complexity of the problem increases, inverse FE methods are very useful \cite{Husain2004}.\\
 
+The general iFEM process can be divided into the following steps:
 
+\begin{enumerate}
+        \item \textbf{Experimental data collection}: Experimental data of the observed material is gathered from the conducted mechanical tests, e.g., uniaxial tensile and compression testing, indentation, etc. This data, often given as a load-displacement result is the basis for the identification of the parameters \cite{Seshaiyer2003}.
+        \item \textbf{Finite element model development}: A finite element model is developed, which includes the definition of the geometry design, contact definition, boundary conditions and the selcetion of the appropriate material model \cite{Jamal2019}.
+        \item \textbf{Initial parameter estimation}: Based on literature, experimental observations, or expert knowledge initial estimates for the material parameters are chosen and input in the computational model \cite{Chawla2009}.
+        \item \textbf{Optimization of the parameters}: With the aid of an optimization algorithm, the material parameters are iteratively calculated until the simulated response matches or reaches a good agreement with the experimental response. The Levenberg-Marquardt and the genetic algorithm are common algorithm employed in this step \cite{Kauer2002}.
+        \item \textbf{Validation of the parameters}: The identified material parameters are validated by comparing the computational model predictions with the validation experimental data, which was not used in the optimization process \cite{Seshaiyer2003}.
+\end{enumerate}
 
+Some of the strengths of the iFEM is that this method allows the identification of parameters which are difficult to obtain 
+through conventional methods and conserves the native geometry of the specimen. Furthermore, it is particularly advantageous for the 
+solution and quantification of nonlinear problems with complex boundary conditions. A wide 
+range of materials, including soft polymers and biological tissues can be analyzed, and this method allows the 
+assumption of an homogeneous material, which helps in the description of local stresses ans strain fields \cite{Seshaiyer2003}.\\
 
-
-An inverse finite element (FE) approach requires usually a certain experimental model,
- which generates certain information e. g. load-displacement curve, and through 
-a verified computational model match the given data curve to obtain further information 
-of the material's behavior e. g., stress-strain curve.
-
-Specially for nonlinear cases \cite{Husain2004}, where the complexity of the problems 
-increases, and the interest is focused to generate an action which results in a 
-certain output response, is where an inverse finite element approach can be helpful 
-to discover a certain variable going from an ouput data. Through an iterative process it is 
-possible to describe the material's behavior and validate the output data it 
-through other established testing e. g., uniaxial testing.
-
-Though this approach does not always give a hundred percent match in all obtain points 
-or zones, it allows the researcher to understand the influences of certain parameters 
-for the materials. This is specially useful for complex materials as biomaterials. 
-
-Biomaterials, as mentioned previously, depends on multiple external factors, e.g., blood 
-pressure, affected diseases and the their material properties is constantly changing. 
-This issue does not allow the researcher to develop a proper material model which is 
-usable for multiple use-cases. 
-
-Therefore, the importance of the inverse element method as relevant key for estimating 
-constantly changing parameters in soft materials.
-
-For biomechanical models, where the models require knowledge from local properties \cite{Chai2013},
-as the biomaterial is not isotropic; it is possible to identify a parameter e.g. Young's Modulus 
-from a 3D model. The model can be matched to multiple experiments and multiple samples in different areas,
-which allows a better representation of the material for further analysis.
-
-The inverse FE approach can used by optimizing the searched parameter by matching the simulated data
-to a section of a experimental curve and extending this process through some iterations. 
-Nevertheless, it is important to clarify that this method also requires making assumptions to some values.
-Furthermore, it is relevant to document these assumptions for the further analysis. 
-With the combination of assumptions, experimental data, and a optimized and matched simulation curve, it
-is possible to solve the complexity of biomechanical models.
- 
-In next sections some of the experimental models and the material models for bio and soft materials are 
-going to be explained to get a further understanding in how is possible to get a realiable computational 
-model for further reasearch
+On the other hand, iFEM presents several limitations and challenges, such as the requirement for accurate and reliable 
+data,  the possibility of non-unique solutions when the optimization is ill-defined, and the  inability to find a 
+unique set of parameters to describe all regions of heterogeneous materials. Additionally, iFEM often needs
+high computational costs and requires a robust optimization algorithm \cite{Giudice2021}.\\
 
 \subsubsection*{Synthetic Soft Materials}
+Synthetic soft materials are commonly used to validate inverse parameter identification processes. 
+They exhibit similar mechanical behavior to biomaterials, allowing researchers to validate the proposed 
+inverse finite element approach before applying it to more challenging biomaterials, where in vivo measurements are required.
 
-Synthetics materials are commonly used to validate an inverse parameter identification process. 
-Usually these synthetic, soft materials provide similar mechanical behavior to it's biomaterials 
-counterparts. This characterization allows to validate a proposed inverse finite element approach process
-before its applicatoin with a biomaterial, where the measurements to gather the experimental data are 
-some in vivo, and more challenging to recreate.
-
-
-For example, Silgel, a very soft gel-like material \cite{Kauer2002} was used for the experimental 
-validation of the inverse finite element method proposed, to characterized the tissue of 
-a human uteri. In this work, the tensile behavior of the material was predicted through the 
-parameters obtained in the aspiration method. The matching procedure is optimize through 
-an objective function, which consists of the squared differences between the simulation 
-and exprimental data. With an optimization algorithm an optimal set of the following parameters 
-was found: the material parameters \(\mu_i\) [N/m\textsuperscript{2}] and the bulk Modulus
-\(\kappa\) [N/m\textsuperscript{2}]. This method showed good prediction quality of the mentioned 
-material parameters.
+For example, as mentioned in Subsection \ref{subsection:experimentalcharacterization} Silgel was used to validate an inverse
+finite element method for characterizing the tissue of human uteri. The aspiration method was used for the experimental data collection, 
+The FE model of the aspiration method (deformation of the tissue on the aspirated area) required the contact 
+between the tube and the tissue was treated as sticking. The strain energy function 
+\begin{align*}
+        \bar{W} &= (\sum_{k=1}^N \mu_i(J_1 - 3)^i) + \frac{1}{2}\kappa(J_3 - 1)^2 \,,\\
+\end{align*}
+was selected for the explicit displacement-pressure finite element formulations %\cite{SUSSMAN1987}. This function depends on the reduced invariants $J_1$, $J_2$, $J_3$ of the right Cauchy-Green 
+deformation tensor $\boldsymbol{C}$, and $\mu_i$ and $\kappa$ are the target material parameters. For $N = \SI{1}{}$ a nearly incompressible Neo-Hookean model 
+is formulated, which was chosen for the case of Silgel. The Levenberg-Marquardt optimization method was selected for the optimization 
+of three parameters: the shear modulus, and the bulk modulus. This method did not guarantee obtaining a global minimum, however after the selection of arbitriarily 
+initial parameters, the objective function was minimized. With the set of parameters the prediction of the tensile behavior was assessed with 
+actual tensile tests. The prediction of the synthetic tissue demonstrated good prediction quality for these parameters \cite{Kauer2002}.
 
 \subsubsection*{Biomaterials}
-Biomaterials as mentioned before, represent a challenge due its difficult access and lesser replicability.
-Therefore these materials are usually used for the experimetnal validation of a methd applied previously in 
-synthetic materials. 
- Following the first example of the Silgel in the previous section, the inverse finite element parameter
- estimation is applied now on human uteri \cite{Kauer2002} through in vivo and ex vivo measurements of the human tissue of 
- different patients. It was mentioned, that in comparison from the silgel the uterus possesses a complex 
- multi layered structure with strongly anistropic and viscoelastic properties. Nevertheless, five 
- material parameters were determined, based on the strain energy function to model a human uterus (Yamada 1970).
-Through the same inverse method applied with the synthetic material, the obtained parameters facilitated the prediction of stress-elongation curves for tensile experiments. The 
- resulting curves showed the difference of stiffness for in vivo and ex vivo measurements and the material 
- singurality for each uterus.
 
+Ahanchian (2017) characterized the the behavior of heel pad sub-layers utilizing the inverse finite element method.
+%Experiment
+With the aid of the ultrasound imaging and the indentation of the plantar heel pad tissue force-strain responses were recolected 
+for the computational model. The contact between the indentation plate and the heel skin was set frictionless, and the first-order 
+Ogden model was chosen for the description of the heel pad behavior. The Ogden strain energy function is
+\begin{align*}
+        W &= \frac{\mu}{\alpha}((\lambda_1)^{\alpha} + (\lambda_2)^{\alpha} + (\lambda_3)^{\alpha} - 3) \,,\\
+\end{align*}
+where $\lambda_i$ are the principal stretches, $\mu$ the shear modulus, and $\alpha$ the deviatoric exponent, being the last two
+the hyperelastic material parameters. 
+%FE
+The indentation of the human heel was modeled to simulate the sub-layers of the human skin and the compression response of the material.
+%Optimi
+The RMS error 
+\begin{align*}
+        RMSE &= \sqrt{\frac{\sum_{k=1}^N (F_s - F_e)^2}{n} }\,,\\
+\end{align*}
+where, $F_s$ and $F_e$ are the simulated and experimental forces, respectively. The RMSE was the objective function to be minimized, 
+and this process was done manually after each adjustment was input in the FE model. 
+%validation
+For the validation of  $\mu$ and $\alpha$ parameters, magnetic resonance imaging (MRI) was utilized.
+A good agreement was achieved for the hyperelastic model between the simulations and the validation experiments, with this validated model 
+a second stage was performed with a viscoelastic material model to improve the material model of heel skin sub-layers \cite{Ahanchian2017}.\\
 
+In conclusion, integrating the iFEM with the experimental techniques and material models as presented in the previous sections, 
+researchers can effectively identify material parameters for several synthetic and biological soft materials. 
+This approach enables the development of accurate computational models that can be used to understand complex material behavior. 
 %\subsection{Standard Verification and Validation for Computational Solid Mechanics (ASME)}
 %\subsubsection*{VV40}
-
-
 %---------------------------------------------------------------------------------
 
 \section{Overview}
+The thesis is organized into six chapters, providing an in-depth analysis of experimental models, computational models, 
+parameter identification, optimization, and validation. 
+
+\textbf{Chapter 1} served as an introduction to the topic, setting the context and providing the motivation 
+for the work. It also presented an overview of the literature and the state of the art in the field.
+
+\textbf{Chapter 2} details the experimental models used for the inverse finite element method. 
+Indentation experiments were performed and the experimental points are described. The chapter also outlines 
+the main assumptions established for the development of the material model used in the FE model.
+
+\textbf{Chapter 3} focuses on the computational model, where the FE model is thoroughly described. 
+Furthermore, the challenges encountered in the simulation process are also discussed, providing insights into 
+the contact problem between the indenter and the material.
+
+\textbf{Chapter 4} describes the inverse finite element method, explaining the process of material parameter identification. 
+This chapter also describes the optimization methods explored, highlighting its importance in determining the best-fit 
+material parameters for the experimental data.
+
+\textbf{Chapter 5} presents the discussion of a proposed framework to develop a material model with iFEM approach 
+and the results obtained from the iFEM, and the validation of the best material parameters are presented. 
+This chapter assesses the accuracy of the identified parameters by comparing it with other validation experiments.
+Finally, \textbf{Chapter 6} concludes the thesis by summarizing the main findings, discussing the implications of the results, 
+and providing an outlook on future research directions and potential applications in further projects.

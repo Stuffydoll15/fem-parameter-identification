@@ -215,15 +215,48 @@
     \verb{doi}
     \verb 10.1016/j.jbiomech.2013.03.017
     \endverb
-    \field{issue}{10}
-    \field{pages}{1759\bibrangedash 1766}
     \field{title}{Local axial compressive mechanical properties of human
   carotid atherosclerotic plaques-characterisation by indentation test and
   inverse finite element analysis}
-    \field{volume}{46}
     \field{journaltitle}{Journal of Biomechanics}
-    \field{month}{06}
     \field{year}{2013}
+  \endentry
+
+  \entry{Chawla2009}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CA}{%
+         family={Chawla},
+         familyi={C\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Mukherjee},
+         familyi={M\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Karthikeyan},
+         familyi={K\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CAMSKB1}
+    \strng{fullhash}{CAMSKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1007/s10237-008-0121-6
+    \endverb
+    \field{pages}{67\bibrangedash 76}
+    \field{title}{Characterization of human passive muscles for impact loads
+  using genetic algorithm and inverse finite element methods}
+    \field{journaltitle}{Biomechanics and Modeling in Mechanobiology}
+    \field{year}{2009}
   \endentry
 
   \entry{Cox2006}{article}{}
@@ -311,14 +344,10 @@
     \verb{doi}
     \verb 10.1007/s40940-017-0046-5
     \endverb
-    \field{issn}{23635150}
-    \field{issue}{1}
-    \field{pages}{39\bibrangedash 54}
     \field{title}{Adhesive connections in glass structures—part I:
   experiments and analytics on thin structural silicone}
     \field{volume}{3}
     \field{journaltitle}{Glass Structures and Engineering}
-    \field{month}{03}
     \field{year}{2018}
   \endentry
 
@@ -375,6 +404,69 @@
     \field{year}{2017}
   \endentry
 
+  \entry{Giudice2021}{article}{}
+    \name{author}{7}{}{%
+      {{hash=GJS}{%
+         family={Giudice},
+         familyi={G\bibinitperiod},
+         given={J.\bibnamedelima Sebastian},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Alshareef},
+         familyi={A\bibinitperiod},
+         given={Ahmed},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Taotao},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KAK}{%
+         family={Knutsen},
+         familyi={K\bibinitperiod},
+         given={Andrew\bibnamedelima K.},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=HLV}{%
+         family={Hiscox},
+         familyi={H\bibinitperiod},
+         given={Lucy\bibnamedelima V.},
+         giveni={L\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=JCL}{%
+         family={Johnson},
+         familyi={J\bibinitperiod},
+         given={Curtis\bibnamedelima L.},
+         giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=PMB}{%
+         family={Panzer},
+         familyi={P\bibinitperiod},
+         given={Matthew\bibnamedelima B.},
+         giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Frontiers Media S.A.}%
+    }
+    \strng{namehash}{GJS+1}
+    \strng{fullhash}{GJSAAWTKAKHLVJCLPMB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.3389/fbioe.2021.664268
+    \endverb
+    \field{title}{Calibration of a Heterogeneous Brain Model Using a
+  Subject-Specific Inverse Finite Element Approach}
+    \field{journaltitle}{Frontiers in Bioengineering and Biotechnology}
+    \field{year}{2021}
+  \endentry
+
   \entry{Goharian2017}{book}{}
     \name{author}{3}{}{%
       {{hash=GA}{%
@@ -412,7 +504,6 @@
     \field{title}{Biomechanical Evaluation Methods}
     \field{journaltitle}{Trauma Plating Systems: Biomechanical, Material,
   Biological, and Clinical Aspects}
-    \field{month}{03}
     \field{year}{2017}
   \endentry
 
@@ -461,8 +552,6 @@
     \verb{doi}
     \verb 10.3791/54872
     \endverb
-    \field{issn}{1940087X}
-    \field{issue}{118}
     \field{title}{Biomechanical characterization of human soft tissues using
   indentation and tensile testing}
     \field{journaltitle}{Journal of Visualized Experiments}
@@ -500,14 +589,46 @@
     \verb{doi}
     \verb 10.1016/j.commatsci.2004.01.039
     \endverb
-    \field{issue}{1-2}
     \field{pages}{84\bibrangedash 92}
     \field{title}{An inverse finite element procedure for the determination of
   constitutive tensile behavior of materials using miniature specimen}
-    \field{volume}{31}
     \field{journaltitle}{Computational Materials Science}
     \field{month}{09}
     \field{year}{2004}
+  \endentry
+
+  \entry{Jamal2019}{article}{}
+    \name{author}{2}{}{%
+      {{hash=JM}{%
+         family={Jamal},
+         familyi={J\bibinitperiod},
+         given={Mikdam},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MMN}{%
+         family={Morgan},
+         familyi={M\bibinitperiod},
+         given={Michael\bibnamedelima N.},
+         giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MDPI Multidisciplinary Digital Publishing Institute}%
+    }
+    \strng{namehash}{JMMMN1}
+    \strng{fullhash}{JMMMN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \verb{doi}
+    \verb 10.3390/inventions4030040
+    \endverb
+    \field{issn}{24115134}
+    \field{title}{Characterization of material properties based on inverse
+  finite element modelling}
+    \field{volume}{4}
+    \field{year}{2019}
   \endentry
 
   \entry{Joseph2018}{article}{}
@@ -546,7 +667,6 @@
     \verb{doi}
     \verb 10.1080/00202967.2018.1450209
     \endverb
-    \field{issue}{3}
     \field{pages}{121\bibrangedash 129}
     \field{title}{Biomedical applications of polyurethane materials and
   coatings}
@@ -579,7 +699,6 @@
     \verb{doi}
     \verb 10.1016/j.jmbbm.2009.03.005
     \endverb
-    \field{issn}{17516161}
     \field{pages}{51\bibrangedash 62}
     \field{title}{Mechanical characterisation of polyurethane elastomer for
   biomedical applications}
@@ -708,37 +827,14 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{L}
     \field{sortinithash}{L}
-    \field{abstract}{%
-    Polymer gels are widely accepted as candidate materials for tissue
-  engineering, drug delivery, and orthopedic load-bearing applications. In
-  addition, their mechanical and physical properties can be tailored to meet a
-  wide range of design requirements. For soft gels whose elastic modulus is in
-  the kPa range, mechanical characterization by bulk mechanical testing methods
-  presents challenges, for example, in sample preparation, fixture design,
-  gripping, and/or load measurement accuracy. Nanoindentation, however, has
-  advantages when characterizing the mechanical properties of soft materials.
-  This study was aimed at investigating the application of an inverse finite
-  element analysis technique to identify material parameters of polymer gels
-  via nanoindentation creep testing, optimization, and finite element
-  simulation. Nanoindentation experiments were conducted using a rigid circular
-  flat punch, and then simulated using the commercial software ABAQUS™. The
-  optimization (error minimization) procedure was integrated in the parameter
-  determination process using a Matlab™ shell program, which makes this
-  approach readily adaptable to other test geometries and material models. The
-  finite element results compare well with a derived analytical viscoelastic
-  solution for a rigid circular flat punch on a Kelvin-Voigt half-space. ©
-  2008 Elsevier Ltd.%
-    }
     \verb{doi}
     \verb 10.1016/j.jmbbm.2008.12.001
     \endverb
-    \field{pages}{355\bibrangedash 363}
     \field{title}{Mechanical characterization of soft viscoelastic gels via
   indentation and optimization-based inverse finite element analysis}
     \field{volume}{2}
     \field{journaltitle}{Journal of the Mechanical Behavior of Biomedical
   Materials}
-    \field{month}{08}
     \field{year}{2009}
   \endentry
 
@@ -854,10 +950,8 @@
     \endverb
     \field{issn}{01480731}
     \field{issue}{3}
-    \field{pages}{363\bibrangedash 371}
     \field{title}{A sub-domain inverse finite element characterization of
   hyperelastic membranes including soft tissues}
-    \field{volume}{125}
     \field{journaltitle}{Journal of Biomechanical Engineering}
     \field{month}{06}
     \field{year}{2003}
