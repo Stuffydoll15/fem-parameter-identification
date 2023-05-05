@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  5 MAY 2023 02:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  5 MAY 2023 18:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2028,17 +2028,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 838--846
  (Content/Chapter4.tex
 Chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--23
+Underfull \hbox (badness 10000) in paragraph at lines 18--22
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--40
+Underfull \hbox (badness 10000) in paragraph at lines 34--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--46
+Underfull \hbox (badness 10000) in paragraph at lines 40--44
 
  []
 
@@ -2048,22 +2048,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--46
 
 
 
-]) [36]
+]
+Underfull \hbox (badness 10000) in paragraph at lines 63--68
+
+ []
+
+) [36] [37]
 \openout2 = `Content/Chapter5.aux'.
 
- (Content/Chapter5.tex
-Chapter 4.
-)
-1: section
-[37
+ (Content/Chapter5.tex [38
 
 
 
 
 ]
+Chapter 4.
+)
+1: section
+[39]
 \openout2 = `Content/Chapter6.aux'.
 
- (Content/Chapter6.tex [38
+ (Content/Chapter6.tex [40
 
 
 
@@ -2077,10 +2082,10 @@ Overfull \hbox (4.07181pt too wide) in paragraph at lines 21--33
 
 PGFPlots: reading {Table/data1.dat}
 1: section
-[39] [40]) [41]
+[41] [42]) [43]
 \openout2 = `Content/Chapter7.aux'.
 
- (Content/Chapter7.tex [42
+ (Content/Chapter7.tex [44
 
 
 
@@ -2089,10 +2094,10 @@ PGFPlots: reading {Table/data1.dat}
 Chapter 6.
 )
 1: section
-[43]
+[45]
 \openout2 = `Appendix/AppendixA.aux'.
 
- (Appendix/AppendixA.tex [44
+ (Appendix/AppendixA.tex [46
 
 
 
@@ -2101,10 +2106,10 @@ Chapter 6.
 Appendix A.
 )
 1: section
-[45]
+[47]
 \openout2 = `Bibliography/Bibliography.aux'.
 
- (Bibliography/Bibliography.tex [46
+ (Bibliography/Bibliography.tex [48
 
 
 
@@ -2125,7 +2130,7 @@ Overfull \hbox (0.2904pt too wide) in paragraph at lines 1--1
  []
 
 1: section
-[47]
+[49]
 Overfull \hbox (41.42664pt too wide) in paragraph at lines 1--1
 []\OT1/ppl/m/n/10.95 Valentine Kanyanta and Alojz Ivankovic. \  Me-chan-i-cal char-ac-ter-i-sa-tion of polyurethane
  []
@@ -2135,28 +2140,28 @@ Overfull \hbox (31.31085pt too wide) in paragraph at lines 1--1
 \OT1/ppl/m/it/10.95 view of re-cent de-vel-op-ments\OT1/ppl/m/n/10.95 . El-se-vier, 2012, pp. 115{151. \OT1/ppl/m/sc/10.95 doi\OT1/ppl/m/n/10.95 : [][]$\OT1/cmtt/l/it/10.95 10 . 1533 / 9781908818188 .
  []
 
-[48]) [49] (main.aux (FrontBackMatter/Titlepage.aux) (FrontBackMatter/Authorship.aux) (FrontBackMatter/ListOfContent.aux) (FrontBackMatter/Symbols.aux) (Content/Chapter2.aux) (Content/Chapter3.aux) (Content/Chapter4.aux) (Content/Chapter5.aux) (Content/Chapter6.aux) (Content/Chapter7.aux) (Appendix/AppendixA.aux) (Bibliography/Bibliography.aux))
+[50]) [51] (main.aux (FrontBackMatter/Titlepage.aux) (FrontBackMatter/Authorship.aux) (FrontBackMatter/ListOfContent.aux) (FrontBackMatter/Symbols.aux) (Content/Chapter2.aux) (Content/Chapter3.aux) (Content/Chapter4.aux) (Content/Chapter5.aux) (Content/Chapter6.aux) (Content/Chapter7.aux) (Appendix/AppendixA.aux) (Bibliography/Bibliography.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 582EA7CEE3068CF670CF1667FD263EAF;9994.
+(rerunfilecheck)             Checksum: 7E819FDA76E835F46F9675A63E35AAF3;10045.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59324 strings out of 475281
- 1426005 string characters out of 2774064
- 2442467 words of memory out of 3000000
+ 59329 strings out of 475281
+ 1426055 string characters out of 2774064
+ 2442469 words of memory out of 3000000
  79471 multiletter control sequences out of 15000+600000
  514836 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,21n,100p,2324b,3265s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (63 pages, 25613782 bytes).
+Output written on main.pdf (65 pages, 25616509 bytes).
 PDF statistics:
- 1060 PDF objects out of 1200 (max. 8388607)
- 256 named destinations out of 1000 (max. 500000)
+ 1072 PDF objects out of 1200 (max. 8388607)
+ 261 named destinations out of 1000 (max. 500000)
  542 words of extra memory for PDF output out of 10000 (max. 10000000)
 

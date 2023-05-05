@@ -15,28 +15,26 @@ during the FE model construction process, such as the contact definition between
 and the mesh convergence of the FE model.
 
 \section{Middle point}
-\subsection{Description}
 The quasi static nature of the indentation experiment allowed the use of a static 
 structural analysis. As the most important factor is the development of the framework for identification 
 of the material parameter process, the model was simplified as much as possible to avoid the influence 
 of the error produced by complex geometries and the definition of the boundary condtions.\\
 
+\subsection{Experimental model I}
+\subsubsection*{Description}
+
 For the geometry, only the key components that significantly contribute to the mechanical response were modeled, 
 i.e., the indenter and the specimen. The tumor extraction geometry shown in Figure \ref{fig:specimenhole}
-was only simulated for EP I. This was removed for the EP II geometry model, as it was shown that this area 
-of the specimen's geometry was irrelevant for the calculation of the results.
+was also simulated for EP I. 
 
-Both, the indenter and the specimen used SOLID187 elements. 
-SOLID187 elements are a high order 3-D, 10 node elements with three degrees of freedom at each node. 
+Both, the indenter and the specimen used SOLID187 elements. SOLID187 elements are a high order 3-D, 10 node elements with three degrees of freedom at each node. 
 This element was suitable to simulate the deformations of nearly incompressible hyperelastic materials 
 and had the hyperelasticity, large deflection, and large strain capabilities \cite{Ansys2010}.
 
-The geometries used for EP I and EP II are shown Figure. %figure of the middle point geometry for experimental model I and II
-This figure shows the geoemtry model for the middle point test configuration, which allowed the used 
+The geometry model used for EP I is observed in Figure. %figure of the middle point geometry for experimental model I and II
+This figure shows the FE model for the middle point test configuration, which allowed the used 
 of symmetry boundary conditions. This characteristic reduced the computational cost for the simulation 
-of the FE model. For EP I and EP II only one-quarter, and the half of the full model was used respectively.
-The decision to use half model for EP II was made to make the visualization of the deformation profile 
-easier for the validation in further steps.\\
+of the FE model, therefore one-quarter model was used for EP I.\\
 
 %Maybe create table of the initial parameters chosen? which part is this going to be?
 To approximate the mechanical properties of ultra-soft polyurethane, initial parameters were assigned 
@@ -46,7 +44,27 @@ the shear modulus $\mu$ and the incompressibility parameter $D_1$ were specified
 
 The contact interaction between the indenter and the specimen were set frictionless, to reduce 
 overall complexity of the model and mimic the lubricated contact in the experiments.
+The lower half of the specimen was defined as a fixed support, reflecting the physical constraint in the 
+experimental setup. The displacement value was applied to the indenter in Y-direction, 
+from which the force reaction was obtained.
+%CONTA174 and TARGE170
 
+The mesh for the whole model were formed from quadratic tetrahedral elements. 
+Various meshing methods were tried and the mesh, which showed the best results for experimental model I 
+possessed an global element size of $e_{I_s}=\SI{5}{\milli\meter}$ and $e_{I_i}=\SI{1}{\milli\meter}$ for the specimen 
+and the indenter respectively. A refinement was made in the area of interest, i.e., the contact 
+area between the indenter and the specimen's surface, with a sphere radius of 
+$r_{I_a}=\SI{8}{\milli\meter}$ and an element size of $e_{I_a}=\SI{0.5}{\milli\meter}$ (Fig.). %add meshing figure.
+
+\subsubsection*{Results}
+
+
+\subsection*{Experimental model II}
+This was removed for the EP II geometry model, as it was shown that this area 
+of the specimen's geometry was irrelevant for the calculation of the results.
+For EP I and EP II only one-quarter, and the half of the full model was used respectively.
+The decision to use half model for EP II was made to make the visualization of the deformation profile 
+easier for the validation in further steps.\\
 
 The mesh for the whole model is formed from quad tetrahedral elemennts. The platform and 
 the specimen have an global element size of 5 mm. The indenter has an element size of
