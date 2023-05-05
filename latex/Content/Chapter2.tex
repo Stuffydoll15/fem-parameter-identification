@@ -1,8 +1,7 @@
 % Chapter 2
 
 \chapter{Introduction} % Main chapter title
-
-\label{Chapter2} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+\label{chapter:introduction} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
 \section{Background and Problem Statement}
 The biomechanical characterization of soft tissues has gained attention
@@ -12,7 +11,7 @@ their accumulated experience. While this information have proven to be useful in
 these methods have limitations in cases where quantifiable data is necessary, specifically for computer-assisted systems, e.g,
 medical diagnosis, therapy, and training \cite{Kauer2002}.
 To gather the material data, e.g., elasticity, stiffness, response under deformation and temperature, it is required 
-to gain access to the soft tissues and perform in vivo testing experiments. 
+to gain access to the soft tissues and perform \textit{in vivo} testing experiments. 
 However, obtaining accurate biomechanical data can be challenging 
 due to the invasive nature of the procedures and the difficulty in maintaining constant and reproducible internal or external factors  
 in experimental configurations \cite{Carter2001}.\\
@@ -101,7 +100,7 @@ Experimental testing is a key approach to obtaining information about the mechan
 In order to characterize the mechanical behavior of a test specimen, the most common method
 method is to mechanically load the specimen and measure the response of the force against 
 the displacement \cite{Bergström2015}. Soft materials are commonly applied 
-for tissue engineering applications, however, some challenges arise for the 
+for tissue engineering applications, however, challenges arise for the 
 design of experimental design due to their elastic modulus range ($\SI{}{\kilo \pascal}$) and complex
 mechanical properties \cite{Liu2009}.\\
 
@@ -252,13 +251,13 @@ of the sample \cite{Griffin2016}.
         \centering
        \quad
        \includegraphics[width=10cm]{Images/chapter1/compressiontypes.png}%
-       \caption[Uniaxial compression testing methodologies showed by \citet{Griffin2016}]{Uniaxial compression testing: Illustration of different compression methodologies for a cartilage specimen. Unconfined compression, confined compression and Indentation. Diagrams are based on the methodologies showed by \citet{Griffin2016}.}%
+       \caption[Uniaxial compression testing methodologies by \citet{Griffin2016}]{Uniaxial compression testing: Illustration of different compression methodologies for a cartilage specimen. Unconfined compression, confined compression and Indentation. Diagrams are based on the methodologies showed by \citet{Griffin2016}.}%
        \label{fig:compressiontypes}%
 \end{figure}
 
 %------------------------------------------------------------------------
 \subsubsection*{Indentation}
-Indentation testing, icluding micro and nanoindentation, is a popular method for characterizing 
+Indentation testing, including micro and nanoindentation, is a popular method for characterizing 
 the mechanical properties of soft materials \cite{Wu2016}. One of the main advantages of 
 indentation testing is that it requires minimal sample preparation and it is often a 
 nondestructive technique, which allows the preservation of the geometry and tissue's architecture \cite{Shi2019}.
@@ -266,7 +265,7 @@ Furthermore, indentation is useful where more traditional testing techniques suc
 uniaxial or biaxial testing, are not possible to employ, 
 and can also be utilized to evaluate nonlinear properties, e.g., viscoplastic responses\cite{Bergström2015}.\\
 
-Despite these advantages, there are some challenges when using indentation to 
+Despite these advantages, there are challenges when using indentation to 
 characterize soft materials. First, a stress-strain response is difficult to
 obtain due to the complex boundary conditions, which introduces an inverse problem 
 for the identification of material parameters \cite{Shi2019}. Second, many of the current 
@@ -283,7 +282,7 @@ The deformation can be measured through an capacitance gauge or also optically, 
 \begin{figure}[th]
         \centering
         \includegraphics[width=7cm]{Images/nanoindentationbigletter}
-        \caption[Nanoindentation diagram by \citet{Bergström2015}]{Nanoindentation experiment setup diagram with an indenter tip attached to a rod and a polymer as specimen. Diagram is based on the "Mechanics of Solid Polymers" by Bergström \cite{Bergström2015}.}
+        \caption[Nanoindentation experiment diagram by \citet{Bergström2015}]{Nanoindentation experiment setup diagram with an indenter tip attached to a rod and a polymer as specimen. Diagram is based on the "Mechanics of Solid Polymers" by Bergström \cite{Bergström2015}.}
         \label{fig:Nanoindentation}
 \end{figure}
 
@@ -308,9 +307,9 @@ sensitivity of these parameters to experimental data noise \cite{Zhang2014}.\\
 For an application with biological tissues \citet{Carter2001} performed indentation experiments on 
 human and porcine organs for its application in realistic computer-based simulators 
 for minimal access surgery (MAS) training. 
-This study investigated the stress-strain data pig spleen and liver for ex vivo experiments, 
-along with human liver for in vivo experiments from volunteers patients undergoing a minor 
-surgery. For the ex vivo experiment a static indentation setup was used as shown in Figure 
+This study investigated the stress-strain data pig spleen and liver for \textit{ex vivo} experiments, 
+along with human liver for \textit{in vivo} experiments from volunteers patients undergoing a minor 
+surgery. For the \textit{ex vivo} experiment a static indentation setup was used as shown in Figure 
 \ref{fig:carter1}, where the specimens were placed on a flat surface. A force was applied 
 manually with a winding mechanism at constant rate of $\SI[per-mode = symbol]{1}{\milli \m\per \second}$ 
 with a rounded indenter with a diameter of $\SI{4.5}{\milli \m}$. Ten measurements were 
@@ -322,7 +321,7 @@ gathered with a computerized system with a sampling rate of $\SI{15}{\hertz}$.\\
         \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Images/chapter1/indentation1carter.png}
-        \caption{Static indentation configuration used for ex vivo indentations tests. Indenter advances against the tissue by rotating the wheel}
+        \caption{Static indentation configuration used for \textit{ex vivo} indentations tests. Indenter advances against the tissue by rotating the wheel}
         \label{fig:carter1}
         \end{subfigure}
         \hfill
@@ -333,11 +332,11 @@ gathered with a computerized system with a sampling rate of $\SI{15}{\hertz}$.\\
         \label{fig:carter2}
         \end{subfigure}
         \hspace{0.3cm}
-        \caption[Indentation testing setup of synthetic and biological tissues by \citet{Carter2001}]{Indentation testing: Diagram of static and mobile indentation tests, indenters were attached to a load cell, which was connected to a displacement transducer. Diagrams are based on the study of made by \citet{Carter2001}.}
+        \caption[Indentation setup of synthetic and biological tissues by \citet{Carter2001}]{Indentation testing: Diagram of static and mobile indentation tests, indenters were attached to a load cell, which was connected to a displacement transducer. Diagrams are based on the study of made by \citet{Carter2001}.}
         \label{fig:indentationcarter}
 \end{figure}
 
-The in vivo experiments were carried out using a hand-held compliance probe. To achieve 
+The \textit{in vivo} experiments were carried out using a hand-held compliance probe. To achieve 
 an overall consistency of the measurements the same surgeon performed the experiments. 
 In addition to maintain consistent indentation depth of $\SI{5}{\milli \m}$ the indenter was 
 surrounded with a reference ring to provide stability in the measurements (Fig. \ref{fig:carter2}). The force 
@@ -358,7 +357,7 @@ diseased liver showed a higher elastic modulus of $\SI{0.74}{\mega \pascal}$ \ci
 \subsubsection*{Aspiration Experiment}
 
 Tissue aspiration experiments was a method introduced by \citet{Kauer2002} for determining 
-the material parameters of biological soft tissues in vivo.
+the material parameters of biological soft tissues \textit{in vivo}.
 In this study the method was validated with a synthetic material, Silgel, a very 
 soft gel-like material with similar properties to biological soft tissues. 
 This material was ideal to use it for the validation of the 
@@ -372,7 +371,7 @@ provides a good chance to perform measurements before and after the removal of t
 This method introduced an aspiration tube which is put against the 
 soft tissue, generating a vacuum a causing the deformation of the tissue (Fig. \ref{fig:aspiration} ). 
 An advantageous feature of this experimental technique is that 
-it can be perfomed in vivo and ex vivo.
+it can be perfomed \textit{in vivo} and \textit{ex vivo}.
 With the help of a mirror placed next to aspiration hole, the reflection 
 of the side-view of the tissue can be captured with a video camera.
 This camera captures the images of the iluminated surface of the material and the 
@@ -415,7 +414,7 @@ accurate for monotonic loading, and not capturing rate effects, i.e., viscoelast
 hysteresis during cyclic loading \cite{Bergström2015}.
 
 In this subsection, linear elasticity and hyperelasticity constitutive models will be presented 
-based on the overview made by \citet{Bergström2015}, followed by some examples from the research 
+based on the overview made by \citet{Bergström2015}, followed by examples from the research 
 papers from the Subsection \ref{subsection:experimentalcharacterization} to confirm the relevance of these 
 models for medical research.
 
@@ -455,7 +454,7 @@ temperatures \cite{Bergström2015}.
 
 \subsubsection*{Anisotropic Elasticity}
 Anisotropic elasticity is an extension of linear elasticity theory that considers the anisotropic 
-behavior of the material, as is usually the case for biopolymers. The strain and stress 
+behavior of the material, as is usually the case for biopolymers. The strain $\epsilon_{ij}$ and stress $\sigma_{ij}$ 
 \begin{align}
         \epsilon_{ij} &= S_{ijkl} \sigma_{kl}, \label{eq:strainanisotropic}\\
         \sigma_{ij} &= C_{ijkl} \epsilon_{kl}, \label{eq:stressanisotropic}
@@ -464,19 +463,19 @@ can be written using Hooke's Law for an anisotropic material. These equations
 show that the stress and strain tensor are linearly dependent on each other by a linear stiffness $C_{ijkl}$ 
 or compliance tensor $S_{ijkl}$. The stiffness and compliance tensors possess $\SI{81}{}$ components and 
 since the stress and strain tensors are symmetrical, the independent components of $S$ and $C$ can be then reduced 
-to $\SI{36}{}$. Depending on the degree of anisotropy, these matrices can be further simplified. 
+to $\SI{36}{}$ components. Depending on the degree of anisotropy, these matrices can be further simplified. 
 
 \subsubsection*{Hyperelasticity}
 Hyperelastic models are an extension of linear elasticity that accounts for nonlinearity 
 and large strain predictions. These models have been widely developed over the years and 
 are available in various FE softwares. Hyperelastic models are very important in modeling 
 soft tissues, as they can be sometimes connected to the micromechanisms driving the 
-deformation behavior of the material \cite{Bergström2015}. Some common hyperelastic models include the 
+deformation behavior of the material \cite{Bergström2015}. Common hyperelastic models include the 
 Neo-Hookean, Mooney-Rivlin and Ogden models.\\
 
 \textbf{Neo-Hookean Model}\\
 
-The Neo-Hookean (NH) model is a simple hyperelastic model based on the shear 
+The Neo-Hookean (NH) model consists of a simple hyperelastic model based on the shear 
 modulus $\mu$ and the bulk modulus $\kappa$. This model can be used for compressible 
 and incompressible deformations, with the compressible version often being more 
 practical for finite element simulations. The NH model is primarily used for 
@@ -560,7 +559,7 @@ For the incompressible version of the MR model, the Cauchy stresses in uniaxial,
 The Mooney-Rivlin model often enhances the accuracy of the predictions of the Neo-Hookean model.
 However, certain loading modes can cause instability in the case of a negative $C_{01}$ term \cite{Bergström2015}.\\
 
-Some research papers, which used the Mooney-Rivlin model are, e.g., Drass et al. (2018) utilized the MR 
+Research papers, which used the Mooney-Rivlin model are, e.g., Drass et al. (2018) utilized the MR 
 model to describe the behavior of silicone and identify the hyperelastic parameters through inverse methods. This model 
 showed adequate results for the fitting of four different experimental methods; uniaxial tension and compression test, 
 biaxial tension, and shear pancake test \cite{Drass2018}.
@@ -682,21 +681,21 @@ The general iFEM process can be divided into the following steps:
         \item \textbf{Validation of the parameters}: The identified material parameters are validated by comparing the computational model predictions with the validation experimental data, which was not used in the optimization process \cite{Seshaiyer2003}.
 \end{enumerate}
 
-Some strengths of the iFEM is that this method allows the identification of parameters which are difficult to obtain 
+The main strengths of the iFEM is that this method allows the identification of parameters which are difficult to obtain 
 through conventional methods and conserves the native geometry of the specimen. Furthermore, it is particularly advantageous for the 
 solution and quantification of nonlinear problems with complex boundary conditions. A wide 
 range of materials, including soft polymers and biological tissues can be analyzed, and this method allows the 
 assumption of a homogeneous material, which helps in the description of local stresses and strain fields \cite{Seshaiyer2003}.\\
 
 On the other hand, iFEM presents several limitations and challenges, this include the need for precise and dependable 
-data, the potential for non-unique solutions in cases of poorly.defined optimization, and the  inability to find a 
-unique set of parameters to describe all heterogeneous material regions. Also, iFEM often demands
+data, the potential for non-unique solutions in cases of poorly defined optimization, and the inability to find a 
+unique set of parameters to describe all heterogeneous material regions. Also, iFEM with complex boundary conditions often demands
 significant computational resources and requires a sturdy optimization algorithm \cite{Giudice2021}.\\
 
 \subsubsection*{Synthetic Soft Materials}
 Synthetic soft materials are commonly used to validate inverse parameter identification processes. 
 They exhibit similar mechanical behavior to biomaterials, allowing researchers to validate the proposed 
-inverse finite element approach before applying it to more challenging biomaterials, where in vivo measurements are required.
+inverse finite element approach before applying it to more challenging biomaterials, where \textit{in vivo} measurements are required.
 
 For example, as mentioned in Subsection \ref{subsection:experimentalcharacterization} Silgel was used to validate an inverse
 finite element method for characterizing the tissue of human uteri. The aspiration method was used for the experimental data collection, 
@@ -721,7 +720,7 @@ With the aid of the ultrasound imaging and the indentation of the plantar heel p
 for the computational model. The contact between the indentation plate and the heel skin was set frictionless, and the first-order 
 Ogden model was chosen for the description of the heel pad behavior. The Ogden strain energy function is
 \begin{align}
-        W &= \frac{\mu}{\alpha}((\lambda_1)^{\alpha} + (\lambda_2)^{\alpha} + (\lambda_3)^{\alpha} - 3) \,,\\
+        W &= \frac{\mu}{\alpha}((\lambda_1)^{\alpha} + (\lambda_2)^{\alpha} + (\lambda_3)^{\alpha} - 3) \,,
 \end{align}
 where $\lambda_i$ are the principal stretches, $\mu$ the shear modulus, and $\alpha$ the deviatoric exponent, being the last two
 the hyperelastic material parameters. 
@@ -730,7 +729,7 @@ The indentation of the human heel was modeled to simulate the sub-layers of the 
 %Optimi
 The RMS error 
 \begin{align}
-        RMSE &= \sqrt{\frac{\sum_{k=1}^N (F_s - F_e)^2}{n} }\,,\\
+        RMSE &= \sqrt{\frac{\sum_{k=1}^N (F_s - F_e)^2}{n} }\,,
 \end{align}
 where, $F_s$ and $F_e$ are the simulated and experimental forces, respectively. The RMSE was the objective function to be minimized, 
 and this process was done manually after each adjustment was input in the FE model. 
@@ -750,14 +749,13 @@ This approach enables the development of accurate computational models that can 
 The thesis is organized into six chapters, providing an in-depth analysis of experimental models, computational models, 
 parameter identification, optimization, and validation. 
 
-\textbf{Chapter 1} served as an introduction to the topic, setting the context and providing the motivation 
-for the work. It also presented an overview of the literature and the state of the art in the field.
-
-\textbf{Chapter 2} details the experimental models used for the inverse finite element method. 
+%\textbf{Chapter 1} served as an introduction to the topic, setting the context and providing the motivation 
+%for the work. It also presented an overview of the literature and the state of the art in the field.
+\textbf{Chapter \ref{chapter:experimentalmodel}} details the experimental models used for the inverse finite element method. 
 Indentation experiments were performed, and the experimental points are described. The chapter also outlines 
 the main assumptions established for the development of the material model used in the FE model.
 
-\textbf{Chapter 3} focuses on the computational model, where the FE model is thoroughly described. 
+\textbf{Chapter \ref{chapter:computationalmodel}} focuses on the computational model, where the FE model is thoroughly described. 
 Furthermore, the challenges encountered in the simulation process are also discussed, providing insights into 
 the contact problem between the indenter and the material.
 

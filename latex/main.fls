@@ -2072,7 +2072,9 @@ INPUT Content\Chapter2.tex
 INPUT .\Content\Chapter2.tex
 INPUT Content\Chapter2.tex
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb7t.tfm
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplri7t.tfm
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplb7t.vf
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplri7t.vf
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr7t.tfm
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb7t.tfm
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplro7t.vf
@@ -2138,6 +2140,32 @@ INPUT .\Images\nanoindentationbigletter.png
 INPUT .\Images\nanoindentationbigletter.png
 INPUT .\Images\nanoindentationbigletter.png
 INPUT .\Images\nanoindentationbigletter.png
+INPUT .\Images\chapter1\indentation1carter.png
+INPUT .\Images\chapter1\indentation1carter.png
+INPUT Images\chapter1\indentation1carter.png
+INPUT .\Images\chapter1\indentation1carter.png
+INPUT .\Images\chapter1\indentation1carter.png
+INPUT .\Images\chapter1\indentation1carter.png
+INPUT .\Images\chapter1\indentation1carter.png
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplri7t.tfm
+INPUT .\Images\chapter1\indentation2carter.png
+INPUT .\Images\chapter1\indentation2carter.png
+INPUT Images\chapter1\indentation2carter.png
+INPUT .\Images\chapter1\indentation2carter.png
+INPUT .\Images\chapter1\indentation2carter.png
+INPUT .\Images\chapter1\indentation2carter.png
+INPUT .\Images\chapter1\indentation2carter.png
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplri7t.vf
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplri8r.tfm
+INPUT .\Images\chapter1\aspirationkauer.png
+INPUT .\Images\chapter1\aspirationkauer.png
+INPUT Images\chapter1\aspirationkauer.png
+INPUT .\Images\chapter1\aspirationkauer.png
+INPUT .\Images\chapter1\aspirationkauer.png
+INPUT .\Images\chapter1\aspirationkauer.png
+INPUT .\Images\chapter1\aspirationkauer.png
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7t.vf
+INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT .\Content\Chapter3.tex
 INPUT .\Content\Chapter3.tex
 INPUT .\Content\Chapter3.tex
@@ -2264,11 +2292,11 @@ INPUT Table\Loadunload\Speed\L75.dat
 INPUT Table\Loadunload\Speed\U75.dat
 INPUT Table\Loadunload\Speed\L100.dat
 INPUT Table\Loadunload\Speed\U100.dat
-INPUT Table\Middle Point\MPI38mm.dat
-INPUT Table\Nearby Point\nbexpI.dat
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7t.vf
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmr.tfm
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
+INPUT Table\Middle Point\MPI38mm.dat
+INPUT Table\Nearby Point\nbexpI.dat
 INPUT Table\Middle Point\MPII4mm.dat
 INPUT Table\Nearby Point\nbP1expII.dat
 INPUT Table\Nearby Point\nbP2expII.dat
@@ -2312,8 +2340,6 @@ INPUT Content\Chapter6.tex
 INPUT .\Content\Chapter6.tex
 INPUT Content\Chapter6.tex
 INPUT Table\data1.dat
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7t.vf
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT .\Content\Chapter7.tex
 INPUT .\Content\Chapter7.tex
 INPUT .\Content\Chapter7.tex
@@ -2345,8 +2371,6 @@ INPUT .\Bibliography\Bibliography.tex
 INPUT Bibliography\Bibliography.tex
 INPUT .\Bibliography\Bibliography.tex
 INPUT Bibliography\Bibliography.tex
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplri7t.tfm
-INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplri7t.vf
 INPUT main.aux
 INPUT .\FrontBackMatter\Titlepage.aux
 INPUT FrontBackMatter\Titlepage.aux

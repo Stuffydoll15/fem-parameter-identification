@@ -1,17 +1,54 @@
 % Chapter 3
 
 \chapter{Computational model} % Main chapter title
+\label{chapter:computationalmodel} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
-\label{Chapter4} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+In the previous chapter the experimental model designs for the iFEM process of the material 
+parameter identification were illustrated. The experimental setups, the results, and the main assumptions 
+made for the material models laid the foundation for the development of the finite element (FE) model.
+
+In this chapter, the computational model of the indentation tests described in Chapter \ref{chapter:experimentalmodel} 
+will be described. These models were built using the finite element software ANSYS. 
+The computational model serves as principal link between the experimental data and identification of the 
+specimen's material parameters. Furthermore, this chapter will discussed some of the complications encountered 
+during the FE model construction process, such as the contact definition between the indenter and the specimen,
+and the mesh convergence of the FE model.
 
 \section{Middle point}
 \subsection{Description}
-asas
-The quasi static nature of the indentation experiment allows the use of a static 
-structural analysis.
+The quasi static nature of the indentation experiment allowed the use of a static 
+structural analysis. As the most important factor is the development of the framework for identification 
+of the material parameter process, the model was simplified as much as possible to avoid the influence 
+of the error produced by complex geometries and the definition of the boundary condtions.\\
 
-For the creation of the computational model, the SOLID 187 elements were used. The mesh 
-for the whole model is formed from quad tetrahedral elemennts. The platform and 
+For the geometry, only the key components that significantly contribute to the mechanical response were modeled, 
+i.e., the indenter and the specimen. The tumor extraction geometry shown in Figure \ref{fig:specimenhole}
+was only simulated for EP I. This was removed for the EP II geometry model, as it was shown that this area 
+of the specimen's geometry was irrelevant for the calculation of the results.
+
+Both, the indenter and the specimen used SOLID187 elements. 
+SOLID187 elements are a high order 3-D, 10 node elements with three degrees of freedom at each node. 
+This element was suitable to simulate the deformations of nearly incompressible hyperelastic materials 
+and had the hyperelasticity, large deflection, and large strain capabilities \cite{Ansys2010}.
+
+The geometries used for EP I and EP II are shown Figure. %figure of the middle point geometry for experimental model I and II
+This figure shows the geoemtry model for the middle point test configuration, which allowed the used 
+of symmetry boundary conditions. This characteristic reduced the computational cost for the simulation 
+of the FE model. For EP I and EP II only one-quarter, and the half of the full model was used respectively.
+The decision to use half model for EP II was made to make the visualization of the deformation profile 
+easier for the validation in further steps.\\
+
+%Maybe create table of the initial parameters chosen? which part is this going to be?
+To approximate the mechanical properties of ultra-soft polyurethane, initial parameters were assigned 
+to the computational model. For the linear elasticity level, values for the Young's modulus $E$ and the 
+Poisson's ratio $\nu$ were assigned. At the hyperelastic level, the initial parameters for the Neo-Hookean model, 
+the shear modulus $\mu$ and the incompressibility parameter $D_1$ were specified.\\ 
+
+The contact interaction between the indenter and the specimen were set frictionless, to reduce 
+overall complexity of the model and mimic the lubricated contact in the experiments.
+
+
+The mesh for the whole model is formed from quad tetrahedral elemennts. The platform and 
 the specimen have an global element size of 5 mm. The indenter has an element size of
 0.5 mm. In the area of the indentation, there is finer mesh with an element size of
 1 mm and a radius of 8 mm. 

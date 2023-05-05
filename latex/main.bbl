@@ -17,6 +17,59 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{Ahanchian2017}{article}{}
+    \name{author}{5}{}{%
+      {{hash=AN}{%
+         family={Ahanchian},
+         familyi={A\bibinitperiod},
+         given={Nafiseh},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=NCJ}{%
+         family={Nester},
+         familyi={N\bibinitperiod},
+         given={Christopher\bibnamedelima J.},
+         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Howard},
+         familyi={H\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=RL}{%
+         family={Ren},
+         familyi={R\bibinitperiod},
+         given={Lei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Parker},
+         familyi={P\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Ltd}%
+    }
+    \strng{namehash}{AN+1}
+    \strng{fullhash}{ANNCJHDRLPD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb 10.1016/j.medengphy.2016.11.003
+    \endverb
+    \field{pages}{11\bibrangedash 19}
+    \field{title}{Estimating the material properties of heel pad sub-layers
+  using inverse Finite Element Analysis}
+    \field{volume}{40}
+    \field{journaltitle}{Medical Engineering and Physics}
+    \field{year}{2017}
+  \endentry
+
   \entry{Ansys2010}{article}{}
     \list{publisher}{1}{%
       {ANSYS Inc.}%
@@ -169,6 +222,43 @@
     \field{year}{2013}
   \endentry
 
+  \entry{Chawla2009}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CA}{%
+         family={Chawla},
+         familyi={C\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Mukherjee},
+         familyi={M\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Karthikeyan},
+         familyi={K\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CAMSKB1}
+    \strng{fullhash}{CAMSKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1007/s10237-008-0121-6
+    \endverb
+    \field{pages}{67\bibrangedash 76}
+    \field{title}{Characterization of human passive muscles for impact loads
+  using genetic algorithm and inverse finite element methods}
+    \field{journaltitle}{Biomechanics and Modeling in Mechanobiology}
+    \field{year}{2009}
+  \endentry
+
   \entry{Cox2006}{article}{}
     \name{author}{4}{}{%
       {{hash=CMA}{%
@@ -314,6 +404,69 @@
     \field{year}{2017}
   \endentry
 
+  \entry{Giudice2021}{article}{}
+    \name{author}{7}{}{%
+      {{hash=GJS}{%
+         family={Giudice},
+         familyi={G\bibinitperiod},
+         given={J.\bibnamedelima Sebastian},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Alshareef},
+         familyi={A\bibinitperiod},
+         given={Ahmed},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Taotao},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KAK}{%
+         family={Knutsen},
+         familyi={K\bibinitperiod},
+         given={Andrew\bibnamedelima K.},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=HLV}{%
+         family={Hiscox},
+         familyi={H\bibinitperiod},
+         given={Lucy\bibnamedelima V.},
+         giveni={L\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=JCL}{%
+         family={Johnson},
+         familyi={J\bibinitperiod},
+         given={Curtis\bibnamedelima L.},
+         giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=PMB}{%
+         family={Panzer},
+         familyi={P\bibinitperiod},
+         given={Matthew\bibnamedelima B.},
+         giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Frontiers Media S.A.}%
+    }
+    \strng{namehash}{GJS+1}
+    \strng{fullhash}{GJSAAWTKAKHLVJCLPMB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.3389/fbioe.2021.664268
+    \endverb
+    \field{title}{Calibration of a Heterogeneous Brain Model Using a
+  Subject-Specific Inverse Finite Element Approach}
+    \field{journaltitle}{Frontiers in Bioengineering and Biotechnology}
+    \field{year}{2021}
+  \endentry
+
   \entry{Goharian2017}{book}{}
     \name{author}{3}{}{%
       {{hash=GA}{%
@@ -404,6 +557,78 @@
     \field{journaltitle}{Journal of Visualized Experiments}
     \field{month}{12}
     \field{year}{2016}
+  \endentry
+
+  \entry{Husain2004}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HA}{%
+         family={Husain},
+         familyi={H\bibinitperiod},
+         given={Asif},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SDK}{%
+         family={Sehgal},
+         familyi={S\bibinitperiod},
+         given={D.\bibnamedelima K.},
+         giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=PRK}{%
+         family={Pandey},
+         familyi={P\bibinitperiod},
+         given={R.\bibnamedelima K.},
+         giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HASDKPRK1}
+    \strng{fullhash}{HASDKPRK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.1016/j.commatsci.2004.01.039
+    \endverb
+    \field{pages}{84\bibrangedash 92}
+    \field{title}{An inverse finite element procedure for the determination of
+  constitutive tensile behavior of materials using miniature specimen}
+    \field{journaltitle}{Computational Materials Science}
+    \field{month}{09}
+    \field{year}{2004}
+  \endentry
+
+  \entry{Jamal2019}{article}{}
+    \name{author}{2}{}{%
+      {{hash=JM}{%
+         family={Jamal},
+         familyi={J\bibinitperiod},
+         given={Mikdam},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MMN}{%
+         family={Morgan},
+         familyi={M\bibinitperiod},
+         given={Michael\bibnamedelima N.},
+         giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MDPI Multidisciplinary Digital Publishing Institute}%
+    }
+    \strng{namehash}{JMMMN1}
+    \strng{fullhash}{JMMMN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \verb{doi}
+    \verb 10.3390/inventions4030040
+    \endverb
+    \field{issn}{24115134}
+    \field{title}{Characterization of material properties based on inverse
+  finite element modelling}
+    \field{volume}{4}
+    \field{year}{2019}
   \endentry
 
   \entry{Joseph2018}{article}{}
@@ -808,6 +1033,97 @@
     \field{year}{2019}
   \endentry
 
+  \entry{Sun2019}{article}{}
+    \name{author}{6}{}{%
+      {{hash=SY}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Yue},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Lihua},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=lYK}{%
+         prefix={lun},
+         prefixi={l\bibinitperiod},
+         family={Yick},
+         familyi={Y\bibinitperiod},
+         given={Kit},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=YW}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Winnie},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=LN}{%
+         family={Lau},
+         familyi={L\bibinitperiod},
+         given={Newman},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=JW}{%
+         family={Jiao},
+         familyi={J\bibinitperiod},
+         given={Wanzhong},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SY+1}
+    \strng{fullhash}{SYCLYKlYWLNJW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1016/j.jmbbm.2018.11.016
+    \endverb
+    \field{pages}{615\bibrangedash 625}
+    \field{title}{Optimization method for the determination of Mooney-Rivlin
+  material coefficients of the human breasts in-vivo using static and dynamic
+  finite element models}
+    \field{volume}{90}
+    \field{journaltitle}{Journal of the Mechanical Behavior of Biomedical
+  Materials}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Sussman1987}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ST}{%
+         family={Sussman},
+         familyi={S\bibinitperiod},
+         given={Theodore},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BKJ}{%
+         family={Bathe},
+         familyi={B\bibinitperiod},
+         given={Klaus-J√ºrgen},
+         giveni={K\bibinithyphendelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{STBKJ1}
+    \strng{fullhash}{STBKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb https://doi.org/10.1016/0045-7949(87)90265-3
+    \endverb
+    \field{pages}{357\bibrangedash 409}
+    \field{title}{A finite element formulation for nonlinear incompressible
+  elastic and inelastic analysis}
+    \field{journaltitle}{Computers and Structures}
+    \field{year}{1987}
+  \endentry
+
   \entry{Wang2012}{book}{}
     \name{author}{2}{}{%
       {{hash=WW}{%
@@ -883,6 +1199,30 @@
     \field{year}{2016}
   \endentry
 
+  \entry{Youssef2022}{book}{}
+    \name{author}{1}{}{%
+      {{hash=YG}{%
+         family={Youssef},
+         familyi={Y\bibinitperiod},
+         given={George},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YG1}
+    \strng{fullhash}{YG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \verb{doi}
+    \verb 10.1016/b978-0-12-821078-9.00002-8
+    \endverb
+    \field{pages}{117\bibrangedash 144}
+    \field{title}{Hyperelastic behavior of polymers}
+    \field{journaltitle}{Applied Mechanics of Polymers}
+    \field{year}{2022}
+  \endentry
+
   \entry{Zhang2014}{article}{}
     \name{author}{4}{}{%
       {{hash=ZMG}{%
@@ -926,6 +1266,41 @@
   parameters of hyperelastic soft materials}
     \field{journaltitle}{Biomechanics and Modeling in Mechanobiology}
     \field{year}{2014}
+  \endentry
+
+  \entry{Lagan2017}{article}{}
+    \name{author}{2}{}{%
+      {{hash=≈SD}{%
+         family={≈Åagan},
+         familyi={≈\bibinitperiod},
+         given={Sylwia\bibnamedelima D.},
+         giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=LKA}{%
+         family={Liber-Kneƒá},
+         familyi={L\bibinithyphendelim K\bibinitperiod},
+         given={Aneta},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institute of Machine Design}%
+      {Operation}%
+    }
+    \strng{namehash}{≈SDLKA1}
+    \strng{fullhash}{≈SDLKA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{≈}
+    \field{sortinithash}{≈}
+    \verb{doi}
+    \verb 10.5277/ABB-00755-2016-02
+    \endverb
+    \field{title}{Experimental testing and constitutive modeling of the
+  mechanical properties of the swine skin tissue}
+    \field{volume}{19}
+    \field{journaltitle}{Acta of Bioengineering and Biomechanics}
+    \field{year}{2017}
   \endentry
 \enddatalist
 \endinput
