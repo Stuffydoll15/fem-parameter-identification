@@ -7,32 +7,50 @@ In the previous chapter the experimental model designs for the iFEM process of t
 parameter identification were illustrated. The experimental setups, the results, and the main assumptions 
 made for the material models laid the foundation for the development of the finite element (FE) model.
 
-In this chapter, the computational model of the indentation tests described in Chapter \ref{chapter:experimentalmodel} 
+In this chapter, the computational models of the indentation tests described in Chapter \ref{chapter:experimentalmodel} 
 will be described. These models were built using the finite element software ANSYS. 
 The computational model serves as principal link between the experimental data and identification of the 
-specimen's material parameters. Furthermore, this chapter will discussed some of the complications encountered 
-during the FE model construction process, such as the contact definition between the indenter and the specimen,
-and the mesh convergence of the FE model.
+specimen's material parameters.  
 
-\section{Middle point}
+The initial simulation model, referred to as Computational model I, served as a tool 
+for testing the preliminary ideas, as well as establishing the basis structure for 
+the computational model. This first step was essential to identify the strengths and 
+weaknesses of the model, and it provided insights that guided the development of an 
+improved simulation model, referred to as Computational model II. By exploring the 
+results and challenges of computational model I, the initial ideas 
+were iterated and a more robust and accurate computational model was created for the material
+parameters identification process.
+
+In this chapter the development process of the computational models will be detailed, 
+as well as the encountered complications and their proposed solutions, 
+and the improvements made in computational model II.
+
+%-----------------------------------------------------------------------------------------
+\section{Computational model I (CP I)}
+\subsection{Middle point}
 The quasi static nature of the indentation experiment allowed the use of a static 
 structural analysis. As the most important factor is the development of the framework for identification 
 of the material parameter process, the model was simplified as much as possible to avoid the influence 
-of the error produced by complex geometries and the definition of the boundary condtions.\\
+of the error produced by complex geometries and the definition of the boundary conditions.
 
-\subsection{Experimental model I}
 \subsubsection*{Description}
 
 For the geometry, only the key components that significantly contribute to the mechanical response were modeled, 
 i.e., the indenter and the specimen. The tumor extraction geometry shown in Figure \ref{fig:specimenhole}
-was also simulated for EP I. 
-
-Both, the indenter and the specimen used SOLID187 elements. SOLID187 elements are a high order 3-D, 10 node elements with three degrees of freedom at each node. 
+was also simulated for CP I. Both, the indenter and the specimen used SOLID187 elements. 
+SOLID187 elements are a high order 3-D, 10 node elements with three degrees of freedom at each node. 
 This element was suitable to simulate the deformations of nearly incompressible hyperelastic materials 
-and had the hyperelasticity, large deflection, and large strain capabilities \cite{Ansys2010}.
+and had the hyperelasticity, large deflection, and large strain capabilities \cite{Ansys2010}.\\
 
 The geometry model used for EP I is observed in Figure. %figure of the middle point geometry for experimental model I and II
-This figure shows the FE model for the middle point test configuration, which allowed the used 
+This figure shows the FE model for the middle point test configuration, even though symmetry can be applied, this was 
+not employed. The main reason for this was because future project steps were taken into consideration. 
+For future steps in this project the measurement and identification of human organs material parameter 
+is the desired goal. In this case, due to the anisotropy of the material and the geometry complexity,
+symmetry boundary conditions cannot be applied. 
+
+
+which allowed the used 
 of symmetry boundary conditions. This characteristic reduced the computational cost for the simulation 
 of the FE model, therefore one-quarter model was used for EP I.\\
 
@@ -58,20 +76,7 @@ $r_{I_a}=\SI{8}{\milli\meter}$ and an element size of $e_{I_a}=\SI{0.5}{\milli\m
 
 \subsubsection*{Results}
 
-
-\subsection*{Experimental model II}
-This was removed for the EP II geometry model, as it was shown that this area 
-of the specimen's geometry was irrelevant for the calculation of the results.
-For EP I and EP II only one-quarter, and the half of the full model was used respectively.
-The decision to use half model for EP II was made to make the visualization of the deformation profile 
-easier for the validation in further steps.\\
-
-The mesh for the whole model is formed from quad tetrahedral elemennts. The platform and 
-the specimen have an global element size of 5 mm. The indenter has an element size of
-0.5 mm. In the area of the indentation, there is finer mesh with an element size of
-1 mm and a radius of 8 mm. 
-
-\subsection{Analysis and Complications}
+\section{Analysis and Complications}
 Their a two main factors which increases the complexity of the validation of the simulation
 and those are, the contact nonlinearity, and the element distortion due to indentation
  experiment. These issues make the computational time expensive, as it requires to manual 
@@ -85,6 +90,20 @@ good mesh convergence analysis.
 A force-displacement curve, shown in Fig... is generated from the first assumption, 
 for this case 
 %Additionally due to these factors, the converge analysis   
+
+\section*{Experimental model II}
+This was removed for the EP II geometry model, as it was shown that this area 
+of the specimen's geometry was irrelevant for the calculation of the results.
+For EP I and EP II only one-quarter, and the half of the full model was used respectively.
+The decision to use half model for EP II was made to make the visualization of the deformation profile 
+easier for the validation in further steps.\\
+
+The mesh for the whole model is formed from quad tetrahedral elemennts. The platform and 
+the specimen have an global element size of 5 mm. The indenter has an element size of
+0.5 mm. In the area of the indentation, there is finer mesh with an element size of
+1 mm and a radius of 8 mm. 
+
+
 
 For both cases 
 
