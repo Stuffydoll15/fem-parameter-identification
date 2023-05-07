@@ -37,7 +37,7 @@ of the error produced by complex geometries and the definition of the boundary c
 
 For the geometry, only the key components that significantly contribute to the mechanical response were modeled, 
 i.e., the indenter and the specimen. The tumor extraction geometry shown in Figure \ref{fig:specimenhole}
-was also simulated for CP I. Both, the indenter and the specimen used SOLID187 elements. 
+was also modeled for CP I. Both, the indenter and the specimen used SOLID187 elements. 
 SOLID187 elements are a high order 3-D, 10 node elements with three degrees of freedom at each node. 
 This element was suitable to simulate the deformations of nearly incompressible hyperelastic materials 
 and had the hyperelasticity, large deflection, and large strain capabilities \cite{Ansys2010}.\\
@@ -49,7 +49,19 @@ For future steps in this project the measurement and identification of human org
 is the desired goal. In this case, due to the anisotropy of the material and the geometry complexity,
 symmetry boundary conditions cannot be applied. 
 
+To approximate the mechanical properties of ultra-soft polyurethane, initial parameters were assigned 
+to the computational model. For the linear elasticity level, values for the Young's modulus $E$ and the 
+Poisson's ratio $\nu$ were assigned. At the hyperelastic level, the initial parameters for the Neo-Hookean model, 
+the shear modulus $\mu$ and the incompressibility parameter $D_1$ were specified.\\ 
 
+%esribir formula!
+
+To approximate the mechanical properties of ultra-soft polyurethane, initial parameters were assigned 
+to the computational model. For the linear elasticity level, values for the Young's modulus $E$ and the 
+Poisson's ratio $\nu$ were assigned. At the hyperelastic level, the initial parameters for the Neo-Hookean model, 
+the shear modulus $\mu$ and the incompressibility parameter $D_1$ were specified.\\ 
+
+%Symmetry
 which allowed the used 
 of symmetry boundary conditions. This characteristic reduced the computational cost for the simulation 
 of the FE model, therefore one-quarter model was used for EP I.\\
