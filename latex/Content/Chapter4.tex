@@ -41,17 +41,62 @@ was also modeled for CP I. Both, the indenter and the specimen used SOLID187 ele
 SOLID187 elements are a high order 3-D, 10 node elements with three degrees of freedom at each node. 
 This element was suitable to simulate the deformations of nearly incompressible hyperelastic materials 
 and had the hyperelasticity, large deflection, and large strain capabilities \cite{Ansys2010}.\\
-
-The geometry model used for EP I is observed in Figure. %figure of the middle point geometry for experimental model I and II
+%geometry model
+The geometry model used for EP I is observed in Figure. %figure of the middle point geometry for experimental model I
 This figure shows the FE model for the middle point test configuration, even though symmetry can be applied, this was 
 not employed. The main reason for this was because future project steps were taken into consideration. 
 For future steps in this project the measurement and identification of human organs material parameter 
 is the desired goal. In this case, due to the anisotropy of the material and the geometry complexity,
 symmetry boundary conditions cannot be applied. 
+%contact
+The contact interaction between the indenter and the specimen were set frictionless, to reduce 
+overall complexity of the model and mimic the lubricated contact in the experiments.
+The lower half of the specimen was defined as a fixed support, reflecting the physical constraint in the 
+experimental setup. The displacement value $h$ was applied to the indenter in Y-direction, 
+from which the force reaction was obtained.
+%mesh
+The mesh for the whole model were formed from quadratic tetrahedral elements. 
+A global element size of $e_{I_s}=\SI{5}{\milli\meter}$ was applied for the specimen and 
+a refinement was made in the area of interest, i.e., the contact 
+area between the indenter and the specimen's surface, with a contact sizing refinement of  
+$e_{I_a}=\SI{0.3}{\milli\meter}$ (Fig.). %add meshing figure.
+The main reason of applying the contact sizing refinement was to be indenpendent from the geometry 
+of the specimen or the indenter's position on the specimen's surface.
 
-To approximate the mechanical properties of ultra-soft polyurethane, initial parameters were assigned 
+Lastly, to approximate the mechanical properties of ultra-soft polyurethane, initial parameters were assigned 
 to the computational model. For the linear elasticity level, values for the Young's modulus $E$ and the 
-Poisson's ratio $\nu$ were assigned. At the hyperelastic level, the initial parameters for the Neo-Hookean model, 
+Poisson's ratio $\nu$ were assigned. From the main assumptions made in Section \ref{section:mainassumption},
+the Poisson's ratio for the first level material model was set to $\nu =  0.49$, and from equation \ref{eq:forcelinear} the Young's
+modulus can be calculated 
+\begin{align}
+    E = \frac{3F(1-\nu^2)} {4{r_i}^{\frac{1}{2}} {h}^{\frac{3}{2}}}\, .
+    \label{eq:forcelinearcp1}
+\end{align}
+Substituting the indenter radius $r_i =  \SI{3}{\milli \meter}$ and the indentation depth $h =  \SI{3.8}{\milli \meter}$ a Young's modulus 
+\begin{align}
+    E_l = 0.018 \text{MPa} \approx 0.02 \text{MPa}
+    \label{eq:Elinearcp1}
+\end{align}
+could be calculated. 
+
+\subsubsection*{First Results}
+With an linear elastic model was not possible to solve the computational model with an indentation depth of $h = \SI{3.8}{\milli \meter}$.
+Through an interation process it was discovered that the linear elastic material model was only possible to be applied until an indentation 
+depth of $h \approx \SI{2}{\milli \meter}$. However, this first attempt to match the experimental and simulation data proved 
+to show un acercamiento a la data experimental 
+
+a good agreement. Figure %add graph of 2mm linear elastic model
+shows a the results of the experimental data vs. the simulated data result from the described model. Here it was possible to 
+observe an almost identical initial slope, and small deviation at the end of the curve. Here it was observed, that simulated 
+curves tends to be lower than the experimental data. 
+Important was to notice, that even though a linear elastic model was used, the material showed a nonlinear response. One of the main 
+reasons for this is the nonlinear contact between the indenter and the specimen. The frictionless contact allowed the model 
+to recalculate the area the deeper the indenter went. 
+
+
+
+\subsubsection*{Level 2: Hyperelastic model}
+At the hyperelastic level, the initial parameters for the Neo-Hookean model, 
 the shear modulus $\mu$ and the incompressibility parameter $D_1$ were specified.\\ 
 
 %esribir formula!
@@ -72,13 +117,9 @@ to the computational model. For the linear elasticity level, values for the Youn
 Poisson's ratio $\nu$ were assigned. At the hyperelastic level, the initial parameters for the Neo-Hookean model, 
 the shear modulus $\mu$ and the incompressibility parameter $D_1$ were specified.\\ 
 
-The contact interaction between the indenter and the specimen were set frictionless, to reduce 
-overall complexity of the model and mimic the lubricated contact in the experiments.
-The lower half of the specimen was defined as a fixed support, reflecting the physical constraint in the 
-experimental setup. The displacement value was applied to the indenter in Y-direction, 
-from which the force reaction was obtained.
-%CONTA174 and TARGE170
 
+%CONTA174 and TARGE170
+%best result with convergence
 The mesh for the whole model were formed from quadratic tetrahedral elements. 
 Various meshing methods were tried and the mesh, which showed the best results for experimental model I 
 possessed an global element size of $e_{I_s}=\SI{5}{\milli\meter}$ and $e_{I_i}=\SI{1}{\milli\meter}$ for the specimen 

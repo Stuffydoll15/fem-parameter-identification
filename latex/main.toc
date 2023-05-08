@@ -21,34 +21,34 @@
 \contentsline {chapter}{\numberline {3}Computational model}{35}{chapter.123}%
 \contentsline {section}{\numberline {3.1}Computational model I (CP I)}{35}{section.124}%
 \contentsline {subsection}{\numberline {3.1.1}Middle point}{35}{subsection.125}%
-\contentsline {section}{\numberline {3.2}Analysis and Complications}{36}{section.128}%
-\contentsline {subsection}{\numberline {3.2.1}Verification of the Simulation Model}{37}{subsection.130}%
-\contentsline {section}{\numberline {3.3}Nearby point}{37}{section.133}%
-\contentsline {chapter}{\numberline {4}Inverse Finite Element Method for Material Parameter Identification}{39}{chapter.134}%
-\contentsline {section}{\numberline {4.1}Procedure of IFEM}{39}{section.135}%
-\contentsline {section}{\numberline {4.2}Material Modeling}{39}{section.136}%
-\contentsline {subsection}{\numberline {4.2.1}Response Surface Optimization}{39}{subsection.137}%
-\contentsline {subsection}{\numberline {4.2.2}Objective Function Optimzation}{39}{subsection.140}%
-\contentsline {subsection}{\numberline {4.2.3}Analysis and Comparison of Each Approach}{39}{subsection.141}%
-\contentsline {chapter}{\numberline {5}Results}{41}{chapter.142}%
-\contentsline {section}{\numberline {5.1}Overview and Analysis}{41}{section.143}%
-\contentsline {section}{\numberline {5.2}Framework proposal}{41}{section.144}%
-\contentsline {section}{\numberline {5.3}Verification and Validation}{41}{section.145}%
-\contentsline {subsection}{\numberline {5.3.1}Deeper indentation}{41}{subsection.146}%
-\contentsline {subsection}{\numberline {5.3.2}Deformation profile analysis}{41}{subsection.147}%
-\contentsline {section}{\numberline {5.4}Limitations and implications of the results}{41}{section.148}%
-\contentsline {subsection}{\numberline {5.4.1}First Experimental model}{41}{subsection.149}%
-\contentsline {subsection}{\numberline {5.4.2}Second Experimental model}{42}{subsection.151}%
-\contentsline {section}{\numberline {5.5}Material model framework assumptions}{42}{section.152}%
-\contentsline {subsection}{\numberline {5.5.1}First Material model}{43}{subsection.153}%
-\contentsline {subsubsection}{Linear elasticity}{43}{section*.154}%
-\contentsline {subsubsection}{Hyperelasticity}{43}{section*.155}%
-\contentsline {section}{\numberline {5.6}Computational model}{43}{section.156}%
-\contentsline {section}{\numberline {5.7}Material model}{43}{section.157}%
-\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{45}{chapter.158}%
-\contentsline {section}{\numberline {6.1}Summary and Contributions}{45}{section.159}%
-\contentsline {section}{\numberline {6.2}Recommendations for Future Research}{45}{section.160}%
-\contentsline {section}{\numberline {6.3}Conclusions and Final Remarks}{45}{section.161}%
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{47}{appendix.162}%
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{47}{section.163}%
-\contentsline {chapter}{Bibliography}{49}{appendix*.164}%
+\contentsline {section}{\numberline {3.2}Analysis and Complications}{37}{section.132}%
+\contentsline {subsection}{\numberline {3.2.1}Verification of the Simulation Model}{38}{subsection.134}%
+\contentsline {section}{\numberline {3.3}Nearby point}{38}{section.137}%
+\contentsline {chapter}{\numberline {4}Inverse Finite Element Method for Material Parameter Identification}{39}{chapter.138}%
+\contentsline {section}{\numberline {4.1}Procedure of IFEM}{39}{section.139}%
+\contentsline {section}{\numberline {4.2}Material Modeling}{39}{section.140}%
+\contentsline {subsection}{\numberline {4.2.1}Response Surface Optimization}{39}{subsection.141}%
+\contentsline {subsection}{\numberline {4.2.2}Objective Function Optimzation}{39}{subsection.144}%
+\contentsline {subsection}{\numberline {4.2.3}Analysis and Comparison of Each Approach}{39}{subsection.145}%
+\contentsline {chapter}{\numberline {5}Results}{41}{chapter.146}%
+\contentsline {section}{\numberline {5.1}Overview and Analysis}{41}{section.147}%
+\contentsline {section}{\numberline {5.2}Framework proposal}{41}{section.148}%
+\contentsline {section}{\numberline {5.3}Verification and Validation}{41}{section.149}%
+\contentsline {subsection}{\numberline {5.3.1}Deeper indentation}{41}{subsection.150}%
+\contentsline {subsection}{\numberline {5.3.2}Deformation profile analysis}{41}{subsection.151}%
+\contentsline {section}{\numberline {5.4}Limitations and implications of the results}{41}{section.152}%
+\contentsline {subsection}{\numberline {5.4.1}First Experimental model}{41}{subsection.153}%
+\contentsline {subsection}{\numberline {5.4.2}Second Experimental model}{42}{subsection.155}%
+\contentsline {section}{\numberline {5.5}Material model framework assumptions}{42}{section.156}%
+\contentsline {subsection}{\numberline {5.5.1}First Material model}{43}{subsection.157}%
+\contentsline {subsubsection}{Linear elasticity}{43}{section*.158}%
+\contentsline {subsubsection}{Hyperelasticity}{43}{section*.159}%
+\contentsline {section}{\numberline {5.6}Computational model}{43}{section.160}%
+\contentsline {section}{\numberline {5.7}Material model}{43}{section.161}%
+\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{45}{chapter.162}%
+\contentsline {section}{\numberline {6.1}Summary and Contributions}{45}{section.163}%
+\contentsline {section}{\numberline {6.2}Recommendations for Future Research}{45}{section.164}%
+\contentsline {section}{\numberline {6.3}Conclusions and Final Remarks}{45}{section.165}%
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{47}{appendix.166}%
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{47}{section.167}%
+\contentsline {chapter}{Bibliography}{49}{appendix*.168}%
