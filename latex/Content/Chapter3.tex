@@ -334,7 +334,7 @@ to the right of the middle point was selected as shown in Figure \ref{fig:nbdiag
    \subfloat[\centering Nearby point location for Experimental model I \label{fig:nbdiagexp1}]{{\includegraphics[width=6.5cm]{Images/Experiment/nbexp1.png}}}%
    \qquad
    \subfloat[\centering Nearby points location for Experimental model II \label{fig:nbdiagexp2}]{{\includegraphics[width=6.5cm]{Images/Experiment/nbexp2.png}}}%
-   \caption[Nearby point test positions]{Nearby test point: Loading points for each experimental model to analyze shear stresses and to vbe employed for the validation of the computation models.}%
+   \caption[Nearby point test positions]{Nearby test point: Loading points for each experimental model to analyze shear stresses and to be employed for the validation of the computation models.}%
    \label{fig:nbexp}%
 \end{figure}
 
@@ -906,7 +906,7 @@ The second level introduces a higher complexity, as more material parameters are
 Neo-Hookean model was used to describe the material behavior based in the strain energy potential function.
 The elastic strain energy potential function for the Neo-Hookean material model is given by
 \begin{align}
-            W = C_1 (I_1 - 3) + \frac{1}{D_1} (J-1)^2 \, ,
+    W = C_1 (I_1 - 3) + \frac{1}{D_1} (J-1)^2 \, ,
 \end{align}
 where $C_1$ is a material constant, $D_1$ the material incompressibility parameter, $J$ the determinant 
 of the elastic deformation gradient, and $I_1$ is the first invariant of the right Cauchy-Green deformation tensor, i.e. 
@@ -927,14 +927,17 @@ The Neo-Hookean model requires two main parameters to be identified; the shear m
 the incompressibility parameter $D_1$. The incompressibility parameter relationship with the initial bulk modulus
 \begin{align}
     K = \frac{2}{D_1} \, ,
+    \label{eq:incomparcp1}
 \end{align}
  can be defined \cite{Ansys2010}. The relationship between the shear modulus, the elastic modulus, and the Poisson's ratio
 \begin{align}
     \mu = \frac{E}{2(1+\nu)} \, ,
+    \label{eq:mucp1}
 \end{align}
 can be calculated, as well as for the bulk modulus 
 \begin{align}
     K = \frac{E}{3(1-2\nu)} \, .
+    \label{eq:bulkmodcp1}
 \end{align}
 Using the results of the first level with $E$ and $\nu$ it is possible to establish a possible range for $\mu$ 
 and $D_1$. This targeted range helped in the reduction of computational time for simulations.
