@@ -358,6 +358,18 @@ CM II are displayed in Figure \ref{fig:cmIIstressdistanalysis}.\\
     \label{fig:cmIIstressdistanalysis}
 \end{figure}
 
+\subsubsection*{Adjustments to Deformation Behavior}
+During the simulated indentation process, an unusual deformation pattern was observed in the computational model.
+The indented mass in the model tended to move upwards, enveloping the spherical indenter, which deviated from the 
+experimental test observations. In the real-world experiments, the indented mass seemed to 
+displace sideways. This discrepancy was attributed to the fixed support boundary condition on the lower specimen's 
+surface, which restricted lateral movement of the indented mass.
+
+To improve this unnatural deformation patternm, a more accurate representation of the 
+experimental setup was introduced into the FE model. 
+
+
+
 This chapter has presented an in-depth analysis of the development and refinement of the computational models I and II, used
 for simulating the indentation tests. The transition from CM I to CM II revealed the challenges encountered in a indentation 
 simulation model and how significant is handling large element deformation for the mesh quality improvement. 
