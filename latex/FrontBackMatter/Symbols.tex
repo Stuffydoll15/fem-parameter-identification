@@ -17,13 +17,13 @@
 \textbf{YM} & \textbf{Y}eoh \textbf{M}odel\\
 \textbf{OM} & \textbf{O}gden \textbf{M}odel\\
 \textbf{RMSE} & \textbf{R}oot \textbf{M}ean \textbf{S}quare \textbf{E}rror\\
-\textbf{EP I} & \textbf{E}xperimental \textbf{M}odel \textbf{I} \\
-\textbf{EP II} & \textbf{E}xperimental \textbf{M}odel \textbf{II} \\
+\textbf{EM I} & \textbf{E}xperimental \textbf{M}odel \textbf{I} \\
+\textbf{EM II} & \textbf{E}xperimental \textbf{M}odel \textbf{II} \\
 \textbf{MP} & \textbf{M}iddle \textbf{P}oint\\
 \textbf{LU} & \textbf{L}oad \textbf{U}nloading (Case)\\
 \textbf{NBP} & \textbf{N}ear\textbf{b}y \textbf{P}oint\\
-\textbf{CP I} & \textbf{C}omputational \textbf{M}odel \textbf{I} \\
-\textbf{CP II} & \textbf{C}omputational \textbf{M}odel \textbf{II} \\
+\textbf{CM I} & \textbf{C}omputational \textbf{M}odel \textbf{I} \\
+\textbf{CM II} & \textbf{C}omputational \textbf{M}odel \textbf{II} \\
 \end{abbreviations}
 
 %----------------------------------------------------------------------------------------
@@ -67,32 +67,32 @@ $n$ & number of data points\\
 \addlinespace % Gap to separate chapter
 
 $r_{i1}$ & indenter head radius of experimental model I & (\si{\milli\meter})\\
-$l_{i1}$ & indenter length of EPI & (\si{\milli\meter})\\
+$l_{i1}$ & indenter length of EMI & (\si{\milli\meter})\\
 $r_1$ & specimen minor radius & (\si{\milli\meter})\\
 $r_2$ & specimen major radius & (\si{\milli\meter})\\
 $r_{t1}$ & specimen tumor minor radius & (\si{\milli\meter})\\
 $r_{t2}$ & specimen tumor major radius & (\si{\milli\meter})\\
 $r_{i2}$ & indenter head radius of experimental model II & (\si{\milli\meter})\\
-$E_{i2}$ & Young's Modulus of indenter of EPII & (\si{\newton\per\square\milli\meter})\\
-$F_x$ & force reaction in X-direction of EPII & (\si{\newton})\\
-$F_y$ & force reaction in Y-direction of EPII & (\si{\newton})\\
-$F_z$ & force reaction in Z-direction of EPII & (\si{\newton})\\
-$h_{I}$ & indentation depth of EPI & (\si{\milli\meter})\\
-$h_{II}$ & indentation depth of EPII & (\si{\milli\meter})\\
-$p_{I1}$ & nearby point of EPI & (\si{\milli\meter})\\
-$p_{II1}$ & first nearby point of EPII & (\si{\milli\meter})\\
-$p_{II2}$ & second nearby point of EPII & (\si{\milli\meter})\\
-$p_{II3}$ & third nearby point of EPII & (\si{\milli\meter})\\
-$u_{I_{MP}}$ & maximum displacement of the middle point of EPI & (\si{\milli\meter})\\
-$F_{I_{MP}}$ & maximum force of the middle point of EPI & (\si{\newton})\\
-$u_{II_{MP}}$ & maximum displacement of the middle point of EPII\\
+$E_{i2}$ & Young's Modulus of indenter of EMII & (\si{\newton\per\square\milli\meter})\\
+$F_x$ & force reaction in X-direction of EMII & (\si{\newton})\\
+$F_y$ & force reaction in Y-direction of EMII & (\si{\newton})\\
+$F_z$ & force reaction in Z-direction of EMII & (\si{\newton})\\
+$h_{I}$ & indentation depth of EMI & (\si{\milli\meter})\\
+$h_{II}$ & indentation depth of EMII & (\si{\milli\meter})\\
+$p_{I1}$ & nearby point of EMI & (\si{\milli\meter})\\
+$p_{II1}$ & first nearby point of EMII & (\si{\milli\meter})\\
+$p_{II2}$ & second nearby point of EMII & (\si{\milli\meter})\\
+$p_{II3}$ & third nearby point of EMII & (\si{\milli\meter})\\
+$u_{I_{MP}}$ & maximum displacement of the middle point of EMI & (\si{\milli\meter})\\
+$F_{I_{MP}}$ & maximum force of the middle point of EMI & (\si{\newton})\\
+$u_{II_{MP}}$ & maximum displacement of the middle point of EMII\\
 $F_{Z_{II,MP}}$ & maximum force component in X-direction & (\si{\newton})\\
 $F_{Y_{II,MP}}$ & maximum force component in Y-direction & (\si{\newton})\\
 $F_{X_{II,MP}}$ & maximum force component in Z-direction & (\si{\newton})\\
-$F_{I_{LU}}$ & force of the loading-unloading case of EPI & (\si{\newton})\\
-$F_{II_{LU}}$ & force of the loading-unloading case of EPII & (\si{\newton})\\
-$F_{I_{NBP}}$ & maximum force component of nearby point of EPI & (\si{\newton})\\
-$F_{II_{NB}}$ & force component of the nearby point of EPII & (\si{\newton})\\
+$F_{I_{LU}}$ & force of the loading-unloading case of EMI & (\si{\newton})\\
+$F_{II_{LU}}$ & force of the loading-unloading case of EMII & (\si{\newton})\\
+$F_{I_{NBP}}$ & maximum force component of nearby point of EMI & (\si{\newton})\\
+$F_{II_{NB}}$ & force component of the nearby point of EMII & (\si{\newton})\\
 $A$ & contact area between specimen and indenter & (\si{\milli\meter})\\
 $r_i$ & radius of the indenter & (\si{\milli\meter})\\
 $F$ & applied indented force & (\si{\newton})\\
@@ -104,7 +104,19 @@ $I_1$ & first invariant of the right Cauchy-Green deformation tensor\\
 $W$ & elastic strain energy potential function for the NH material\\
 $K$ & initial bulk modulus & (\si{\newton\per\square\milli\meter})\\
 
-
+\addlinespace % Gap to separate chapter
+$e_{I_s}$ & global element size of the specimen's mesh CM I & (\si{\milli\meter})\\
+$e_{I_a}$ & contact sizing element size for CM I & (\si{\milli\meter})\\
+$E_{LE}$ & Young's modulus of the linear elastic model & (\si{\newton\per\square\milli\meter})\\
+$u$ & indenter's displacement & (\si{\milli\meter})\\
+$D_{1_{CMI}}$ & incompressibility parameter for CM I & (\si{\newton\per\square\milli\meter})\\
+$e_{M_s}$ & specimen's element size for mesh convergence model & (\si{\milli\meter})\\
+$e_{M_i}$ & indenter's element size for mesh convergence model & (\si{\milli\meter})\\
+$e_{M_a}$ & refiniment's element size for mesh convergence model & (\si{\milli\meter})\\
+$r_{M_a}$ & radius of refinement area for mesh convergence model & (\si{\milli\meter})\\
+$e_{{II}_s}$ & global element size of the specimen's mesh CM II & (\si{\milli\meter})\\
+$e_{{II}_i}$ & element size of the indenter's mesh CM II & (\si{\milli\meter})\\
+$r_{{II}_a}$ & radius of refinement area for CM II & (\si{\milli\meter})\\
 %Symbol & Name & Unit \\
 
 \addlinespace % Gap to separate the Roman symbols from the Greek
@@ -124,9 +136,12 @@ $\sigma$ & Cauchy stress\\
 $\lambda_i$ & stretches of the deformation\\
 $\alpha_k$ & alpha-parameters\\
 \addlinespace % Gap to separate chapter
-$\nu_{i2}$ & Poisson's ratio of indenter of experimental model II\\
+$\nu_{i2}$ & Poisson's ratio of indenter of EM II\\
 $\sigma$ & stress of linear elastic model & (\si{\newton\per\square\milli\meter})\\
 $\varepsilon$ & strain of linear elastic model\\
 $\lambda$ & principal stretches\\
 $\mu$ & shear modulus or the second Lamé parameter & (\si{\newton\per\square\milli\meter})\\
+\addlinespace % Gap to separate chapter
+$\mu_{CMI}$ & shear modulus for CM I & (\si{\newton\per\square\milli\meter})\\
+
 \end{symbols}
