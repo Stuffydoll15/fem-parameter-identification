@@ -109,7 +109,7 @@ The initial attempt to match the experimental and simulation data provided a rea
 Figure \ref{fig:MPI2mmvsCPILE} demonstrates the comparison between the experimental data and the CM I using a 
 linear elastic material model up to an indentation depth of $h = \SI{2}{\milli \meter}$. The CM I curve displayed 
 a more pronounced curvature than the experimental data. Additionally, at $u =\SI{0}{\milli \meter}$, 
-this curve exhibited a steeper initial slope; however, as the displacement increased, the 
+the experimental curve exhibited a steeper initial slope; however, as the displacement increased, the 
 difference in slope between the two curves diminished.\\
 
 This result indicated that for a displacement greater than $u = \SI{2}{\milli \meter}$, the CM I curve would 
@@ -134,7 +134,7 @@ simple material model could capture some degree of nonlinearity.
             \legend{Experiment I,CM I-LE}
         \end{axis}
     \end{tikzpicture}%
-   \caption[Computational model I vs Experimental data - Linear elasticity]{CM I vs EM I: Comparison of force-displacement curves between experimental data for Middle Point case and the initial computational model with a linear elastic model for $h = \SI{2}{\milli \meter}$.}%
+   \caption[Computational model I vs. Experimental data - Linear elasticity]{CM I vs. EM I: Comparison of force-displacement curves between experimental data for Middle Point case and the initial computational model with a linear elastic model for $h = \SI{2}{\milli \meter}$.}%
    \label{fig:MPI2mmvsCPILE}%
 \end{figure}
 
@@ -154,7 +154,7 @@ and \ref{eq:incomparcp1}, the shear modulus $\mu_{CMI}$ and the incompressibilit
 \end{align}
 were calculated, respectively. These parameters were integrated in the model described above. In comparison from 
 the linear elastic model, the Neo-Hookean material model could solve the simulation for an indentantion depth of 
-$h =  \SI{3.8}{\milli \meter}$.
+$h =  \SI{3.7}{\milli \meter}$.
 \begin{figure}%
     \centering
    \quad
@@ -172,12 +172,12 @@ $h =  \SI{3.8}{\milli \meter}$.
             \legend{Experiment I,CM I-NH}
         \end{axis}
     \end{tikzpicture}%
-   \caption[Computational model I vs Experimental data - Neo-Hookean]{CM I vs EM I: Comparison of force-displacement curves between experimental data for Middle Point case and the initial computational model with a Neo-Hookean model for $h = \SI{3.8}{\milli \meter}$.}%
+   \caption[Computational model I vs. Experimental data - Neo-Hookean]{CM I vs. EM I: Comparison of force-displacement curves between experimental data for Middle Point case and the initial computational model with a Neo-Hookean model for $h = \SI{3.8}{\milli \meter}$.}%
    \label{fig:MPIvsCPINH}%
 \end{figure}
-The Neo-Hookean simulation curve displayed a slightly steeper slope at lower values of $u$ in comparison to the experimental data.
-As the displacement $u$ increased, the difference in slope between the two curves decreased, inidicating that the 
-curves approached certain parallelism around $u = \SI{3.8}{\milli \meter}$.\\
+The Neo-Hookean simulation curve displayed a similar slope at lower values of $u$ in comparison to the experimental data.
+As the displacement $u$ increased, the difference in slope between the two curves increased, and from $u \approx \SI{2.5}{\milli \meter}$
+until the end, the computational curve showed a flatter slope than the experimental curve.\\
 
 Despite the discrepancies between the two curves, the Neo-Hookean provided a fair approximation to the experimental data, considered the 
 given displacement range. Likewise, this outcome evidenced that the Neo-Hookean model was capable of capturing some of the nonlinear 
@@ -192,9 +192,9 @@ For the nearby point computational model the Neo-Hookean model was employed, and
 indenter's position.
 
 The experimental data curve from \ref{subsection:nearbypointresult} and the computational model's curve are shown in Figure 
-\ref{fig:nbpointIvsCPINBNH}. Both curves exhibited similar parabolic shape; however the simulation curve once again showed
-a slightly lower initial slope than the experimental data. In comparison to the middle point case, the simulation curve 
-presented a constant offset from the experimental data. 
+\ref{fig:nbpointIvsCPINBNH}. Both curves exhibited similar parabolic shape; however, the simulation curve showed once again,
+at a larger indentation depth, a flatter slope than the experimental data. This result presented a 
+nearly identical behavior to that of the middle point case.\\
 \label{subsection:nbpcpI}
 \begin{figure}%
     \centering
@@ -213,7 +213,7 @@ presented a constant offset from the experimental data.
             \legend{Nearby Point, CM I-NBP-NH}
         \end{axis}
     \end{tikzpicture}%
-   \caption[Nearby Point: Computational model I vs Experimental data - Neo-Hookean]{NBP - CM I vs EM I: Comparison of force-displacement curves between experimental data for Nearby Point case and the initial computational model with a Neo-Hookean model for $h = \SI{3.8}{\milli \meter}$.}%
+   \caption[Nearby Point: Computational model I vs. Experimental data - Neo-Hookean]{NBP - CM I vs. EM I: Comparison of force-displacement curves between experimental data for Nearby Point case and the initial computational model with a Neo-Hookean model for $h = \SI{3.8}{\milli \meter}$.}%
    \label{fig:nbpointIvsCPINBNH}%
 \end{figure}
 In conclusion, while there are som differences, the initial calculated values provide a consistent approximation to experimental
@@ -253,30 +253,30 @@ The second challenge encountered during the verification process was the analysi
 computational model I. A classic indentation solution between an almost rigid body and an elastic body gives a Hertzian 
 solution \cite{Lin2009}. The expected Hertzian stress distribution was not clearly observed; instead, the stress 
 contour plot showed rough borders, with some irregularities in the indentation surface area. This issue highlighted
-the need for model improvement %(Fig. \ref{fig:stressdistributionanalysis}).%figura con stress distribution NH model and stress distribution symm
+the need for model improvement (Fig. \ref{fig:stressdistributionanalysis}).
 
 Of interest was to observe a cleaner Hertzian stress distribution in the mesh convergence FE model as shown in Figure, 
 suggesting that the original model was not entirely reliable and the mesh dependency in the contact area.  
 
-%\begin{figure}
-%    \centering
-%    \begin{subfigure}[b]{0.45\textwidth}
-%    \centering
-%    \includegraphics[width=\textwidth]{Images/computational/%fig}
-%    \caption{Stress distribution of CM I - NH}
-%    \label{fig:cm1meshtotal}
-%    \end{subfigure}
-%    \hfill
-%    \begin{subfigure}[b]{0.45\textwidth}
-%    \centering
-%    \includegraphics[width=\textwidth]{Images/computational/meshzoomstress.png}
-%    \caption{Stress distribution of mesh convergence model}
-%    \label{fig:cm1meshref}
-%    \end{subfigure}
-%    \hspace{0.3cm}
-%    \caption[Mesh convergence model I stress distribution]{Stress distribution analysis of the CM I with a Neo-Hookean material model and the mesh convergence model, which shows the irregularities in the stress contour plot.}
-%    \label{fig:stressdistributionanalysis}
-%\end{figure}
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/computational/37CSNHstresshalfzoommesh.png}
+    \caption{CM I - NH}
+    \label{fig:cm1meshtotal}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/computational/meshzoomstress.png}
+    \caption{Mesh convergence model}
+    \label{fig:cm1meshref}
+    \end{subfigure}
+    \hspace{0.3cm}
+    \caption[Mesh convergence model I stress distribution]{Stress distribution analysis of the CM I with a Neo-Hookean material model and the mesh convergence model, which shows the irregularities in the stress contour plot.}
+    \label{fig:stressdistributionanalysis}
+\end{figure}
 %----------------------------------------------------------------------------------------------------------------------
 \section{Computational model II}
 The computational model II or improved computational model, adressed the challenges and observations 
@@ -342,19 +342,19 @@ CM II are displayed in Figure \ref{fig:cmIIstressdistanalysis}.\\
     \centering
     \begin{subfigure}[b]{0.7\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{Images/computational/cm2geometry.png}
-    \caption{Geometry model}
+    \includegraphics[width=\textwidth]{Images/computational/37CSNHstresshalfzoommesh.png}
+    \caption{Computational model I}
     \label{fig:cm1stress}
     \end{subfigure}
     \hspace{0.3cm}
     \begin{subfigure}[b]{0.7\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/computational/stresscmII.png}
-    \caption{Mesh refinement area}
+    \caption{Computational model II}
     \label{fig:cm2stress}
     \end{subfigure}
     \hspace{0.3cm}
-    \caption[Stress distribution analysis]{Comparison of stress distribution in computational models I and II after the mesh strategy improvements.}
+    \caption[Stress distribution analysis]{Comparison of stress distribution in computational models I and II with a Neo-Hookean material model after mesh strategy improvements.}
     \label{fig:cmIIstressdistanalysis}
 \end{figure}
 
@@ -365,17 +365,46 @@ experimental test observations. In the real-world experiments, the indented mass
 displace sideways. This discrepancy was attributed to the fixed support boundary condition on the lower specimen's 
 surface, which restricted lateral movement of the indented mass.
 
-To improve this unnatural deformation patternm, a more accurate representation of the 
-experimental setup was introduced into the FE model. 
+To improve this unnatural deformation pattern, a more accurate representation of the 
+experimental setup was introduced into the FE model. The specimen was positioned on a bowl-shaped
+platform, mirroring the experimental configuration. The platform was design with a slightly major radius to allow 
+for lateral displacement of the indented mass to avoid over-constraining the specimen. The contact 
+between the specimen and the platform was set to frictional, with a friction coefficient of 0.2, and the base of the platform 
+possessed a fixed support.
 
-
+The inclusion of the platform in the FE model had an impact on the load-displacement curve (Fig. \ref{fig:noplatformvsplatform}). 
+The curve with platform showed a better fit to the experimental data, as the overall shape of the curve was more 
+comparable to the experimental data. Therefore, the FE model with the platform was selected as the final model for computational 
+model II.\\
+\begin{figure}%
+    \centering
+   \quad
+    \begin{tikzpicture}[scale=1]
+        \begin{axis}[
+            xmax=4,xmin=0,
+            ymin= 0,ymax=0.6,
+            ytick={0,0.1,0.2,...,0.5},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction $F_I [N]$},
+            grid = major,
+            legend pos= north west]
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Middle Point/MPII4mmtotalap.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/CP2/CP2noplatNH8541_5.dat};  
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/CP2/CP2platNH8541_5.dat};            
+            \legend{Middle Point, CM II-No platform, CM II-Platform}
+        \end{axis}
+    \end{tikzpicture}%
+   \caption[CP II: No platform vs. with platform]{NBP - CM I vs. EM I: Comparison of force-displacement curves between experimental data for Nearby Point case and the initial computational model with a Neo-Hookean model for $h = \SI{3.8}{\milli \meter}$.}%
+   \label{fig:noplatformvsplatform}%
+\end{figure}
 
 This chapter has presented an in-depth analysis of the development and refinement of the computational models I and II, used
 for simulating the indentation tests. The transition from CM I to CM II revealed the challenges encountered in a indentation 
 simulation model and how significant is handling large element deformation for the mesh quality improvement. 
 Specifically, the use of a nonlinear adaptive region facilitated more reliable simulation results, displaying a more 
 closely Hertzian solution. This improvement reinforced the model's robustness for the subsequent application in an inverse
-finite element method approach for identefication the material's parameters.
+finite element method approach for identification the material's parameters. Moreover, the adjustment in involving platform
+emphasized the importance of incorporating realistic boundary conditions and constraints into the computational model.
 %best result with convergence
 %Their a two main factors which increases the complexity of the validation of the simulation
 %and those are, the contact nonlinearity, and the element distortion due to indentation

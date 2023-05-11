@@ -2370,6 +2370,20 @@ INPUT .\Images\computational\meshzoom.png
 INPUT .\Images\computational\meshzoom.png
 INPUT .\Images\computational\meshzoom.png
 INPUT .\Images\computational\meshzoom.png
+INPUT .\Images\computational\37CSNHstresshalfzoommesh.png
+INPUT .\Images\computational\37CSNHstresshalfzoommesh.png
+INPUT Images\computational\37CSNHstresshalfzoommesh.png
+INPUT .\Images\computational\37CSNHstresshalfzoommesh.png
+INPUT .\Images\computational\37CSNHstresshalfzoommesh.png
+INPUT .\Images\computational\37CSNHstresshalfzoommesh.png
+INPUT .\Images\computational\37CSNHstresshalfzoommesh.png
+INPUT .\Images\computational\meshzoomstress.png
+INPUT .\Images\computational\meshzoomstress.png
+INPUT Images\computational\meshzoomstress.png
+INPUT .\Images\computational\meshzoomstress.png
+INPUT .\Images\computational\meshzoomstress.png
+INPUT .\Images\computational\meshzoomstress.png
+INPUT .\Images\computational\meshzoomstress.png
 INPUT .\Images\computational\cm2geometry.png
 INPUT .\Images\computational\cm2geometry.png
 INPUT Images\computational\cm2geometry.png
@@ -2384,10 +2398,10 @@ INPUT .\Images\computational\cm2meshzoom.png
 INPUT .\Images\computational\cm2meshzoom.png
 INPUT .\Images\computational\cm2meshzoom.png
 INPUT .\Images\computational\cm2meshzoom.png
-INPUT .\Images\computational\cm2geometry.png
-INPUT .\Images\computational\cm2geometry.png
-INPUT Images\computational\cm2geometry.png
-INPUT .\Images\computational\cm2geometry.png
+INPUT .\Images\computational\37CSNHstresshalfzoommesh.png
+INPUT .\Images\computational\37CSNHstresshalfzoommesh.png
+INPUT Images\computational\37CSNHstresshalfzoommesh.png
+INPUT .\Images\computational\37CSNHstresshalfzoommesh.png
 INPUT .\Images\computational\stresscmII.png
 INPUT .\Images\computational\stresscmII.png
 INPUT Images\computational\stresscmII.png
@@ -2395,6 +2409,9 @@ INPUT .\Images\computational\stresscmII.png
 INPUT .\Images\computational\stresscmII.png
 INPUT .\Images\computational\stresscmII.png
 INPUT .\Images\computational\stresscmII.png
+INPUT Table\Middle Point\MPII4mmtotalap.dat
+INPUT Table\CP2\CP2noplatNH8541_5.dat
+INPUT Table\CP2\CP2platNH8541_5.dat
 INPUT .\Content\Chapter5.tex
 INPUT .\Content\Chapter5.tex
 INPUT .\Content\Chapter5.tex

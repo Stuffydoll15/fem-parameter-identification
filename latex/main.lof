@@ -23,14 +23,16 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Computational model I geometry}}{36}{figure.caption.127}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Computational model I mesh}}{36}{figure.caption.128}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Computational model I vs Experimental data - Linear elasticity}}{37}{figure.caption.132}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Computational model I vs Experimental data - Neo-Hookean}}{38}{figure.caption.136}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Nearby Point: Computational model I vs Experimental data - Neo-Hookean}}{39}{figure.caption.138}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Computational model I vs. Experimental data - Linear elasticity}}{37}{figure.caption.132}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Computational model I vs. Experimental data - Neo-Hookean}}{38}{figure.caption.136}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Nearby Point: Computational model I vs. Experimental data - Neo-Hookean}}{39}{figure.caption.138}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Mesh convergence model I}}{40}{figure.caption.142}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Computational model II mesh}}{41}{figure.caption.147}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Stress distribution analysis}}{42}{figure.caption.150}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Mesh convergence model I stress distribution}}{40}{figure.caption.144}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Computational model II mesh}}{41}{figure.caption.148}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Stress distribution analysis}}{42}{figure.caption.151}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces CP II: No platform vs. with platform}}{43}{figure.caption.153}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Expdata}}{48}{figure.caption.169}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Expdata}}{48}{figure.caption.170}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
