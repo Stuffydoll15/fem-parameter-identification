@@ -1192,6 +1192,38 @@
     \field{year}{2012}
   \endentry
 
+  \entry{Wendels2021}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WS}{%
+         family={Wendels},
+         familyi={W\bibinitperiod},
+         given={Sophie},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AL}{%
+         family={Avérous},
+         familyi={A\bibinitperiod},
+         given={Luc},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {KeAi Communications Co.}%
+    }
+    \strng{namehash}{WSAL1}
+    \strng{fullhash}{WSAL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1016/j.bioactmat.2020.10.002
+    \endverb
+    \field{title}{Biobased polyurethanes for biomedical applications}
+    \field{journaltitle}{Bioactive Materials}
+    \field{year}{2021}
+  \endentry
+
   \entry{Wu2016}{article}{}
     \name{author}{3}{}{%
       {{hash=WCE}{%
