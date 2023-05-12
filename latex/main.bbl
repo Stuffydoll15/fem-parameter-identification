@@ -507,6 +507,40 @@
     \field{year}{2017}
   \endentry
 
+  \entry{Grebenisan2017}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GG}{%
+         family={Grebenişan},
+         familyi={G\bibinitperiod},
+         given={Gavril},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Salem},
+         familyi={S\bibinitperiod},
+         given={Nazzal},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {EDP Sciences}%
+    }
+    \strng{namehash}{GGSN1}
+    \strng{fullhash}{GGSN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.1051/matecconf/201712603003
+    \endverb
+    \field{issn}{2261236X}
+    \field{title}{The multi-objective genetic algorithm optimization, of a
+  superplastic forming process, using ansys®}
+    \field{journaltitle}{MATEC Web of Conferences}
+    \field{year}{2017}
+  \endentry
+
   \entry{Griffin2016}{article}{}
     \name{author}{5}{}{%
       {{hash=GM}{%
