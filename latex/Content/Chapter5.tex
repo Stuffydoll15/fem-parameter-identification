@@ -55,9 +55,50 @@ and \ref{eq:incomparcp1}, the shear modulus $\mu$ and the incompressibility para
 The corresponding ranges were \SIrange{3356}{36765}{\pascal} and \SIrange{1}{168}{\mega\pascal\tothe{-1}}, respectively.
 
 \subsection*{Sensitivity Analysis}
+The RSO generated a response surface that enabled the perfomance of a sensitivity analysis.
+The sensitivity analysis helped identified which design variables had the most impact 
+on the objective function or performance metric, i.e. it was possible to observe how much 
+an objective change when each input variable changed. By evaluating the sensitivity of the 
+function to variations in the design variables, it was possible to prioritize the most 
+influencial parameters and understand their influence in the model during the optimization 
+process.
+
+This analysis was presented with a response surface and a local sensitivity bar diagram. 
+Figure \ref{fig:fullrangelocalsensi} plots the local sensitvity bar diagram for design variables,
+$\mu$ and $D_1$ with respect to the output parameters, the maximum force reaction in Z-direction $F_z$ 
+and the maximum directional deformation in Z-direction $u_z$. 
+
+\begin{figure}%
+    \centering
+	\begin{tikzpicture}
+	\begin{axis}[
+	    ybar,
+	    bar width=1cm,
+	    ymax=80,
+	    xlabel=Parameter,
+	    ylabel={Local Sensitiviy (\%)},
+	    xtick=data,
+	    xticklabels from table={Table/sensitivity/fullrangeplat2points/test.csv}{Name},
+	    enlarge x limits=1,
+	    width=0.8\textwidth,
+	    height=6cm,
+	    legend style={at={(0.5,-0.15)},
+	    anchor=north,legend columns=-1},
+	    ymajorgrids=true,
+	    grid style=dashed,
+	]
+	\addplot table [x expr=\coordindex, y=P3] {Table/sensitivity/fullrangeplat2points/test.csv};
+	\addplot table [x expr=\coordindex, y=P5] {Table/sensitivity/fullrangeplat2points/test.csv};
+	\legend{Directional Deformation, Force Reaction Z Axis}
+	\end{axis}
+	\end{tikzpicture}
+	\caption[Local sensitivity analysis - Initial parameter range]{Local sensitivity analysis displaying the influence of the shear modulus and incompressibility parameter for the directional deformation and force reaction in Z-direction.}%
+	\label{fig:fullrangelocalsensi}%
+ \end{figure}
 
 
 
+ 
 
 
 

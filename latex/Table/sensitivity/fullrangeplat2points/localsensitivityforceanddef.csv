@@ -1,0 +1,11 @@
+﻿# Response Point
+# Name,P1 - Initial Shear Modulus Mu (Pa),P2 - Incompressibility Parameter D1 (MPa^-1),P3 - Directional Deformation Minimum (mm),P5 - Force Reaction Minimum Z Axis (N),P8 - Directional Deformation Minimum (mm),P9 - Force Reaction Minimum Z Axis (N)
+Name,P1,P2,P3,P5,P8,P9
+Response Point,20060.5,84.5,-3.9680765879128574,-0.42182163011171303,-1.9686648843961807,-0.14044148356445241
+
+# Local Sensitivity
+# Mode: Bar,Axes Range: Use Min Max of the Output Parameter
+# Name,P3 - Directional Deformation Minimum,P5 - Force Reaction Minimum Z Axis
+Name,P3,P5
+Local Sensitivity:P1,-72.018060638234559,-68.673142506629318
+Local Sensitivity:P2,-54.972732060726827,17.665299500900041
