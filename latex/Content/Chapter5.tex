@@ -63,10 +63,18 @@ function to variations in the design variables, it was possible to prioritize th
 influencial parameters and understand their influence in the model during the optimization 
 process.
 
-This analysis was presented with a response surface and a local sensitivity bar diagram. 
-Figure \ref{fig:fullrangelocalsensi} plots the local sensitvity bar diagram for design variables,
-$\mu$ and $D_1$ with respect to the output parameters, the maximum force reaction in Z-direction $F_z$ 
+By examining a local sensitivity bar diagram and a response surface, the sensitivity analysis was conducted.
+Figure \ref{fig:fullrangelocalsensi} displays the local sensitvity bar diagram for the design variables
+$\mu$ and $D_1$, in relation to the output parameters, namely the maximum force reaction in Z-direction $F_z$ 
 and the maximum directional deformation in Z-direction $u_z$. 
+
+The local sensitivity bar diagram provided a quantitative measure of the relative impact of the material 
+parameters. This diagram indicated that the shear modulus has a positive correlation with both the force
+reaction and the directional deformation. I also highlighted the considerably greater impact of the shear modulus 
+on the force reaction, nearly four times as much as the incompressibility parameter. Moreover, $D_1$ exhibited 
+an inverse negative correlation with force reaction.
+In terms of deformation, both $\mu$ and $D_1$ showed a positive correlation. However the impact of the 
+shear modulus slightly surpassed that of the incompressibility parameter.\\
 
 \begin{figure}%
     \centering
@@ -96,7 +104,19 @@ and the maximum directional deformation in Z-direction $u_z$.
 	\label{fig:fullrangelocalsensi}%
  \end{figure}
 
+The response surface (Fig. )%made surface diagram
+reinforced the findings obtained from the local sensitivity diagram. The steeper gradient of the shear modulus 
+signified its greater imapct on the force reaction. The incompressibility parameter, on the other hand, 
+exhibited a steeper slope at the beginning, but it tended to flatten and almost converged. This indicated 
+a lowering influence on the force reaction.
 
+\begin{figure}%
+	\centering
+   \quad
+   \includegraphics[width=10cm]{Images/ifem/plat NH 4 and 2 fullrange/rsoforce.png}%
+   \caption[Response surface - Force Reaction]{Response Surface for the Neo-Hookean parameters $\mu$ and $D_1$ in relation to the force reaction in the Z-axis.}%
+   \label{fig:rsoforce}%
+\end{figure}
 
  
 
