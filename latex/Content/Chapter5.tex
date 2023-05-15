@@ -161,8 +161,30 @@ $u_z=\SI{3.9}{\milli\meter}$, specifically at $u_z=\SI{2}{\milli\meter}$,
 and later an additional target at $\SI{3}{\milli\meter}$ was also tested.
 
 Figure% shows the comparison between matching the data ith one point vs 2 and 3 points 
-
-
+showed the result of introducing an extra optimization target in the RSO. 
+The use of \SI{2}{} or even \SI{3}{} target points along the curve did not showed a significant
+difference in the give material paremeter set for load-displacement curve.
+\begin{figure}%
+    \centering
+   \quad
+    \begin{tikzpicture}[scale=1]
+        \begin{axis}[
+            xmax=4.2,xmin=0,
+            ymin= 0,ymax=0.6,
+            ytick={0,0.1,0.2,...,0.5},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction $F_{II} [N]$},
+            grid = major,
+            legend pos= north west]
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/RSO/expdatatop.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/RSO/2point99997_6.dat};
+			\addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/RSO/3point10867_47.dat};
+            \legend{Experiment II,RSO-2 points,RSO-3 points}
+        \end{axis}
+    \end{tikzpicture}%
+   \caption[Multi-objective optimization comparison]{Analysis of multi-objective target optimization, \SI{2}{} and \SI{3}{} sought targets were introduced in the RSO process. }%
+   \label{fig:1vs2vs3points}%
+\end{figure}
 
 
 

@@ -2434,6 +2434,9 @@ INPUT .\Images\ifem\plat NH 4 and 2 fullrange\rsoforce1.png
 INPUT .\Images\ifem\plat NH 4 and 2 fullrange\rsoforce1.png
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplr7t.vf
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr8r.tfm
+INPUT Table\RSO\expdatatop.dat
+INPUT Table\RSO\2point99997_6.dat
+INPUT Table\RSO\3point10867_47.dat
 INPUT .\Content\Chapter6.tex
 INPUT .\Content\Chapter6.tex
 INPUT .\Content\Chapter6.tex
