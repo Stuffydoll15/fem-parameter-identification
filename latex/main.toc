@@ -28,9 +28,9 @@
 \contentsline {subsection}{\numberline {3.3.1}Middle Point}{41}{subsection.146}%
 \contentsline {chapter}{\numberline {4}Inverse Finite Element Method for Material Parameter Identification}{45}{chapter.154}%
 \contentsline {section}{\numberline {4.1}Response Surface Optimization}{45}{section.155}%
-\contentsline {subsection}{\numberline {4.1.1}Minimizing the Objective Function}{48}{subsection.172}%
-\contentsline {section}{\numberline {4.2}Evaluation of the Identified Material Parameters}{49}{section.173}%
-\contentsline {section}{\numberline {4.3}Comparison between RSO and MATLAB Optimization}{49}{section.174}%
+\contentsline {section}{\numberline {4.2}Minimizing the Objective Function}{49}{section.172}%
+\contentsline {section}{\numberline {4.3}Evaluation of the Identified Material Parameters}{50}{section.173}%
+\contentsline {section}{\numberline {4.4}Comparison between RSO and MATLAB Optimization}{50}{section.174}%
 \contentsline {chapter}{\numberline {5}Results}{51}{chapter.175}%
 \contentsline {section}{\numberline {5.1}Overview and Analysis}{51}{section.176}%
 \contentsline {section}{\numberline {5.2}Framework proposal}{51}{section.177}%

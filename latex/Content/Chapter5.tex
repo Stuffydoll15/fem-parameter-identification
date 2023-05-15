@@ -158,12 +158,30 @@ Although the RSO proved to be useful, the obtained candidates were not providing
 match to the entire load-displacement curve when using only a single point as the optimization target.
 This motivated the introduction of more targets along the curve in addition to the force reaction at 
 $u_z=\SI{3.9}{\milli\meter}$, specifically at $u_z=\SI{2}{\milli\meter}$, 
-and later an additional target at $\SI{3}{\milli\meter}$ was also tested.
+and later an additional target at $\SI{3}{\milli\meter}$ was also tested.\\
 
-Figure% shows the comparison between matching the data ith one point vs 2 and 3 points 
-showed the result of introducing an extra optimization target in the RSO. 
-The use of \SI{2}{} or even \SI{3}{} target points along the curve did not showed a significant
-difference in the give material paremeter set for load-displacement curve.
+Initially, the force reactions at \SI{2}{\milli\meter} and \SI{4}{\milli\meter} indentation depths
+were used as targets. The range of the shear modulus for this two-point target was set to
+\SIrange{6000}{10000}{\pascal}, while the range of the incompressibility parameter was set to 
+\SIrange{1}{6}{\mega\pascal\tothe{-1}}.
+
+Subsequently, a third target was introduced at \SI{3}{\milli\meter} indentation depth, and the ranges 
+for $mu$ and $D_1$ were revised to \SIrange{9000}{15000}{\pascal} and \SIrange{1}{50}{\mega\pascal\tothe{-1}}, 
+respectively.
+
+The RSO for the two-point target optimization gave a $mu_{2p}=\SI{9999.7}{\pascal}$ and a 
+$D_{1_{2p}}=\SI{5.8}{\mega\pascal\tothe{-1}}$. In comparison, the three-point target optimization 
+yielded a  $mu_{3p}=\SI{10867}{\pascal}$ and $D_{1_{3p}}=\SI{47.2}{\mega\pascal\tothe{-1}}$.
+
+Despite the differences in the estimated material parameters, the simulation curves obtained  
+from these parameter sets were nearly identical, as shown in Figure \ref{fig:1vs2vs3points}.
+Furthermore, the RSO exhibited the tendency to select higher values from the range of the 
+incompressibility parameter.
+
+%Figure% shows the comparison between matching the data ith one point vs 2 and 3 points 
+%showed the result of introducing an extra optimization target in the RSO. 
+%The use of \SI{2}{} or even \SI{3}{} target points along the curve did not showed a significant
+%difference in the give material paremeter set for load-displacement curve.
 \begin{figure}%
     \centering
    \quad
@@ -186,23 +204,30 @@ difference in the give material paremeter set for load-displacement curve.
    \label{fig:1vs2vs3points}%
 \end{figure}
 
-
+Given that the two-point and three-point target optimizations had comparable results, the optimization
+was continued with the two-point target optimization. This decision was driven when considering 
+the computational cost, as this requires fewer simulations than the three-point target optimization.
 
 %buscar un ejemplo con un grafico mostrando dos puntos y un punto
 %explicar cambio en sets
 
-\subsection{Minimizing the Objective Function}
+\section{Minimizing the Objective Function}
 
-In addition to the RSO, a separate optimization was conducted in MATLAB to find the global minimum of the objective function. The objective function was defined as the NRMSE, which quantifies the difference between the simulated and experimental responses.
+In addition to the RSO, a separate identification process was conducted with MATLAB to find the global minimum of 
+the objective function. The objective function was defined as the NRMSE, which quantifies the difference 
+between the simulated and experimental responses.
 
-The MATLAB optimization used the data from the RSO to approximate the objective function as a surface in a three-dimensional space. The x-axis represented the shear modulus, the y-axis represented the incompressibility parameter, and the z-axis represented the NRMSE of each simulation.
+The MATLAB optimization used the data from the RSO calculated error measurements to approximate 
+the objective function as a surface in a three-dimensional space in relation to the design variables. 
 
-The MATLAB optimization then used a mathematical algorithm (such as gradient descent or a genetic algorithm) to search this surface for the set of input parameters that minimized the NRMSE. This set of parameters represented the optimal solution that best matched the experimental data.
+Using data from approximately 35 simulations, a surface was approximated where the x-axis represented the shear 
+modulus, the y-axis represented the incompressibility parameter, and the z-axis represented the NRMSE 
+of each simulation. The Mean Relative Error (MRE) 
 
-This was a bit more detailed explanation of those aspects. Please let me know if you'd like to delve into any other specific areas or if you have further queries.
+was also calculated for each simulation, and the same 
+surface approximation method was applied.
 
 
-Additionally, an effort was made to find the global minimum of the objective function (the relationship between the input parameters and the NRMSE) using MATLAB. Using data from approximately 40 simulations, a surface was approximated where the x-axis represented the shear modulus, the y-axis represented the incompressibility parameter, and the z-axis represented the NRMSE of each simulation. The Mean Relative Error (MRE) was also calculated for each simulation, and the same surface approximation method was applied.
 
 \section{Evaluation of the Identified Material Parameters}
 
