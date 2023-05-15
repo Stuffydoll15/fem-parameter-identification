@@ -73,7 +73,7 @@ parameters. This diagram indicated that the shear modulus has a positive correla
 reaction and the directional deformation. I also highlighted the considerably greater impact of the shear modulus 
 on the force reaction, nearly four times as much as the incompressibility parameter. Moreover, $D_1$ exhibited 
 an inverse negative correlation with force reaction.
-In terms of deformation, both $\mu$ and $D_1$ showed a positive correlation. However the impact of the 
+In terms of deformation, both $\mu$ and $D_1$ showed a positive correlation. However, the impact of the 
 shear modulus slightly surpassed that of the incompressibility parameter.\\
 
 \begin{figure}%
@@ -104,7 +104,7 @@ shear modulus slightly surpassed that of the incompressibility parameter.\\
 	\label{fig:fullrangelocalsensi}%
  \end{figure}
 
-The response surface (Fig. )%made surface diagram
+The response surface (Fig. \ref{fig:rsoforce}) 
 reinforced the findings obtained from the local sensitivity diagram. The steeper gradient of the shear modulus 
 signified its greater imapct on the force reaction. The incompressibility parameter, on the other hand, 
 exhibited a steeper slope at the beginning, but it tended to flatten and almost converged. This indicated 
@@ -113,35 +113,49 @@ a lowering influence on the force reaction.
 \begin{figure}%
 	\centering
    \quad
-   \includegraphics[width=10cm]{Images/ifem/plat NH 4 and 2 fullrange/rsoforce.png}%
+   \includegraphics[width=10cm]{Images/ifem/plat NH 4 and 2 fullrange/rsoforce1.png}%
    \caption[Response surface - Force Reaction]{Response Surface for the Neo-Hookean parameters $\mu$ and $D_1$ in relation to the force reaction in the Z-axis.}%
    \label{fig:rsoforce}%
 \end{figure}
 
- 
+\subsection*{Initial RSO Results and Evaluation}
+The primary performance metric or objective for the RSO was to match the maximum force in the Z-direction, 
+observed experimentally at a displacement of $u_z=\SI{4}{\milli\meter}$.
+The initial RSO process offered three candidate sets of material parameters, with shear modulus values 
+around \SI{0.011}{\mega \pascal} and incompressibility parameter values of \SI{50}{\mega\pascal\tothe{-1}}, 
+\SI{112}{\mega\pascal\tothe{-1}}, and \SI{161}{\mega\pascal\tothe{-1}}. Nevertheless, these candidates 
+did not match with the experimental maximum force when verified. Moreover, it was observed that ANSYS 
+tended to offer only higher values for $D_1$ and ignored the lower half of the range. This led to a decision to 
+refine the parameter ranges further.\\
 
+The refined ranges were from \SIrange{7500}{9500}{\pascal} for the shear modulus and 
+\SIrange{1}{10}{\mega\pascal\tothe{-1}} for the incompressibility parameter. The new candidates from the RSO had a 
+$\mu$ around \SI{0.085}{\mega \pascal} and $D_1$ of \SI{2}{\mega\pascal\tothe{-1}}, 
+\SI{5}{\mega\pascal\tothe{-1}}, and \SI{7}{\mega\pascal\tothe{-1}}. 
 
+Furthermore, it was observed that the maximum total deformation of the specimen did not fully reach the  
+displacement of \SI{4}{\milli\meter}, therefore a new target was modified and set for a displacement 
+of $u_z\approx\SI{3.9}{\milli\meter}$.
 
-\subsection{Sensitivity Analysis}
+\subsection*{Assessment and Process Optimization}
+For each simulation curve obtained, the Root Mean Square Error (RMSE) was calculated.
+The RMSE is considered a commonly used metric to evaluate the differences between the predicted and 
+observed values in the experiments. This function measured the standard deviation of the residuals 
+or prediction errors. The RMSE is given by the formula 
+\begin{align}
+	\text{RMSE} = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}\, ,
+\end{align}
+where $y_i$ is the observed or experimental value, $\hat{y}_i$ is the predicted or simulated value, and 
+$n$ is the number of data points. However, since the RMSE is scale-dependent, it was normalized by dividing the
+RMSE value with the difference of the maximal and minimal value of the observed data
+\begin{align}
+	\text{NRMSE} = \frac{\text{RMSE}}{y_{max} - y_{min}} \, .
+\end{align}
 
-The sensitivity analysis provided by the RSO shows the relative importance of each input parameter in determining the output responses. The analysis is presented in the form of a Sensitivity Diagram, which plots the influence of each parameter on the outputs.
-
-In this study, the sensitivity analysis can be used to understand how changes in the shear modulus and incompressibility parameter affect the maximum force and maximum directional deformation. This information can guide the refinement of the parameter ranges in the RSO, as well as the selection of the optimization targets.
-
-For example, if the sensitivity analysis shows that the maximum force is highly sensitive to changes in the shear modulus but not the incompressibility parameter, it may be beneficial to narrow the range of the shear modulus in the RSO and focus on optimizing the maximum force.
-
-
-\subsection{Initial RSO Results}
-
-The initial RSO offered three candidate sets of material parameters, with the shear modulus around 0.11 MPa and the incompressibility parameter values of $50, 112, and 161 MPa^-1$. However, these candidates did not yield a match with the experimental maximum force. Moreover, it was observed that ANSYS tended to offer only the higher values for $D_1$ and ignored the lower half of the range. This led to a decision to refine the parameter ranges further.
-
-\subsection{Refined Parameter Range and Results}
-
-The refined parameter ranges were $[7500 Pa, 9500 Pa]$ for the shear modulus and $[1, 10 MPa^-1]$ for the incompressibility parameter. The new candidates from the RSO had shear moduli around $0.085 MPa$ and incompressibility parameters of $2, 5, and 7 MPa^-1$. The new target for the RSO was then the force reaction for an indentation depth of 3.9 mm, and the Normalized Root Mean Square Error (NRMSE) was calculated manually for each simulation to evaluate the quality of the solutions.
-
-\section{Advanced Optimization Techniques}
-
-The RSO, though useful, was not providing a satisfactory match to the entire load-displacement curve when using only a single point as the optimization target. This motivated the introduction of multiple targets along the curve, specifically the force reactions at 2 mm and 3.9 mm indentation depths. An additional target at 3 mm was also tested.
+Although the RSO proved to be useful, the obtained candidates were not providing a satisfactory 
+match to the entire load-displacement curve when using only a single point as the optimization target.
+%buscar un ejemplo con un grafico mostrando dos puntos y un punto
+%explicar cambio en sets
 
 \subsection{Minimizing the Objective Function}
 
