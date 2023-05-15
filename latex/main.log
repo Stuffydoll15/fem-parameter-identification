@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  15 MAY 2023 02:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  15 MAY 2023 17:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2132,7 +2132,7 @@ PGFPlots: reading {"Table/Middle Point/MPII4mmtotalap.dat"}
 PGFPlots: reading {Table/CP2/CP2noplatNH8541_5.dat}
 PGFPlots: reading {Table/CP2/CP2platNH8541_5.dat}
 
-Underfull \hbox (badness 1590) in paragraph at lines 399--399
+Underfull \hbox (badness 1590) in paragraph at lines 400--400
  []\OT1/ppl/m/sc/10 Figure 3.10: |\OT1/ppl/m/n/10 NBP - CM I vs. EM I: Com-par-i-son of force- 
  []
 
@@ -2272,13 +2272,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  59719 strings out of 475281
  1435249 string characters out of 2774064
- 2445882 words of memory out of 3000000
+ 2445883 words of memory out of 3000000
  79777 multiletter control sequences out of 15000+600000
  521109 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,21n,100p,2324b,2736s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (75 pages, 26582222 bytes).
+Output written on main.pdf (75 pages, 26582444 bytes).
 PDF statistics:
  1213 PDF objects out of 1440 (max. 8388607)
  305 named destinations out of 1000 (max. 500000)

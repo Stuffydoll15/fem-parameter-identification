@@ -147,13 +147,25 @@ or prediction errors. The RMSE is given by the formula
 \end{align}
 where $y_i$ is the observed or experimental value, $\hat{y}_i$ is the predicted or simulated value, and 
 $n$ is the number of data points. However, since the RMSE is scale-dependent, it was normalized by dividing the
-RMSE value with the difference of the maximal and minimal value of the observed data
+RMSE value with the mean of the observed values%difference of the maximal and minimal value of the observed data
+%\begin{align}
+%	\text{NRMSE} = \frac{\text{RMSE}}{y_{max} - y_{min}} \, .
+%\end{align}
 \begin{align}
-	\text{NRMSE} = \frac{\text{RMSE}}{y_{max} - y_{min}} \, .
+	\text{NRMSE} = \frac{\text{RMSE}}{\bar{y}} \, .
 \end{align}
-
 Although the RSO proved to be useful, the obtained candidates were not providing a satisfactory 
 match to the entire load-displacement curve when using only a single point as the optimization target.
+This motivated the introduction of more targets along the curve in addition to the force reaction at 
+$u_z=\SI{3.9}{\milli\meter}$, specifically at $u_z=\SI{2}{\milli\meter}$, 
+and later an additional target at $\SI{3}{\milli\meter}$ was also tested.
+
+Figure% shows the comparison between matching the data ith one point vs 2 and 3 points 
+
+
+
+
+
 %buscar un ejemplo con un grafico mostrando dos puntos y un punto
 %explicar cambio en sets
 
