@@ -118,7 +118,7 @@ a lowering influence on the force reaction.
    \label{fig:rsoforce}%
 \end{figure}
 
-\subsection*{Initial RSO Results and Evaluation}
+\subsection*{Initial RSO Results and Analysis}
 The primary performance metric or objective for the RSO was to match the maximum force in the Z-direction, 
 observed experimentally at a displacement of $u_z=\SI{4}{\milli\meter}$.
 The initial RSO process offered three candidate sets of material parameters, with shear modulus values 
@@ -169,9 +169,9 @@ Subsequently, a third target was introduced at \SI{3}{\milli\meter} indentation 
 for $mu$ and $D_1$ were revised to \SIrange{9000}{15000}{\pascal} and \SIrange{1}{50}{\mega\pascal\tothe{-1}}, 
 respectively.
 
-The RSO for the two-point target optimization gave a $mu_{2p}=\SI{9999.7}{\pascal}$ and a 
+The RSO for the two-point target optimization gave a $\mu_{2p}=\SI{9999.7}{\pascal}$ and a 
 $D_{1_{2p}}=\SI{5.8}{\mega\pascal\tothe{-1}}$. In comparison, the three-point target optimization 
-yielded a  $mu_{3p}=\SI{10867}{\pascal}$ and $D_{1_{3p}}=\SI{47.2}{\mega\pascal\tothe{-1}}$.
+yielded a  $\mu_{3p}=\SI{10867}{\pascal}$ and $D_{1_{3p}}=\SI{47.2}{\mega\pascal\tothe{-1}}$.
 
 Despite the differences in the estimated material parameters, the simulation curves obtained  
 from these parameter sets were nearly identical, as shown in Figure \ref{fig:1vs2vs3points}.
@@ -220,48 +220,110 @@ between the simulated and experimental responses.
 The MATLAB optimization used the data from the RSO calculated error measurements to approximate 
 the objective function as a surface in a three-dimensional space in relation to the design variables. 
 
-Using data from approximately 35 simulations, a surface was approximated where the x-axis represented the shear 
-modulus, the y-axis represented the incompressibility parameter, and the z-axis represented the NRMSE 
+Using data from approximately \SI{35}{} simulations, a surface was generated where the X-axis represented the shear 
+modulus, the Y-axis represented the incompressibility parameter, and the Z-axis represented the NRMSE 
 of each simulation. The Mean Relative Error (MRE) 
+\begin{align}
+	\text{MRE} = \frac{1}{n} \sum_{i=1}^{n} \left| \frac{y_i - \hat{y}_i}{y_i} \right| \, ,
+\end{align}
+was also calculated for each simulation, and the same surface approximation method was applied. 
+The approximation was performed with a second and fourth degree polynomial.
+Figure \ref{fig:poly4NRMSE}
+shows the surface plot of a fourth-degree polynomial with \SI{15}{} variables for the NRMSE. 
+The fourth degree polynomial function had the following form
+\begin{align}
+	\begin{split}
+	f(x) = p00 + &p10x_1 + p01x_2 + p20x_1^2 + p11x_1x_2 + p02x_2^2 + \\
+	&p30x_1^3 + p21x_1^2x_2 + p12x_1x_2^2 + p03x_2^3 + \\
+	&p40x_1^4 + p31x_1^3x_2 + p22x_1^2x_2^2 + p13x_1x_2^3 + p04x_2^4 \,.
+	\end{split}
+\end{align}
+%Evtl surface beeschreiben poly2 doesnt reach tiefsten punkten...
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/ifem/MATLAB/NRMSE2poly.png}
+    \caption{Second degree polynomial surface}
+    \label{fig:poly2NRMSE}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/ifem/MATLAB/NRMSE4poly.png}
+    \caption{Fourth degree polynomial surface}
+    \label{fig:poly4NRMSE}
+    \end{subfigure}
+    \hspace{0.3cm}
+    \caption[Polynomial approximation surfaces-NRMSE]{Surface approximation method with a second and fourth degree polynomial for NRMSE.}
+    \label{fig:poly2and4}
+\end{figure}
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/ifem/MATLAB/MRE2poly.png}
+    \caption{Second degree polynomial surface}
+    \label{fig:poly2MRE}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/ifem/MATLAB/MRE4poly.png}
+    \caption{Fourth degree polynomial surface}
+    \label{fig:poly4MRE}
+    \end{subfigure}
+    \hspace{0.3cm}
+    \caption[Polynomial approximation surfaces-MRE]{Surface approximation method with a second and fourth degree polynomial for MRE.}
+    \label{fig:poly2and4MRE}
+\end{figure}
+The results obtained from the different polynomial degrees and the two performance metrics were summarized
+in Table \ref{tab:materialsetMATLAB}.
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	\textbf{Polynomial Degree} & \textbf{Error Metric} & $\mu$ (Pa) &	$D_1$ (MPa\textsuperscript{-1}) \\
+	\hline
+	2 & NRMSE & 12200 & 108.6 \\
+	4 & NRMSE & 10600 & 29.6 \\
+	2 & MRE & 11900 & 72.7 \\
+	4 & MRE & 10200 & 1.1 \\
+	\hline
+	\end{tabular}
+	\caption[Material parameter sets obtained from MATLAB]{Shear modulus and incompressibility parameter obtained from different polynomial degrees and error metrics using MATLAB script.}
+	\label{tab:materialsetMATLAB}
+\end{table}
 
-was also calculated for each simulation, and the same 
-surface approximation method was applied.
-
-
-
-\section{Evaluation of the Identified Material Parameters}
-
-The material parameters identified through the RSO and the MATLAB-based optimization were introduced into the computational model for evaluation. The performance of these parameter sets was compared against the experimental data to determine their adequacy.
-
+This revealed that varying the polynomial degree and the perfomance metric can influence the estimated material parameters. 
+A higher polynomial degree tended to result in a lower shear modulus and incompressibility parameter. Furthermore, 
+using the MRE as the performance metric resulted in lower estimates for these parameters.\\
 
 \section{Comparison between RSO and MATLAB Optimization}
+\label{section:comparisonrsomatlab}
 
-Both RSO and MATLAB-based optimization are valuable tools for parameter estimation and can offer unique advantages in different scenarios. Here, we outline the strengths and weaknesses of each method based on the experiences in this study.
+During the parameter identification exploration process, both RSO and MATLAB-based optimization proved to be valuable tools with 
+their own distinct strengths and weaknesses. The combined use of these methods complemented the overall analysis of their application in the
+iFEM process.\\
 
-\textbf{Strengths of RSO:}
+The RSO in ANSYS provided a relatively user-friendly interface which did not required a background in programming, while its integration
+in ANSYS generated an intuitive workflow. Moreover, the RSO included built-in tools for the sensitivity analysis, which provided 
+valuable information and insights into the relationship between the design variables and the output parameters. 
+However, the RSO offered less flexibility compared to a custom-coded MATLAB optimization routine, and there was the need to 
+reduce the number of the design variables and their constraints to achieve an adequate result.\\
 
-	1. \textit{User-Friendly Interface:} RSO in ANSYS provides a relatively user-friendly interface that does not require advanced knowledge of programming languages. This can make the process more accessible for users who do not have a background in programming.
-	2. \textit{Integrated Design:} Since RSO is an integral part of ANSYS, it works seamlessly with the rest of the software package. This integration can streamline the workflow and reduce the likelihood of errors or inconsistencies.
-	3. \textit{Sensitivity Analysis:} RSO includes built-in tools for sensitivity analysis, which can provide valuable insights into the relative importance of each input parameter.
+MATLAB strengths relied on its highly customizable apporach for problem-sol-\\ving. 
+In addition, the advanced tools for data 
+analysis and visualization was useful to generated some direct relationship with the perfomance metrics. Still, 
+MATLAB demanded software expertise, and importing the data from ANSYS introduced some time cost. Furthermore, for an 
+accurate polynomial approximation an increase in data points and preparation was necessary.\\
 
-\textbf{Weaknesses of RSO:}
-
-	1. \textit{Limited Flexibility:} RSO may offer less flexibility compared to custom-coded MATLAB optimization routines. For example, it might not be possible to use custom objective functions or optimization algorithms.
-	2. \textit{Inability to Handle Complex Objective Functions:} RSO can struggle with objective functions that are highly nonlinear, discontinuous, or have multiple local minima.
-
-\textbf{Strengths of MATLAB Optimization:}
-
-	1. \textit{Highly Customizable:} MATLAB allows for highly customizable optimization routines. You can design your own objective function, constraints, and choose from a variety of optimization algorithms.
-	2. \textit{Advanced Analysis Tools:} MATLAB provides advanced tools for data analysis and visualization, which can be useful for interpreting the results of the optimization.
-
-\textbf{Weaknesses of MATLAB Optimization:}
-
-	1. \textit{Requires Programming Knowledge:} Unlike RSO, MATLAB-based optimization requires a good understanding of programming, which can be a barrier for some users.
-	2. \textit{Separate Workflow:} Since MATLAB is a separate software, it requires an additional step of exporting and importing data between ANSYS and MATLAB. This can add complexity to the workflow.
-
-In conclusion, the choice between RSO and MATLAB optimization depends on the specific requirements of the study, the complexity of the problem, and the resources and skills available. In this study, both methods were used to leverage their unique advantages and to provide a more comprehensive parameter estimation.
-
-
+In conclusion, the choice between RSO and MATLAB optimization depends on the specific requirements of the study, 
+the complexity of the problem, and the resources and skills available. 
+This study complemented both methods to provide a more comprehensive parameter estimation.
+Consequently, the best material parameters identified through the RSO and the MATLAB-based optimization were 
+inserted into the computational model for evaluation. The performance of these parameter sets was compared against 
+the experimental data to determine their suitability.
 
 %\section{Material Modeling}
 %In an ideal and first scenario, this material can be assumed as linear, isotropic, 
