@@ -32,19 +32,19 @@
 \contentsline {section}{\numberline {4.3}Comparison between RSO and MATLAB Optimization}{51}{section.178}%
 \contentsline {chapter}{\numberline {5}Results}{53}{chapter.179}%
 \contentsline {section}{\numberline {5.1}Overview and Analysis}{53}{section.180}%
-\contentsline {section}{\numberline {5.2}Framework proposal}{53}{section.181}%
-\contentsline {section}{\numberline {5.3}Verification and Validation}{53}{section.182}%
-\contentsline {subsection}{\numberline {5.3.1}Deeper indentation}{53}{subsection.183}%
-\contentsline {subsection}{\numberline {5.3.2}Deformation profile analysis}{53}{subsection.184}%
+\contentsline {section}{\numberline {5.2}Verification and Validation}{53}{section.181}%
+\contentsline {subsection}{\numberline {5.2.1}Deeper indentation}{53}{subsection.182}%
+\contentsline {subsection}{\numberline {5.2.2}Deformation profile analysis}{53}{subsection.183}%
+\contentsline {section}{\numberline {5.3}Framework proposal}{53}{section.184}%
 \contentsline {section}{\numberline {5.4}Limitations and implications of the results}{53}{section.185}%
 \contentsline {subsection}{\numberline {5.4.1}First Experimental model}{53}{subsection.186}%
 \contentsline {subsection}{\numberline {5.4.2}Second Experimental model}{54}{subsection.188}%
-\contentsline {section}{\numberline {5.5}Material model framework assumptions}{54}{section.189}%
+\contentsline {section}{\numberline {5.5}Material model framework assumptions}{55}{section.189}%
 \contentsline {subsection}{\numberline {5.5.1}First Material model}{55}{subsection.190}%
 \contentsline {subsubsection}{Linear elasticity}{55}{section*.191}%
 \contentsline {subsubsection}{Hyperelasticity}{55}{section*.192}%
 \contentsline {section}{\numberline {5.6}Computational model}{55}{section.193}%
-\contentsline {section}{\numberline {5.7}Material model}{55}{section.194}%
+\contentsline {section}{\numberline {5.7}Material model}{56}{section.194}%
 \contentsline {chapter}{\numberline {6}Conclusion and Outlook}{57}{chapter.195}%
 \contentsline {section}{\numberline {6.1}Summary and Contributions}{57}{section.196}%
 \contentsline {section}{\numberline {6.2}Recommendations for Future Research}{57}{section.197}%

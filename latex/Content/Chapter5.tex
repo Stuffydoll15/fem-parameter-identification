@@ -144,6 +144,7 @@ observed values in the experiments. This function measured the standard deviatio
 or prediction errors. The RMSE is given by the formula 
 \begin{align}
 	\text{RMSE} = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}\, ,
+    \label{eq:rmse}
 \end{align}
 where $y_i$ is the observed or experimental value, $\hat{y}_i$ is the predicted or simulated value, and 
 $n$ is the number of data points. However, since the RMSE is scale-dependent, it was normalized by dividing the
@@ -153,6 +154,7 @@ RMSE value with the mean of the observed values%difference of the maximal and mi
 %\end{align}
 \begin{align}
 	\text{NRMSE} = \frac{\text{RMSE}}{\bar{y}} \, .
+    \label{eq:nrmse}
 \end{align}
 Although the RSO proved to be useful, the obtained candidates were not providing a satisfactory 
 match to the entire load-displacement curve when using only a single point as the optimization target.
@@ -225,6 +227,7 @@ modulus, the Y-axis represented the incompressibility parameter, and the Z-axis 
 of each simulation. The Mean Relative Error (MRE) 
 \begin{align}
 	\text{MRE} = \frac{1}{n} \sum_{i=1}^{n} \left| \frac{y_i - \hat{y}_i}{y_i} \right| \, ,
+    \label{eq:mre}
 \end{align}
 was also calculated for each simulation, and the same surface approximation method was applied. 
 The approximation was performed with a second and fourth degree polynomial.
