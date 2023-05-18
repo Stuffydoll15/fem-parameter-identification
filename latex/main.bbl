@@ -958,6 +958,45 @@
     \field{year}{2015}
   \endentry
 
+  \entry{Rajagukguk2020}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RRA}{%
+         family={Rajagukguk},
+         familyi={R\bibinitperiod},
+         given={Rial\bibnamedelima A.},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=RRA}{%
+         family={Ramadhan},
+         familyi={R\bibinitperiod},
+         given={Raden\bibnamedelima A.A.},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=LHJ}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Hyun\bibnamedelima Jin},
+         giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MDPI AG}%
+    }
+    \strng{namehash}{RRARRALHJ1}
+    \strng{fullhash}{RRARRALHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{doi}
+    \verb 10.3390/en13246623
+    \endverb
+    \field{title}{A review on deep learning models for forecasting time series
+  data of solar irradiance and photovoltaic power}
+    \field{journaltitle}{Energies}
+    \field{year}{2020}
+  \endentry
+
   \entry{Seshaiyer2003}{article}{}
     \name{author}{2}{}{%
       {{hash=SP}{%

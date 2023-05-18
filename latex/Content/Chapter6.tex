@@ -11,13 +11,45 @@ Each simulation deployed various Neo-Hookean parameters sets and
 had a unique load-displacement solutions. These load-displacement curves were 
 juxtaposed with the experimental data and the RMSE and NRMSE (Equation \ref{eq:rmse} and \ref{eq:nrmse}) was calculated to quantify the quality 
 of each solution. To deepen the evaluation, additional performance metrics were incorporated: 
-Mean Relative Error (MRE) (Equation \ref{eq:mre}), Mean Percentage Error (MPE)
-, and Root Mean Square Relative Error (RMSRE).\\
-% incluir formulas 
+Mean Relative Error (MRE) (Equation \ref{eq:mre}), Mean Absolute Percentage Error (MAPE)
+\begin{align}
+    \text{MAPE} = \frac{100\%}{n} \sum_{i=1}^{n} \left| \frac{y_i - \hat{y}_i}{y_i} \right| \,,
+\end{align}
+and  Relative Root Mean Square Error (RRMSE)  
+\begin{align}
+    \text{RRMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \frac{y_i - \hat{y}_i}{y_i} \right)^2} \,.
+\end{align}
+%https://www.analyticsvidhya.com/blog/2021/10/evaluation-metric-for-regression-models/   
+Performance metrics are critical for evaluating the predictive accuracy of the computational model.
+These metrics provide insights into how well the model's prediction align with the 
+experimental data. The combination of these metrics allowed for a more comprehensive 
+assessmetn of all the simulations performance. For instance, the RMSE and NRMSE measured the
+absolute deviation of the predicted values from the observed data, providing an overall 
+measure of the computational model accuracy. On the other hand, metrics like MRE, MAPE. and 
+RRMSE are useful when considering relative errors. These metrics weighed errors in relation
+to the actual size of the actual values \cite{Rajagukguk2020}.\\
 
-The simulation results yielding the lowest performance metrics were set aside as possible
-optimal candidates. In particularm the paremeters with the lowest NRMSE, MRE and RMSRE were 
+The simulation results that produced the lowest performance metrics were set aside as possible
+optimal candidates. In particular the paremeters with the lowest NRMSE, MRE and RMSRE were  
+investigated. The parameters that were determined to provide the best fit to the 
+experimental data based on these assessments were listed on Table \ref{tab:materialsetbestfit}.
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+    Set & $\mu$ (Pa) & $D_1$ (MPa\textsuperscript{-1}) & NRMSE & MRE & RRMSE & Optimization Method\\
+    \hline
+    1 & 9999.7 & 5.8 & 0.0339 & 0.1098 & 0.2067 & RSO 2P RR\\
+    2 & 9975.2 & 5.3 & 0.0340 & 0.1097 & 0.2069 & RSO 2P RR\\
+    3 & 10200 & 1.1 & 0.0533 & 0.1139 & 0.1964 & MATLAB Poly 4 MRE\\
+    4 & 12453 & 139.3 & 0.0648 & 0.1713 & 0.2592 & RSO 2P FR\\
+    \hline
+    \end{tabular}
+    \caption[Best Material parameter sets]{Neo-Hookean material parameter sets that demonstrated the best fit to the experimental data of the EM II.}
+	\label{tab:materialsetbestfit}
+\end{table}
 
+\subsection*{Assessment of Performance Metrics}
 
 \section{Verification and Validation}
 
