@@ -2488,6 +2488,10 @@ INPUT .\Images\validationcase\8mm\setstressdistribution.png
 INPUT .\Images\validationcase\8mm\setstressdistribution.png
 INPUT .\Images\validationcase\8mm\setstressdistribution.png
 INPUT .\Images\validationcase\8mm\setstressdistribution.png
+INPUT Table\results\8mm\expdatatop8mm.dat
+INPUT Table\results\8mm\set199997_58_8mm.dat
+INPUT Table\results\8mm\set310200_11_8mm.dat
+INPUT Table\results\8mm\set412453_1393_8mm.dat
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\vf\public\mathpazo\zplmr7m.vf
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\mathpazo\fplmri.tfm
 INPUT C:\Users\drevs\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm

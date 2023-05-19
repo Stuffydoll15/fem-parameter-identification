@@ -128,11 +128,11 @@ at the center of the surface.
 \label{section:validationcm}
 In order to confirm the reliability and effectiveness of the identified material parameters,
 two distinct validation cases were performed. 
-The first validation case involved the alteration of the indentation depth, changing it to 
+The first validation case (VC I) involved the alteration of the indentation depth, changing it to 
 \SI{8}{\milli \meter} from the original \SI{4}{\milli \meter}. This case aimed to assess how 
 well the material model could adapt and represent the mechanical behavior with increased deformation.
 
-The second validation case revolved around the deformation profile of the spe-\\cimen. The aim here 
+The second validation case (VC II)  revolved around the deformation profile of the spe-\\cimen. The aim here 
 was understand the accuracy in predicting the actual deformation shape of the specimen under 
 indentation. This provided deeper insights into the effects of the selected incompressibility
 parameters.\\
@@ -148,7 +148,7 @@ validation process.
 The first validation experiment featured an indentation depth of $h_{VC1}=\SI{8}{\milli \meter}$,
 doubling the previous indentation depth of $h=\SI{4}{\milli \meter}$ at the center of the specimen's 
 surface or middle point. Computational model II, described in Chapter \ref{chapter:computationalmodel},
-was used with the adjusted indentation depth (Fig. \ref{fig:stressdis8mm}).
+was used with the adjusted indentation depth (Fig. \ref{fig:stressdis8mm}).\\
 
 \begin{figure}%
 	\centering
@@ -157,8 +157,44 @@ was used with the adjusted indentation depth (Fig. \ref{fig:stressdis8mm}).
    \caption[Deeper Indentation - Stress distribution]{Stress distribution and meshing for the first validation case with an indentation depth of $h_{VC1}=\SI{8}{\milli \meter}$.}%
    \label{fig:stressdis8mm}%
 \end{figure}
+%Here stress distribution description
 
+To facilitate the comparison of the remaining candidates, the load-displacement curves for the 
+set \SI{1}{} with the lowest NRMSE, set \SI{3}{} with the lowest RRMSE, and set \SI{4}{}  with the highest 
+incompressibility parameter, were plotted against the experimental data, as shown in Figure \ref{fig:8mmloaddisplcurves}.\\ 
+%8mm load displacement curves
+\begin{figure}%
+    \centering
+   \quad
+    \begin{tikzpicture}[scale=1]
+        \begin{axis}[
+            xmax=8.5,xmin=0,
+            ymin= 0,ymax=1.5,
+            ytick={0,0.2,...,1.4},
+            xlabel={Displacement $u [mm]$},
+            ylabel={Force reaction $F_{II} [N]$},
+            grid = major,
+            legend pos= north west]
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/results/8mm/expdatatop8mm.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/results/8mm/set199997_58_8mm.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/results/8mm/set310200_11_8mm.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/results/8mm/set412453_1393_8mm.dat};
+            \legend{EM II-VC 1, Set 1, Set 3, Set 4}
+        \end{axis}
+    \end{tikzpicture}%
+   \caption[First validation case load-displacement curves]{Analyis of the load-displacement curves of the best material parameter sets and the experimental data for the first validation case with a deeper indentation.}%
+   \label{fig:8mmloaddisplcurves}%
+\end{figure}
 
+The load-displacement graph showed that the experimental data displayed again a steeper initial slope 
+than the computational models. Sets \SI{1}{} and \SI{3}{} curves intersected the experimental curve 
+around a displacement of $u=\SI{2}{\milli \meter}$, whereas set \SI{4}{} intersected at about $u=\SI{3}{\milli \meter}$.
+
+As displacement increased to $u=\SI{4}{\milli \meter}$, the curves for sets \SI{1}{} and \SI{3}{} began 
+to flatten and fell beneath the experimental curve, while set \SI{4}{} maintained its steepness and remained above.
+At a displacement of $u=\SI{8}{\milli \meter}$, set \SI{4}{} with a maximum force of 
+$F_{4_{max}}=\SI{1.3951}{\newton}$ managed to produce the closest 
+approximation to the maximum experimental force $F_{II_{max}}=\SI{1.283}{\newton}$.
 
 \subsection{Deformation Profile Analysis}
 \label{subsection:defprofanalysis}
