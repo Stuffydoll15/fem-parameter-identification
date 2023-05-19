@@ -4,7 +4,7 @@
 \label{chapter:computationalmodel} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
 The previous chapter, presented the experimental model designs for the iFEM process of the material 
-parameter identification, detailling the experimental setups, results, and main assumptions 
+parameter identification, detailing the experimental setups, results, and main assumptions 
 made for the material models. These foundations enabled the development of the finite element (FE) model.
 
 In this chapter, the computational models of the indentation tests introduced in Chapter \ref{chapter:experimentalmodel} 
@@ -21,7 +21,7 @@ results and challenges of computational model I, the initial conceptual ideas fo
 were iterated, leading to the creation of a more robust and accurate computational model
 for the material parameters' identification process.
 
-In this chapter, the development process of the computational models will discussed in detail, 
+In this chapter, the development process of the computational models will be discussed in detail, 
 including the complications encountered, the proposed solutions, 
 and the improvements made in computational model II.
 
@@ -87,7 +87,7 @@ sizing refinement was to ensure independence from the specimen's geometry or the
 \end{figure}
 Finally, initial parameters were assigned to the computational model to approximate the mechanical properties of ultra-soft polyurethane. 
 For the linear elasticity level, values for the Young's modulus $E$ and the Poisson's ratio $\nu$ were assigned. 
-From the main assumptions made in Section \ref{section:mainassumption},the Poisson's ratio for the first 
+From the main assumptions made in Section \ref{section:mainassumption}, the Poisson's ratio for the first 
 level material model was set to $\nu_{LE} =  0.49$, and the Young's modulus was calculated using equation \ref{eq:forcelinear}
 \begin{align}
     E = \frac{3F(1-\nu^2)} {4{r_i}^{\frac{1}{2}} {h}^{\frac{3}{2}}}\, .
@@ -154,7 +154,7 @@ and \ref{eq:incomparcp1}, the shear modulus $\mu_{CMI}$ and the incompressibilit
     D_{1_{CMI}} = 6 MPa^{-1} \, ,
     \label{eq:d1cp1result}
 \end{align}
-were calculated, respectively. These parameters were integrated in the model described above. In comparison from 
+were calculated, respectively. These parameters were integrated in the model described above. In comparison to 
 the linear elastic model, the Neo-Hookean material model could solve the simulation for an indentantion depth of 
 $h =  \SI{3.7}{\milli \meter}$.
 \begin{figure}%
@@ -188,13 +188,13 @@ Nevertheless, it is important to note that improvements to the computational mod
 accurate representation of the experimental results.
 
 \subsection{Nearby Point}
-For the nearby point test configuration describe in Subsection \ref{subsection:nearbypoint} was also modeled to gain an insight 
+For the nearby point test configuration described in Subsection \ref{subsection:nearbypoint} was also modeled to gain an insight 
 of the first set material parameters obtained from the middle point computational model.
-For the nearby point computational model the Neo-Hookean model was employed, and the CM I was adapted by changing the 
+For the nearby point computational model, the Neo-Hookean model was employed, and the CM I was adapted by changing the 
 indenter's position.
 
 The experimental data curve from \ref{subsection:nearbypointresult} and the computational model's curve are shown in Figure 
-\ref{fig:nbpointIvsCPINBNH}. Both curves exhibited similar parabolic shape; however, the simulation curve showed once again,
+\ref{fig:nbpointIvsCPINBNH}. Both curves exhibited a similar parabolic shape; however, the simulation curve showed once again,
 at a larger indentation depth, a flatter slope than the experimental data. This result presented a 
 nearly identical behavior to that of the middle point case.\\
 \label{subsection:nbpcpI}
@@ -218,7 +218,7 @@ nearly identical behavior to that of the middle point case.\\
    \caption[Nearby Point: CM I vs. Experimental data - Neo-Hookean]{NBP - CM I vs. EM I: Comparison of force-displacement curves between experimental data for Nearby Point case and the initial computational model with a Neo-Hookean model for $h = \SI{3.8}{\milli \meter}$.}%
    \label{fig:nbpointIvsCPINBNH}%
 \end{figure}
-In conclusion, while there are som differences, the initial calculated values provide a consistent approximation to experimental
+In conclusion, while there were differences, the initial calculated values provided a consistent approximation to experimental
 data, indicating that the computational model captures the essential features of the material's behavior.
 It was decided that further refinements of the material parameters may be necessary to minimize the error between the 
 simulated and experimental curves.
@@ -281,8 +281,8 @@ suggesting that the original model was not entirely reliable and the mesh depend
 \end{figure}
 %----------------------------------------------------------------------------------------------------------------------
 \section{Computational model II}
-The computational model II or improved computational model, adressed the challenges and observations 
-encountered during the  development of CM I. This refined model integrated the proposed
+The computational model II or improved computational model, addressed the challenges and observations 
+encountered during the development of CM I. This refined model integrated the proposed
 solutions to the previously identified irregularities, and thus served as the final model for the 
 iFEM approach for parameter identification. 
 
@@ -295,13 +295,13 @@ featuring a spherical indenter and specimen. The tumor extraction characteristic
 lower part of the specimen was deemed irrelevant for the overall results (Fig. \ref{fig:cm2meshtotal}). Furthermore, in CM II, only 
 one-half of the model was used, again taking advantage of the symmetry boundary conditions. Also,
 this choice was made to facilitate the visualization of the deformation profile for subsequent validation 
-steps. Same as in CM I, the contact set as frictionless, and the fixed support was applied to lower part of the organ.\\
+steps. Same as in CM I, the contact set as frictionless, and the fixed support was applied to the lower part of the organ.\\
 
 %mesh 
 The mesh refinement for CM II was guided by the results of the mesh convergence analysis of CP I.
-The global element size was mantained at $e_{{II}_s}=\SI{5}{\milli\meter}$, while the refinement area
+The global element size was maintained at $e_{{II}_s}=\SI{5}{\milli\meter}$, while the refinement area
 was adjusted to $e_{{II}_a}=\SI{0.5}{\milli\meter}$ with a sphere radius of $r_{{II}_a}=\SI{8}{\milli\meter}$.
-The results in CM I showed that the indenter could be considered as rigid body; therefore, the element size was 
+The results in CM I showed that the indenter could be considered as a rigid body; therefore, the element size was 
 set at $e_{{II}_i}=\SI{1}{\milli\meter}$, as it did not have a significant influence on the results.
 To further improve the mesh quality, a patch independent method was employed, reducing the mesh's 
 maximum skewness from \SI{0.85}{} to \SI{0.6}{} (Fig. \ref{fig:cm2meshref}).
@@ -329,8 +329,8 @@ maximum skewness from \SI{0.85}{} to \SI{0.6}{} (Fig. \ref{fig:cm2meshref}).
 To address the issue of the large element deformation for larger indentation depths, the ANSYS \textbf{nonlinear adaptive region}
 option was applied. This feature performed a remeshing operation in the contact area of the specimen whenever 
 the elements reached a high distortion level. This adaptive meshing region process made it possible to conduct 
-a successful mesh convergence analysis. In this mesh convergence analysis all values could be calculated and 
-convergence was reached. As a result, the element size in the contact area was determine to be changed from 
+a successful mesh convergence analysis. In this mesh convergence analysis, all values could be calculated and 
+convergence was reached. As a result, the element size in the contact area was determined to be changed from 
 \SI{0.5}{\milli\meter} to \SI{1}{\milli\meter}. 
 
 \subsubsection*{Stress Distribution Strategy}
@@ -338,7 +338,7 @@ In terms of the stress distribution, the computational model II demonstrated imp
 stress contour plot exhibited more clearly defined borders, and the irregularities present in CM I did not 
 emerge on the specimen's indented surface. This resulted in a stress distribution that more closely aligned
 with the expected Hertzian solution. A comparative illustration of the stress distributions from CM I and 
-CM II are displayed in Figure \ref{fig:cmIIstressdistanalysis}.\\
+CM II is displayed in Figure \ref{fig:cmIIstressdistanalysis}.\\
 
 \begin{figure}
     \centering
@@ -369,13 +369,13 @@ surface, which restricted lateral movement of the indented mass.
 
 To improve this unnatural deformation pattern, a more accurate representation of the 
 experimental setup was introduced into the FE model. The specimen was positioned on a bowl-shaped
-platform, mirroring the experimental configuration. The platform was design with a slightly major radius to allow 
+platform, mirroring the experimental configuration. The platform was designed with a slightly major radius to allow 
 for lateral displacement of the indented mass to avoid over-constraining the specimen. The contact 
 between the specimen and the platform was set to frictional, with a friction coefficient of 0.2, and the base of the platform 
 possessed a fixed support.
 
 The inclusion of the platform in the FE model had an impact on the deformation in the indentation area, 
-as it showed a more natural deformation. Also, there was an impact in the load-displacement curve (Fig. \ref{fig:noplatformvsplatform}). 
+as it showed a more natural deformation. Also, there was an impact on the load-displacement curve (Fig. \ref{fig:noplatformvsplatform}). 
 The curve with platform showed a better fit to the experimental data, as the overall shape of the curve was more 
 comparable to the experimental data. Therefore, the FE model with the platform was selected as the final model for computational 
 model II.\\
@@ -402,11 +402,11 @@ model II.\\
 \end{figure}
 
 This chapter has presented an in-depth analysis of the development and refinement of the computational models I and II, used
-for simulating the indentation tests. The transition from CM I to CM II revealed the challenges encountered in a indentation 
+for simulating the indentation tests. The transition from CM I to CM II revealed the challenges encountered in an indentation 
 simulation model and how significant is handling large element deformation for the mesh quality improvement. 
 Specifically, the use of a nonlinear adaptive region facilitated more reliable simulation results, displaying a more 
 closely Hertzian solution. This improvement reinforced the model's robustness for the subsequent application in an inverse
-finite element method approach for identification the material's parameters. Moreover, the adjustment in involving platform
+finite element method approach for the identification of the material's parameters. Moreover, the adjustment in involving platform
 emphasized the importance of incorporating realistic boundary conditions and constraints into the computational model.
 %best result with convergence
 %Their a two main factors which increases the complexity of the validation of the simulation
@@ -417,11 +417,5 @@ emphasized the importance of incorporating realistic boundary conditions and con
 % process if the a certain parameter is exceeded.%Revisar explanation of nonlinear adaprive meshing
 %Specially, for larger indentation cases, this option shows a more stable model with a good mesh convergence analysis.
 
-
-%\subsubsection*{Platform vs Fixed Support}
-
-
-%----------------------------------------------------------------------------------
-%\subsection{Nearby point}
 
 
