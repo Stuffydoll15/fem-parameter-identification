@@ -1,7 +1,7 @@
 % Chapter 5
 
 \chapter{Results} % Main chapter title
-\label{resultschapter} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+\label{chapter:results} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
 %----------------------------------------------------------------------------------
 \section{Overview and Analysis}
@@ -35,7 +35,7 @@ investigated. Moreover, a set with an elevated incompressibility parameter was c
 analyzing its influence on validation cases.
 The parameters that were determined to provide the best fit to the 
 experimental data based on these assessments were listed on Table \ref{tab:materialsetbestfit}.
-\begin{table}[h!]
+\begin{table}[ht!]
     \centering
     \begin{tabular}{|c|c|c|c|c|c|c|}
     \hline
@@ -102,7 +102,7 @@ To clarify, the lowest value of the NRMSE was \SI{0.0339}{}. The mean NRMSE acro
 Consequently, the baseline NRMSE, represented a simple model predicting the mean load-displacement, was 
 \SI{0.6835}{}, indicating that models with an NRMSE below this value surpassed the baseline model.\\ 
 
-\begin{table}[h!]
+\begin{table}[ht!]
     \centering
     \begin{tabular}{|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{2cm}|>{\centering\arraybackslash}m{2cm}|}
     \hline
@@ -125,12 +125,49 @@ evaluating the goodness of fit in this specific case, an indentation of $h=\SI{4
 at the center of the surface.
 
 \section{Validation of Computational Model}
+\label{section:validationcm}
+In order to confirm the reliability and effectiveness of the identified material parameters,
+two distinct validation cases were performed. 
+The first validation case involved the alteration of the indentation depth, changing it to 
+\SI{8}{\milli \meter} from the original \SI{4}{\milli \meter}. This case aimed to assess how 
+well the material model could adapt and represent the mechanical behavior with increased deformation.
+
+The second validation case revolved around the deformation profile of the spe-\\cimen. The aim here 
+was understand the accuracy in predicting the actual deformation shape of the specimen under 
+indentation. This provided deeper insights into the effects of the selected incompressibility
+parameters.\\
+
+The experimental models for the validation cases followed the same procedural guidelines 
+described in Chapter \ref{chapter:experimentalmodel} for experimental model II. 
+Furthermore, for the validation cases only Sets \SI{1}{}, \SI{3}{} and \SI{4}{} were evaluated (Table \ref{tab:materialsetbestfit}).
+As set \SI{2}{} demonstrated nearly identical results as set \SI{1}{}, it was not considered for the 
+validation process.
 
 \subsection{Deeper Indentation}
+\label{subsection:8mm}
+The first validation experiment featured an indentation depth of $h_{VC1}=\SI{8}{\milli \meter}$,
+doubling the previous indentation depth of $h=\SI{4}{\milli \meter}$ at the center of the specimen's 
+surface or middle point. Computational model II, described in Chapter \ref{chapter:computationalmodel},
+was used with the adjusted indentation depth (Fig. \ref{fig:stressdis8mm}).
 
-\subsection{Nearby Point - Blue Point}
+\begin{figure}%
+	\centering
+   \quad
+   \includegraphics[width=10cm]{Images/validationcase/8mm/setstressdistribution.png}%
+   \caption[Deeper Indentation - Stress distribution]{Stress distribution and meshing for the first validation case with an indentation depth of $h_{VC1}=\SI{8}{\milli \meter}$.}%
+   \label{fig:stressdis8mm}%
+\end{figure}
+
+
 
 \subsection{Deformation Profile Analysis}
+\label{subsection:defprofanalysis}
+
+
+\subsection{Nearby Point - Blue Point}
+\label{subsection:bluepoint}
+
+
 
 \section{Framework Proposal}
 

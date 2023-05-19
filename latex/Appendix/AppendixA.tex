@@ -5,26 +5,21 @@
 
 % Appendix A
 
-\chapter{Frequently Asked Questions} % Main appendix title
-
+\chapter{Appendix} % Main appendix title
 \label{AppendixA} % For referencing this appendix elsewhere, use \ref{AppendixA}
 
-\section{How do I change the colors of links?}
+\section{Experimental Research from YNU}
 
-The color of links can be changed to your liking using:
+\subsection*{Background of Research}
+In recent years, laparoscopic surgery and robot-assisted surgery, which are less invasive than conventional open surgery, have become popular. Laparoscopic surgery is performed by making multiple 1 cm holes in the abdomen, inserting endoscopes and surgical forceps into the holes, and displaying the intra-abdominal conditions obtained through the endoscopes on a monitor. Laparoscopic surgery has a narrower field of view and provides less information than open surgery, making it difficult to master the technique. For this reason, surgical simulators for preoperative training have been developed to improve physicians' skills. The simulator is given the shape data and physical properties of organs obtained from CT scan data in advance. The position and posture of the surgical instruments are input by moving the instruments attached to the simulator, and the deformed state of the organs and the reaction force to the instruments are calculated as output. The reaction force is transmitted to the haptic device, the surgical tool, as a sensation, and the state of deformation is fed back to the surgeon by being projected on a monitor. In this study, we focus on the physical properties of organs to be input to the simulator. Current simulators use the physical properties of organs that have been processed, tested in vitro, and identified. However, the physical properties of organs in vivo differ from those of organs removed from the body due to cellular transformation and blood flow. Therefore, we believe that the physical property values obtained in in vitro tests may not reproduce the response of organs during surgery. Therefore, the purpose of this study is to identify the physical properties of the whole organ immediately after removal, which is closer to the in vivo state.
 
-{\small\verb!\hypersetup{urlcolor=red}!}, or
+\subsection*{Physical Property Identification}
+Various methods are used to identify physical properties. For example, there are methods that identify the Young's modulus from stress-strain curve obtained from a tensile test, and identify soft tissues by solving an inverse problem based on the results of strain measurement of the tissue using ultrasonic waves. As a method for identifying the physical properties of living organs, the viscoelastic properties of organs are identified by applying vibration to the organs to obtain material property data for use in surgical simulators, and by using the displacement captured by MRI. In this study, a nondestructive indentation test will be employed, which does not involve any treatment that alters the physical properties of the organ, such as damaging. At first, a load is applied to the organ, and the load applied to the organ and the deformation of the organ are measured. And simulate the model of the organ with the same geometry as in the experiment by applying a load to it. If the deformation is out of the acceptable range, the parameters given in the simulation are changed. Then, simulation is performed until the deformation is within the acceptable range, and the parameters obtained when the deformation is within the acceptable range are used as the physical properties of the organ immediately after removal.
 
-{\small\verb!\hypersetup{citecolor=green}!}, or
+\subsection*{Experimental Requirements}
+The model is designed to identify the physical properties of organs by performing loading experiments on the organs and inverse analysis of the experimental results using CAE software. Since the internal tissues of organs are complex and the distribution of physical properties may not be uniform, the objective is to improve the accuracy of the model by loading at multiple locations and obtaining results for various deformation modes. Since the inverse analysis uses indentation and reaction forces as inputs, it is necessary to measure them simultaneously. In addition, since the accuracy is expected to be improved by considering the overall deformation as a constraint when determining material parameters in the inverse analysis, the overall deformation is also measured simultaneously. The purpose of this study is to construct a loading system that satisfies the above requirements and to measure the data for the inverse analysis.
 
-{\small\verb!\hypersetup{allcolor=blue}!}.
+\subsection*{Experimental Device}
+The experimental apparatus is shown in Figure 1. A %insert figura 1A
+Workbee from Ooznest was used as the base actuator for the loading device. The loading device is controlled using G-code, which is used for NC machining. CNCShield for Arduino was used to issue commands to the loading device. In this study, the loading was applied vertically downward to the curved surface of the simulated organ (ellipsoid shape), so a small 6-axis force sensor manufactured by MinebeaMitsumi was used, which can measure reaction forces in directions other than the loading direction. The indentation depth was measured by the trigger voltage using G-code, and the trigger signal was recorded using National Instruments' USB-6003 and DAQ Express software. A spherical measuring element was attached to the tip of the loading rod to prevent breakage. The diameter of the measuring element was \SI{6}{\milli \meter}, and the material was ruby, which has a high level of both rigidity and sphericity. The simulated organs were made of Exseal's human skin gel (ultra-soft urethane resin) and molded into an ellipsoid shape. The deformation of the simulated organ was measured using KEYENCE's IX150 laser displacement meter and WAVE LOGGER X measurement software.
 
-\noindent If you want to completely hide the links, you can use:
-
-{\small\verb!\hypersetup{allcolors=.}!}, or even better: 
-
-{\small\verb!\hypersetup{hidelinks}!}.
-
-\noindent If you want to have obvious links in the PDF but not the printed text, use:
-
-{\small\verb!\hypersetup{colorlinks=false}!}.
