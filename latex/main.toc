@@ -34,14 +34,15 @@
 \contentsline {section}{\numberline {5.1}Overview and Analysis}{53}{section.180}%
 \contentsline {section}{\numberline {5.2}Validation of Computational Model}{55}{section.187}%
 \contentsline {subsection}{\numberline {5.2.1}Deeper Indentation}{55}{subsection.188}%
-\contentsline {subsection}{\numberline {5.2.2}Deformation Profile Analysis}{55}{subsection.189}%
-\contentsline {section}{\numberline {5.3}Framework Proposal}{55}{section.190}%
-\contentsline {section}{\numberline {5.4}Limitations and Implications of the Results}{55}{section.191}%
-\contentsline {section}{\numberline {5.5}Material model}{55}{section.192}%
-\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{57}{chapter.193}%
-\contentsline {section}{\numberline {6.1}Summary and Contributions}{57}{section.194}%
-\contentsline {section}{\numberline {6.2}Recommendations for Future Research}{57}{section.195}%
-\contentsline {section}{\numberline {6.3}Conclusions and Final Remarks}{57}{section.196}%
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{59}{appendix.197}%
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{59}{section.198}%
-\contentsline {chapter}{Bibliography}{61}{appendix*.199}%
+\contentsline {subsection}{\numberline {5.2.2}Nearby Point - Blue Point}{55}{subsection.189}%
+\contentsline {subsection}{\numberline {5.2.3}Deformation Profile Analysis}{55}{subsection.190}%
+\contentsline {section}{\numberline {5.3}Framework Proposal}{55}{section.191}%
+\contentsline {section}{\numberline {5.4}Limitations and Implications of the Results}{55}{section.192}%
+\contentsline {section}{\numberline {5.5}Material model}{55}{section.193}%
+\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{57}{chapter.194}%
+\contentsline {section}{\numberline {6.1}Summary and Contributions}{57}{section.195}%
+\contentsline {section}{\numberline {6.2}Recommendations for Future Research}{57}{section.196}%
+\contentsline {section}{\numberline {6.3}Conclusions and Final Remarks}{57}{section.197}%
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{59}{appendix.198}%
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{59}{section.199}%
+\contentsline {chapter}{Bibliography}{61}{appendix*.200}%
