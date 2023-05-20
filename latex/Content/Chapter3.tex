@@ -129,7 +129,7 @@ the load cell, a simple filtering method was used to improve the experimental da
 applying the filter, the noise in the data was reduced, resulting in more smoother 
 force reaction readings. 
 
-The applications of the combinations helped to improve the quality and acuracy 
+The applications of the combinations helped to improve the quality and accuracy 
 of the data and gave important information about possible measurement errors to 
 take into consideration for of the experimental model 
 designed by YNU. At last, The filtered data was used for subsequent analysis and 
@@ -147,14 +147,14 @@ member of the Yamada Laboratory from the Mechanical Engineering department of
  Yokohama National University. 
 The main aim for this experimental method was to be able to identify the physical 
 properties of organs in a state that closely resembles the \textit{in vivo} environment.
-Additionally, this model seeked two achieve two objectives: firstly, to develop a 
+Additionally, this model sought two achieve two objectives: firstly, to develop a 
 loading system to acquire the data required for an inverse analysis, and secondly, 
 to establish a measurement process in case of a total nephrectomy \cite{Mori2022}. 
 
 Furthermore, for the present experimental setup a new sample was prepared using 
 the same material as the previous one, i.e., human skin gel made from ultra-soft 
 polyurethane resin, and following the same 
-manufacturing processs as decribe in Section \ref{section:expmod1}. 
+manufacturing process as described in Section \ref{section:expmod1}. 
 %evtl. speak about ehical use of the experimental model : To ensure the ethical use of the experimental model and data provided by the other master student, I obtained permission from them to use their data in my research. Additionally, I made sure that any ethical considerations related to the data, such as informed consent from participants or privacy concerns, 
 %had been appropriately addressed in the original study. As an extra precaution, I also ensured that any identifiable information about the participants had been removed from the data provided by the other master student before incorporating it into my own research. By taking these steps, I ensured that the data was used in a responsible and ethical manner, and that the original research was respected and properly attributed
 
@@ -179,7 +179,7 @@ The experimental device consists of an 6-axis force sensor, a laser displacement
  and 3D cameras placed in four directions to obtain the point cloud data based on the 
  coordinate system of each camera. Fig.\ref{fig:secondexperiment} shows the setup of the 
  experiment. For our project, the 6-axis force sensor and the laser displacement were mainly used.
-The loading system is operated by specifiying de movement of the loading rod in advance, and the 
+The loading system is operated by specifying de movement of the loading rod in advance, and the 
 indentation is performed in the direction normal to the contact surface to prevent slippage (Fig. \ref{fig:loadingdiag}).\\
 
  \begin{figure}%
@@ -219,7 +219,7 @@ lowered at constant velocity of $\SI[per-mode = symbol]{30}{\milli \m\per \minut
 The experiments were conducted for each loading point five times on the same sample, 
 and the average of the results were calculated.
 
-Furthermore, to minimize the friction during the indentation processs, the indenter 
+Furthermore, to minimize the friction during the indentation process, the indenter 
 and the loading surface on the specimen were covered with a thin layer of lotion. 
 This was done due to inaccuracies and step-like data shown in the measurements. Therefore, to reduce 
 this measurement error, the application of lubricant was employed, ensuring a 
@@ -269,7 +269,7 @@ measurements.
 Additionally, the first indentation depth was chosen arbitriarily, for the first 
 experimental model was $h_{I} = \SI{3.8}{\milli \m}$, and for the second 
 experimental model was $h_{II} = \SI{4}{\milli \m}$. This depth was considered 
-to be an appropiate compromise that would allow to capture the nonlinear 
+to be an appropriate compromise that would allow to capture the nonlinear 
 behavior of the material, while also remaining a simple use case to 
 reproduce in a computational model in ANSYS.\\
 
@@ -283,7 +283,7 @@ to establish a solid foundation for the subsequent experiments and data analysis
 \subsection*{Load-Unloading (LU)}
 \label{subsection:loadunload}
 Building on the previous test point (Fig. \ref{fig:midpoint}), an indentation
- test was condunted on the same point, with the an indentation depth of 
+ test was conducted on the same point, with the an indentation depth of 
  $\SI{4}{\milli \m}$, but this time in a loading-unloading case.
 
 The first experimental model setup, as describe in Section \ref{section:expmod1},
@@ -308,7 +308,7 @@ behavior, as well as to investigate the viscoelastic properties of the material.
 The load-unload test was performed at six different loading speeds, namely, 
 \SIlist[per-mode = symbol]{10;20;30;50;75;100}{\milli \metre \per \minute} on the 
 same specimen.
-Each speed configuration was reapeated five times, and te results were average to 
+Each speed configuration was repeated five times, and te results were average to 
 reduce the effects of experimental variability.\\
 
 The load-unload case helped to determine whether complex material behavior such as 
@@ -370,7 +370,7 @@ The section will start with a brief summary of the tests, followed by the analys
 force-stroke curves gathered throughout the experiments.
 
 The experimental model I served mainly as a comparator and a quick way to gain an idea of the 
-mechanical behavior under indentation, for this model three differents use cases were measured. 
+mechanical behavior under indentation, for this model three different use cases were measured. 
 An indentation in the middle point of the surface with and indentation depth of $h_{I} = \SI{3.8}{\milli \m}$. 
 Subsequently, the load-unload case was observed under an indentation depth of  $h_{I2} = \SI{4}{\milli \m}$, and 
 with six different speeds ranging from $\SI[per-mode = symbol]{10}{\milli \m\per \minute}$ to 
@@ -395,7 +395,7 @@ possess a elastic-plastic behavior, which in a typical load-displacement curves 
 \begin{enumerate}
     \item Nonlinear elastic (self-adjusting): In this stage, the material adjusts itself to the loading conditions, and the deformation is elastic and reversible.
     \item Linear elastic: The material is bearing the external load in this stage, the deformation is still elastic and reversible 
-    \item Nonlinear plastic (failing): With the increase of the external load, the material reaches its yield point and undergoes permament deformation
+    \item Nonlinear plastic (failing): With the increase of the external load, the material reaches its yield point and undergoes permanent deformation
     \item Failure: The material fails leading to permanent damage.
 \end{enumerate}
 
@@ -410,7 +410,7 @@ resulting in a slightly concave shape.
 
 Figure \ref{fig:mpIexp} displays all the measurements points obtained from experimental model I and its 
 polynomial approximation. This approximation was used for the subsequent steps of the iFEM approach. The 
-maximum total force for experimental model I at a maximun indentation depth of 
+maximum total force for experimental model I at a maximum indentation depth of 
 $u_{I_{MP}} = \SI{3.8}{\milli \m}$ was $F_{I_{MP}} = \SI{0.4218}{\newton}$. For experimental 
 model II, at an indentation depth of 
 $u_{II_{MP}} = \SI{4}{\milli \m}$, the maximum forces for each component were
@@ -504,7 +504,7 @@ Following the Middle Point use case, in addition to the loading data, the unload
 also captured for both experiments as explained in Section \ref{subsection:loadunload}.
 Figure \ref{fig:loadunloadgraph} shows the load-displacement curve for experimental model 
 I and next to it experimental model II. Both results exhibited during the unloading some 
-degree of hysteresis, as there was a sligth difference in the force reaction measured.
+degree of hysteresis, as there was a slight difference in the force reaction measured.
 However, the material displayed good elastic behavior, as it returned to its 
 original shape once the indenter was removed.\\
 
@@ -546,7 +546,7 @@ original shape once the indenter was removed.\\
    \label{fig:loadunloadgraph}%
 \end{figure}
 
-The hysteresis displayed for both configurations could have occured due to several reasons, such 
+The hysteresis displayed for both configurations could have occurred due to several reasons, such 
 as viscoelastic behavior of the material, or external factors, like friction 
 between the indenter and the specimen, surface roughness of the indenter, test configuration, and so on.
 To examine closer the main reason for the hysteresis, only with first experimental setup,

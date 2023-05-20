@@ -23,14 +23,14 @@ and  Relative Root Mean Square Error (RRMSE)
 Performance metrics are critical for evaluating the predictive accuracy of the computational model.
 These metrics provide insights into how well the model's prediction align with the 
 experimental data. The combination of these metrics allowed for a more comprehensive 
-assessmetn of all the simulations performance. For instance, the RMSE and NRMSE measured the
+assessment of all the simulations performance. For instance, the RMSE and NRMSE measured the
 absolute deviation of the predicted values from the observed data, providing an overall 
 measure of the computational model accuracy. On the other hand, metrics like MRE, MAPE. and 
 RRMSE are useful when considering relative errors. These metrics weighed errors in relation
 to the actual size of the actual values \cite{Rajagukguk2020}.\\
 
 The simulation results that produced the lowest performance metrics were set aside as possible
-optimal candidates. In particular, the paremeters with the lowest NRMSE, MRE and RMSRE were  
+optimal candidates. In particular, the parameters with the lowest NRMSE, MRE and RMSRE were  
 investigated. Moreover, a set with an elevated incompressibility parameter was chosen for 
 analyzing its influence on validation cases.
 The parameters that were determined to provide the best fit to the 
@@ -89,7 +89,7 @@ However, it remained constantly below throughout the experimental data.\\
             \legend{EM II-MP,Set 1,Set 2, Set 3, Set 4}
         \end{axis}
     \end{tikzpicture}%
-   \caption[Best material parameter sets load-displacement curves]{Visual analyis of the load-displacement curves of the best material parameter sets with the lowest NRMSE, MRE, and RRMSE and the experimental data.}%
+   \caption[Best material parameter sets load-displacement curves]{Visual analysis of the load-displacement curves of the best material parameter sets with the lowest NRMSE, MRE, and RRMSE and the experimental data.}%
    \label{fig:bestfitcandidatescurve}%
 \end{figure}
 
@@ -115,7 +115,7 @@ Consequently, the baseline NRMSE, represented a simple model predicting the mean
     RRMSE & 0.2067 0.2069 0.1964 0.2592 & 0.2688 & 0.6835\\
     \hline
     \end{tabular}
-    \caption[Goodness of fit]{Comparison of the perfomance metric of each candidate set with their mean value and baseline model value, extracted from all calculated simulations.}
+    \caption[Goodness of fit]{Comparison of the performance metric of each candidate set with their mean value and baseline model value, extracted from all calculated simulations.}
 	\label{tab:performancegoodness}
 \end{table}
 
@@ -182,7 +182,7 @@ incompressibility parameter, were plotted against the experimental data, as show
             \legend{EM II-VC I, Set 1, Set 3, Set 4}
         \end{axis}
     \end{tikzpicture}%
-   \caption[First validation case load-displacement curves]{Analyis of the load-displacement curves of the best material parameter sets and the experimental data for the first validation case with a deeper indentation.}%
+   \caption[First validation case load-displacement curves]{Analysis of the load-displacement curves of the best material parameter sets and the experimental data for the first validation case with a deeper indentation.}%
    \label{fig:8mmloaddisplcurves}%
 \end{figure}
 
@@ -268,7 +268,7 @@ throughout the indentation until reaching the maximum depth of \SI{4}{\milli \me
 
 From the results calculated with the computational model II for the middle point case, 
 a method to capture the deformation profile for the second validation case was required.
-However, tracking specific points on the surface of the simulation was challeging due to 
+However, tracking specific points on the surface of the simulation was challenging due to 
 the remeshing process of the nonlinear adaptive meshing option utilized in the model. This
 process did not support the measurement of the displacement for a specific node, as the 
 position of the node changed throughout the execution of the model's calculation.\\
@@ -293,7 +293,7 @@ Point \SI{5}{} next to middle point, had a close match for sets \SI{1}{} and \SI
 Further, as the incompressibility parameter decreased, the overall deformation decreased. The 
 NRMSE values for this case were listed on Table \ref{tab:nrmsedefprof}. The NRMSE results 
 revealed that the set \SI{3}{} had the best value followed closely by set \SI{1}{}. This validation case 
-showcased that the selction of the range set for the iFEM process impacts the deformation response, even though the
+showcased that the selection of the range set for the iFEM process impacts the deformation response, even though the
 influence of the incompressibility parameter on the force reaction results was relatively minor.\\
 \begin{table}[ht!]
     \centering
@@ -329,7 +329,7 @@ influence of the incompressibility parameter on the force reaction results was r
             \legend{EM II-VC II, Set 1, Set 3, Set 4}
         \end{axis}
     \end{tikzpicture}%
-   \caption[Second validation case measurement data]{Analyis of the deformation profile curves of the best material parameter sets and the experimental data for the second validation case.}%
+   \caption[Second validation case measurement data]{Analysis of the deformation profile curves of the best material parameter sets and the experimental data for the second validation case.}%
    \label{fig:defprofiledata}%
 \end{figure}
 
