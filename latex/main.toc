@@ -34,15 +34,15 @@
 \contentsline {section}{\numberline {5.1}Overview and Analysis}{53}{section.180}%
 \contentsline {section}{\numberline {5.2}Validation of Computational Model}{55}{section.187}%
 \contentsline {subsection}{\numberline {5.2.1}Deeper Indentation}{55}{subsection.188}%
-\contentsline {subsection}{\numberline {5.2.2}Deformation Profile Analysis}{57}{subsection.191}%
-\contentsline {subsection}{\numberline {5.2.3}Nearby Point - Blue Point}{57}{subsection.192}%
-\contentsline {section}{\numberline {5.3}Framework Proposal}{57}{section.193}%
-\contentsline {section}{\numberline {5.4}Limitations and Implications of the Results}{57}{section.194}%
-\contentsline {section}{\numberline {5.5}Material model}{57}{section.195}%
-\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{59}{chapter.196}%
-\contentsline {section}{\numberline {6.1}Summary and Contributions}{59}{section.197}%
-\contentsline {section}{\numberline {6.2}Recommendations for Future Research}{59}{section.198}%
-\contentsline {section}{\numberline {6.3}Conclusions and Final Remarks}{59}{section.199}%
-\contentsline {chapter}{\numberline {A}Appendix}{61}{appendix.200}%
-\contentsline {section}{\numberline {A.1}Experimental Research from YNU}{61}{section.201}%
-\contentsline {chapter}{Bibliography}{63}{appendix*.206}%
+\contentsline {subsection}{\numberline {5.2.2}Deformation Profile Analysis}{57}{subsection.192}%
+\contentsline {subsection}{\numberline {5.2.3}Nearby Point - Blue Point}{61}{subsection.198}%
+\contentsline {section}{\numberline {5.3}Framework Proposal}{61}{section.199}%
+\contentsline {section}{\numberline {5.4}Limitations and Implications of the Results}{61}{section.200}%
+\contentsline {section}{\numberline {5.5}Material model}{61}{section.201}%
+\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{63}{chapter.202}%
+\contentsline {section}{\numberline {6.1}Summary and Contributions}{63}{section.203}%
+\contentsline {section}{\numberline {6.2}Recommendations for Future Research}{63}{section.204}%
+\contentsline {section}{\numberline {6.3}Conclusions and Final Remarks}{63}{section.205}%
+\contentsline {chapter}{\numberline {A}Appendix}{65}{appendix.206}%
+\contentsline {section}{\numberline {A.1}Experimental Research from YNU}{65}{section.207}%
+\contentsline {chapter}{Bibliography}{67}{appendix*.212}%

@@ -179,7 +179,7 @@ incompressibility parameter, were plotted against the experimental data, as show
             \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/results/8mm/set199997_58_8mm.dat};
             \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/results/8mm/set310200_11_8mm.dat};
             \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/results/8mm/set412453_1393_8mm.dat};
-            \legend{EM II-VC 1, Set 1, Set 3, Set 4}
+            \legend{EM II-VC I, Set 1, Set 3, Set 4}
         \end{axis}
     \end{tikzpicture}%
    \caption[First validation case load-displacement curves]{Analyis of the load-displacement curves of the best material parameter sets and the experimental data for the first validation case with a deeper indentation.}%
@@ -196,17 +196,158 @@ At a displacement of $u=\SI{8}{\milli \meter}$, set \SI{4}{} with a maximum forc
 $F_{4_{max}}=\SI{1.3951}{\newton}$ managed to produce the closest 
 approximation to the maximum experimental force $F_{II_{max}}=\SI{1.283}{\newton}$.
 
+The new NRMSE values were significantly higher than those of the first case (Table \ref{tab:nrmse8mm}). 
+Noteworthy, set \SI{3}{}, with a lower NRMSE for the first case, and set \SI{4}{} with a higher $D_1$ 
+exhibited a better NRMSE performance for this case, in contrast to set \SI{1}{}, which had shown 
+the best performance for the $h=\SI{4}{\milli \meter}$ indentation.\\
+
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    Set & $\mu$ (Pa) & $D_1$ (MPa\textsuperscript{-1}) & EM II NRMSE & VC I NRMSE\\
+    \hline
+    1 & 9999.7 & 5.8 & 0.0339 & 0.1503\\
+    3 & 10200 & 1.1 & 0.0533 & 0.1116\\
+    4 & 12453 & 139.3 & 0.0648 & 0.1425\\
+    \hline
+    \end{tabular}
+    \caption[NRMSE for first validation case]{Comparison of the NRMSE calculated for the EM II and for the first validation case with a deeper indentation.}
+	\label{tab:nrmse8mm}
+\end{table}
+
+This suggested that the identified parameters may not be able to capture the behavior 
+of the material at larger indentations. Therefore, a case-specific parameter identification
+for accurate modelling of larger indentations would be required.\\
+
+%------------------------------------------------------------------------------------------------
 \subsection{Deformation Profile Analysis}
 \label{subsection:defprofanalysis}
+The second validation case evaluated the deformation profile of the specimen for the first 
+indentation case of $h=\SI{4}{\milli \meter}$ in the middle of the specimen's surface. The goal 
+was to understand how the selection of the incompressibility parameter, linked to the 
+bulk modulus, influenced the deformation shape under indentation.\\
 
+To capture the deformation shape of the specimen, the displacement of the points along an axis positioned 
+\SI{5}{\milli \meter} parallel to the X-axis were calculated (Fig. \ref{fig:defprofdiagram}). %Figure of diagram of
+This reference line was chosen to avoid any optical interference caused by the indenter during the 
+laser measurements, as illustrated in Figure \ref{fig:defprofinter}.
+Figure \ref{fig:defprofexperiment} illustrates the experiment conducted by YNU.
+Using the marked points as reference, the laser displacement meter captured the specimen's 
+shape along the parallel axis both before and during the indentation process.
+This allowed for the measurement of the deformation profile at intervals of \SI{1}{\milli \meter}
+throughout the indentation until reaching the maximum depth of \SI{4}{\milli \meter} was reached (Appendix \ref{AppendixA}).\\
 
+\begin{figure}%
+	\centering
+   \quad
+   \includegraphics[width=10cm]{Images/validationcase/defprof/defprofdiag.png}%
+   \caption[Deformation profile - Diagram]{Deformation profile measurement diagram for the second validation case, showing the measured points along the parallel to X-axis.}%
+   \label{fig:defprofdiagram}%
+\end{figure}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.5\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/validationcase/defprof/defprofexp.png}
+    \caption{Experimental setup with laser displacement meter measurement}
+    \label{fig:defprofexce}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.5\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/validationcase/defprof/interferencedef.png}
+    \caption{Interference from the indenter of the measurements along the main X-axis}
+    \label{fig:defprofinter}
+    \end{subfigure}
+    \hspace{0.3cm}
+    \caption[Deformation profile experiment]{Deformation profile experiment setup performed by YNU to capture the shape of the specimen during the indentation test.}
+    \label{fig:defprofexperiment}
+\end{figure}
+
+From the results calculated with the computational model II for the middle point case, 
+a method to capture the deformation profile for the second validation case was required.
+However, tracking specific points on the surface of the simulation was challeging due to 
+the remeshing process of the nonlinear adaptive meshing option utilized in the model. This
+process did not support the measurement of the displacement for a specific node, as the 
+position of the node changed throughout the execution of the model's calculation.\\
+
+To overcome this issue, a section plane was created, located \SI{5}{\milli \meter} to the 
+right of the symmetry axis, similar to the experimental model. Probe points were then
+selected around the deformed surface within this plane (Fig. \ref{fig:defprofcompmodel}).
+
+\begin{figure}%
+	\centering
+   \quad
+   \includegraphics[width=10cm]{Images/validationcase/defprof/10200defprofile.png}%
+   \caption[Deformation profile - Computational model]{Deformation profile measurement in the computational model with aid of probes along the surface of the section plane located \SI{5}{\milli \meter} next to the X-axis.}%
+   \label{fig:defprofcompmodel}%
+\end{figure}
+
+The deformation profiles for the remaining candidate sets were compared with the experimental
+data, as shown in Figure \ref{fig:defprofiledata}. Although all computational models 
+showed some degree of misalignment with the experimental data, the position of maximum deformation,
+Point \SI{5}{} next to middle point, had a close match for sets \SI{1}{} and \SI{3}{}.
+
+Further, as the incompressibility parameter decreased, the overall deformation decreased. The 
+NRMSE values for this case were listed on Table \ref{tab:nrmsedefprof}. The NRMSE results 
+revealed that the set \SI{3}{} had the best value followed closely by set \SI{1}{}. This validation case 
+showcased that the selction of the range set for the iFEM process impacts the deformation response, even though the
+influence of the incompressibility parameter on the force reaction results was relatively minor.\\
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    Set & $\mu$ (Pa) & $D_1$ (MPa\textsuperscript{-1}) & EM II NRMSE & VC II NRMSE\\
+    \hline
+    1 & 9999.7 & 5.8 & 0.0339 & 0.3126\\
+    3 & 10200 & 1.1 & 0.0533 & 0.2810\\
+    4 & 12453 & 139.3 & 0.0648 & 0.5645\\
+    \hline
+    \end{tabular}
+    \caption[NRMSE for second validation case]{Comparison of the NRMSE calculated for the EM II and for the second validation case for the deformation profile curves.}
+	\label{tab:nrmsedefprof}
+\end{table}
+
+\begin{figure}%
+    \centering
+   \quad
+    \begin{tikzpicture}[scale=1]
+        \begin{axis}[
+            xmax=25,xmin=0,
+            ymax= 0,ymin=-1.4,
+            ytick={0,-0.2,...,-1.4},
+            xlabel={X-Axis displacement $u_{x} [mm]$},
+            ylabel={Z-Axis displacement $u_{x} [mm]$},
+            grid = major,
+            legend pos= south east]
+            \addplot+[smooth, thick] table [y=$Def$, x=Xdis]{Table/results/defprofile/defprofexp.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Def$, x=Xdis]{Table/results/defprofile/set1prof.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Def$, x=Xdis]{Table/results/defprofile/set3prof.dat};
+            \addplot+[smooth, no markers, thick] table [y=$Def$, x=Xdis]{Table/results/defprofile/set4prof.dat};
+            \legend{EM II-VC II, Set 1, Set 3, Set 4}
+        \end{axis}
+    \end{tikzpicture}%
+   \caption[Second validation case measurement data]{Analyis of the deformation profile curves of the best material parameter sets and the experimental data for the second validation case.}%
+   \label{fig:defprofiledata}%
+\end{figure}
+
+Based on the combined results of both validation cases and their NRMSE values, set 3 with a 
+shear modulus $\mu=\SI{10200}{\pascal}$ and the incompressibility parameter $D_1=\SI{1.1}{\mega\pascal\tothe{-1}}$ 
+was identified as the best overall choice. This material parameter set captured with good 
+agreement the indentation for EM II, and showed the best results for the deformation profile 
+validation case and the deeper indentation case.  
+
+%--------------------------------------------------------------------------------------------------
 \subsection{Nearby Point - Blue Point}
 \label{subsection:bluepoint}
 
 
-
+%--------------------------------------------------------------------------------------------------
 \section{Framework Proposal}
 
+%------------------------------------------------------------------------------------------------
 \section{Limitations and Implications of the Results}
 
 
