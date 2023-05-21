@@ -2,6 +2,25 @@
 
 \chapter{Results} % Main chapter title
 \label{chapter:results} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+This chapter presents the findings from the methodologies employed throughout this study.
+The focus of the research was to identify the material parameters of ultra-soft polyurethane
+effectively. The results obtained offered critical insights into the approach's 
+efficacy and potential limitations.\\
+
+In the first section, the performance metrics applied were examined. These metrics 
+provided a quantifiable measure of the validity and reliability of the material parameter sets identified,
+offering a robust means of assessing the approach's accuracy.
+
+Subsequently, a thorough analysis of the three validation cases are detailed.
+These cases contributed significantly to select the best material parameter set and 
+assess the applicability of the material parameters in other use cases.
+
+This is followed by a detailed exposition of the framework proposed in this study for the material 
+parameter identification process based on an iFEM approach.
+
+Lastly, the limitations and implications of the results are listed. By identifying the constraints 
+of the results, a well-rounded perspective of the findings was presented to further refine the 
+process for future research.
 
 %----------------------------------------------------------------------------------
 \section{Overview and Analysis}
@@ -605,9 +624,154 @@ when considering different locations on the specimen's surface and all
 force components into the analysis.
 %--------------------------------------------------------------------------------------------------
 \section{Framework Proposal}
+With this study a framework for the identification of soft material's parameters, focusing on the 
+simplest possible material model was proposed. This framework, illustrated in Figure \ref{fig:flowchart}, 
+was based on an iFEM approach and provided a robust and systematic procedure that aligns experimental 
+load-displacement data with computational models.\\
+
+This process began with defining the use case and proceeded with the inclusion of two primary paths
+running in parallel; the design of the experimental model or comparator, and the computational or FE model.
+
+On the experimental design side, the physical indentation experiments were design and performed (Experimental 
+Model I and II). During these experiments, the mechanical behavior of the material was observed and analyzed.
+This analysis played a crucial role in establishing the main assumptions for the material model. Furthermore, 
+load-displacement data was captured, which served as the benchmark 
+against which the computational model was verified.\\
+
+On the computational model design side, the corresponding simulation was constructed to meet the experimental 
+conditions. Here, the simplest material law was selected and initial parameters were set, allowing for the simulation of 
+the indentation process and generation of load-displacement data.\\
+
+The simulation load-displacement data was then compared with the measured data from the experiments.
+An important inquiry at this stage was wether the selected material law adequately capture the mechanical 
+behavior of the material. If the answer was no, the material law was adjusted to the next level, and the 
+simulation was rerun. This loop continued until a satisfactory agreement was found.\\
+
+Once the simulation captured the mechanical behavior, the material parameters' or design parameters were inputted into a 
+response surface optimization process. Here, the definition of an adequate range, played an important role 
+in the obtained candidate sets.\\ 
+
+The next step, involved running the simulations for the different candidate points or material parameter sets,
+an calculating their pre-established error metric. This error metric, such as NRMSE, was used to determine 
+wether these simulations met ir surpassed the established error threshold. If the simulation did not meet the threshold, 
+the process was repeated with new sets of candidate material sets.\\
+
+Finally, once a parameter set met the error threshold, it was identified as the optimal material parameter set.
+This was an iterative and comprehensive process that ensured that the identified material 
+parameters were not only theoretically robust but also practically validated.
+This proposed framework is a tool for the identification of material parameters to describe a complex material behavior,
+representing a balance between simplicity and accuracy. 
+
+
+\begin{figure}%   
+    \begin{center}
+    \begin{tikzpicture}[node distance = 0.5cm, auto, thick]
+        \tikzstyle{decision} = [diamond, draw, text width=4em, text badly centered, node distance=0.5cm, inner sep=0pt, font=\small]
+        \tikzstyle{block} = [rectangle, draw, text width=6.5em, text centered, rounded corners, minimum height=3.5em, font=\small]
+        \tikzstyle{line} = [draw, -latex']
+    
+        \node [block] (start) {Definition of Use Case};
+    
+        \node [block, below right =of start,xshift=0.75cm] (process1) {Experimental design};
+        \node [block, below =of process1,yshift=-3.8cm] (process2) {Measured load-displacement};
+    
+        \node [block, below left=of start,xshift=-0.75cm] (process5) {FE Model design};
+        \node [block, below =of process5] (process3) {Selection of material law};
+        \node [block, below =of process3] (process4) {Initial parameter set};
+        
+        \node [block, below =of process4] (process6) {Simulated load-displacement};
+    
+        \node [block, right =of process6, xshift=0.7cm] (process7) {Comparison of data};
+        \node [decision, below =of process7] (decision1) {Capture mechanical behavior?};
+    
+        \node [block, below =of decision1] (success1) {Input material parameters' range in RSO};
+    
+        \node [block, below =of success1] (process8) {Simulate candidate points};
+    
+        \node [decision, below =of process8] (decision2) {Error metric threshold?};
+        \node [block, below =of decision2] (success2) {Optimal material parameter set};
+    
+        \path [line] (start) -- (process1);
+        \path [line] (start) -- (process5);
+    
+        \path [line] (process1) -- (process2);
+        \path [line] (process2) -- (process7);
+    
+        \path [line] (process5) -- (process3);
+        \path [line] (process3) -- (process4);
+        \path [line] (process4) -- (process6);
+        \path [line] (process6) -- (process7);
+    
+        \path [line] (process7) -- (decision1);
+        %\path [line] (decision1) -| node [near start] {no} ($(process3.west)+(-1,0)$);
+        %\path [line] ($(process3.west)+(-1,0)$) -- (process3);
+        \path [line] (decision1) -|  node [near start] {no} ($(process3.west)+(-1,0)$) -- (process3);
+        \path [line] (decision1) -- node {yes} (success1);
+    
+        \path [line] (success1) -- (process8);
+        \path [line] (process8) -- (decision2);
+        
+        %\path [line] (decision2) -| node [near start] {no} ($(success1.west)+(-1,0)$);
+        %\path [line] ($(success1.west)+(-1,0)$) -- (success1);
+        \path [line] (decision2) -|  node [near start] {no} ($(success1.west)+(-1,0)$) -- (success1);
+
+        \path [line] (decision2) -- node {yes} (success2);
+    
+    \end{tikzpicture}
+    \end{center}
+    \caption[Framework proposal]{Flowchart of the identification of soft material parameters based on an iFEM approach conducted in this study.}%
+    \label{fig:flowchart}%
+ \end{figure}
+     
 
 %------------------------------------------------------------------------------------------------
 \section{Limitations and Implications of the Results}
+The findings from this study offered valuable insights for the identification of soft material 
+parameters. However, it is essential to acknowledge the limitations of the proposed framework and 
+the obtained results, as well as their implications on its applicability.\\
+
+One notable limitation arose from the indentation depth used for the identification process. 
+As the indentation depth increased, the accuracy of the material model decreased significantly.
+Additionally, maintaining the stability of the computational model became increasingly 
+difficult with a larger indentation due to element large deformation issues. This
+issue was addressed using the nonlinear adaptive meshing option, although it added 
+another layer of complexity to the FE modeling process.\\
+
+The proposed method demonstrated positive performance for simple testing scenarios, such 
+as vertical indentation and small deformations. As the complexity of the use case increased,
+the challenge of finding a simple material model capable of accurately replicating the material 
+behavior became more pronounced. 
+
+An additional limitation was discovered in the analysis of the deformation profile.
+It was observed that the Neo-Hookean model could match the experimental deformation
+profile at a single point but failed to reproduce the entire measured deformation shape.
+This indicated that a refinement in the experimental procedure, or the selection of a 
+different material model may be necessary to improve the results.\\
+
+Assumptions made in this study also contributed to certain limitations. The assumed symmetrical
+deformation might not be applicable to all materials, thereby constraining the framework's
+utility. Furthermore, the choice of the middle point for the experimental model was based on
+simplicity and avoid external factor that could influence in the selection of the material 
+model. Nonetheless, this point was not optimal to accurately capturing all force reaction 
+components.\\
+
+The material parameters' range used in the RSO process affected the obtained candidate points, 
+demonstrating a sensitivity to defined ranges. Noticeably, the best material parameter set 
+found originated from the approximated polynomial global minimum obtained from the MATLAB code, 
+suggesting the potential for further optimization of the range inputted in the RSO process. 
+Despite this, set \SI{1}{}, the best candidate from the RSO process, demonstrated comparable 
+results to the MATLAB set, reinforcing the validity of the proposed methodology.\\
+
+Lastly, this study highlighted the significance
+of balancing simplicity and accuracy in material parameter identification process for ultra-soft polyurethane. 
+While the proposed methodology effectively handled simpler cases, the results indicated
+the need for a more sophisticated approach when dealing with complex deformation scenarios.
+These findings can provide useful insights and a valuable foundation for further refinement and 
+improvement of parameter identification methodologies.
+
+
+
+
 
 
 
@@ -639,10 +803,7 @@ force components into the analysis.
 % top surface of the specimen. This indentation depth surpasses the pin radius \(r_3\) and 
 % was chose arbitriarily to analyze the behavior of the material on the defined position.
  %reference?
- Additionally, it was observed that in soft materials it is easier to capture 
- some parameters with a larger indentation. Some references also observe that with
- indentation depth lower than indenter radius has a lot of noise and do not describe
- th results accurately. %reference?
+
 
 %\begin{figure}[th]
 %    \centering
@@ -700,21 +861,26 @@ force components into the analysis.
 %accordingly and for each model the influence of the material parameters is going
 %to be assessed.
 
-
+%Por revisar!!!
 %----------------------------------------------------------------------------------
-\section{Material model}
+%\section{Material model}
 
 %n an ideal and first scenario, this material can be assumed as linear, isotropic, 
 %lastic and nearly imcompressible. For this case, there are two main variables, the Young's
 %odulus \(E\), and the Poisson's ratio $\nu$.
 
 %comentario sobre la influencia del bulk modulus y poissons ratio
-From the parametric analysis, it is possible to see that the bulk 
-modulus of this material does not possess a big impact in the FE 
-simulation results. This conclusion combined with the results 
-from the Poisson ratio in the first material model coincide with the 
-statements from Bergström, where it is no vital to know these parameters 
-to obtain accurate FE computational models, as these have limited
-influence on the mechanical response. \cite{Bergström2015} %pag64Bergströom
+%From the parametric analysis, it is possible to see that the bulk 
+%modulus of this material does not possess a big impact in the FE 
+%simulation results. This conclusion combined with the results 
+%from the Poisson ratio in the first material model coincide with the 
+%statements from Bergström, where it is no vital to know these parameters 
+%to obtain accurate FE computational models, as these have limited
+%influence on the mechanical response. \cite{Bergström2015} %pag64Bergströom
 
 %---------------------------------------------------------------------------------
+
+%Additionally, it was observed that in soft materials it is easier to capture 
+%some parameters with a larger indentation. Some references also observe that with
+%indentation depth lower than indenter radius has a lot of noise and do not describe
+%th results accurately. %reference?

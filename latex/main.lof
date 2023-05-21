@@ -27,10 +27,10 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Computational model I vs. Experimental data - Neo-Hookean}}{38}{figure.caption.136}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Nearby Point: CM I vs. Experimental data - Neo-Hookean}}{39}{figure.caption.138}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Mesh convergence model I}}{40}{figure.caption.142}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Mesh convergence model I stress distribution}}{40}{figure.caption.144}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Computational model II mesh}}{41}{figure.caption.148}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Stress distribution analysis}}{42}{figure.caption.151}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces CP II: No platform vs. with platform}}{43}{figure.caption.153}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Mesh convergence model I stress distribution}}{41}{figure.caption.144}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Computational model II mesh}}{42}{figure.caption.148}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Stress distribution analysis}}{43}{figure.caption.151}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces CP II: No platform vs. with platform}}{44}{figure.caption.153}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Local sensitivity analysis - Initial parameter range}}{47}{figure.caption.165}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Response surface - Force Reaction}}{47}{figure.caption.166}%
@@ -38,9 +38,9 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Polynomial approximation surfaces-NRMSE}}{50}{figure.caption.175}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Polynomial approximation surfaces-MRE}}{50}{figure.caption.176}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Best material parameter sets load-displacement curves}}{54}{figure.caption.185}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Best material parameter sets load-displacement curves}}{55}{figure.caption.185}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Deeper Indentation - Stress distribution}}{56}{figure.caption.189}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces First validation case load-displacement curves}}{56}{figure.caption.190}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces First validation case load-displacement curves}}{57}{figure.caption.190}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Deformation profile - Diagram}}{58}{figure.caption.193}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Deformation profile experiment}}{59}{figure.caption.194}%
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Deformation profile - Computational model}}{60}{figure.caption.195}%
@@ -49,13 +49,14 @@
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Blue point computational model}}{62}{figure.caption.200}%
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Middle point force components comparison}}{63}{figure.caption.202}%
 \contentsline {figure}{\numberline {5.11}{\ignorespaces Blue point force components comparison}}{64}{figure.caption.203}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Framework proposal}}{66}{figure.caption.205}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Experimental device\relax }}{71}{figure.caption.217}%
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Simulated organ\relax }}{71}{figure.caption.219}%
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Schematic diagram YNU}}{72}{figure.caption.220}%
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Time history of trigger voltage\relax }}{73}{figure.caption.229}%
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Specifications of miniature 6-axis force sensors\relax }}{73}{figure.caption.231}%
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Deformation measurement\relax }}{74}{figure.caption.233}%
-\contentsline {figure}{\numberline {A.7}{\ignorespaces Reaction force components results\relax }}{75}{figure.caption.235}%
-\contentsline {figure}{\numberline {A.8}{\ignorespaces Deformation results\relax }}{75}{figure.caption.236}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Experimental device\relax }}{73}{figure.caption.217}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Simulated organ\relax }}{73}{figure.caption.219}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Schematic diagram YNU}}{74}{figure.caption.220}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Time history of trigger voltage\relax }}{75}{figure.caption.229}%
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Specifications of miniature 6-axis force sensors\relax }}{75}{figure.caption.231}%
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Deformation measurement\relax }}{76}{figure.caption.233}%
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Reaction force components results\relax }}{77}{figure.caption.235}%
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Deformation results\relax }}{77}{figure.caption.236}%
