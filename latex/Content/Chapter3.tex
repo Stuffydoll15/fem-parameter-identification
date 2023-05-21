@@ -8,8 +8,8 @@ tested material. This data will be used to determine the design parameters
 that can help to characterize the material's mechanical behavior. \\
 
 The experimental model I had the purpose of serving as a comparator for the experimental 
-model II (see Section \ref{section:expmod2}). At the beginning of the project, the desired experimental 
-model to be analyzed was the second experimental model, which was developed and designed by Yokohama National 
+model II (see Section \ref{section:expmod2}). 
+The experimental model designated for analysis at the project's inception was the second model, which was developed and designed by Yokohama National 
 University (YNU). As this second experimental model was still undergoing some improvements and corrections, a similar 
 experiment was designed which could fulfill the same purpose.
 
@@ -21,8 +21,8 @@ observe the response under an indentation larger than the indenter radius. Addit
 by performing the indentation tests, the obtained 
 data helped for a more in-depth understanding of the material's mechanical behavior for the chosen 
 use cases and the determination of the main assumptions for the material modeling.
-The main advantage of indentation is the noninvasive feature, which will mostly 
-become useful when a test sample should not be modified, e.g., an organ.\\
+The main advantage of indentation is the noninvasive feature, which is 
+useful when a test sample should not be modified, e.g., an organ.\\
 
 For both experimental setups, the specimen, which was tested, was made from a human skin gel.
 The human skin gel material was a two-component ultra-soft urethane resin.
@@ -36,7 +36,7 @@ with complex shapes for medical research purposes \cite{Joseph2018}. \\
 
 In this chapter, the different experimental models, which were used to evaluate the 
 mechanical behavior of the ultra-soft polyurethane, will be 
-described. In the first two subsections, will focus on the description and 
+described. The first two subsections, will focus on the description and 
 procedure of the experimental models, followed by explanation of the indentation test 
 types. Consequently, an evaluation and analysis of the results will be provided and the 
 main assumptions for the design of the material modeling will be defined. 
@@ -105,7 +105,7 @@ test stopped once the inserted depth was reached. The indenter returned to its
 original position after reaching the maximum depth with a rate of 
 $\SI[per-mode = symbol]{100}{\milli \m\per \minute}$. Due to the material properties,
 the specimen returned to its original shape.
-The result of the indentation test was a load-displacement data,
+The result of the indentation test was load-displacement data,
 which was recorded with a sampling rate of $\SI{63}{\hertz}$ using a load 
 cell of $\SI{\pm 500}{\newton}$ and a encoder to measure the displacement.
 
@@ -113,7 +113,7 @@ The measurement accuracy according to the specification of the machine, has
 a relative reading error of $\SI{1.0}{\percent}$. The indentation test 
 was repeated five times on the same sample to ensure and observe 
 reliability and repeatability. Furthermore, the raw data collected from the test 
-was processed and analyzed using Excel.\\
+was processed and analyzed.\\
 
 During the initial indentation test using the $\SI{500}{\newton}$ load cell, 
 the collected experimental data showed noise that could affect the accuracy 
@@ -173,13 +173,13 @@ computational model.
 % organ deformation, and organ shape. The experimental results show that the method can measure organ mechanical 
 % properties and provide data for simulators.
 
-In this experimental model the indentation loading system, which gathers data of the indentation 
+In this experimental model (EM II), the indentation loading system gathered data of the indentation 
 depth, reaction force and general deformation. 
 The experimental device consists of an 6-axis force sensor, a laser displacement transducer,
  and 3D cameras placed in four directions to obtain the point cloud data based on the 
  coordinate system of each camera. Fig.\ref{fig:secondexperiment} shows the setup of the 
  experiment. For our project, the 6-axis force sensor and the laser displacement were mainly used.
-The loading system is operated by specifying de movement of the loading rod in advance, and the 
+The loading system is operated by specifying the movement of the loading rod in advance, and the 
 indentation is performed in the direction normal to the contact surface to prevent slippage (Fig. \ref{fig:loadingdiag}).\\
 
  \begin{figure}%
@@ -194,7 +194,7 @@ indentation is performed in the direction normal to the contact surface to preve
 \begin{figure}%
     \centering
    \quad
-   \includegraphics[width=6.5cm]{Images/Experiment/Loadingdiagram.png}%
+   \includegraphics[width=9cm]{Images/Experiment/Loadingdiagram.png}%
    \caption[Experimental model II diagram]{YNU experimental model: Loading diagram showing initial position of the indenter in normal position \cite{Mori2022}.}%
    \label{fig:loadingdiag}%
 \end{figure}
@@ -204,13 +204,13 @@ The specimen, same as in the first experimental model (Section \ref{section:expm
  radius $r_2 = \SI{60}{\milli \m}$, and was
 made from ultra-soft polyurethane resin. Consequently, the platform is also 
 bowl-shaped. For this experiment, the platform base was made from transparent 
-acrylic resin to record the contact status of the bottom surface \cite{Mori2022}. 
+acrylic resin to visually record the contact status of the bottom surface \cite{Mori2022}. 
 The maximum load capacity of the load cell is $\SI{200}{\newton}$ and a theoretical 
 force resolution of $\SI{0.001}{\newton}$. In addition, the resolution of the 
 laser displacement sensor is $\SI{0.05}{\milli \m}$.
 The indenter is sphere-shaped with a radius of $r_{i2} = \SI{3}{\milli \m}$ and
 was made from ruby with the following specifications; 
-a Young's Modulus of $E_{i2} = \SI{440}{\giga \pascal}$ and a Poisson's ratio of 
+Young's Modulus of $E_{i2} = \SI{440}{\giga \pascal}$ and a Poisson's ratio of 
 $\nu_{i2} = \SI{0.3}{\milli \m}$.\\
 
 The indentation test was conducted under room temperature conditions. Also, 

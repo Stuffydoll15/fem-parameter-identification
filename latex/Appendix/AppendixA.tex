@@ -20,6 +20,138 @@ Various methods are used to identify physical properties. For example, there are
 The model is designed to identify the physical properties of organs by performing loading experiments on the organs and inverse analysis of the experimental results using CAE software. Since the internal tissues of organs are complex and the distribution of physical properties may not be uniform, the objective is to improve the accuracy of the model by loading at multiple locations and obtaining results for various deformation modes. Since the inverse analysis uses indentation and reaction forces as inputs, it is necessary to measure them simultaneously. In addition, since the accuracy is expected to be improved by considering the overall deformation as a constraint when determining material parameters in the inverse analysis, the overall deformation is also measured simultaneously. The purpose of this study is to construct a loading system that satisfies the above requirements and to measure the data for the inverse analysis.
 
 \subsection*{Experimental Device}
-The experimental apparatus is shown in Figure 1. A %insert figura 1A
-Workbee from Ooznest was used as the base actuator for the loading device. The loading device is controlled using G-code, which is used for NC machining. CNCShield for Arduino was used to issue commands to the loading device. In this study, the loading was applied vertically downward to the curved surface of the simulated organ (ellipsoid shape), so a small 6-axis force sensor manufactured by MinebeaMitsumi was used, which can measure reaction forces in directions other than the loading direction. The indentation depth was measured by the trigger voltage using G-code, and the trigger signal was recorded using National Instruments' USB-6003 and DAQ Express software. A spherical measuring element was attached to the tip of the loading rod to prevent breakage. The diameter of the measuring element was \SI{6}{\milli \meter}, and the material was ruby, which has a high level of both rigidity and sphericity. The simulated organs were made of Exseal's human skin gel (ultra-soft urethane resin) and molded into an ellipsoid shape. The deformation of the simulated organ was measured using KEYENCE's IX150 laser displacement meter and WAVE LOGGER X measurement software.
+The experimental apparatus is shown in Figure \ref{fig:expdeviceynu}.
+A Workbee from Ooznest was used as the base actuator for the loading device. The loading device is controlled using G-code, which is used for NC machining. CNCShield for Arduino was used to issue commands to the loading device. In this study, the loading was applied vertically downward to the curved surface of the simulated organ (ellipsoid shape), so a small 6-axis force sensor manufactured by MinebeaMitsumi was used, which can measure reaction forces in directions other than the loading direction. The indentation depth was measured by the trigger voltage using G-code, and the trigger signal was recorded using National Instruments' USB-6003 and DAQ Express software. A spherical measuring element was attached to the tip of the loading rod to prevent breakage. The diameter of the measuring element was \SI{6}{\milli \meter}, and the material was ruby, which has a high level of both rigidity and sphericity. The simulated organs were made of Exseal's human skin gel (ultra-soft urethane resin) and molded into an ellipsoid shape. The deformation of the simulated organ was measured using KEYENCE's IX150 laser displacement meter and WAVE LOGGER X measurement software.
 
+\begin{figure}%
+	\centering
+   \quad
+   \includegraphics[width=10cm]{Images/appendix/ynu/fig1experimentaldevice.png}%
+   \caption{Experimental device}%
+   \label{fig:expdeviceynu}%
+\end{figure}
+
+\subsection*{Experimental Procedure}
+The simulated organ to be loaded is shown in Figure \ref{fig:simorganynu} and a schematic diagram (top view) representing the coordinates of the loading points is shown in 
+Figure \ref{fig:schemdiagynu}.
+The loading points were set on the dotted line in Figure \ref{fig:schemdiagynu} because it was considered more suitable for parameter fitting if there were reaction forces of components other than the loading direction when performing the inverse analysis. The loading points were set at the top of the simulated organ and at a total of five points along the dotted line in
+Figure \ref{fig:schemdiagynu}, moving with increments of $(\Delta X, \Delta Y) = (+2.5\,\mathrm{mm}, +2.5\,\mathrm{mm})$.\\
+\begin{figure}%
+	\centering
+   \quad
+   \includegraphics[width=10cm]{Images/appendix/ynu/fig2simulatedorgan.png}%
+   \caption{Simulated organ}%
+   \label{fig:simorganynu}%
+\end{figure}
+\begin{figure}%
+	\centering
+   \quad
+   \includegraphics[width=8cm]{Images/appendix/ynu/fig3schematicdiagramrepresentingcoordinatesofloadingpoints_topview.png}%
+   \caption[Schematic diagram YNU]{Schematic diagram representing coordinates of loading points (top view)}%
+   \label{fig:schemdiagynu}%
+\end{figure}
+
+The experimental procedure is described below.
+\begin{enumerate}
+    \item Set the simulated organ on the table.
+    \item Lubricate the loading point to eliminate the effect of friction.
+    \item Move the measuring element directly above the loading point.
+    \item Execute the G-code and start measuring the stroke, reaction force, and deformation.
+    \item After the G-code is completed, terminate the measurement.
+    \item Perform the same experiment 5 times for each loading point to confirm reproducibility.
+\end{enumerate}
+
+Experiments were conducted under room temperature environment (approx. \SI{20}{\degreeCelsius}).
+The loading speed was \SI[per-mode = symbol]{30}{\milli \m\per \minute}, assuming the actual environment. 
+
+\subsection*{Measurement method}
+\subsubsection*{Measurement of indentation}
+A $\SI{4}{\milli \m}$ load was applied to each loading point. The G code used in this study was designed to output a trigger voltage at a total of \SI{81}{}
+times, and once when the bar was pushed in $\SI{0.1}{\milli \m}$.
+
+These voltage changes were time-stamped using NI's USB-6003 and DAQ Express software. The indentation depth at the time of contact was set to
+$\SI{0}{\milli \m}$, and the amount of indentation depth was measured as $\SI{0.1}{\milli \m}$ for each time the trigger voltage was transmitted. The sampling frequency was 
+$\SI{10}{\kilo \hertz}$. An example of the voltage change during loading is shown in Figure \ref{fig:timevoltageynu}.\\
+\begin{figure}%
+	\centering
+   \quad
+   \includegraphics[width=10cm]{Images/appendix/ynu/fig4timehistoryoftriggervoltage.png}%
+   \caption{Time history of trigger voltage}%
+   \label{fig:timevoltageynu}%
+\end{figure}
+Because the reaction force and voltage were measured independently, the time axis was aligned by matching the peak time of the reaction force in the loading direction and the peak time of the push-in amount (Time when $\SI{4}{\milli \m}$ indented).
+
+\subsubsection*{Measurement of reaction forces}
+The specifications of the compact 6-axis force sensors are shown in Figure \ref{fig:specsensorynu}. 
+\begin{figure}%
+	\centering
+   \quad
+   \includegraphics[width=10cm]{Images/appendix/ynu/tab1specificationsofminiature6axisforcesensors.png}%
+   \caption{Specifications of miniature 6-axis force sensors}%
+   \label{fig:specsensorynu}%
+\end{figure}
+The sampling frequency was $\SI{1000}{\hertz}$. To reduce the effect of initial drift, we waited five minutes to stabilize after sensor startup.
+
+\subsubsection*{Measurement of deformation}
+Figure \ref{fig:defmeasureynu} shows the laser beam on a straight line. Since the laser displacement meter was run with the same trigger voltage as the stroke measurement, the time when the deformation was measured was based on the time axis of the stroke.
+\begin{figure}%
+	\centering
+   \quad
+   \includegraphics[width=8cm]{Images/appendix/ynu/fig5laserlineonthesimulatedorgan.png}%
+   \caption{Deformation measurement}%
+   \label{fig:defmeasureynu}%
+\end{figure}
+
+\subsection*{Experimental results}
+The time history of the reaction force in the loading direction when the top of the simulated organ is loaded is shown 
+in Figure \ref{fig:forcemeasurementynu}, and the deformation is shown in Figure \ref{fig:defmeasurementynu}. 
+We performed five loading experiments to ensure reproducibility. The measurement accuracy of the laser displacement meter is
+$\SI{0.05}{\milli \m}$.
+
+The experimental results show that the deformation of the simulated organ at symmetrically located points, such as measurement points No. \SI{4}{} and No. \SI{6}{} (Fig. \ref{fig:disstroke}), are in good agreement with the results obtained by the laser displacement meter. The results indicate the possibility of using the deformation state obtained by laser displacement meter for the identification of physical properties in the future.
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/appendix/ynu/fig6forcestroke_a.png}
+    \caption{Force component in x-direction}
+    \label{fig:forcezxnu}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/appendix/ynu/fig6forcestroke_b.png}
+    \caption{Force component in y-direction}
+    \label{fig:forceyynu}
+    \end{subfigure}
+    \vspace{0.5cm}
+    \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/appendix/ynu/fig6forcestroke_c.png}
+    \caption{Force component in z-direction}
+    \label{fig:forcezynu}
+    \end{subfigure}  
+    \hspace{0.3cm}
+    \caption{Reaction force components results}
+    \label{fig:forcemeasurementynu}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.5\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/appendix/ynu/fig7hightprofiletransition.png}
+    \caption{Height profile transition}
+    \label{fig:heighttrans}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.5\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/appendix/ynu/fig8displacementsstroke.png}
+    \caption{Displacement stroke}
+    \label{fig:disstroke}
+    \end{subfigure}
+    \vspace{0.5cm}
+    \caption{Deformation results}
+    \label{fig:defmeasurementynu}
+\end{figure}
