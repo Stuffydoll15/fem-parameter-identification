@@ -40,8 +40,8 @@
 \contentsline {section}{\numberline {5.4}Limitations and Implications of the Results}{67}{section.206}%
 \contentsline {chapter}{\numberline {6}Conclusion and Outlook}{69}{chapter.207}%
 \contentsline {section}{\numberline {6.1}Summary and Contributions}{69}{section.208}%
-\contentsline {section}{\numberline {6.2}Recommendations for Future Research}{69}{section.209}%
-\contentsline {section}{\numberline {6.3}Conclusions and Final Remarks}{69}{section.210}%
+\contentsline {section}{\numberline {6.2}Recommendations for Future Research}{70}{section.209}%
+\contentsline {section}{\numberline {6.3}Conclusions and Final Remarks}{70}{section.210}%
 \contentsline {chapter}{\numberline {A}Appendix}{71}{appendix.211}%
 \contentsline {section}{\numberline {A.1}Experimental Research from YNU}{71}{section.212}%
 \contentsline {section}{\numberline {A.2}MATLAB Code}{76}{section.237}%

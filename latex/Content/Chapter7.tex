@@ -21,19 +21,26 @@ established, mirroring the physical experiment setup, and a initial guess of the
 parameters was inputted.\\
 
 In establishing the computational model, the primarily challenge encountered was the 
-high distortion effect pf elements during simulation calculations. To address this issue, the nonlinear adaptive 
+high distortion effect of elements during simulation calculations. To address this issue, the nonlinear adaptive 
 meshing option solution was applied, facilitating the verification of the designed 
-computational model.\\
+computational model. Regarding the material model, varying the levels from linear elasticity to 
+Neo-Hookean were explored. In this process, the key parameters were identified and their interrelationships were analyzed.\\
 
 A Response Surface Optimization (RSO) algorithm was employed to optimize these 
 parameters, which were assessed by a performance metric defined as the difference between the 
 experimental and simulated results.The RSO method allowed the identification and analysis of the 
 key design parameters and their influence in the material's behavior. 
-To further enhance the RSO results different performance metrics were calculated and analyzed for 
-the best candidates to evaluate if the same material can be approximated with different material 
-parameter sets.\\
+To enhance the RSO results, various performance metrics were calculated and examined for 
+the top candidates. This evaluation was conducted to determine if the same material could be approximated 
+using with different sets of material parameters. Additionally, the approximated polynomial derived 
+from the material parameter sets and their corresponding performance metric aided in evaluating the 
+candidates yielded by the RSO, also confirming the correctness of the setup.\\
 
-
+Moreover, three validation cases were conducted to evaluate the material parameter identification 
+approach's robustness. While these cases affirmed the effectiveness of this approach under 
+specific conditions, it also revealed inherent limitations. These limitations served to 
+lay out the boundaries of this approach's applicability, providing valuable insights for the 
+optimization of this framework for future research.
 
 %In the first chapter, the significant issue of biomechanical characterization of soft tissues, 
 %which is relevant in medical research, was addressed. Moreover, it was mentioned while traditional methods rely on experts 
@@ -41,7 +48,37 @@ parameter sets.\\
 %This highlights 
 
 \section{Recommendations for Future Research}
+Future research should consider extending and improving the applicability of the developed 
+framework beyond the specific condition validated in this work. Firstly, it is suggested to explore 
+a multi-point indentation to capture the overall mechanical behavior of the material, rather than a 
+single indentation. This study illustrated that the blue point validation case offered promise 
+for evaluating the force reaction components. Therefore, shifting the focus from solely utilizing 
+the most basic case, the middle point indentation, to including multiple points is recommended.\\
 
+Additionally, the reassessment of the selection of experiments employed for the iFEM method is 
+encouraged. The data collected from each experiment can provide different insights about the material, therefore, 
+the selection of the right experiments significantly influence the understanding of the material's behavior and 
+improve the accuracy of the generated models. This includes, expanding the depth of indentation or incorporating 
+measurements of the deformation shape of the whole sample's surface.\\
+
+Further, the constraints on the specimen were found to be relevant to the results of the computational model.
+Thus, further investigations into the friction value between the used platform and the specimen could 
+provide more accurate values.\\
+
+When considering the application of this study in organs, it is recommended that indentations from 
+different directions be considered. The results showed that the surface gradient impacts the force-displacement data the
+further the indentation is moved from the middle point. As such, considering perpendicular indentations to the top 
+of the surface, or indentations from the side, could offer comprehensive information about the organ behavior.\\
+
+Furthermore, the exploration of other hyperelastic models should be evaluated. The Neo-Hookean material 
+model could not perfectly match the curve, indicating that other material models, e.g., Mooney-Rivlin or Yeoh model, may 
+offer better suitability and potentially capture the material's response more accurately. Another area to explore is the range
+ of input parameters for the RSO for the selected material model. The results indicated that there may be room 
+for further optimization in the input range to provide even more precise results.\\
+
+Lastly, future research should consider a methodology to establish the error metric threshold, particularly for studies
+involving biomaterials. Collaborating with experts in the field can help determine the level of accuracy the model 
+needs to achieve to be deemed suitable for practical applications.
 
 \section{Conclusions and Final Remarks}
 
