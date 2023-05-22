@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  22 MAY 2023 01:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  22 MAY 2023 16:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1199,7 +1199,35 @@ File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \arrowsize=\dimen341
 )) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count510
+\lst@gtempboxa=\box110
+\lst@token=\toks63
+\lst@length=\count511
+\lst@currlwidth=\dimen342
+\lst@column=\count512
+\lst@pos=\count513
+\lst@lostspace=\dimen343
+\lst@width=\dimen344
+\lst@newlines=\count514
+\lst@lineno=\count515
+\lst@maxwidth=\dimen345
+ (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count516
+\lst@skipnumbers=\count517
+\lst@framebox=\box111
+) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
+Package scrhack Info: loading listings hack on input line 50.
+ (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\listings.hak
+File: listings.hak 2022/10/12 v3.38 KOMA-Script scrhack part (hacking package listings)
+Package tocbasic Info: setting babel extension for `lol' on input line 143.
+Package scrhack Info: redefining \lstlistoflistings on input line 143.
+)
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+)
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 35.
 Package hyperref Info: Option `hypertexnames' set `false' on input line 35.
 Package hyperref Info: Option `colorlinks' set `true' on input line 35.
@@ -1237,17 +1265,17 @@ File: translations-basic-dictionary-english.trsl (english translation file `tran
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 35.
  (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count510
-\scratchdimen=\dimen342
-\scratchbox=\box110
-\nofMPsegments=\count511
-\nofMParguments=\count512
-\everyMPshowfont=\toks63
-\MPscratchCnt=\count513
-\MPscratchDim=\dimen343
-\MPnumerator=\count514
-\makeMPintoPDFobject=\count515
-\everyMPtoPDFconversion=\toks64
+\scratchcounter=\count518
+\scratchdimen=\dimen346
+\scratchbox=\box112
+\nofMPsegments=\count519
+\nofMParguments=\count520
+\everyMPshowfont=\toks64
+\MPscratchCnt=\count521
+\MPscratchDim=\dimen347
+\MPnumerator=\count522
+\makeMPintoPDFobject=\count523
+\everyMPtoPDFconversion=\toks65
 ) (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1256,10 +1284,11 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen344
-\caption@adjustwidth@linewidth=\dimen345
+\caption@adjustwidth@hsize=\dimen348
+\caption@adjustwidth@linewidth=\dimen349
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1465,6 +1494,8 @@ Dictionary: glossaries-dictionary, Language: English
 )
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
+\c@lstlisting=\count524
+Package scrhack Info: undefining \float@addtolists on input line 35.
 1: section
 \openout2 = `FrontBackMatter/Titlepage.aux'.
 
@@ -1481,7 +1512,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Style/rwth_km_logo_en-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Style/rwth_km_logo_en-eps-converted-to.pdf, id=190, 341.275pt x 91.34125pt>
+<Style/rwth_km_logo_en-eps-converted-to.pdf, id=194, 341.275pt x 91.34125pt>
 File: Style/rwth_km_logo_en-eps-converted-to.pdf Graphic file (type pdf)
 <use Style/rwth_km_logo_en-eps-converted-to.pdf>
 Package pdftex.def Info: Style/rwth_km_logo_en-eps-converted-to.pdf  used on input line 11.
@@ -1642,17 +1673,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--127
  []
 
 [2]
-<Images/chapter1/uniaxialtension.png, id=466, 185.0112pt x 184.5294pt>
+<Images/chapter1/uniaxialtension.png, id=471, 185.0112pt x 184.5294pt>
 File: Images/chapter1/uniaxialtension.png Graphic file (type png)
 <use Images/chapter1/uniaxialtension.png>
 Package pdftex.def Info: Images/chapter1/uniaxialtension.png  used on input line 138.
 (pdftex.def)             Requested size: 181.81184pt x 181.34721pt.
-<Images/chapter1/uniaxialintermediate.png, id=468, 183.8067pt x 183.5658pt>
+<Images/chapter1/uniaxialintermediate.png, id=473, 183.8067pt x 183.5658pt>
 File: Images/chapter1/uniaxialintermediate.png Graphic file (type png)
 <use Images/chapter1/uniaxialintermediate.png>
 Package pdftex.def Info: Images/chapter1/uniaxialintermediate.png  used on input line 145.
 (pdftex.def)             Requested size: 181.81184pt x 181.58223pt.
-<Images/chapter1/uniaxialhigh.png, id=469, 173.6889pt x 97.5645pt>
+<Images/chapter1/uniaxialhigh.png, id=474, 173.6889pt x 97.5645pt>
 File: Images/chapter1/uniaxialhigh.png Graphic file (type png)
 <use Images/chapter1/uniaxialhigh.png>
 Package pdftex.def Info: Images/chapter1/uniaxialhigh.png  used on input line 152.
@@ -1677,7 +1708,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 201--207
 
  []
 
-<Images/chapter1/compressiondiag.png, id=486, 185.0112pt x 77.088pt>
+<Images/chapter1/compressiondiag.png, id=491, 185.0112pt x 77.088pt>
 File: Images/chapter1/compressiondiag.png Graphic file (type png)
 <use Images/chapter1/compressiondiag.png>
 Package pdftex.def Info: Images/chapter1/compressiondiag.png  used on input line 211.
@@ -1688,7 +1719,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--233
  []
 
 [5 <./Images/chapter1/compressiondiag.png>]
-<Images/chapter1/compressiontypes.png, id=512, 185.0112pt x 77.088pt>
+<Images/chapter1/compressiontypes.png, id=517, 185.0112pt x 77.088pt>
 File: Images/chapter1/compressiontypes.png Graphic file (type png)
 <use Images/chapter1/compressiontypes.png>
 Package pdftex.def Info: Images/chapter1/compressiontypes.png  used on input line 253.
@@ -1703,7 +1734,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--281
 
  []
 
-<Images/nanoindentationbigletter.png, id=523, 221.32687pt x 217.93922pt>
+<Images/nanoindentationbigletter.png, id=528, 221.32687pt x 217.93922pt>
 File: Images/nanoindentationbigletter.png Graphic file (type png)
 <use Images/nanoindentationbigletter.png>
 Package pdftex.def Info: Images/nanoindentationbigletter.png  used on input line 284.
@@ -1718,12 +1749,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 307--318
 
  []
 
-<Images/chapter1/indentation1carter.png, id=541, 170.3163pt x 162.8484pt>
+<Images/chapter1/indentation1carter.png, id=546, 170.3163pt x 162.8484pt>
 File: Images/chapter1/indentation1carter.png Graphic file (type png)
 <use Images/chapter1/indentation1carter.png>
 Package pdftex.def Info: Images/chapter1/indentation1carter.png  used on input line 323.
 (pdftex.def)             Requested size: 181.81184pt x 173.84103pt.
-<Images/chapter1/indentation2carter.png, id=542, 137.5539pt x 140.9265pt>
+<Images/chapter1/indentation2carter.png, id=547, 137.5539pt x 140.9265pt>
 File: Images/chapter1/indentation2carter.png Graphic file (type png)
 <use Images/chapter1/indentation2carter.png>
 Package pdftex.def Info: Images/chapter1/indentation2carter.png  used on input line 330.
@@ -1739,7 +1770,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 366--370
  []
 
 [8 <./Images/chapter1/indentation1carter.png> <./Images/chapter1/indentation2carter.png>]
-<Images/chapter1/aspirationkauer.png, id=563, 150.8034pt x 135.1449pt>
+<Images/chapter1/aspirationkauer.png, id=568, 150.8034pt x 135.1449pt>
 File: Images/chapter1/aspirationkauer.png Graphic file (type png)
 <use Images/chapter1/aspirationkauer.png>
 Package pdftex.def Info: Images/chapter1/aspirationkauer.png  used on input line 384.
@@ -1866,22 +1897,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--49
 
 1: section
 [19]
-<Images/Experiment/firstexperimentwithtext.png, id=728, 2240.37pt x 2987.16pt>
+<Images/Experiment/firstexperimentwithtext.png, id=733, 2240.37pt x 2987.16pt>
 File: Images/Experiment/firstexperimentwithtext.png Graphic file (type png)
 <use Images/Experiment/firstexperimentwithtext.png>
 Package pdftex.def Info: Images/Experiment/firstexperimentwithtext.png  used on input line 68.
 (pdftex.def)             Requested size: 184.9429pt x 246.5896pt.
-<Images/Experiment/firstexpotherloadwithtext.png, id=729, 1271.5003pt x 1717.16531pt>
+<Images/Experiment/firstexpotherloadwithtext.png, id=734, 1271.5003pt x 1717.16531pt>
 File: Images/Experiment/firstexpotherloadwithtext.png Graphic file (type png)
 <use Images/Experiment/firstexpotherloadwithtext.png>
 Package pdftex.def Info: Images/Experiment/firstexpotherloadwithtext.png  used on input line 70.
 (pdftex.def)             Requested size: 184.9429pt x 249.75554pt.
-<Images/Experiment/specimenhole.png, id=731, 185.0112pt x 99.4917pt>
+<Images/Experiment/specimenhole.png, id=736, 185.0112pt x 99.4917pt>
 File: Images/Experiment/specimenhole.png Graphic file (type png)
 <use Images/Experiment/specimenhole.png>
 Package pdftex.def Info: Images/Experiment/specimenhole.png  used on input line 90.
 (pdftex.def)             Requested size: 184.9429pt x 99.45955pt.
-<Images/Experiment/specimenholeside.png, id=732, 185.0112pt x 99.4917pt>
+<Images/Experiment/specimenholeside.png, id=737, 185.0112pt x 99.4917pt>
 File: Images/Experiment/specimenholeside.png Graphic file (type png)
 <use Images/Experiment/specimenholeside.png>
 Package pdftex.def Info: Images/Experiment/specimenholeside.png  used on input line 92.
@@ -1896,17 +1927,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--184
 
  []
 
-<Images/Experiment/secondexp1.png, id=752, 1113.40968pt x 1484.54625pt>
+<Images/Experiment/secondexp1.png, id=757, 1113.40968pt x 1484.54625pt>
 File: Images/Experiment/secondexp1.png Graphic file (type png)
 <use Images/Experiment/secondexp1.png>
 Package pdftex.def Info: Images/Experiment/secondexp1.png  used on input line 187.
 (pdftex.def)             Requested size: 184.9429pt x 246.57053pt.
-<Images/Experiment/secondexp2.jpg, id=753, 1113.15875pt x 1484.54625pt>
+<Images/Experiment/secondexp2.jpg, id=758, 1113.15875pt x 1484.54625pt>
 File: Images/Experiment/secondexp2.jpg Graphic file (type jpg)
 <use Images/Experiment/secondexp2.jpg>
 Package pdftex.def Info: Images/Experiment/secondexp2.jpg  used on input line 189.
 (pdftex.def)             Requested size: 184.9429pt x 246.63849pt.
-<Images/Experiment/Loadingdiagram.png, id=754, 176.2585pt x 125.268pt>
+<Images/Experiment/Loadingdiagram.png, id=759, 176.2585pt x 125.268pt>
 File: Images/Experiment/Loadingdiagram.png Graphic file (type png)
 <use Images/Experiment/Loadingdiagram.png>
 Package pdftex.def Info: Images/Experiment/Loadingdiagram.png  used on input line 197.
@@ -1917,7 +1948,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--215
  []
 
 [22] [23 <./Images/Experiment/secondexp1.png> <./Images/Experiment/secondexp2.jpg> <./Images/Experiment/Loadingdiagram.png>]
-<Images/Experiment/specimenmidp.png, id=773, 184.7703pt x 100.9371pt>
+<Images/Experiment/specimenmidp.png, id=778, 184.7703pt x 100.9371pt>
 File: Images/Experiment/specimenmidp.png Graphic file (type png)
 <use Images/Experiment/specimenmidp.png>
 Package pdftex.def Info: Images/Experiment/specimenmidp.png  used on input line 264.
@@ -1928,7 +1959,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 269--275
  []
 
 [24 <./Images/Experiment/specimenmidp.png>]
-<Images/Experiment/unloading.png, id=784, 500.62032pt x 666.99188pt>
+<Images/Experiment/unloading.png, id=789, 500.62032pt x 666.99188pt>
 File: Images/Experiment/unloading.png Graphic file (type png)
 <use Images/Experiment/unloading.png>
 Package pdftex.def Info: Images/Experiment/unloading.png  used on input line 301.
@@ -1939,12 +1970,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 306--313
  []
 
 [25 <./Images/Experiment/unloading.png>]
-<Images/Experiment/nbexp1.png, id=794, 148.3944pt x 98.769pt>
+<Images/Experiment/nbexp1.png, id=799, 148.3944pt x 98.769pt>
 File: Images/Experiment/nbexp1.png Graphic file (type png)
 <use Images/Experiment/nbexp1.png>
 Package pdftex.def Info: Images/Experiment/nbexp1.png  used on input line 334.
 (pdftex.def)             Requested size: 184.9429pt x 123.0977pt.
-<Images/Experiment/nbexp2.png, id=795, 185.0112pt x 99.4917pt>
+<Images/Experiment/nbexp2.png, id=800, 185.0112pt x 99.4917pt>
 File: Images/Experiment/nbexp2.png Graphic file (type png)
 <use Images/Experiment/nbexp2.png>
 Package pdftex.def Info: Images/Experiment/nbexp2.png  used on input line 336.
@@ -2086,17 +2117,17 @@ Overfull \hbox (0.2993pt too wide) in paragraph at lines 15--23
 []\OT1/ppl/m/n/10.95 The ini-tial sim-u-la-tion model, re-ferred to as Com-pu-ta-tional model I (CM I), served
  []
 
-<Images/computational/Assemblynoplatform2.png, id=882, 1483.5425pt x 692.5875pt>
+<Images/computational/Assemblynoplatform2.png, id=887, 1483.5425pt x 692.5875pt>
 File: Images/computational/Assemblynoplatform2.png Graphic file (type png)
 <use Images/computational/Assemblynoplatform2.png>
 Package pdftex.def Info: Images/computational/Assemblynoplatform2.png  used on input line 54.
 (pdftex.def)             Requested size: 284.52756pt x 132.82944pt.
-<Images/computational/MeshCSES03total.png, id=884, 418.06187pt x 316.68312pt>
+<Images/computational/MeshCSES03total.png, id=889, 418.06187pt x 316.68312pt>
 File: Images/computational/MeshCSES03total.png Graphic file (type png)
 <use Images/computational/MeshCSES03total.png>
 Package pdftex.def Info: Images/computational/MeshCSES03total.png  used on input line 73.
 (pdftex.def)             Requested size: 181.81184pt x 137.72705pt.
-<Images/computational/MeshCSES03.png, id=885, 1101.11375pt x 634.37pt>
+<Images/computational/MeshCSES03.png, id=890, 1101.11375pt x 634.37pt>
 File: Images/computational/MeshCSES03.png Graphic file (type png)
 <use Images/computational/MeshCSES03.png>
 Package pdftex.def Info: Images/computational/MeshCSES03.png  used on input line 80.
@@ -2130,18 +2161,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--183
 [38]
 PGFPlots: reading {"Table/Nearby Point/nbexpI.dat"}
 PGFPlots: reading {Table/CP1/NBPCSNHCPI.dat}
-<Images/computational/meshzoom.png, id=923, 1130.2225pt x 633.36626pt>
+<Images/computational/meshzoom.png, id=928, 1130.2225pt x 633.36626pt>
 File: Images/computational/meshzoom.png Graphic file (type png)
 <use Images/computational/meshzoom.png>
 Package pdftex.def Info: Images/computational/meshzoom.png  used on input line 243.
 (pdftex.def)             Requested size: 284.52756pt x 159.44292pt.
  [39]
-<Images/computational/37CSNHstresshalfzoommesh.png, id=931, 1130.2225pt x 633.36626pt>
+<Images/computational/37CSNHstresshalfzoommesh.png, id=936, 1130.2225pt x 633.36626pt>
 File: Images/computational/37CSNHstresshalfzoommesh.png Graphic file (type png)
 <use Images/computational/37CSNHstresshalfzoommesh.png>
 Package pdftex.def Info: Images/computational/37CSNHstresshalfzoommesh.png  used on input line 267.
 (pdftex.def)             Requested size: 282.81912pt x 158.48613pt.
-<Images/computational/meshzoomstress.png, id=932, 1130.2225pt x 633.36626pt>
+<Images/computational/meshzoomstress.png, id=937, 1130.2225pt x 633.36626pt>
 File: Images/computational/meshzoomstress.png Graphic file (type png)
 <use Images/computational/meshzoomstress.png>
 Package pdftex.def Info: Images/computational/meshzoomstress.png  used on input line 274.
@@ -2152,12 +2183,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 294--300
  []
 
 [40 <./Images/computational/meshzoom.png (PNG copy)>] [41 <./Images/computational/37CSNHstresshalfzoommesh.png (PNG copy)> <./Images/computational/meshzoomstress.png (PNG copy)>]
-<Images/computational/cm2geometry.png, id=946, 1126.2075pt x 631.35875pt>
+<Images/computational/cm2geometry.png, id=951, 1126.2075pt x 631.35875pt>
 File: Images/computational/cm2geometry.png Graphic file (type png)
 <use Images/computational/cm2geometry.png>
 Package pdftex.def Info: Images/computational/cm2geometry.png  used on input line 313.
 (pdftex.def)             Requested size: 181.81184pt x 101.91539pt.
-<Images/computational/cm2meshzoom.png, id=947, 1126.2075pt x 631.35875pt>
+<Images/computational/cm2meshzoom.png, id=952, 1126.2075pt x 631.35875pt>
 File: Images/computational/cm2meshzoom.png Graphic file (type png)
 <use Images/computational/cm2meshzoom.png>
 Package pdftex.def Info: Images/computational/cm2meshzoom.png  used on input line 320.
@@ -2171,7 +2202,7 @@ File: Images/computational/37CSNHstresshalfzoommesh.png Graphic file (type png)
 <use Images/computational/37CSNHstresshalfzoommesh.png>
 Package pdftex.def Info: Images/computational/37CSNHstresshalfzoommesh.png  used on input line 348.
 (pdftex.def)             Requested size: 282.81912pt x 158.48613pt.
-<Images/computational/stresscmII.png, id=949, 1128.215pt x 637.38126pt>
+<Images/computational/stresscmII.png, id=954, 1128.215pt x 637.38126pt>
 File: Images/computational/stresscmII.png Graphic file (type png)
 <use Images/computational/stresscmII.png>
 Package pdftex.def Info: Images/computational/stresscmII.png  used on input line 355.
@@ -2215,7 +2246,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--78
 PGFPlots: reading {Table/sensitivity/fullrangeplat2points/test.csv}
 PGFPlots: reading {Table/sensitivity/fullrangeplat2points/test.csv}
 PGFPlots: reading {Table/sensitivity/fullrangeplat2points/test.csv}
-<Images/ifem/plat NH 4 and 2 fullrange/rsoforce1.png, id=999, 750.6444pt x 562.7424pt>
+<Images/ifem/plat NH 4 and 2 fullrange/rsoforce1.png, id=1004, 750.6444pt x 562.7424pt>
 File: Images/ifem/plat NH 4 and 2 fullrange/rsoforce1.png Graphic file (type png)
 <use Images/ifem/plat NH 4 and 2 fullrange/rsoforce1.png>
 Package pdftex.def Info: Images/ifem/plat NH 4 and 2 fullrange/rsoforce1.png  used on input line 116.
@@ -2239,22 +2270,22 @@ PGFPlots: reading {Table/RSO/expdatatop.dat}
 PGFPlots: reading {Table/RSO/2point99997_6.dat}
 PGFPlots: reading {Table/RSO/3point10867_47.dat}
 [49]
-<Images/ifem/MATLAB/NRMSE2poly.png, id=1020, 421.21pt x 316.09pt>
+<Images/ifem/MATLAB/NRMSE2poly.png, id=1025, 421.21pt x 316.09pt>
 File: Images/ifem/MATLAB/NRMSE2poly.png Graphic file (type png)
 <use Images/ifem/MATLAB/NRMSE2poly.png>
 Package pdftex.def Info: Images/ifem/MATLAB/NRMSE2poly.png  used on input line 249.
 (pdftex.def)             Requested size: 181.81184pt x 136.43694pt.
-<Images/ifem/MATLAB/NRMSE4poly.png, id=1021, 421.21pt x 316.09pt>
+<Images/ifem/MATLAB/NRMSE4poly.png, id=1026, 421.21pt x 316.09pt>
 File: Images/ifem/MATLAB/NRMSE4poly.png Graphic file (type png)
 <use Images/ifem/MATLAB/NRMSE4poly.png>
 Package pdftex.def Info: Images/ifem/MATLAB/NRMSE4poly.png  used on input line 256.
 (pdftex.def)             Requested size: 181.81184pt x 136.43694pt.
-<Images/ifem/MATLAB/MRE2poly.png, id=1022, 421.21pt x 316.09pt>
+<Images/ifem/MATLAB/MRE2poly.png, id=1027, 421.21pt x 316.09pt>
 File: Images/ifem/MATLAB/MRE2poly.png Graphic file (type png)
 <use Images/ifem/MATLAB/MRE2poly.png>
 Package pdftex.def Info: Images/ifem/MATLAB/MRE2poly.png  used on input line 268.
 (pdftex.def)             Requested size: 181.81184pt x 136.43694pt.
-<Images/ifem/MATLAB/MRE4poly.png, id=1023, 421.21pt x 316.09pt>
+<Images/ifem/MATLAB/MRE4poly.png, id=1028, 421.21pt x 316.09pt>
 File: Images/ifem/MATLAB/MRE4poly.png Graphic file (type png)
 <use Images/ifem/MATLAB/MRE4poly.png>
 Package pdftex.def Info: Images/ifem/MATLAB/MRE4poly.png  used on input line 275.
@@ -2330,7 +2361,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--171
 
  []
 
-<Images/validationcase/8mm/setstressdistribution.png, id=1066, 1130.2225pt x 633.36626pt>
+<Images/validationcase/8mm/setstressdistribution.png, id=1071, 1130.2225pt x 633.36626pt>
 File: Images/validationcase/8mm/setstressdistribution.png Graphic file (type png)
 <use Images/validationcase/8mm/setstressdistribution.png>
 Package pdftex.def Info: Images/validationcase/8mm/setstressdistribution.png  used on input line 175.
@@ -2364,17 +2395,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 250--259
 
  []
 
-<Images/validationcase/defprof/defprofdiag.png, id=1077, 176.3388pt x 88.4103pt>
+<Images/validationcase/defprof/defprofdiag.png, id=1082, 176.3388pt x 88.4103pt>
 File: Images/validationcase/defprof/defprofdiag.png Graphic file (type png)
 <use Images/validationcase/defprof/defprofdiag.png>
 Package pdftex.def Info: Images/validationcase/defprof/defprofdiag.png  used on input line 263.
 (pdftex.def)             Requested size: 284.52756pt x 142.67212pt.
-<Images/validationcase/defprof/defprofexp.png, id=1078, 1254.93843pt x 1672.74937pt>
+<Images/validationcase/defprof/defprofexp.png, id=1083, 1254.93843pt x 1672.74937pt>
 File: Images/validationcase/defprof/defprofexp.png Graphic file (type png)
 <use Images/validationcase/defprof/defprofexp.png>
 Package pdftex.def Info: Images/validationcase/defprof/defprofexp.png  used on input line 272.
 (pdftex.def)             Requested size: 202.01454pt x 269.25339pt.
-<Images/validationcase/defprof/interferencedef.png, id=1079, 1263.21938pt x 1111.15125pt>
+<Images/validationcase/defprof/interferencedef.png, id=1084, 1263.21938pt x 1111.15125pt>
 File: Images/validationcase/defprof/interferencedef.png Graphic file (type png)
 <use Images/validationcase/defprof/interferencedef.png>
 Package pdftex.def Info: Images/validationcase/defprof/interferencedef.png  used on input line 279.
@@ -2385,7 +2416,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 288--294
  []
 
 [57]
-<Images/validationcase/defprof/10200defprofile.png, id=1085, 1128.215pt x 634.37pt>
+<Images/validationcase/defprof/10200defprofile.png, id=1090, 1128.215pt x 634.37pt>
 File: Images/validationcase/defprof/10200defprofile.png Graphic file (type png)
 <use Images/validationcase/defprof/10200defprofile.png>
 Package pdftex.def Info: Images/validationcase/defprof/10200defprofile.png  used on input line 302.
@@ -2394,7 +2425,7 @@ PGFPlots: reading {Table/results/defprofile/defprofexp.dat}
 PGFPlots: reading {Table/results/defprofile/set1prof.dat}
 PGFPlots: reading {Table/results/defprofile/set3prof.dat}
 PGFPlots: reading {Table/results/defprofile/set4prof.dat}
-<Images/validationcase/bluepoint/bluepointdiag.png, id=1089, 145.0218pt x 86.724pt>
+<Images/validationcase/bluepoint/bluepointdiag.png, id=1094, 145.0218pt x 86.724pt>
 File: Images/validationcase/bluepoint/bluepointdiag.png Graphic file (type png)
 <use Images/validationcase/bluepoint/bluepointdiag.png>
 Package pdftex.def Info: Images/validationcase/bluepoint/bluepointdiag.png  used on input line 371.
@@ -2405,12 +2436,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 364--379
  []
 
 [58 <./Images/validationcase/defprof/defprofdiag.png>] [59 <./Images/validationcase/defprof/defprofexp.png> <./Images/validationcase/defprof/interferencedef.png>] [60 <./Images/validationcase/defprof/10200defprofile.png>]
-<Images/validationcase/bluepoint/bluepointmesh.png, id=1109, 1130.2225pt x 633.36626pt>
+<Images/validationcase/bluepoint/bluepointmesh.png, id=1114, 1130.2225pt x 633.36626pt>
 File: Images/validationcase/bluepoint/bluepointmesh.png Graphic file (type png)
 <use Images/validationcase/bluepoint/bluepointmesh.png>
 Package pdftex.def Info: Images/validationcase/bluepoint/bluepointmesh.png  used on input line 389.
 (pdftex.def)             Requested size: 202.01454pt x 113.19885pt.
-<Images/validationcase/bluepoint/bluepointstress3.png, id=1110, 1130.2225pt x 633.36626pt>
+<Images/validationcase/bluepoint/bluepointstress3.png, id=1115, 1130.2225pt x 633.36626pt>
 File: Images/validationcase/bluepoint/bluepointstress3.png Graphic file (type png)
 <use Images/validationcase/bluepoint/bluepointstress3.png>
 Package pdftex.def Info: Images/validationcase/bluepoint/bluepointstress3.png  used on input line 396.
@@ -2552,6 +2583,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 758--764
 
 ]
 Chapter 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--35
+
+ []
+
 )
 1: section
 [69]
@@ -2566,68 +2617,70 @@ Chapter 6.
 Appendix A.
 1: section
 [71]
-<Images/appendix/ynu/fig1experimentaldevice.png, id=1167, 256.23pt x 341.3115pt>
+<Images/appendix/ynu/fig1experimentaldevice.png, id=1172, 256.23pt x 341.3115pt>
 File: Images/appendix/ynu/fig1experimentaldevice.png Graphic file (type png)
 <use Images/appendix/ynu/fig1experimentaldevice.png>
 Package pdftex.def Info: Images/appendix/ynu/fig1experimentaldevice.png  used on input line 29.
 (pdftex.def)             Requested size: 284.52756pt x 379.01648pt.
-<Images/appendix/ynu/fig2simulatedorgan.png, id=1172, 278.8965pt x 233.892pt>
+<Images/appendix/ynu/fig2simulatedorgan.png, id=1177, 278.8965pt x 233.892pt>
 File: Images/appendix/ynu/fig2simulatedorgan.png Graphic file (type png)
 <use Images/appendix/ynu/fig2simulatedorgan.png>
 Package pdftex.def Info: Images/appendix/ynu/fig2simulatedorgan.png  used on input line 42.
 (pdftex.def)             Requested size: 284.52756pt x 238.6309pt.
-<Images/appendix/ynu/fig3schematicdiagramrepresentingcoordinatesofloadingpoints_topview.png, id=1173, 341.77687pt x 407.27156pt>
+<Images/appendix/ynu/fig3schematicdiagramrepresentingcoordinatesofloadingpoints_topview.png, id=1178, 341.77687pt x 407.27156pt>
 File: Images/appendix/ynu/fig3schematicdiagramrepresentingcoordinatesofloadingpoints_topview.png Graphic file (type png)
 <use Images/appendix/ynu/fig3schematicdiagramrepresentingcoordinatesofloadingpoints_topview.png>
 Package pdftex.def Info: Images/appendix/ynu/fig3schematicdiagramrepresentingcoordinatesofloadingpoints_topview.png  used on input line 49.
 (pdftex.def)             Requested size: 227.62204pt x 271.24855pt.
  [72] [73 <./Images/appendix/ynu/fig1experimentaldevice.png> <./Images/appendix/ynu/fig2simulatedorgan.png>]
-<Images/appendix/ynu/fig4timehistoryoftriggervoltage.png, id=1189, 361.35pt x 216.81pt>
+<Images/appendix/ynu/fig4timehistoryoftriggervoltage.png, id=1194, 361.35pt x 216.81pt>
 File: Images/appendix/ynu/fig4timehistoryoftriggervoltage.png Graphic file (type png)
 <use Images/appendix/ynu/fig4timehistoryoftriggervoltage.png>
 Package pdftex.def Info: Images/appendix/ynu/fig4timehistoryoftriggervoltage.png  used on input line 78.
 (pdftex.def)             Requested size: 284.52756pt x 170.71892pt.
-<Images/appendix/ynu/tab1specificationsofminiature6axisforcesensors.png, id=1191, 310.66063pt x 206.7725pt>
+<Images/appendix/ynu/tab1specificationsofminiature6axisforcesensors.png, id=1196, 310.66063pt x 206.7725pt>
 File: Images/appendix/ynu/tab1specificationsofminiature6axisforcesensors.png Graphic file (type png)
 <use Images/appendix/ynu/tab1specificationsofminiature6axisforcesensors.png>
 Package pdftex.def Info: Images/appendix/ynu/tab1specificationsofminiature6axisforcesensors.png  used on input line 89.
 (pdftex.def)             Requested size: 284.52756pt x 189.37798pt.
  [74 <./Images/appendix/ynu/fig3schematicdiagramrepresentingcoordinatesofloadingpoints_topview.png>]
-<Images/appendix/ynu/fig5laserlineonthesimulatedorgan.png, id=1205, 233.5635pt x 311.418pt>
+<Images/appendix/ynu/fig5laserlineonthesimulatedorgan.png, id=1210, 233.5635pt x 311.418pt>
 File: Images/appendix/ynu/fig5laserlineonthesimulatedorgan.png Graphic file (type png)
 <use Images/appendix/ynu/fig5laserlineonthesimulatedorgan.png>
 Package pdftex.def Info: Images/appendix/ynu/fig5laserlineonthesimulatedorgan.png  used on input line 100.
 (pdftex.def)             Requested size: 227.62204pt x 303.49588pt.
-<Images/appendix/ynu/fig6forcestroke_a.png, id=1209, 185.9748pt x 119.4864pt>
+<Images/appendix/ynu/fig6forcestroke_a.png, id=1214, 185.9748pt x 119.4864pt>
 File: Images/appendix/ynu/fig6forcestroke_a.png Graphic file (type png)
 <use Images/appendix/ynu/fig6forcestroke_a.png>
 Package pdftex.def Info: Images/appendix/ynu/fig6forcestroke_a.png  used on input line 116.
 (pdftex.def)             Requested size: 181.81184pt x 116.81508pt.
-<Images/appendix/ynu/fig6forcestroke_b.png, id=1210, 185.9748pt x 119.4864pt>
+<Images/appendix/ynu/fig6forcestroke_b.png, id=1215, 185.9748pt x 119.4864pt>
 File: Images/appendix/ynu/fig6forcestroke_b.png Graphic file (type png)
 <use Images/appendix/ynu/fig6forcestroke_b.png>
 Package pdftex.def Info: Images/appendix/ynu/fig6forcestroke_b.png  used on input line 123.
 (pdftex.def)             Requested size: 181.81184pt x 116.81508pt.
-<Images/appendix/ynu/fig6forcestroke_c.png, id=1211, 185.9748pt x 119.4864pt>
+<Images/appendix/ynu/fig6forcestroke_c.png, id=1216, 185.9748pt x 119.4864pt>
 File: Images/appendix/ynu/fig6forcestroke_c.png Graphic file (type png)
 <use Images/appendix/ynu/fig6forcestroke_c.png>
 Package pdftex.def Info: Images/appendix/ynu/fig6forcestroke_c.png  used on input line 130.
 (pdftex.def)             Requested size: 181.81184pt x 116.81508pt.
  [75 <./Images/appendix/ynu/fig4timehistoryoftriggervoltage.png> <./Images/appendix/ynu/tab1specificationsofminiature6axisforcesensors.png>]
-<Images/appendix/ynu/fig7hightprofiletransition.png, id=1221, 427.8384pt x 214.401pt>
+<Images/appendix/ynu/fig7hightprofiletransition.png, id=1226, 427.8384pt x 214.401pt>
 File: Images/appendix/ynu/fig7hightprofiletransition.png Graphic file (type png)
 <use Images/appendix/ynu/fig7hightprofiletransition.png>
 Package pdftex.def Info: Images/appendix/ynu/fig7hightprofiletransition.png  used on input line 143.
 (pdftex.def)             Requested size: 202.01454pt x 101.2363pt.
-<Images/appendix/ynu/fig8displacementsstroke.png, id=1222, 427.8384pt x 214.401pt>
+<Images/appendix/ynu/fig8displacementsstroke.png, id=1227, 427.8384pt x 214.401pt>
 File: Images/appendix/ynu/fig8displacementsstroke.png Graphic file (type png)
 <use Images/appendix/ynu/fig8displacementsstroke.png>
 Package pdftex.def Info: Images/appendix/ynu/fig8displacementsstroke.png  used on input line 150.
 (pdftex.def)             Requested size: 202.01454pt x 101.2363pt.
-) [76 <./Images/appendix/ynu/fig5laserlineonthesimulatedorgan.png>] [77 <./Images/appendix/ynu/fig6forcestroke_a.png> <./Images/appendix/ynu/fig6forcestroke_b.png> <./Images/appendix/ynu/fig6forcestroke_c.png> <./Images/appendix/ynu/fig7hightprofiletransition.png> <./Images/appendix/ynu/fig8displacementsstroke.png>]
+ (C:\Users\drevs\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) [76 <./Images/appendix/ynu/fig5laserlineonthesimulatedorgan.png>] [77 <./Images/appendix/ynu/fig6forcestroke_a.png> <./Images/appendix/ynu/fig6forcestroke_b.png> <./Images/appendix/ynu/fig6forcestroke_c.png> <./Images/appendix/ynu/fig7hightprofiletransition.png> <./Images/appendix/ynu/fig8displacementsstroke.png>] [78]) [79]
 \openout2 = `Bibliography/Bibliography.aux'.
 
- (Bibliography/Bibliography.tex [78
+ (Bibliography/Bibliography.tex [80
 
 
 
@@ -2648,38 +2701,38 @@ Overfull \hbox (0.2904pt too wide) in paragraph at lines 1--1
  []
 
 1: section
-[79]
+[81]
 Overfull \hbox (41.42664pt too wide) in paragraph at lines 1--1
 []\OT1/ppl/m/n/10.95 Valentine Kanyanta and Alojz Ivankovic. \  Me-chan-i-cal char-ac-ter-i-sa-tion of polyurethane
  []
 
-[80]
+[82]
 Overfull \hbox (31.31085pt too wide) in paragraph at lines 1--1
 \OT1/ppl/m/it/10.95 view of re-cent de-vel-op-ments\OT1/ppl/m/n/10.95 . El-se-vier, 2012, pp. 115{151. \OT1/ppl/m/sc/10.95 doi\OT1/ppl/m/n/10.95 : [][]$\OT1/cmtt/l/it/10.95 10 . 1533 / 9781908818188 .
  []
 
-) [81] (main.aux (FrontBackMatter/Titlepage.aux) (FrontBackMatter/Authorship.aux) (FrontBackMatter/ListOfContent.aux) (FrontBackMatter/Symbols.aux) (Content/Chapter2.aux) (Content/Chapter3.aux) (Content/Chapter4.aux) (Content/Chapter5.aux) (Content/Chapter6.aux) (Content/Chapter7.aux) (Appendix/AppendixA.aux) (Bibliography/Bibliography.aux))
+) [83] (main.aux (FrontBackMatter/Titlepage.aux) (FrontBackMatter/Authorship.aux) (FrontBackMatter/ListOfContent.aux) (FrontBackMatter/Symbols.aux) (Content/Chapter2.aux) (Content/Chapter3.aux) (Content/Chapter4.aux) (Content/Chapter5.aux) (Content/Chapter6.aux) (Content/Chapter7.aux) (Appendix/AppendixA.aux) (Bibliography/Bibliography.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1CCF308982CB9CD428754252C53F4676;8840.
+(rerunfilecheck)             Checksum: 198B7712F842945877BCFB85A1B0E957;8956.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62729 strings out of 475281
- 1521832 string characters out of 2774064
- 2542887 words of memory out of 3000000
- 82609 multiletter control sequences out of 15000+600000
- 521913 words of font info for 162 fonts, out of 8000000 for 9000
+ 65045 strings out of 475281
+ 1551838 string characters out of 2774064
+ 2743477 words of memory out of 3000000
+ 84831 multiletter control sequences out of 15000+600000
+ 522081 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 107i,21n,100p,2324b,2761s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 107i,21n,100p,2324b,3068s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (95 pages, 36875642 bytes).
+Output written on main.pdf (97 pages, 36894953 bytes).
 PDF statistics:
- 1430 PDF objects out of 1440 (max. 8388607)
- 367 named destinations out of 1000 (max. 500000)
- 651 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1532 PDF objects out of 1728 (max. 8388607)
+ 443 named destinations out of 1000 (max. 500000)
+ 659 words of extra memory for PDF output out of 10000 (max. 10000000)
 
