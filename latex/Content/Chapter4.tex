@@ -226,7 +226,7 @@ simulated and experimental curves.
 %--------------------------------------------------------------------------------------------------------------
 \section{Analysis and Complications}
 \label{section:challengescm}
-\subsection{Verification of the Computational Model}
+\subsection*{Verification of the Computational Model}
 The verification of the computational model was an important aspect of ensuring the accuracy and reliability of the 
 simulation results. One typical approach to verify the model is to conduct a mesh convergence analysis. To 
 reduce computational time, symmetry boundary conditions were applied, and one-quarter of CM I was used.
@@ -262,14 +262,14 @@ suggesting that the original model was not entirely reliable and the mesh depend
 
 \begin{figure}
     \centering
-    \begin{subfigure}[b]{0.7\textwidth}
+    \begin{subfigure}[b]{0.8\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/computational/37CSNHstresshalfzoommesh.png}
     \caption{CM I - NH}
     \label{fig:cm1meshtotal}
     \end{subfigure}
     \vspace{0.3cm}
-    \begin{subfigure}[b]{0.7\textwidth}
+    \begin{subfigure}[b]{0.8\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/computational/meshzoomstress.png}
     \caption{Mesh convergence model}
@@ -280,7 +280,7 @@ suggesting that the original model was not entirely reliable and the mesh depend
     \label{fig:stressdistributionanalysis}
 \end{figure}
 %----------------------------------------------------------------------------------------------------------------------
-\section{Computational model II}
+\section{Computational Model II}
 \label{section:cmII}
 The computational model II or improved computational model, addressed the challenges and observations 
 encountered during the development of CM I. This refined model integrated the proposed
@@ -326,6 +326,7 @@ maximum skewness from \SI{0.85}{} to \SI{0.6}{} (Fig. \ref{fig:cm2meshref}).
     \label{fig:cmIImesh}
 \end{figure}
 
+\subsection{Model Improvement Strategy}
 \subsubsection*{Large Element Deformation Strategy}
 To address the issue of the large element deformation for larger indentation depths, the ANSYS \textbf{nonlinear adaptive region}
 option was applied. This feature performed a remeshing operation in the contact area of the specimen whenever 
@@ -343,14 +344,14 @@ CM II is displayed in Figure \ref{fig:cmIIstressdistanalysis}.\\
 
 \begin{figure}
     \centering
-    \begin{subfigure}[b]{0.7\textwidth}
+    \begin{subfigure}[b]{0.8\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/computational/37CSNHstresshalfzoommesh.png}
     \caption{Computational model I}
     \label{fig:cm1stress}
     \end{subfigure}
     \hspace{0.3cm}
-    \begin{subfigure}[b]{0.7\textwidth}
+    \begin{subfigure}[b]{0.8\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/computational/stresscmII.png}
     \caption{Computational model II}
