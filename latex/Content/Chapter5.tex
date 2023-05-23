@@ -38,11 +38,11 @@ The process to find parameters using the RSO in ANSYS generally involves the fol
 
 For this research, the design, or input variables were the material properties from the Neo-Hookean 
 material model, the shear modulus $\mu$ and the incompressibility parameter $D_1$. The output parameters 
-were the maximum force reaction in Z-direction $F_z$ and the maximum directional deformation in Z-direction $u_z$.
+were the maximum force reaction in z-direction $F_z$ and the maximum directional deformation in z-direction $u_z$.
 
 Based on the observation presented in Chapter \ref{chapter:experimentalmodel} regarding the impact of the force 
-components in EM II, only the values for the Z-direction were considered. Consequently, the other force 
-components could be neglected for this particular case. The prioritization of the Z-direction values came from 
+components in EM II, only the values for the z-direction were considered. Consequently, the other force 
+components could be neglected for this particular case. The prioritization of the z-direction values came from 
 their maximal influence on the outcomes.
 
 \subsection*{Initial Parameter Range}
@@ -65,8 +65,8 @@ process.
 
 By examining a local sensitivity bar diagram and a response surface, the sensitivity analysis was conducted.
 Figure \ref{fig:fullrangelocalsensi} displays the local sensitivity bar diagram for the design variables
-$\mu$ and $D_1$, in relation to the output parameters, namely the maximum force reaction in Z-direction $F_z$ 
-and the maximum directional deformation in Z-direction $u_z$. 
+$\mu$ and $D_1$, in relation to the output parameters, namely the maximum force reaction in z-direction $F_z$ 
+and the maximum directional deformation in z-direction $u_z$. 
 
 The local sensitivity bar diagram provided a quantitative measure of the relative impact of the material 
 parameters. This diagram indicated that the shear modulus has a positive correlation with both the force
@@ -97,7 +97,7 @@ shear modulus slightly surpassed that of the incompressibility parameter.\\
 	]
 	\addplot table [x expr=\coordindex, y=P3] {Table/sensitivity/fullrangeplat2points/test.csv};
 	\addplot table [x expr=\coordindex, y=P5] {Table/sensitivity/fullrangeplat2points/test.csv};
-	\legend{Directional Deformation, Force Reaction Z Axis}
+	\legend{Directional deformation, Force reaction z-axis}
 	\end{axis}
 	\end{tikzpicture}
 	\caption[Local sensitivity analysis - Initial parameter range]{Local sensitivity analysis displaying the influence of the shear modulus and incompressibility parameter for the directional deformation and force reaction in z-direction.}%
@@ -119,7 +119,7 @@ a lowering influence on the force reaction.
 \end{figure}
 
 \subsection*{Initial RSO Results and Analysis}
-The primary performance metric or objective for the RSO was to match the maximum force in the Z-direction, 
+The primary performance metric or objective for the RSO was to match the maximum force in the z-direction, 
 observed experimentally at a displacement of $u_z=\SI{4}{\milli\meter}$.
 The initial RSO process offered three candidate sets of material parameters, with shear modulus values 
 around $\SI{0.011}{\mega \pascal}$ and incompressibility parameter values of $\SI{50}{\mega\pascal\tothe{-1}}$, 
@@ -222,8 +222,8 @@ between the simulated and experimental responses.
 The MATLAB optimization used the data from the RSO calculated error measurements to approximate 
 the objective function as a surface in a three-dimensional space in relation to the design variables. 
 
-Using data from approximately \SI{35}{} simulations, a surface was generated where the X-axis represented the shear 
-modulus, the Y-axis represented the incompressibility parameter, and the Z-axis represented the NRMSE 
+Using data from approximately \SI{35}{} simulations, a surface was generated where the x-axis represented the shear 
+modulus, the y-axis represented the incompressibility parameter, and the z-axis represented the NRMSE 
 of each simulation. The Mean Relative Error (MRE) 
 \begin{align}
 	\text{MRE} = \frac{1}{n} \sum_{i=1}^{n} \left| \frac{y_i - \hat{y}_i}{y_i} \right| \, ,
