@@ -21,7 +21,7 @@ The model is designed to identify the physical properties of organs by performin
 
 \subsection*{Experimental Device}
 The experimental apparatus is shown in Figure \ref{fig:expdeviceynu}.
-A Workbee from Ooznest was used as the base actuator for the loading device. The loading device is controlled using G-code, which is used for NC machining. CNCShield for Arduino was used to issue commands to the loading device. In this study, the loading was applied vertically downward to the curved surface of the simulated organ (ellipsoid shape), so a small 6-axis force sensor manufactured by MinebeaMitsumi was used, which can measure reaction forces in directions other than the loading direction. The indentation depth was measured by the trigger voltage using G-code, and the trigger signal was recorded using National Instruments' USB-6003 and DAQ Express software. A spherical measuring element was attached to the tip of the loading rod to prevent breakage. The diameter of the measuring element was \SI{6}{\milli \meter}, and the material was ruby, which has a high level of both rigidity and sphericity. The simulated organs were made of Exseal's human skin gel (ultra-soft urethane resin) and molded into an ellipsoid shape. The deformation of the simulated organ was measured using KEYENCE's IX150 laser displacement meter and WAVE LOGGER X measurement software.
+A Workbee from Ooznest was used as the base actuator for the loading device. The loading device is controlled using G-code, which is used for NC machining. CNCShield for Arduino was used to issue commands to the loading device. In this study, the loading was applied vertically downward to the curved surface of the simulated organ (ellipsoid shape), so a small 6-axis force sensor manufactured by MinebeaMitsumi was used, which can measure reaction forces in directions other than the loading direction. The indentation depth was measured by the trigger voltage using G-code, and the trigger signal was recorded using National Instruments' USB-6003 and DAQ Express software. A spherical measuring element was attached to the tip of the loading rod to prevent breakage. The diameter of the measuring element was $\SI{6}{\milli \meter}$, and the material was ruby, which has a high level of both rigidity and sphericity. The simulated organs were made of Exseal's human skin gel (ultra-soft urethane resin) and molded into an ellipsoid shape. The deformation of the simulated organ was measured using KEYENCE's IX150 laser displacement meter and WAVE LOGGER X measurement software.
 
 \begin{figure}%
 	\centering
@@ -47,7 +47,7 @@ Figure \ref{fig:schemdiagynu}, moving with increments of $(\Delta X, \Delta Y) =
 	\centering
    \quad
    \includegraphics[width=8cm]{Images/appendix/ynu/fig3schematicdiagramrepresentingcoordinatesofloadingpoints_topview.png}%
-   \caption[Schematic diagram YNU]{Schematic diagram representing coordinates of loading points (top view)}%
+   \caption[Schematic diagram YNU]{Schematic diagram representing coordinates of loading points (top view).}%
    \label{fig:schemdiagynu}%
 \end{figure}
 
@@ -61,11 +61,11 @@ The experimental procedure is described below.
     \item Perform the same experiment 5 times for each loading point to confirm reproducibility.
 \end{enumerate}
 
-Experiments were conducted under room temperature environment (approx. \SI{20}{\degreeCelsius}).
-The loading speed was \SI[per-mode = symbol]{30}{\milli \m\per \minute}, assuming the actual environment. 
+Experiments were conducted under room temperature environment (approx. $\SI{20}{\degreeCelsius}$).
+The loading speed was $\SI[per-mode = symbol]{30}{\milli \m\per \minute}$, assuming the actual environment. 
 
-\subsection*{Measurement method}
-\subsubsection*{Measurement of indentation}
+\subsection*{Measurement Method}
+\subsubsection*{Measurement of Indentation}
 A $\SI{4}{\milli \m}$ load was applied to each loading point. The G code used in this study was designed to output a trigger voltage at a total of \SI{81}{}
 times, and once when the bar was pushed in $\SI{0.1}{\milli \m}$.
 
@@ -81,7 +81,7 @@ $\SI{10}{\kilo \hertz}$. An example of the voltage change during loading is show
 \end{figure}
 Because the reaction force and voltage were measured independently, the time axis was aligned by matching the peak time of the reaction force in the loading direction and the peak time of the push-in amount (Time when $\SI{4}{\milli \m}$ indented).
 
-\subsubsection*{Measurement of reaction forces}
+\subsubsection*{Measurement of Reaction forces}
 The specifications of the compact 6-axis force sensors are shown in Figure \ref{fig:specsensorynu}. 
 \begin{figure}%
 	\centering
@@ -92,7 +92,7 @@ The specifications of the compact 6-axis force sensors are shown in Figure \ref{
 \end{figure}
 The sampling frequency was $\SI{1000}{\hertz}$. To reduce the effect of initial drift, we waited five minutes to stabilize after sensor startup.
 
-\subsubsection*{Measurement of deformation}
+\subsubsection*{Measurement of Deformation}
 Figure \ref{fig:defmeasureynu} shows the laser beam on a straight line. Since the laser displacement meter was run with the same trigger voltage as the stroke measurement, the time when the deformation was measured was based on the time axis of the stroke.
 \begin{figure}%
 	\centering
@@ -102,7 +102,7 @@ Figure \ref{fig:defmeasureynu} shows the laser beam on a straight line. Since th
    \label{fig:defmeasureynu}%
 \end{figure}
 
-\subsection*{Experimental results}
+\subsection*{Experimental Results}
 The time history of the reaction force in the loading direction when the top of the simulated organ is loaded is shown 
 in Figure \ref{fig:forcemeasurementynu}, and the deformation is shown in Figure \ref{fig:defmeasurementynu}. 
 We performed five loading experiments to ensure reproducibility. The measurement accuracy of the laser displacement meter is
@@ -157,7 +157,7 @@ The experimental results show that the deformation of the simulated organ at sym
 \end{figure}
 
 %-----------------------------------------------------
-\section{MATLAB Code}
+\section{MATLAB Script}
 \subsection*{NRMSE Polynomial Second Degree}
 
 \lstset{style=matlab} % set the style to MATLAB

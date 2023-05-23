@@ -20,8 +20,8 @@
 \contentsline {section}{\numberline {2.5}Main Assumptions for Material Modeling}{32}{section.106}%
 \contentsline {subsection}{\numberline {2.5.1}Level 1: Linear Elasticity}{33}{subsection.111}%
 \contentsline {subsection}{\numberline {2.5.2}Level 2: Hyperelasticity}{34}{subsection.116}%
-\contentsline {chapter}{\numberline {3}Computational model}{35}{chapter.124}%
-\contentsline {section}{\numberline {3.1}Computational model I}{35}{section.125}%
+\contentsline {chapter}{\numberline {3}Computational Model}{35}{chapter.124}%
+\contentsline {section}{\numberline {3.1}Computational Model I}{35}{section.125}%
 \contentsline {subsection}{\numberline {3.1.1}Middle Point}{35}{subsection.126}%
 \contentsline {subsection}{\numberline {3.1.2}Nearby Point}{38}{subsection.138}%
 \contentsline {section}{\numberline {3.2}Analysis and Complications}{39}{section.140}%
@@ -31,7 +31,7 @@
 \contentsline {chapter}{\numberline {4}Inverse Finite Element Method for Material Parameter Identification}{45}{chapter.156}%
 \contentsline {section}{\numberline {4.1}Response Surface Optimization}{45}{section.157}%
 \contentsline {section}{\numberline {4.2}Minimizing the Objective Function}{49}{section.174}%
-\contentsline {section}{\numberline {4.3}Comparison between RSO and MATLAB Optimization}{51}{section.180}%
+\contentsline {section}{\numberline {4.3}Comparison Between RSO and MATLAB Optimization}{51}{section.180}%
 \contentsline {chapter}{\numberline {5}Results}{53}{chapter.181}%
 \contentsline {section}{\numberline {5.1}Overview and Analysis}{53}{section.182}%
 \contentsline {section}{\numberline {5.2}Validation of Computational Model}{55}{section.189}%
@@ -46,5 +46,5 @@
 \contentsline {section}{\numberline {6.3}Conclusions and Final Remarks}{70}{section.212}%
 \contentsline {chapter}{\numberline {A}Appendix}{73}{appendix.213}%
 \contentsline {section}{\numberline {A.1}Experimental Research from YNU}{73}{section.214}%
-\contentsline {section}{\numberline {A.2}MATLAB Code}{78}{section.239}%
+\contentsline {section}{\numberline {A.2}MATLAB Script}{78}{section.239}%
 \contentsline {chapter}{Bibliography}{83}{appendix*.313}%

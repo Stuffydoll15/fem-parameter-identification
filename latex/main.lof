@@ -12,20 +12,20 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Experimental model II}}{23}{figure.caption.82}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Experimental model II diagram}}{23}{figure.caption.83}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Middle point test position}}{24}{figure.caption.87}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Load-Unloading test}}{25}{figure.caption.89}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Load-unloading test}}{25}{figure.caption.89}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Nearby point test positions}}{26}{figure.caption.91}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Middle Point experimental data}}{28}{figure.caption.98}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Middle Point experimental data}}{28}{figure.caption.99}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Load-Unload experimental data}}{29}{figure.caption.101}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Load-Unload Use Case: Analysis of Viscoelasticity}}{30}{figure.caption.102}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Experimental data for Middle Point vs. Nearby Point}}{31}{figure.caption.104}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Nearby Point Use Case: Shear stresses analysis}}{32}{figure.caption.105}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Middle point experimental data}}{28}{figure.caption.98}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Middle point experimental data}}{28}{figure.caption.99}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Load-unload experimental data}}{29}{figure.caption.101}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Load-unload use case: Analysis of Viscoelasticity}}{30}{figure.caption.102}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Experimental data for middle point vs. nearby point}}{31}{figure.caption.104}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Nearby point use case: Shear stresses analysis}}{32}{figure.caption.105}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Computational model I geometry}}{36}{figure.caption.128}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Computational model I mesh}}{36}{figure.caption.129}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Computational model I vs. Experimental data - Linear elasticity}}{37}{figure.caption.133}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Computational model I vs. Experimental data - Neo-Hookean}}{38}{figure.caption.137}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Nearby Point: CM I vs. Experimental data - Neo-Hookean}}{39}{figure.caption.139}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Nearby point: CM I vs. Experimental data - Neo-Hookean}}{39}{figure.caption.139}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Mesh convergence model I}}{40}{figure.caption.143}%
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Mesh convergence model I stress distribution}}{41}{figure.caption.145}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Computational model II mesh}}{42}{figure.caption.149}%
@@ -33,13 +33,13 @@
 \contentsline {figure}{\numberline {3.10}{\ignorespaces CP II: No platform vs. with platform}}{44}{figure.caption.155}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Local sensitivity analysis - Initial parameter range}}{47}{figure.caption.167}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Response surface - Force Reaction}}{47}{figure.caption.168}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Response surface - Force reaction}}{47}{figure.caption.168}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Multi-objective optimization comparison}}{49}{figure.caption.173}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Polynomial approximation surfaces-NRMSE}}{50}{figure.caption.177}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Polynomial approximation surfaces-MRE}}{50}{figure.caption.178}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Polynomial approximation surfaces - NRMSE}}{50}{figure.caption.177}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Polynomial approximation surfaces - MRE}}{50}{figure.caption.178}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Best material parameter sets load-displacement curves}}{55}{figure.caption.187}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Deeper Indentation - Stress distribution}}{56}{figure.caption.191}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Deeper indentation - Stress distribution}}{56}{figure.caption.191}%
 \contentsline {figure}{\numberline {5.3}{\ignorespaces First validation case load-displacement curves}}{57}{figure.caption.192}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Deformation profile - Diagram}}{58}{figure.caption.195}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Deformation profile experiment}}{59}{figure.caption.196}%
