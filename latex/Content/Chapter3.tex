@@ -332,9 +332,9 @@ downwards of the middle point was selected as shown in Figure \ref{fig:nbdiagexp
 
 \begin{figure}%
     \centering
-   \subfloat[\centering Nearby point location for Experimental model I \label{fig:nbdiagexp1}]{{\includegraphics[width=6.5cm]{Images/Experiment/nbexp1.png}}}%
+   \subfloat[\centering Nearby point location for experimental model I \label{fig:nbdiagexp1}]{{\includegraphics[width=6.5cm]{Images/Experiment/nbexp1.png}}}%
    \qquad
-   \subfloat[\centering Nearby points location for Experimental model II \label{fig:nbdiagexp2}]{{\includegraphics[width=6.5cm]{Images/Experiment/nbexp2.png}}}%
+   \subfloat[\centering Nearby points location for experimental model II \label{fig:nbdiagexp2}]{{\includegraphics[width=6.5cm]{Images/Experiment/nbexp2.png}}}%
    \caption[Nearby point test positions]{Nearby test point: Loading points for each experimental model to analyze shear stresses and to be employed for the validation of the computation models.}%
    \label{fig:nbexp}%
 \end{figure}
@@ -380,7 +380,7 @@ Finally, a nearby point was selected near the middle point, $p_{I1} = \SI{5}{\mi
 to use it as a validation point for the selected material model. 
 
 A similar process was followed for the experimental model II (EM II), the middle point indentation was 
-performed with an indentation depth of $h_{II} = \SI{4}{\milli \m}$ and a indentation 
+performed with an indentation depth of $h_{II} = \SI{4}{\milli \m}$ and an indentation 
 speed of $\SI[per-mode = symbol]{30}{\milli \m\per \minute}$, where the force components 
 could be observed. Similarly, the load-unload scenario was tested under the same conditions, and three 
 nearby points were measured.
@@ -491,7 +491,7 @@ configuration was manufactured months before (Section \ref{section:expmod1}), it
 had led to a decrease in its mechanical properties, resulting in a lower resistance to deformation
 and therefore, lower stiffness than the newly manufactured sample.
 Another possible explanation could be the presence of external factors during the conduction of 
-the experiments or the configuration of these. Nevertheless, as the main purpose of this Middle Point 
+the experiments or the configuration of these. Nevertheless, as the main purpose of this middle point 
 use case was to minimize the influence of these factors, this explanation seems less probable.
 
 %the difference between a and b graph can also be the that one sample is older as the other
@@ -501,7 +501,7 @@ use case was to minimize the influence of these factors, this explanation seems 
 \label{subsection:loadunloadresult}
 %EXPII:20230203_Datasummary_4mmindentation/Average_Force-Stroke_0226
 %EXPI:20221025_DataSharing_pptdocument/processeddata
-Following the Middle Point use case, in addition to the loading data, the unloading was 
+Following the middle point use case, in addition to the loading data, the unloading was 
 also captured for both experiments as explained in Section \ref{subsection:loadunload}.
 Figure \ref{fig:loadunloadgraph} shows the load-displacement curve for experimental model 
 I and next to it experimental model II. Both results exhibited during the unloading some 
@@ -704,11 +704,11 @@ following the minor axis of the ellipsoid (see Subsection \ref{subsection:nearby
 This location was chosen to investigate if the mechanical response of the material 
 is uniform across the surface and if any variations could be detected within 
 a short distance. Figure \ref{fig:midpointIvsnbpointI} shows the results of the 
-Middle Point use case vs. the selected Nearby Point case for experimental model I. 
+middle point use case vs. the selected nearby point case for experimental model I. 
 
 The new load-displacement shows nearly identical behavior to that of the 
-first case, except for the last part of the curve, where the Nearby Point curve goes 
-slightly lower. The maximum force obtained for the Nearby Point case was $F_{I_{NBP}} = \SI{0.4134}{\newton}$, 
+first case, except for the last part of the curve, where the nearby point curve goes 
+slightly lower. The maximum force obtained for the nearby point case was $F_{I_{NBP}} = \SI{0.4134}{\newton}$, 
 which is lower than the one obtained before, which was $F_{I_{MP}} = \SI{0.4218}{\newton}$.\\
 
 \begin{figure}%
@@ -725,7 +725,7 @@ which is lower than the one obtained before, which was $F_{I_{MP}} = \SI{0.4218}
             legend pos= north west]
             \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Middle Point/MPI38mm.dat};
             \addplot+[smooth, no markers, thick] table [y=$Force$, x=Def]{Table/Nearby Point/nbexpI.dat};
-            \legend{Middle Point,Nearby Point}
+            \legend{Middle point,Nearby point}
         \end{axis}
     \end{tikzpicture}%
    \caption[Experimental data for middle point vs. nearby point]{Total force reaction-displacement curve: Comparison between experimental data for middle point and nearby point. This point was located $\SI{5}{\milli\m}$ right from the midpoint, following the minor axis of the ellipsoid.}%
@@ -733,7 +733,7 @@ which is lower than the one obtained before, which was $F_{I_{MP}} = \SI{0.4218}
 \end{figure}
 
 It can be concluded, that the results from this nearby point support the 
-findings from the Middle point test, indicating that the material behavior was
+findings from the middle point test, indicating that the material behavior was
 homogeneous in the region of interest. The small difference in the maximum force values could 
 be due to the variations in the experimental conditions, e.g. the increment of the 
 gradient of the contact surface due to the curvature of the specimen. This change 
@@ -744,17 +744,17 @@ With the measurements taken in the additional nearby points for experimental mod
 it was possible to investigate whether the small variations in the results obtained with 
 experimental model I could be attributed to the difference in the gradient of the contact surface.
 Figure \ref{fig:nbpexpIIgraph} shows the result for each force reaction component for all four 
-tested points. In x-direction, the maximum force was observe for point 2, which had the smallest gradient 
-contact surface, followed by point 3. These points were $\SI{20}{\milli \m}$ down along the x-axis, in contrast 
+tested points. In x-direction, the maximum force was observe for point \SI{2}{}, which had the smallest gradient 
+contact surface, followed by point \SI{3}{}. These points were $\SI{20}{\milli \m}$ down along the x-axis, in contrast 
 to the other two points, which were at the origin of the x-axis.
-For the middle point and point 1, which had the largest contact surface gradient, the 
-x-component force reaction was almost $\SI{0}{\newton}$. 
+For the middle point and point \SI{1}{}, which had the largest contact surface gradient, the 
+x-component force reaction was close to $\SI{0}{\newton}$. 
 
-Similarly, in y-direction, the maximum force was observed for point 3, followed closely by point 1. For 
-the middle point and point 2 the y-component force reaction was almost $\SI{0}{\newton}$.  Point 3 and point 1 were 
-$\SI{20}{\milli \m}$ right along the y-axis, and the middle point and point 2 were at the origin of the y-axis.
-As for the z-direction, the maximum force was observed at the middle point, followed by point 2, and consequently with 
-similar results point 1 and point 3. For all the points the results in z-direction are more significant than 
+Similarly, in y-direction, the maximum force was observed for point \SI{3}{}, followed closely by point \SI{1}{}. For 
+the middle point and point \SI{2}{} the y-component force reaction was practically $\SI{0}{\newton}$.  Point \SI{3}{} and point \SI{1}{} were 
+$\SI{20}{\milli \m}$ right along the y-axis, and the middle point and point \SI{2}{} were at the origin of the y-axis.
+As for the z-direction, the maximum force was observed at the middle point, followed by point \SI{2}{}, and consequently with 
+similar results point \SI{1}{} and point \SI{3}{}. For all the points the results in z-direction are more significant than 
 in the other directions.\\
 
 These results suggested that variation in the gradient of the contact surface may have contributed
@@ -851,7 +851,7 @@ Based on the presented experimental data and previous discussion, the following 
 \begin{enumerate}
     \item The material can be assumed to be homogeneous in the region of interest for the middle point case, as the results from the nearby points support the findings from midpoint test.
     \item Nonlinear elasticity is observed and hysteresis can be neglected, as the changes observed with the different loading speeds were not significant enough to affect the initial results.
-    \item The viscoelasticity of the material can be ignored for the first design of the material model, as the material returns to its original shape and almost no energy is lost during deformation. 
+    \item The viscoelasticity of the material can be ignored for the first design of the material model, as the material returns to its original shape and essentially no energy is lost during deformation. 
     \item Friction and shear stresses will be neglected, as in the middle point case the observed force components in x-direction and y-direction are non-relevant.
 \end{enumerate}
 
@@ -872,7 +872,7 @@ shape after the load is removed. This model is based on Hooke's law, where the s
 \end{align}
 where $\sigma$ is the stress, $E$ is the elastic modulus, and $\varepsilon$ is the strain. 
 %The elastic modulus served to measure the stiffness of the material.
-For the Middle Point Case, the material is assumed homogeneous and isotropic, thus the elastic modulus is the 
+For the middle point Case, the material is assumed homogeneous and isotropic, thus the elastic modulus is the 
 same in all directions. 
 For an indenter with a spherical tip, the contact area $A$ between the indenter and the specimen can be approximated as, 
 \begin{align}
@@ -892,7 +892,7 @@ indentation experiments \cite{Lin2009}.
 %If you have already defined some terms in the previous sections, you can consider referring to them instead of redefining them. This can make your text more concise.
 This model provided a simple and straightforwards approach to describe the material behavior under 
 small deformations. The elastic modulus and the Poisson's ratio are the two main parameters 
-that will be used for this model. Additionally it was assumed that the material is near incompressible,
+that will be used for this model. Additionally, it was assumed that the material is near incompressible,
 therefore, a fixed Poisson's ratio was chosen, 
 \begin{align}
     \nu = 0.49 \, ,
@@ -979,7 +979,7 @@ elastic model, as this model takes into account the nonlinear behavior of the ma
 %            %x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
 %            %y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
 %            xlabel={Displacement $u [mm]$},
-%            ylabel={Force reaction in Z-Axis $F_z [N]$},
+%            ylabel={Force reaction in z-Axis $F_z [N]$},
 %            legend pos= north west]
 %            
 %            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/data1.dat};

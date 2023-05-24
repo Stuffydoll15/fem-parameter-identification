@@ -27,7 +27,7 @@ process for future research.
 Upon applying the RSO and MATLAB optimization to identify the optimal material parameter set, 
 multiple sets were calculated. 
 Each simulation deployed various Neo-Hookean parameters sets and 
-had a unique load-displacement solutions. These load-displacement curves were 
+provided a unique load-displacement solutions. These load-displacement curves were 
 juxtaposed with the experimental data and the RMSE and NRMSE (Equation \ref{eq:rmse} and \ref{eq:nrmse}) was calculated to quantify the quality 
 of each solution. To deepen the evaluation, additional performance metrics were incorporated: 
 Mean Relative Error (MRE) (Equation \ref{eq:mre}), Mean Absolute Percentage Error (MAPE)
@@ -151,7 +151,7 @@ The first validation case (VC I) involved the alteration of the indentation dept
 $\SI{8}{\milli \meter}$ from the original $\SI{4}{\milli \meter}$. This case aimed to assess how 
 well the material model could adapt and represent the mechanical behavior with increased deformation.
 
-The second validation case (VC II)  revolved around the deformation profile of the spe-\\cimen. The aim here 
+The second validation case (VC II) revolved around the deformation profile of the specimen. The aim here 
 was understand the accuracy in predicting the actual deformation shape of the specimen under 
 indentation. This provided deeper insights into the effects of the selected incompressibility
 parameters.\\
@@ -224,10 +224,10 @@ the best performance for the $h=\SI{4}{\milli \meter}$ indentation.\\
     \centering
     \begin{tabular}{|c|c|c|c|c|}
     \hline
-    Set & $\mu$ (Pa) & $D_1$ (MPa\textsuperscript{-1}) & EM II NRMSE & VC I NRMSE\\
+    Set & $\mu$ (Pa) & $D_1$ (MPa\textsuperscript{-1}) & EM II NRMSE & \textbf{VC I NRMSE}\\
     \hline
     1 & 9999.7 & 5.8 & 0.0339 & 0.1503\\
-    \textbf{3} & \textbf{10200} & \textbf{1.1} & \textbf{0.0533} & \textbf{0.1116}\\
+    \textbf{3} & \textbf{10200} & \textbf{1.1} & 0.0533 & \textbf{0.1116}\\
     4 & 12453 & 139.3 & 0.0648 & 0.1425\\
     \hline
     \end{tabular}
@@ -318,10 +318,10 @@ influence of the incompressibility parameter on the force reaction results was r
     \centering
     \begin{tabular}{|c|c|c|c|c|}
     \hline
-    Set & $\mu$ (Pa) & $D_1$ (MPa\textsuperscript{-1}) & EM II NRMSE & VC II NRMSE\\
+    Set & $\mu$ (Pa) & $D_1$ (MPa\textsuperscript{-1}) & EM II NRMSE & & \textbf{VC II NRMSE}\\
     \hline
     1 & 9999.7 & 5.8 & 0.0339 & 0.3126\\
-    \textbf{3} & \textbf{10200} & \textbf{1.1} & \textbf{0.0533} & \textbf{0.2810}\\
+    \textbf{3} & \textbf{10200} & \textbf{1.1} & 0.0533 & \textbf{0.2810}\\
     4 & 12453 & 139.3 & 0.0648 & 0.5645\\
     \hline
     \end{tabular}
@@ -430,7 +430,7 @@ acceptable NRMSE limit of $\SI{0.1668}{}$.\\
     \hline
     Case & Force & NRMSE  \\
     \hline
-    Middle Point & x-component y-component z-component Total & 1.1329 67.984 0.0534 0.1669 \\
+    Middle point & x-component y-component z-component Total & 1.1329 67.984 0.0534 0.1669 \\
     \hline
     Blue point & x-component y-component z-component Total & 0.1281 1.5615 0.0990 0.1015 \\
     \hline
@@ -632,8 +632,8 @@ load-displacement data with computational models.\\
 This process began with defining the use case and proceeded with the inclusion of two primary paths
 running in parallel; the design of the experimental model or comparator, and the computational or FE model.
 
-On the experimental design side, the physical indentation experiments were design and performed (Experimental 
-Model I and II). During these experiments, the mechanical behavior of the material was observed and analyzed.
+On the experimental design side, the physical indentation experiments were design and performed (experimental 
+model I and II). During these experiments, the mechanical behavior of the material was observed and analyzed.
 This analysis played a crucial role in establishing the main assumptions for the material model. Furthermore, 
 load-displacement data was captured, which served as the benchmark 
 against which the computational model was verified.\\
@@ -757,7 +757,7 @@ components.\\
 
 The material parameters' range used in the RSO process affected the obtained candidate points, 
 demonstrating a sensitivity to defined ranges. Noticeably, the best material parameter set 
-found originated from the approximated polynomial global minimum obtained from the MATLAB code, 
+found originated from the approximated polynomial global minimum obtained from the MATLAB script, 
 suggesting the potential for further optimization of the range inputted in the RSO process. 
 Despite this, set \SI{1}{}, the best candidate from the RSO process, demonstrated comparable 
 results to the MATLAB set, reinforcing the validity of the proposed methodology.\\
@@ -782,7 +782,7 @@ improvement of parameter identification methodologies.
 %with a minor radius \(r_1\) = 35 mm and a major radius \(r_2\) = 60 mm. This was positioned
 % on a fixed platform that suited the ellipsoidal geometry of the 
 % specimen to constrain its movement. 
-% The specimen was tested in a indentation test configuration with a tensile/compression machine.
+% The specimen was tested in an indentation test configuration with a tensile/compression machine.
 % To achieve this congiguration a pin with a rounded head made of structural steel, 
 % with a radius of \(r_3\) = 3 mm was attached 
 % to the holding grips followed by a force load cell. 
@@ -815,7 +815,7 @@ improvement of parameter identification methodologies.
 %            %x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
 %            %y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
 %            xlabel={Displacement $u [mm]$},
-%            ylabel={Force reaction in Z-axis $F_z [N]$},
+%            ylabel={Force reaction in z-axis $F_z [N]$},
 %            legend pos= north west]
 %            
 %            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/data1.dat};
