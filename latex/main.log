@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  24 MAY 2023 15:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  24 MAY 2023 23:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1727,12 +1727,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--68
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--106
+Underfull \hbox (badness 10000) in paragraph at lines 97--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--127
+Underfull \hbox (badness 10000) in paragraph at lines 115--125
 
  []
 
@@ -1740,50 +1740,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--127
 <Images/chapter1/uniaxialtension.png, id=497, 185.0112pt x 184.5294pt>
 File: Images/chapter1/uniaxialtension.png Graphic file (type png)
 <use Images/chapter1/uniaxialtension.png>
-Package pdftex.def Info: Images/chapter1/uniaxialtension.png  used on input line 138.
+Package pdftex.def Info: Images/chapter1/uniaxialtension.png  used on input line 136.
 (pdftex.def)             Requested size: 181.81184pt x 181.34721pt.
 <Images/chapter1/uniaxialintermediate.png, id=499, 183.8067pt x 183.5658pt>
 File: Images/chapter1/uniaxialintermediate.png Graphic file (type png)
 <use Images/chapter1/uniaxialintermediate.png>
-Package pdftex.def Info: Images/chapter1/uniaxialintermediate.png  used on input line 145.
+Package pdftex.def Info: Images/chapter1/uniaxialintermediate.png  used on input line 143.
 (pdftex.def)             Requested size: 181.81184pt x 181.58223pt.
 <Images/chapter1/uniaxialhigh.png, id=500, 173.6889pt x 97.5645pt>
 File: Images/chapter1/uniaxialhigh.png Graphic file (type png)
 <use Images/chapter1/uniaxialhigh.png>
-Package pdftex.def Info: Images/chapter1/uniaxialhigh.png  used on input line 152.
+Package pdftex.def Info: Images/chapter1/uniaxialhigh.png  used on input line 150.
 (pdftex.def)             Requested size: 282.81912pt x 158.86493pt.
  [3 <./Images/chapter1/uniaxialtension.png> <./Images/chapter1/uniaxialintermediate.png> <./Images/chapter1/uniaxialhigh.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 177--182
+Underfull \hbox (badness 10000) in paragraph at lines 173--179
 
  []
 
 
-Overfull \hbox (17.39793pt too wide) in paragraph at lines 183--189
-\OT1/ppl/m/n/10.95 the wet-room tem-per-a-ture and wet con-di-tions, re-spec-tively. More-over, the polyurethane
- []
-
-
-Overfull \hbox (1.5205pt too wide) in paragraph at lines 190--194
+Overfull \hbox (1.5205pt too wide) in paragraph at lines 187--191
 \OT1/ppl/m/n/10.95 ex-hib-ited mod-er-ate strain rate sen-si-tiv-ity at in-ter-me-di-ate and high strain rates, where
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--207
+Underfull \hbox (badness 10000) in paragraph at lines 198--204
 
  []
 
 <Images/chapter1/compressiondiag.png, id=517, 185.0112pt x 77.088pt>
 File: Images/chapter1/compressiondiag.png Graphic file (type png)
 <use Images/chapter1/compressiondiag.png>
-Package pdftex.def Info: Images/chapter1/compressiondiag.png  used on input line 211.
+Package pdftex.def Info: Images/chapter1/compressiondiag.png  used on input line 208.
 (pdftex.def)             Requested size: 284.52756pt x 118.55942pt.
-
-Overfull \hbox (5.0908pt too wide) in paragraph at lines 216--221
+[4]
+Overfull \hbox (5.0908pt too wide) in paragraph at lines 213--218
 \OT1/ppl/m/n/10.95 tested was fab-ri-cated from Trans-par-ent Struc-tural Sil-i-cone Ad-he-sive (TSSA), a rubber-
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 229--233
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--230
 
  []
 
@@ -1791,50 +1786,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--233
 <Images/chapter1/compressiontypes.png, id=542, 185.0112pt x 77.088pt>
 File: Images/chapter1/compressiontypes.png Graphic file (type png)
 <use Images/chapter1/compressiontypes.png>
-Package pdftex.def Info: Images/chapter1/compressiontypes.png  used on input line 253.
+Package pdftex.def Info: Images/chapter1/compressiontypes.png  used on input line 250.
 (pdftex.def)             Requested size: 284.52756pt x 118.55942pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--267
+Underfull \hbox (badness 10000) in paragraph at lines 257--264
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--281
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
 
  []
 
 <Images/nanoindentationbigletter.png, id=553, 221.32687pt x 217.93922pt>
 File: Images/nanoindentationbigletter.png Graphic file (type png)
 <use Images/nanoindentationbigletter.png>
-Package pdftex.def Info: Images/nanoindentationbigletter.png  used on input line 284.
+Package pdftex.def Info: Images/nanoindentationbigletter.png  used on input line 280.
 (pdftex.def)             Requested size: 199.16928pt x 196.13017pt.
 [6 <./Images/chapter1/compressiontypes.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 303--306
+Underfull \hbox (badness 10000) in paragraph at lines 299--302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--318
+Underfull \hbox (badness 10000) in paragraph at lines 303--314
 
  []
 
 <Images/chapter1/indentation1carter.png, id=571, 170.3163pt x 162.8484pt>
 File: Images/chapter1/indentation1carter.png Graphic file (type png)
 <use Images/chapter1/indentation1carter.png>
-Package pdftex.def Info: Images/chapter1/indentation1carter.png  used on input line 323.
+Package pdftex.def Info: Images/chapter1/indentation1carter.png  used on input line 319.
 (pdftex.def)             Requested size: 181.81184pt x 173.84103pt.
 <Images/chapter1/indentation2carter.png, id=572, 137.5539pt x 140.9265pt>
 File: Images/chapter1/indentation2carter.png Graphic file (type png)
 <use Images/chapter1/indentation2carter.png>
-Package pdftex.def Info: Images/chapter1/indentation2carter.png  used on input line 330.
+Package pdftex.def Info: Images/chapter1/indentation2carter.png  used on input line 326.
 (pdftex.def)             Requested size: 181.81184pt x 186.27728pt.
 
-Underfull \hbox (badness 2134) in paragraph at lines 331--331
+Underfull \hbox (badness 2134) in paragraph at lines 327--327
  []\OT1/ppl/m/sc/9 (b) |\OT1/ppl/m/n/9 Mo-bile in-den-ta-tion con-fig-u-ra-tion with 
  []
 
 [7 <./Images/nanoindentationbigletter.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 366--370
+Underfull \hbox (badness 10000) in paragraph at lines 362--366
 
  []
 
@@ -1842,107 +1837,127 @@ Underfull \hbox (badness 10000) in paragraph at lines 366--370
 <Images/chapter1/aspirationkauer.png, id=594, 150.8034pt x 135.1449pt>
 File: Images/chapter1/aspirationkauer.png Graphic file (type png)
 <use Images/chapter1/aspirationkauer.png>
-Package pdftex.def Info: Images/chapter1/aspirationkauer.png  used on input line 384.
+Package pdftex.def Info: Images/chapter1/aspirationkauer.png  used on input line 380.
 (pdftex.def)             Requested size: 199.16928pt x 178.4949pt.
- [9 <./Images/chapter1/aspirationkauer.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 469--475
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 476--477
+ [9 <./Images/chapter1/aspirationkauer.png>] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 465--471
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 514--520
+Underfull \hbox (badness 10000) in paragraph at lines 472--473
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--516
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 530--533
+Underfull \hbox (badness 10000) in paragraph at lines 526--529
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 534--535
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--561
+Underfull \hbox (badness 10000) in paragraph at lines 554--557
 
  []
 
 [12]
-Overfull \hbox (3.55788pt too wide) in paragraph at lines 567--571
+Overfull \hbox (3.55788pt too wide) in paragraph at lines 563--567
 \OT1/ppl/m/n/10.95 breast soft tis-sues' de-for-ma-tion dur-ing a lean-ing for-ward po-si-tion and run-ning move-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 567--571
+Underfull \hbox (badness 10000) in paragraph at lines 563--567
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 572--573
+Underfull \hbox (badness 10000) in paragraph at lines 568--569
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 605--610
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 612--613
+Underfull \hbox (badness 10000) in paragraph at lines 599--605
 
  []
 
 [13]
+Underfull \hbox (badness 10000) in paragraph at lines 607--608
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 640--644
+
+ []
+
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 645--649
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--654
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 667--674
+Underfull \hbox (badness 10000) in paragraph at lines 662--669
 
  []
 
 
-Overfull \hbox (3.52486pt too wide) in paragraph at lines 679--680
+Overfull \hbox (3.52486pt too wide) in paragraph at lines 674--675
 \OT1/ppl/m/n/10.95 which in-cludes the def-i-ni-tion of the ge-om-e-try de-sign, con-tact def-i-ni-tion, bound-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 685--690
+Underfull \hbox (badness 10000) in paragraph at lines 680--685
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 691--695
+Underfull \hbox (badness 10000) in paragraph at lines 686--690
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 734--741
+Underfull \hbox (badness 10000) in paragraph at lines 729--736
 
  []
 
-) [17]
+
+Underfull \hbox (badness 10000) in paragraph at lines 744--746
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 747--750
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 751--754
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 755--758
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 759--762
+
+ []
+
+[17]) [18]
 \openout2 = `Content/Chapter3.aux'.
 
- (Content/Chapter3.tex [18
-
-
-
-
-]
+ (Content/Chapter3.tex
 Chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--9
@@ -1965,7 +1980,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--49
  []
 
 1: section
-[19]
+[19
+
+
+
+
+]
 <Images/Experiment/firstexperimentwithtext.png, id=759, 2240.37pt x 2987.16pt>
 File: Images/Experiment/firstexperimentwithtext.png Graphic file (type png)
 <use Images/Experiment/firstexperimentwithtext.png>
@@ -2017,8 +2037,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--215
  []
 
 [22] [23 <./Images/Experiment/secondexp1.png> <./Images/Experiment/secondexp2.jpg> <./Images/Experiment/Loadingdiagram.png>]
-Overfull \hbox (3.93011pt too wide) in paragraph at lines 232--243
-\OT1/ppl/m/n/10.95 The sec-ond ex-per-i-men-tal model of-fered some ad-van-tages over the first model. Firstly,
+Overfull \hbox (6.36086pt too wide) in paragraph at lines 232--243
+\OT1/ppl/m/n/10.95 The sec-ond ex-per-i-men-tal model of-fered ad-van-tages over the first ex-per-i-men-tal model.
  []
 
 <Images/Experiment/specimenmidp.png, id=803, 184.7703pt x 100.9371pt>
@@ -2306,7 +2326,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--12
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 71--78
+Underfull \hbox (badness 10000) in paragraph at lines 71--79
 
  []
 
@@ -2317,20 +2337,20 @@ PGFPlots: reading {Table/sensitivity/fullrangeplat2points/test.csv}
 <Images/ifem/plat NH 4 and 2 fullrange/rsoforce1.png, id=1032, 750.6444pt x 562.7424pt>
 File: Images/ifem/plat NH 4 and 2 fullrange/rsoforce1.png Graphic file (type png)
 <use Images/ifem/plat NH 4 and 2 fullrange/rsoforce1.png>
-Package pdftex.def Info: Images/ifem/plat NH 4 and 2 fullrange/rsoforce1.png  used on input line 116.
+Package pdftex.def Info: Images/ifem/plat NH 4 and 2 fullrange/rsoforce1.png  used on input line 117.
 (pdftex.def)             Requested size: 284.52756pt x 213.30336pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--130
+Underfull \hbox (badness 10000) in paragraph at lines 123--131
 
  []
 
 [47 <./Images/ifem/plat NH 4 and 2 fullrange/rsoforce1.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 158--164
+Underfull \hbox (badness 10000) in paragraph at lines 159--165
 
  []
 
 
-Overfull \hbox (7.1327pt too wide) in paragraph at lines 178--182
+Overfull \hbox (7.1327pt too wide) in paragraph at lines 179--183
 []\OT1/ppl/m/n/10.95 Despite the dif-fer-ences in the es-ti-mated ma-te-rial pa-ram-e-ters, the sim-u-la-tion curves
  []
 
@@ -2342,40 +2362,45 @@ PGFPlots: reading {Table/RSO/3point10867_47.dat}
 <Images/ifem/MATLAB/NRMSE2poly.png, id=1053, 421.21pt x 316.09pt>
 File: Images/ifem/MATLAB/NRMSE2poly.png Graphic file (type png)
 <use Images/ifem/MATLAB/NRMSE2poly.png>
-Package pdftex.def Info: Images/ifem/MATLAB/NRMSE2poly.png  used on input line 249.
+Package pdftex.def Info: Images/ifem/MATLAB/NRMSE2poly.png  used on input line 250.
 (pdftex.def)             Requested size: 181.81184pt x 136.43694pt.
 <Images/ifem/MATLAB/NRMSE4poly.png, id=1054, 421.21pt x 316.09pt>
 File: Images/ifem/MATLAB/NRMSE4poly.png Graphic file (type png)
 <use Images/ifem/MATLAB/NRMSE4poly.png>
-Package pdftex.def Info: Images/ifem/MATLAB/NRMSE4poly.png  used on input line 256.
+Package pdftex.def Info: Images/ifem/MATLAB/NRMSE4poly.png  used on input line 257.
 (pdftex.def)             Requested size: 181.81184pt x 136.43694pt.
 <Images/ifem/MATLAB/MRE2poly.png, id=1055, 421.21pt x 316.09pt>
 File: Images/ifem/MATLAB/MRE2poly.png Graphic file (type png)
 <use Images/ifem/MATLAB/MRE2poly.png>
-Package pdftex.def Info: Images/ifem/MATLAB/MRE2poly.png  used on input line 268.
+Package pdftex.def Info: Images/ifem/MATLAB/MRE2poly.png  used on input line 269.
 (pdftex.def)             Requested size: 181.81184pt x 136.43694pt.
 <Images/ifem/MATLAB/MRE4poly.png, id=1056, 421.21pt x 316.09pt>
 File: Images/ifem/MATLAB/MRE4poly.png Graphic file (type png)
 <use Images/ifem/MATLAB/MRE4poly.png>
-Package pdftex.def Info: Images/ifem/MATLAB/MRE4poly.png  used on input line 275.
+Package pdftex.def Info: Images/ifem/MATLAB/MRE4poly.png  used on input line 276.
 (pdftex.def)             Requested size: 181.81184pt x 136.43694pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--304
+Underfull \hbox (badness 10000) in paragraph at lines 302--305
 
  []
 
 [50 <./Images/ifem/MATLAB/NRMSE2poly.png (PNG copy)> <./Images/ifem/MATLAB/NRMSE4poly.png (PNG copy)> <./Images/ifem/MATLAB/MRE2poly.png (PNG copy)> <./Images/ifem/MATLAB/MRE4poly.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 308--311
+Underfull \hbox (badness 10000) in paragraph at lines 309--312
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--317
+Underfull \hbox (badness 10000) in paragraph at lines 313--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--323
+Overfull \hbox (11.95029pt too wide) in paragraph at lines 319--324
+[]\OT1/ppl/m/n/10.95 MATLAB strengths re-lied on its highly cus-tomiz-able ap-proach for problem-solving.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--324
 
  []
 
@@ -2392,11 +2417,6 @@ Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--9
 
- []
-
-
-Overfull \hbox (2.37001pt too wide) in paragraph at lines 14--17
-[]\OT1/ppl/m/n/10.95 Subsequently, a thor-ough anal-y-sis of the three val-i-da-tion cases are de-tailed. These
  []
 
 
@@ -2444,7 +2464,7 @@ Overfull \hbox (0.14722pt too wide) in paragraph at lines 208--211
 []\OT1/ppl/m/n/10.95 The load-displacement graph showed that the ex-per-i-men-tal data dis-played again
  []
 
-
+[56 <./Images/validationcase/8mm/setstressdistribution.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 218--222
 
  []
@@ -2459,7 +2479,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--249
 
  []
 
-[56 <./Images/validationcase/8mm/setstressdistribution.png (PNG copy)>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 250--259
 
  []
@@ -2827,13 +2847,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  65179 strings out of 475281
  1556053 string characters out of 2774064
- 2749259 words of memory out of 3000000
+ 2749269 words of memory out of 3000000
  84939 multiletter control sequences out of 15000+600000
  523146 words of font info for 165 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,21n,100p,2324b,3068s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (103 pages, 36907319 bytes).
+Output written on main.pdf (103 pages, 36907522 bytes).
 PDF statistics:
  1570 PDF objects out of 1728 (max. 8388607)
  451 named destinations out of 1000 (max. 500000)

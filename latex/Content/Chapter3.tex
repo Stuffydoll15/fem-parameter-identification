@@ -7,10 +7,10 @@ experimental model. This was essential to gather the necessary data from the
 tested material. This data will be used to determine the design parameters 
 that can help to characterize the material's mechanical behavior. \\
 
-The experimental model I had the purpose of serving as a comparator for the experimental 
+The experimental model I was designed to serve as a comparator for the experimental 
 model II (see Section \ref{section:expmod2}). 
 The experimental model designated for analysis at the project's inception was the second model, which was developed and designed by Yokohama National 
-University (YNU). As this second experimental model was still undergoing some improvements and corrections, a similar 
+University (YNU). As this second experimental model was still undergoing improvements and corrections, a similar 
 experiment was designed which could fulfill the same purpose.
 
 The chosen experimental characterization for the inverse finite element method for 
@@ -31,7 +31,7 @@ organs, and medical supplies.
 
 Polyurethane can also be used for simulating organ tissues, as it can be tailored to mimic 
 and match the mechanical properties of the desired biological tissues \cite{Wang2012}.  Furthermore, polyurethane can be 
-synthesized to have a wide range of stiffness, elasticity, viscoelasticity, and can also be prepared 
+synthesized to possess a wide range of stiffness, elasticity, viscoelasticity, and can also be prepared 
 with complex shapes for medical research purposes \cite{Joseph2018}. \\
 
 In this chapter, the different experimental models, which were used to evaluate the 
@@ -60,7 +60,7 @@ machine possess a maximum load capacity of $\SI{500}{\newton}$, and test speeds 
 \SIlist[per-mode = symbol]{10;20;30;50;75;100}{\milli \metre \per \minute}. To achieve an 
 indentation testing configuration, a pin was attached to the movable crosshead holding grip, 
 as shown in Fig \ref{fig:500loadcell}.
-The indenter had a rounded head fabricated of stainless steel with a
+The indenter featured a rounded head fabricated of stainless steel with a
 radius of $r_{i1} = \SI{3}{\milli \m}$ and a length of $l_{i1} = \SI{11}{\milli \m}$.
 
 \begin{figure}%
@@ -72,13 +72,13 @@ radius of $r_{i1} = \SI{3}{\milli \m}$ and a length of $l_{i1} = \SI{11}{\milli 
    \label{fig:firstexperiment}%
 \end{figure}
 
-The specimen possesses a ellipsoidal form with 
+The specimen possesses an ellipsoidal form with 
 with a minor radius $r_1 = \SI{35}{\milli \m}$ and a major radius $r_2 = \SI{60}{\milli \m}$. 
 This specimen geometry is supposed to simulate a kidney with an extracted tumor; therefore,
-on the lower part of the specimen a half ellipsoid with a minor radius $r_{t1} = \SI{10}{\milli \m}$ 
+on the lower part of the specimen, a half ellipsoid with a minor radius $r_{t1} = \SI{10}{\milli \m}$ 
 and a major radius $r_{t2} = \SI{15}{\milli \m}$ was removed (Fig. \ref{fig:specimenhole}). 
 The specimen was prepared by a YNU laboratory member, by 3D printing a mold with the wanted dimensions
- and a ellipsoidal shape, and filling it with liquid resin. 
+ and an ellipsoidal shape, and filling it with liquid resin. 
  Additionally, it was left to cure for around $\SI{30}{\hour}$. It is relevant to clarify, that this 
  sample had been created months before the development of this experimental setup and 
  had been utilized in other projects conducted from the laboratory.
@@ -107,9 +107,9 @@ $\SI[per-mode = symbol]{100}{\milli \m\per \minute}$. Due to the material proper
 the specimen returned to its original shape.
 The result of the indentation test was load-displacement data,
 which was recorded with a sampling rate of $\SI{63}{\hertz}$ using a load 
-cell of $\SI{\pm 500}{\newton}$ and a encoder to measure the displacement.
+cell of $\SI{\pm 500}{\newton}$ and an encoder to measure the displacement.
 
-The measurement accuracy according to the specification of the machine, has 
+The measurement accuracy, according to the machine's specification, shows 
 a relative reading error of $\SI{1.0}{\percent}$. The indentation test 
 was repeated five times on the same sample to ensure and observe 
 reliability and repeatability. Furthermore, the raw data collected from the test 
@@ -122,8 +122,8 @@ of the lead cell. The ultra-soft polyurethane material showed force readings, wh
 were near the lower limit of the load cell's range, which adding any other external factors, 
 results in noisy measurements. To address this issue, a load cell of $\SI{10}{\newton}$
 was installed (Fig. \ref{fig:10loadcell}). This change improved the quality of 
-the measurements and reduced the noise in the data. The change to the load cell had some 
-implication to the experimental setup, such as removing the holding grip, and designing 
+the measurements and reduced the noise in the data. The change to the load cell resulted in  
+implications for the experimental setup, such as removing the holding grip, and designing 
 a part which could connect the indenter with the new load cell. In addition to changing 
 the load cell, a simple filtering method was used to improve the experimental data. After 
 applying the filter, the noise in the data was reduced, resulting in more smoother 
@@ -229,7 +229,7 @@ was also processed and assessed using Excel.
 \subsection*{Analysis and Comparison of Experimental Techniques}
 
 %write about the advantage and comparison
-The second experimental model offered some advantages over the first model. 
+The second experimental model offered advantages over the first  experimental model. 
 Firstly, it enabled not only the measurement of the total force reaction, but also the analysis 
 of the force reaction components $F_x$, $F_y$ and $F_z$. This allowed for a better 
 understanding of the material's mechanical behavior, as it allowed the identification 
@@ -239,7 +239,7 @@ In addition, the second model allowed for the measurement of the deformation in 
 points near the tested loading point. This provided additional information of the 
 material parameters, as it facilitated the characterization of the deformation behavior beyond the 
 direct vicinity of the indentation point. Furthermore, only this test configuration employed a lubricant, 
-as this experimental setup showed some inaccuracies in the first data sample.
+as this experimental setup showed inaccuracies in the first data sample.
 
 In contrast, the first experimental model only measured the total force reaction 
 against the indentation depth, without providing any information about the contribution 
@@ -314,7 +314,7 @@ reduce the effects of experimental variability.\\
 
 The load-unload case helped to determine whether complex material behavior such as 
 viscoelasticity, could be neglected for the computational model of the middle point test.
-The result of this experiment was used to guide this decision, which had important 
+The result of this experiment was used to guide this decision, which carried important 
 implications for the simplification of the computational model and its accuracy and reliability.
 %Escribir sobre experimental model 2?
 
@@ -390,8 +390,8 @@ nearby points were measured.
 \label{subsection:midpointresult}
 %EXPII:20230301_Progress_Report_'3_4mm/Average_Force-Stroke
 The results of the indentation test at the middle point for both experimental showed a clear 
-nonlinear behavior.  It is assumed that this material 
-possess a elastic-plastic behavior, which in a typical load-displacement curves has four known stages \cite{Goharian2017}:
+nonlinear behavior.  It was assumed that this material 
+possess an elastic-plastic behavior, which typically features four known stages in load-displacement curves \cite{Goharian2017}:
 
 \begin{enumerate}
     \item Nonlinear elastic (self-adjusting): In this stage, the material adjusts itself to the loading conditions, and the deformation is elastic and reversible.
@@ -483,7 +483,7 @@ on the force reaction in z-direction. Additionally, this case revealed that shea
 which is consistent with the purpose on performing the indentation with the least influence of external factors.\\
 
 Figure \ref{fig:midpointexpIvsexpII}, shows that the load-displacement curve
-of experimental model I has a similar initial behavior to that of experimental model II.
+of experimental model I exhibited a similar initial behavior to that of experimental model II.
 However, as the indentation depth increases, the curve of experimental model I is positioned 
 lower than that of the second model. One possible explanation for this difference could be the effect of aging 
 on the material properties of the specimen used in the first model. Since the specimen used in this 
@@ -504,9 +504,9 @@ use case was to minimize the influence of these factors, this explanation seems 
 Following the middle point use case, in addition to the loading data, the unloading was 
 also captured for both experiments as explained in Section \ref{subsection:loadunload}.
 Figure \ref{fig:loadunloadgraph} shows the load-displacement curve for experimental model 
-I and next to it experimental model II. Both results exhibited during the unloading some 
+I and next to it experimental model II. Both results exhibited during the unloading a certain 
 degree of hysteresis, as there was a slight difference in the force reaction measured.
-However, the material displayed good elastic behavior, as it returned to its 
+However, the material displayed elastic behavior, as it returned to its 
 original shape once the indenter was removed.\\
 
 %Different Load Unload
@@ -561,7 +561,7 @@ speed was increased. Specifically, during the loading, the
 force reaction were slightly higher as the speed and indentation depth increased.
 During the unloading, the only notable difference was observed with 
 $\SI[per-mode = symbol]{100}{\milli \m\per \minute}$, where the unloading curve
-had the lowest values.\\
+showcased the lowest values.\\
 
 %Different Speeds Graph
 \begin{figure}[htbp]
@@ -744,11 +744,11 @@ With the measurements taken in the additional nearby points for experimental mod
 it was possible to investigate whether the small variations in the results obtained with 
 experimental model I could be attributed to the difference in the gradient of the contact surface.
 Figure \ref{fig:nbpexpIIgraph} shows the result for each force reaction component for all four 
-tested points. In x-direction, the maximum force was observe for point \SI{2}{}, which had the smallest gradient 
+tested points. In x-direction, the maximum force was observe for point \SI{2}{}, which possessed the smallest gradient 
 contact surface, followed by point \SI{3}{}. These points were $\SI{20}{\milli \m}$ down along the x-axis, in contrast 
 to the other two points, which were at the origin of the x-axis.
-For the middle point and point \SI{1}{}, which had the largest contact surface gradient, the 
-x-component force reaction was close to $\SI{0}{\newton}$. 
+For the middle point and point \SI{1}{}, with the largest contact surface gradient, the 
+x-component force reaction approached $\SI{0}{\newton}$. 
 
 Similarly, in y-direction, the maximum force was observed for point \SI{3}{}, followed closely by point \SI{1}{}. For 
 the middle point and point \SI{2}{} the y-component force reaction was practically $\SI{0}{\newton}$.  Point \SI{3}{} and point \SI{1}{} were 
@@ -830,7 +830,7 @@ homogeneous, and that the larger the contact surface gradient became, the lower 
     \end{tikzpicture}
     \caption{Force in z-direction}
     \end{subfigure}  
-    \caption[Nearby point use case: Shear stresses analysis]{Nearby point use case: Analysis of shear stresses by observing three different nearby points on the specimens surface. Load-displacement curves were gathered from experimental model II showing each force component.}
+    \caption[Nearby point use case: Shear stresses analysis]{Nearby point use case: Analysis of shear stresses by observing three different nearby points on the specimen surface. Load-displacement curves were gathered from experimental model II showing each force component.}
     \label{fig:nbpexpIIgraph}
     \end{figure}
 
@@ -889,7 +889,7 @@ where $E$ and $\nu$ are the Young's modulus and Poisson's ratio of the indented 
 This Hertzian relationship is used as the analytical basis on the contact of ellipsoid bodies in 
 indentation experiments \cite{Lin2009}.
 %Comments chat gpt:You can consider adding a figure or illustration to explain the Hertzian contact theory and the contact area better.
-%If you have already defined some terms in the previous sections, you can consider referring to them instead of redefining them. This can make your text more concise.
+%If you have already defined terms in the previous sections, you can consider referring to them instead of redefining them. This can make your text more concise.
 This model provided a simple and straightforwards approach to describe the material behavior under 
 small deformations. The elastic modulus and the Poisson's ratio are the two main parameters 
 that will be used for this model. Additionally, it was assumed that the material is near incompressible,
@@ -964,7 +964,7 @@ elastic model, as this model takes into account the nonlinear behavior of the ma
 
  %reference?larger indentation is better?
  %Additionally, it was observed that in soft materials it is easier to capture 
- %some parameters with a larger indentation. Some references also observe that with
+ % parameters with a larger indentation. references also observe that with
  %indentation depth lower than indenter radius has a lot of noise and do not describe
  %th results accurately. %reference?
 

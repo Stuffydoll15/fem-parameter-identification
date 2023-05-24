@@ -11,8 +11,8 @@ In the first section, the performance metrics applied were examined. These metri
 provided a quantifiable measure of the validity and reliability of the material parameter sets identified,
 offering a robust means of assessing the approach's accuracy.
 
-Subsequently, a thorough analysis of the three validation cases are detailed.
-These cases contributed significantly to select the best material parameter set and 
+Subsequently, a thorough analysis of the three validation cases is detailed.
+These cases contributed significantly to the selection of the best material parameter set and to
 assess the applicability of the material parameters in other use cases.
 
 This is followed by a detailed exposition of the framework proposed in this study for the material 
@@ -71,7 +71,7 @@ experimental data based on these assessments were listed on Table \ref{tab:mater
 \end{table}
 
 \subsection*{Assessment of Performance Metrics}
-Defining good performance metrics values required a multi-dimensional approach. 
+Defining satisfactory performance metrics values required a multi-dimensional approach. 
 Firstly, the load-displacement curves' visual inspection revealed a close approximation 
 to the experimental data (Fig. \ref{fig:bestfitcandidatescurve}).
 
@@ -261,7 +261,7 @@ throughout the indentation until reaching the maximum depth of $\SI{4}{\milli \m
 	\centering
    \quad
    \includegraphics[width=10cm]{Images/validationcase/defprof/defprofdiag.png}%
-   \caption[Deformation profile - Diagram]{Deformation profile measurement diagram for the second validation case, showing the measured points along the parallel to x-axis.}%
+   \caption[Deformation profile - Diagram]{Deformation profile measurement diagram for the second validation case, showing the measured points parallel to the x-axis.}%
    \label{fig:defprofdiagram}%
 \end{figure}
 
@@ -306,19 +306,19 @@ selected around the deformed surface within this plane (Fig. \ref{fig:defprofcom
 
 The deformation profiles for the remaining candidate sets were compared with the experimental
 data, as shown in Figure \ref{fig:defprofiledata}. Although all computational models 
-showed some degree of misalignment with the experimental data, the position of maximum deformation,
-Point \SI{5}{} next to middle point, had a close match for sets \SI{1}{} and \SI{3}{}.
+showed a misalignment with the experimental data, the position of maximum deformation,
+Point \SI{5}{} adjacent to the middle point displayed a close match for sets \SI{1}{} and \SI{3}{}.
 
 Further, as the incompressibility parameter decreased, the overall deformation decreased. The 
 NRMSE values for this case were listed on Table \ref{tab:nrmsedefprof}. The NRMSE results 
-revealed that the set \SI{3}{} had the best value followed closely by set \SI{1}{}. This validation case 
+revealed that the set \SI{3}{} achieved the best value, with set \SI{1}{} following closely behind. This validation case 
 showcased that the selection of the range set for the iFEM process impacts the deformation response, even though the
 influence of the incompressibility parameter on the force reaction results was relatively minor.\\
 \begin{table}[ht!]
     \centering
     \begin{tabular}{|c|c|c|c|c|}
     \hline
-    Set & $\mu$ (Pa) & $D_1$ (MPa\textsuperscript{-1}) & EM II NRMSE & & \textbf{VC II NRMSE}\\
+    Set & $\mu$ (Pa) & $D_1$ (MPa\textsuperscript{-1}) & EM II NRMSE & \textbf{VC II NRMSE}\\
     \hline
     1 & 9999.7 & 5.8 & 0.0339 & 0.3126\\
     \textbf{3} & \textbf{10200} & \textbf{1.1} & 0.0533 & \textbf{0.2810}\\
@@ -354,7 +354,7 @@ influence of the incompressibility parameter on the force reaction results was r
 
 Based on the combined results of both validation cases and their NRMSE values, set 3 with a 
 shear modulus $\mu=\SI{10200}{\pascal}$ and the incompressibility parameter $D_1=\SI{1.1}{\mega\pascal\tothe{-1}}$ 
-was identified as the best overall choice. This material parameter set captured with good 
+was identified as the best overall choice. This material parameter set captured with strong 
 agreement the indentation for EM II, and showed the best results for the deformation profile 
 validation case and the deeper indentation case.  
 
@@ -411,12 +411,12 @@ For the middle point in Figure \ref{fig:mpforcecompvc}, the x-force component in
 in comparison to the experimental data, which possessed a small but noticeable peak. 
 Moreover, the simulation results for this force component appeared unstable.
 
-On the contrary, the y-force component showed show a clear nonlinear trend in the computational model,
+On the contrary, the y-force component showed a clear nonlinear trend in the computational model,
 whereas the experimental curve showed minimal variation. The z-force component was previously analyzed 
-and used to identify the material parameters, therefore has the closest match between the curves.
+and used to identify the material parameters, therefore this exhibited the closest match between the curves.
 
 The total force curve exhibited a similar initial slope difference as showcased for the z-force component
-However, after reaching a displacement of $u\approx\SI{1.2}{\milli \m}$, the simulation curve showed a increased slope,
+However, after reaching a displacement of $u\approx\SI{1.2}{\milli \m}$, the simulation curve showed an increased slope,
 diverging slightly from the experimental data.\\
 
 The calculated NRMSE for all components and the total force reaction of the middle point test were listed in Table \ref{tab:forcecompnrmse}.
@@ -619,9 +619,9 @@ In conclusion, the third validation case reinforced the validity of set number
 \SI{3}{} as the chosen parameter set for this study. This set 
 demonstrated an acceptable level of agreement for all cases with an equal 
 indentation depth. Moreover, this validation supported that this material model 
-can model the behavior of the polyurethane specimen under indentation, particularly
-when considering different locations on the specimen's surface and all 
-force components into the analysis.
+could model the behavior of the polyurethane specimen under indentation, particularly
+if considering different locations on the specimen's surface and analyzing all 
+force components.
 %--------------------------------------------------------------------------------------------------
 \section{Framework Proposal}
 With this study a framework for the identification of soft material's parameters, focusing on the 
@@ -632,7 +632,7 @@ load-displacement data with computational models.\\
 This process began with defining the use case and proceeded with the inclusion of two primary paths
 running in parallel; the design of the experimental model or comparator, and the computational or FE model.
 
-On the experimental design side, the physical indentation experiments were design and performed (experimental 
+On the experimental design side, the physical indentation experiments were designed and performed (experimental 
 model I and II). During these experiments, the mechanical behavior of the material was observed and analyzed.
 This analysis played a crucial role in establishing the main assumptions for the material model. Furthermore, 
 load-displacement data was captured, which served as the benchmark 
@@ -647,13 +647,13 @@ An important inquiry at this stage was wether the selected material law adequate
 behavior of the material. If the answer was no, the material law was adjusted to the next level, and the 
 simulation was rerun. This loop continued until a satisfactory agreement was found.\\
 
-Once the simulation captured the mechanical behavior, the material parameters' or design parameters were inputted into a 
+Once the simulation captured the mechanical behavior, the material parameters' or design parameters were input into a 
 response surface optimization process. Here, the definition of an adequate range, played an important role 
 in the obtained candidate sets.\\ 
 
 The next step, involved running the simulations for the different candidate points or material parameter sets,
-an calculating their pre-established error metric. This error metric, such as NRMSE, was used to determine 
-wether these simulations met ir surpassed the established error threshold. If the simulation did not meet the threshold, 
+and calculating their pre-established error metric. This error metric, such as NRMSE, was used to determine 
+wether these simulations met or surpassed the established error threshold. If the simulation did not meet the threshold, 
 the process was repeated with new sets of candidate material sets.\\
 
 Finally, once a parameter set met the error threshold, it was identified as the optimal material parameter set.
@@ -733,7 +733,7 @@ the obtained results, as well as their implications on its applicability.\\
 One notable limitation arose from the indentation depth used for the identification process. 
 As the indentation depth increased, the accuracy of the material model decreased significantly.
 Additionally, maintaining the stability of the computational model became increasingly 
-difficult with a larger indentation due to element large deformation issues. This
+difficult with a larger indentation due to the high distortion of the mesh elements. This
 issue was addressed using the nonlinear adaptive meshing option, although it added 
 another layer of complexity to the FE modeling process.\\
 
@@ -758,7 +758,7 @@ components.\\
 The material parameters' range used in the RSO process affected the obtained candidate points, 
 demonstrating a sensitivity to defined ranges. Noticeably, the best material parameter set 
 found originated from the approximated polynomial global minimum obtained from the MATLAB script, 
-suggesting the potential for further optimization of the range inputted in the RSO process. 
+suggesting the potential for further optimization of the range input in the RSO process. 
 Despite this, set \SI{1}{}, the best candidate from the RSO process, demonstrated comparable 
 results to the MATLAB set, reinforcing the validity of the proposed methodology.\\
 
@@ -766,7 +766,7 @@ Lastly, this study highlighted the significance
 of balancing simplicity and accuracy in material parameter identification process for ultra-soft polyurethane. 
 While the proposed methodology effectively handled simpler cases, the results indicated
 the need for a more sophisticated approach when dealing with complex deformation scenarios.
-These findings can provide useful insights and a valuable foundation for further refinement and 
+These findings can provide useful insights and a valuable foundation for additional refinement and 
 improvement of parameter identification methodologies.
 
 
@@ -777,8 +777,8 @@ improvement of parameter identification methodologies.
 
 %\subsection{First Experimental model}
 %The chosen experimental technique for the inverse identification for this project was indentation. 
-%The test specimen used for this experiment was a ultra-soft polyurethane resin. 
-%As shown in Fig.. the specimen possesses a ellipsoidal form with 
+%The test specimen used for this experiment was an ultra-soft polyurethane resin. 
+%As shown in Fig.. the specimen possesses an ellipsoidal form with 
 %with a minor radius \(r_1\) = 35 mm and a major radius \(r_2\) = 60 mm. This was positioned
 % on a fixed platform that suited the ellipsoidal geometry of the 
 % specimen to constrain its movement. 
@@ -881,6 +881,6 @@ improvement of parameter identification methodologies.
 %---------------------------------------------------------------------------------
 
 %Additionally, it was observed that in soft materials it is easier to capture 
-%some parameters with a larger indentation. Some references also observe that with
+% parameters with a larger indentation.  references also observe that with
 %indentation depth lower than indenter radius has a lot of noise and do not describe
 %th results accurately. %reference?

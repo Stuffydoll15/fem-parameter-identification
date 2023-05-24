@@ -116,7 +116,7 @@ difference in slope between the two curves diminished.\\
 This result indicated that for a displacement greater than $u = \SI{2}{\milli \meter}$, the CM I curve would 
 lie above the experimental data. Interestingly, it was observed that, despite employing a linear elastic model, 
 the force-displacement curve exhibited a nonlinear response. This observation suggested that even a relatively 
-simple material model could capture some degree of nonlinearity. 
+simple material model could capture certain degree of nonlinearity. 
 
 \begin{figure}%
     \centering
@@ -182,7 +182,7 @@ As the displacement $u$ increased, the difference in slope between the two curve
 until the end, the computational curve showed a flatter slope than the experimental curve.\\
 
 Despite the discrepancies between the two curves, the Neo-Hookean provided a fair approximation to the experimental data, considered the 
-given displacement range. Likewise, this outcome evidenced that the Neo-Hookean model was capable of capturing some of the nonlinear 
+given displacement range. Likewise, this outcome evidenced that the Neo-Hookean model was capable of capturing the nonlinear 
 response observed in the experimental data, by directly inputting the calculated values from the linear elastic material model.
 Nevertheless, it is important to note that improvements to the computational model are necessary to achieve a more
 accurate representation of the experimental results.
@@ -254,7 +254,7 @@ towards convergence was observed.
 The second challenge encountered during the verification process was the analysis of the stress distribution in 
 computational model I. A classic indentation solution between an relatively rigid body and an elastic body gives a Hertzian 
 solution \cite{Lin2009}. The expected Hertzian stress distribution was not clearly observed; instead, the stress 
-contour plot showed rough borders, with some irregularities in the indentation surface area. This issue highlighted
+contour plot showed rough borders, with irregularities in the indentation surface area. This issue highlighted
 the need for model improvement (Fig. \ref{fig:stressdistributionanalysis}).
 
 Moreover, a cleaner Hertzian stress distribution in the mesh convergence FE model could be observed, as shown in Figure \ref{fig:cm1meshref}, 
@@ -302,7 +302,7 @@ The mesh refinement for CM II was guided by the results of the mesh convergence 
 The global element size was maintained at $e_{{II}_s}=\SI{5}{\milli\meter}$, while the refinement area
 was adjusted to $e_{{II}_a}=\SI{0.5}{\milli\meter}$ with a sphere radius of $r_{{II}_a}=\SI{8}{\milli\meter}$.
 The results in CM I showed that the indenter could be considered as a rigid body; therefore, the element size was 
-set at $e_{{II}_i}=\SI{1}{\milli\meter}$, as the element size of the indenter did not has a significant impact on the overall results.
+set at $e_{{II}_i}=\SI{1}{\milli\meter}$, as the element size of the indenter did not demonstrate a significant impact on the overall results.
 To further improve the mesh quality, a patch independent method was employed, reducing the mesh's 
 maximum skewness from $\SI{0.85}{}$ to $\SI{0.6}{}$ (Fig. \ref{fig:cm2meshref}).
 \begin{figure}
@@ -375,7 +375,7 @@ for lateral displacement of the indented mass to avoid over-constraining the spe
 between the specimen and the platform was set to frictional, with a friction coefficient of 0.2, and the base of the platform 
 possessed a fixed support.
 
-The inclusion of the platform in the FE model had an impact on the deformation in the indentation area, 
+The inclusion of the platform in the FE model impacted on the deformation in the indentation area, 
 as it showed a more natural deformation. In addition, there was an impact on the load-displacement curve (Fig. \ref{fig:noplatformvsplatform}). 
 The curve with platform showed a better fit to the experimental data, as the overall shape of the curve was more 
 comparable to the experimental data. Therefore, the FE model with the platform was selected as the final model for computational 
@@ -416,7 +416,7 @@ emphasized the importance of incorporating realistic boundary conditions and con
 % solutions for the meshing in the area of importance, and small time steps. 
 % For that, the nonlinear adaptive meshing option in ANSYS Workbench was applied, which does a remeshing
 % process if the a certain parameter is exceeded.%Revisar explanation of nonlinear adaprive meshing
-%Specially, for larger indentation cases, this option shows a more stable model with a good mesh convergence analysis.
+%Specially, for larger indentation cases, this option shows a more stable model with a mesh convergence analysis.
 
 
 
