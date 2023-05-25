@@ -9,7 +9,7 @@ formed for the material models. These foundations enabled the development of the
 
 In this chapter, the computational models of the indentation tests introduced in Chapter \ref{chapter:experimentalmodel} 
 will be described. These models were constructed using the finite element software ANSYS. 
-The computational model serves as the principal link between the experimental data and the identification of the 
+The computational model served as the principal link between the experimental data and the identification of the 
 specimen's material parameters.\\  
 
 The initial simulation model, referred to as computational model I (CM I), served as a tool 
@@ -36,7 +36,7 @@ parameter identification process, the model was simplified as much as possible.
 This approach minimized the influence of errors arising from complex geometries and boundary conditions.
 
 \subsubsection*{Description}
-The geometry only included key components that significantly contribute to the mechanical response,
+The geometry only included key components that significantly contributed to the mechanical response,
 i.e., the indenter and the specimen. The tumor extraction geometry depicted in Figure \ref{fig:specimenhole}
 was also modeled for CM I. Both the indenter and the specimen utilized SOLID187 elements.
 SOLID187 elements are high order 3-D \SI{10}{}-node elements with three degrees of freedom at each node.
@@ -64,8 +64,8 @@ and the force reaction $F$ was subsequently obtained.\\
 %Mesh
 A global element size of $e_{I_s}=\SI{5}{\milli\meter}$ was applied to the specimen's mesh, which 
 consisted of quadratic tetrahedral elements. The contact area between the indenter and the specimen's surface 
-was refined to $e_{I_a}=\SI{0.3}{\milli\meter}$ (Fig.\ref{fig:cpImesh}). The primary reason for applying contact
-sizing refinement was to ensure independence from the specimen's geometry or the indenter's position on the specimen's surface.\\
+was refined to $e_{I_a}=\SI{0.3}{\milli\meter}$ (Fig.\ref{fig:cpImesh}). The primary reason for applying the contact
+sizing refinement method was to ensure independence from the specimen's geometry or the indenter's position on the specimen's surface.\\
 \begin{figure}
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
@@ -156,13 +156,13 @@ and \ref{eq:incomparcp1}, the shear modulus $\mu_{CMI}$ and the incompressibilit
 \end{align}
 were calculated, respectively. These parameters were integrated in the model described above. In comparison to 
 the linear elastic model, the Neo-Hookean material model could solve the simulation for an indentation depth of 
-$h =  \SI{3.7}{\milli \meter}$.
+$h =  \SI{3.8}{\milli \meter}$.
 \begin{figure}%
     \centering
    \quad
     \begin{tikzpicture}[scale=1]
         \begin{axis}[
-            xmax=4.2,xmin=0,
+            xmax=4,xmin=0,
             ymin= 0,ymax=0.6,
             ytick={0,0.1,0.2,...,0.5},
             xlabel={Displacement $u [mm]$},
@@ -189,7 +189,7 @@ accurate representation of the experimental results.
 
 \subsection{Nearby Point}
 The nearby point test configuration described in Subsection \ref{subsection:nearbypoint} was also modeled to gain an insight 
-of the first set material parameters obtained from the middle point computational model.
+of the first set of material parameters obtained from the middle point computational model.
 For the nearby point computational model, the Neo-Hookean model was employed, and the CM I was adapted by changing the 
 indenter's position.
 
@@ -218,17 +218,18 @@ nearly identical behavior to that of the middle point case.\\
    \caption[Nearby point: CM I vs. Experimental data - Neo-Hookean]{NBP - CM I vs. EM I: Comparison of force-displacement curves between experimental data for nearby point case and the initial computational model with a Neo-Hookean model for $h = \SI{3.8}{\milli \meter}$.}%
    \label{fig:nbpointIvsCPINBNH}%
 \end{figure}
+
 In conclusion, while there were differences, the initial calculated values provided a consistent approximation to experimental
 data, indicating that the computational model captures the essential features of the material's behavior.
-It was decided that further refinements of the material parameters may be necessary to minimize the error between the 
+It was decided that further refinements of the material parameters might be necessary to minimize the error between the 
 simulated and experimental curves.
 
 %--------------------------------------------------------------------------------------------------------------
 \section{Analysis and Complications}
 \label{section:challengescm}
 \subsection*{Verification of the Computational Model}
-The verification of the computational model was an important aspect of ensuring the accuracy and reliability of the 
-simulation results. One typical approach to verify the model is to conduct a mesh convergence analysis. To 
+The verification of the computational model was an important aspect for ensuring the accuracy and reliability of the 
+simulation results. One typical approach to verify a computational model is to conduct a mesh convergence analysis. To 
 reduce computational time, symmetry boundary conditions were applied, and one-quarter of CM I was used.
 
 \subsubsection*{Mesh Convergence Analysis}
@@ -246,13 +247,13 @@ with a sphere radius of $r_{M_a}=\SI{10}{\milli\meter}$ and an element size of $
 \end{figure}
 
 The mesh convergence analysis presented challenges, as reducing the element size from $\SI{5}{\milli\meter}$ to 
-$\SI{0.1}{\milli\meter}$ in the contact area led to unsolvable cases due to large element deformation problems, 
+$\SI{0.1}{\milli\meter}$ in the contact area led to unsolvable cases due to high distortion element problems, 
 or resulted in values deviating significantly from the expected convergence trend. However, a certain tendency 
 towards convergence was observed.
 
 \subsubsection*{Stress Distribution Analysis}
 The second challenge encountered during the verification process was the analysis of the stress distribution in 
-computational model I. A classic indentation solution between an relatively rigid body and an elastic body gives a Hertzian 
+computational model I. A classic indentation solution between a relatively rigid body and an elastic body provides a Hertzian 
 solution \cite{Lin2009}. The expected Hertzian stress distribution was not clearly observed; instead, the stress 
 contour plot showed rough borders, with irregularities in the indentation surface area. This issue highlighted
 the need for model improvement (Fig. \ref{fig:stressdistributionanalysis}).
@@ -276,7 +277,7 @@ suggesting that the original model was not entirely reliable and the mesh depend
     \label{fig:cm1meshref}
     \end{subfigure}
     \hspace{0.3cm}
-    \caption[Mesh convergence model I stress distribution]{Stress distribution analysis of the CM I with a Neo-Hookean material model and the mesh convergence model, which shows the irregularities in the stress contour plot.}
+    \caption[Mesh convergence model I stress distribution]{Stress distribution analysis of the CM I with a Neo-Hookean material model and the mesh convergence model, which showed the irregularities in the stress contour plot.}
     \label{fig:stressdistributionanalysis}
 \end{figure}
 %----------------------------------------------------------------------------------------------------------------------
@@ -285,7 +286,7 @@ suggesting that the original model was not entirely reliable and the mesh depend
 The computational model II or improved computational model, addressed the challenges and observations 
 encountered during the development of CM I. This refined model integrated the proposed
 solutions to the previously identified irregularities, and thus served as the final model for the 
-iFEM approach for parameter identification. 
+iFEM for parameter identification approach. 
 
 \subsection{Middle Point}
 \label{subsection:mpcmII}
@@ -372,7 +373,7 @@ To improve this unnatural deformation pattern, a more accurate representation of
 experimental setup was introduced into the FE model. The specimen was positioned on a bowl-shaped
 platform, mirroring the experimental configuration. The platform was designed with a slightly major radius to allow 
 for lateral displacement of the indented mass to avoid over-constraining the specimen. The contact 
-between the specimen and the platform was set to frictional, with a friction coefficient of 0.2, and the base of the platform 
+between the specimen and the platform was set to frictional, with a friction coefficient of \SI{0.2}{}, and the base of the platform 
 possessed a fixed support.
 
 The inclusion of the platform in the FE model impacted on the deformation in the indentation area, 
@@ -398,13 +399,13 @@ model II.\\
             \legend{Middle point, CM II-No platform, CM II-Platform}
         \end{axis}
     \end{tikzpicture}%
-   \caption[CP II: No platform vs. with platform]{NBP - CM I vs. EM I: Comparison of force-displacement curves between experimental data for nearby point case and the initial computational model with a Neo-Hookean model for $h = \SI{3.8}{\milli \meter}$.}%
+   \caption[CM II: No platform vs. with platform]{CM II - Constraint analysis: Comparison of force-displacement curves between experimental data for middle point case and the influence of the introduction of a platform in the FE model.}%
    \label{fig:noplatformvsplatform}%
 \end{figure}
 
 This chapter has presented an in-depth analysis of the development and refinement of the computational models I and II, used
 for simulating the indentation tests. The transition from CM I to CM II revealed the challenges encountered in an indentation 
-simulation model and how significant it is to handle large element deformation for mesh quality improvement. 
+simulation model and how significant it is to handle high element distortion for mesh quality improvement. 
 Specifically, the use of a nonlinear adaptive region facilitated more reliable simulation results, displaying a more 
 closely Hertzian solution. This improvement reinforced the model's robustness for the subsequent application in an inverse
 finite element method approach for the identification of the material's parameters. Moreover, the adjustment in involving platform

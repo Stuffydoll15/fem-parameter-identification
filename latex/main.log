@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  25 MAY 2023 01:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.14)  25 MAY 2023 13:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2109,11 +2109,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 319--323
  []
 
 [26 <./Images/Experiment/nbexp1.png> <./Images/Experiment/nbexp2.png>]
-Overfull \hbox (19.01837pt too wide) in paragraph at lines 359--362
-\OT1/ppl/m/n/10.95 elastic-plastic be-hav-ior, which typ-i-cally fea-tures four known stages in load-displacement
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 379--386
 
  []
@@ -2292,21 +2287,21 @@ PGFPlots: reading {Table/CP1/NBPCSNHCPI.dat}
 <Images/computational/meshzoom.png, id=955, 1130.2225pt x 633.36626pt>
 File: Images/computational/meshzoom.png Graphic file (type png)
 <use Images/computational/meshzoom.png>
-Package pdftex.def Info: Images/computational/meshzoom.png  used on input line 243.
+Package pdftex.def Info: Images/computational/meshzoom.png  used on input line 244.
 (pdftex.def)             Requested size: 284.52756pt x 159.44292pt.
  [39]
 <Images/computational/37CSNHstresshalfzoommesh.png, id=965, 1130.2225pt x 633.36626pt>
 File: Images/computational/37CSNHstresshalfzoommesh.png Graphic file (type png)
 <use Images/computational/37CSNHstresshalfzoommesh.png>
-Package pdftex.def Info: Images/computational/37CSNHstresshalfzoommesh.png  used on input line 267.
+Package pdftex.def Info: Images/computational/37CSNHstresshalfzoommesh.png  used on input line 268.
 (pdftex.def)             Requested size: 323.22449pt x 181.12978pt.
 <Images/computational/meshzoomstress.png, id=966, 1130.2225pt x 633.36626pt>
 File: Images/computational/meshzoomstress.png Graphic file (type png)
 <use Images/computational/meshzoomstress.png>
-Package pdftex.def Info: Images/computational/meshzoomstress.png  used on input line 274.
+Package pdftex.def Info: Images/computational/meshzoomstress.png  used on input line 275.
 (pdftex.def)             Requested size: 323.22449pt x 181.12978pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--299
+Underfull \hbox (badness 10000) in paragraph at lines 295--300
 
  []
 
@@ -2314,36 +2309,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 294--299
 <Images/computational/cm2geometry.png, id=979, 1126.2075pt x 631.35875pt>
 File: Images/computational/cm2geometry.png Graphic file (type png)
 <use Images/computational/cm2geometry.png>
-Package pdftex.def Info: Images/computational/cm2geometry.png  used on input line 312.
+Package pdftex.def Info: Images/computational/cm2geometry.png  used on input line 313.
 (pdftex.def)             Requested size: 181.81184pt x 101.91539pt.
 <Images/computational/cm2meshzoom.png, id=980, 1126.2075pt x 631.35875pt>
 File: Images/computational/cm2meshzoom.png Graphic file (type png)
 <use Images/computational/cm2meshzoom.png>
-Package pdftex.def Info: Images/computational/cm2meshzoom.png  used on input line 319.
+Package pdftex.def Info: Images/computational/cm2meshzoom.png  used on input line 320.
 (pdftex.def)             Requested size: 181.81184pt x 101.91539pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--343
+Underfull \hbox (badness 10000) in paragraph at lines 339--344
 
  []
 
 File: Images/computational/37CSNHstresshalfzoommesh.png Graphic file (type png)
 <use Images/computational/37CSNHstresshalfzoommesh.png>
-Package pdftex.def Info: Images/computational/37CSNHstresshalfzoommesh.png  used on input line 348.
+Package pdftex.def Info: Images/computational/37CSNHstresshalfzoommesh.png  used on input line 349.
 (pdftex.def)             Requested size: 323.22449pt x 181.12978pt.
 <Images/computational/stresscmII.png, id=982, 1128.215pt x 637.38126pt>
 File: Images/computational/stresscmII.png Graphic file (type png)
 <use Images/computational/stresscmII.png>
-Package pdftex.def Info: Images/computational/stresscmII.png  used on input line 355.
+Package pdftex.def Info: Images/computational/stresscmII.png  used on input line 356.
 (pdftex.def)             Requested size: 323.22449pt x 182.59892pt.
 [42 <./Images/computational/cm2geometry.png> <./Images/computational/cm2meshzoom.png>] [43 <./Images/computational/stresscmII.png>]
 PGFPlots: reading {"Table/Middle Point/MPII4mmtotalap.dat"}
 PGFPlots: reading {Table/CP2/CP2noplatNH8541_5.dat}
 PGFPlots: reading {Table/CP2/CP2platNH8541_5.dat}
-
-Underfull \hbox (badness 1590) in paragraph at lines 401--401
- []\OT1/ppl/m/sc/10 Figure 3.10: |\OT1/ppl/m/n/10 NBP - CM I vs. EM I: Com-par-i-son of force- 
- []
-
 ) [44]
 \openout2 = `Content/Chapter5.aux'.
 
@@ -2887,13 +2877,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  65179 strings out of 475281
  1556053 string characters out of 2774064
- 2749354 words of memory out of 3000000
+ 2749332 words of memory out of 3000000
  84939 multiletter control sequences out of 15000+600000
  523146 words of font info for 165 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,21n,100p,2324b,3068s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/drevs/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (103 pages, 36908177 bytes).
+Output written on main.pdf (103 pages, 36908161 bytes).
 PDF statistics:
  1571 PDF objects out of 1728 (max. 8388607)
  451 named destinations out of 1000 (max. 500000)
