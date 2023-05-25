@@ -734,7 +734,7 @@
     \verb 10.1016/j.jmbbm.2009.03.005
     \endverb
     \field{pages}{51\bibrangedash 62}
-    \field{title}{Mechanical characterisation of polyurethane elastomer for
+    \field{title}{Mechanical characterisation of poly-urethane elastomer for
   biomedical applications}
     \field{volume}{3}
     \field{journaltitle}{Journal of the Mechanical Behavior of Biomedical
@@ -1224,7 +1224,6 @@
     \verb{doi}
     \verb 10.1533/9781908818188.115
     \endverb
-    \field{pages}{115\bibrangedash 151}
     \field{title}{Polyurethane for biomedical applications: A review of recent
   developments}
     \field{journaltitle}{The Design and Manufacture of Medical Devices}

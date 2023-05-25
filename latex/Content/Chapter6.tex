@@ -13,7 +13,7 @@ offering a robust means of assessing the approach's accuracy.
 
 Subsequently, a thorough analysis of the three validation cases is detailed.
 These cases contributed significantly to the selection of the best material parameter set and to
-assess the applicability of the material parameters in other use cases.
+evaluating the applicability of the material parameters in other use cases.
 
 This is followed by a detailed exposition of the framework proposed in this study for the material 
 parameter identification process based on an iFEM approach.
@@ -28,7 +28,7 @@ Upon applying the RSO and MATLAB optimization to identify the optimal material p
 multiple sets were calculated. 
 Each simulation deployed various Neo-Hookean parameters sets and 
 provided a unique load-displacement solutions. These load-displacement curves were 
-juxtaposed with the experimental data and the RMSE and NRMSE (Equation \ref{eq:rmse} and \ref{eq:nrmse}) was calculated to quantify the quality 
+juxtaposed with the experimental data, and the RMSE and NRMSE (Equation \ref{eq:rmse} and \ref{eq:nrmse}) were calculated to quantify the quality 
 of each solution. To deepen the evaluation, additional performance metrics were incorporated: 
 Mean Relative Error (MRE) (Equation \ref{eq:mre}), Mean Absolute Percentage Error (MAPE)
 \begin{align}
@@ -42,18 +42,18 @@ and  Relative Root Mean Square Error (RRMSE)
 Performance metrics are critical for evaluating the predictive accuracy of the computational model.
 These metrics provide insights into how well the model's prediction align with the 
 experimental data. The combination of these metrics allowed for a more comprehensive 
-assessment of all the simulations performance. For instance, the RMSE and NRMSE measured the
+assessment of all the simulations' performance. For instance, the RMSE and NRMSE measured the
 absolute deviation of the predicted values from the observed data, providing an overall 
-measure of the computational model accuracy. On the other hand, metrics like MRE, MAPE. and 
-RRMSE are useful when considering relative errors. These metrics weighed errors in relation
+measure of the computational model accuracy. On the other hand, metrics like MRE, MAPE, and 
+RRMSE were useful when considering relative errors. These metrics weighed errors in relation
 to the actual size of the actual values \cite{Rajagukguk2020}.\\
 
-The simulation results that produced the lowest performance metrics were set aside as possible
+The simulation results that produced the lowest performance metrics were selected as possible
 optimal candidates. In particular, the parameters with the lowest NRMSE, MRE and RMSRE were  
 investigated. Moreover, a set with an elevated incompressibility parameter was chosen for 
-analyzing its influence on validation cases.
+analyzing the influence of this material parameter on validation cases.
 The parameters that were determined to provide the best fit to the 
-experimental data based on these assessments were listed on Table \ref{tab:materialsetbestfit}.
+experimental data based on these assessments were listed in Table \ref{tab:materialsetbestfit}.
 \begin{table}[ht!]
     \centering
     \begin{tabular}{|c|c|c|c|c|c|c|}
@@ -71,12 +71,12 @@ experimental data based on these assessments were listed on Table \ref{tab:mater
 \end{table}
 
 \subsection*{Assessment of Performance Metrics}
-Defining satisfactory performance metrics values required a multi-dimensional approach. 
+Defining satisfactory performance metrics values required a multidimensional approach. 
 Firstly, the load-displacement curves' visual inspection revealed a close approximation 
 to the experimental data (Fig. \ref{fig:bestfitcandidatescurve}).
 
 The load-displacements curves illustrated that the initial slope of EM II was steeper compared to 
-all calculated candidate sets. As the displacement increased sets \SI{1}{} through \SI{3}{} intersected 
+all calculated candidate sets. As the displacement increased, sets \SI{1}{} through \SI{3}{} intersected 
 the experimental curve. Set \SI{1}{} and \SI{2}{} were nearly identical, initially exhibited an increasing 
 slope, yet displayed a tendency to flatten towards the end of the curve, intersecting the experimental curve 
 a second time.
@@ -143,16 +143,16 @@ initially inferred that utilizing NRMSE as the sole performance metric would be 
 evaluating the goodness of fit in this specific case, an indentation of $h=\SI{4}{\milli \meter}$
 at the center of the surface.
 
-\section{Validation of Computational Model}
+\section{Validation of the Computational Model}
 \label{section:validationcm}
-In order to confirm the reliability and effectiveness of the identified material parameters,
+To confirm the reliability and effectiveness of the identified material parameters,
 two distinct validation cases were performed. 
 The first validation case (VC I) involved the alteration of the indentation depth, changing it to 
 $\SI{8}{\milli \meter}$ from the original $\SI{4}{\milli \meter}$. This case aimed to assess how 
 well the material model could adapt and represent the mechanical behavior with increased deformation.
 
 The second validation case (VC II) revolved around the deformation profile of the specimen. The aim here 
-was understand the accuracy in predicting the actual deformation shape of the specimen under 
+was to understand the accuracy in predicting the actual deformation shape of the specimen under 
 indentation. This provided deeper insights into the effects of the selected incompressibility
 parameters.\\
 
@@ -205,7 +205,7 @@ incompressibility parameter, were plotted against the experimental data, as show
    \label{fig:8mmloaddisplcurves}%
 \end{figure}
 
-The load-displacement graph showed that the experimental data displayed again a steeper initial slope 
+The load-displacement graph indicated that the experimental data displayed again a steeper initial slope 
 than the computational models. Sets \SI{1}{} and \SI{3}{} curves intersected the experimental curve 
 around a displacement of $u=\SI{2}{\milli \meter}$, whereas set \SI{4}{} intersected at about $u=\SI{3}{\milli \meter}$.
 
@@ -255,7 +255,7 @@ Figure \ref{fig:defprofexperiment} illustrates the experiment conducted by YNU.
 Using the marked points as reference, the laser displacement meter captured the specimen's 
 shape along the parallel axis both before and during the indentation process.
 This allowed for the measurement of the deformation profile at intervals of $\SI{1}{\milli \meter}$
-throughout the indentation until reaching the maximum depth of $\SI{4}{\milli \meter}$ was reached (Appendix \ref{AppendixA}).\\
+throughout the indentation until reaching the maximum depth of $\SI{4}{\milli \meter}$ (Appendix \ref{AppendixA}).\\
 
 \begin{figure}%
 	\centering
@@ -288,7 +288,7 @@ throughout the indentation until reaching the maximum depth of $\SI{4}{\milli \m
 From the results calculated with the computational model II for the middle point case, 
 a method to capture the deformation profile for the second validation case was required.
 However, tracking specific points on the surface of the simulation was challenging due to 
-the remeshing process of the nonlinear adaptive meshing option utilized in the model. This
+the remeshing process of the nonlinear adaptive region meshing option utilized in the model. This
 process did not support the measurement of the displacement for a specific node, as the 
 position of the node changed throughout the execution of the model's calculation.\\
 
@@ -307,10 +307,10 @@ selected around the deformed surface within this plane (Fig. \ref{fig:defprofcom
 The deformation profiles for the remaining candidate sets were compared with the experimental
 data, as shown in Figure \ref{fig:defprofiledata}. Although all computational models 
 showed a misalignment with the experimental data, the position of maximum deformation,
-Point \SI{5}{} adjacent to the middle point displayed a close match for sets \SI{1}{} and \SI{3}{}.
+Point \SI{5}{}, adjacent to the middle point, displayed a close match for sets \SI{1}{} and \SI{3}{}.
 
 Further, as the incompressibility parameter decreased, the overall deformation decreased. The 
-NRMSE values for this case were listed on Table \ref{tab:nrmsedefprof}. The NRMSE results 
+NRMSE values for this case were listed in Table \ref{tab:nrmsedefprof}. The NRMSE results 
 revealed that the set \SI{3}{} achieved the best value, with set \SI{1}{} following closely behind. This validation case 
 showcased that the selection of the range set for the iFEM process impacts the deformation response, even though the
 influence of the incompressibility parameter on the force reaction results was relatively minor.\\
@@ -337,8 +337,8 @@ influence of the incompressibility parameter on the force reaction results was r
             xmax=25,xmin=0,
             ymax= 0,ymin=-1.4,
             ytick={0,-0.2,...,-1.4},
-            xlabel={X-axis displacement $u_{x} [mm]$},
-            ylabel={Z-axis displacement $u_{x} [mm]$},
+            xlabel={x-axis displacement $u_{x} [mm]$},
+            ylabel={z-axis displacement $u_{x} [mm]$},
             grid = major,
             legend pos= south east]
             \addplot+[smooth, thick] table [y=$Def$, x=Xdis]{Table/results/defprofile/defprofexp.dat};
@@ -379,7 +379,7 @@ represent the behavior of the specimen for this new indentation point.\\
 
 In this use case, unlike the previous ones, the full computational model was required, as shown in Figure \ref{fig:bluepointcm}.
 The symmetry boundary conditions used before were not applicable due to shifted indentation position.
-With exception from these conditions the blue point model followed the process as computational model II, described 
+Except for these conditions, the blue point model followed the process as computational model II, described 
 in Section \ref{section:cmII}.
 
 \begin{figure}
@@ -402,25 +402,25 @@ in Section \ref{section:cmII}.
     \label{fig:bluepointcm}
 \end{figure}
 
-Furthermore, it was anticipated based on previous nearby point experiments that force components in 
-x-direction and y-direction would became significant the further the indentation position was from the middle point (Subsection \ref{subsection:nearbypointresult}).
+Furthermore, it was anticipated based on previous nearby point experiments that force components in the 
+x-direction and y-direction would become significant the further the indentation position was from the middle point (Subsection \ref{subsection:nearbypointresult}).
 Hence, these components were included in the analysis alongside the z-direction force component.\\
 
-The load displacement curves comparison for the middle and blue point revealed distinct behaviors.
+The load-displacement curves comparison for the middle and blue point revealed distinct behaviors.
 For the middle point in Figure \ref{fig:mpforcecompvc}, the x-force component in the computational model was close to zero,
 in comparison to the experimental data, which possessed a small but noticeable peak. 
 Moreover, the simulation results for this force component appeared unstable.
 
 On the contrary, the y-force component showed a clear nonlinear trend in the computational model,
 whereas the experimental curve showed minimal variation. The z-force component was previously analyzed 
-and used to identify the material parameters, therefore this exhibited the closest match between the curves.
+and used to identify the material parameters; therefore, this exhibited the closest match between the curves.
 
-The total force curve exhibited a similar initial slope difference as showcased for the z-force component
+The total force curve exhibited a similar initial slope difference as showcased for the z-force component.
 However, after reaching a displacement of $u\approx\SI{1.2}{\milli \m}$, the simulation curve showed an increased slope,
 diverging slightly from the experimental data.\\
 
 The calculated NRMSE for all components and the total force reaction of the middle point test were listed in Table \ref{tab:forcecompnrmse}.
-In the table was observed that the components for x and y showed high NRMSE values, but 
+In the table, it was observed that the components for x and y showed high NRMSE values, but 
 the z-component and the total force still lied below or slightly higher than the 
 acceptable NRMSE limit of $\SI{0.1668}{}$.\\
 
@@ -458,7 +458,7 @@ acceptable NRMSE limit of $\SI{0.1668}{}$.\\
             \legend{EM II - MP, CM II - MP}
         \end{axis}
     \end{tikzpicture}
-    \caption{X-force component}
+    \caption{x-force component}
     \end{subfigure}
     \hspace{0.3cm}
     \begin{subfigure}[b]{0.45\textwidth}
@@ -477,7 +477,7 @@ acceptable NRMSE limit of $\SI{0.1668}{}$.\\
             \legend{EM II - MP, CM II - MP}
         \end{axis}
     \end{tikzpicture}
-    \caption{Y-force component}
+    \caption{y-force component}
     \end{subfigure}
     \vspace{0.5cm}
     \begin{subfigure}[b]{0.45\textwidth}
@@ -496,7 +496,7 @@ acceptable NRMSE limit of $\SI{0.1668}{}$.\\
             \legend{EM II - MP, CM II - MP}
         \end{axis}
     \end{tikzpicture}
-    \caption{Z-force component}
+    \caption{z-force component}
     \end{subfigure}  
     \hspace{0.3cm}
     \begin{subfigure}[b]{0.45\textwidth}
@@ -522,14 +522,14 @@ acceptable NRMSE limit of $\SI{0.1668}{}$.\\
     \label{fig:mpforcecompvc}
 \end{figure}
 %blue point
-The blue point case a greater alignment across for the x and y-components and the total force reaction, but
+The blue point case a showcased a greater alignment across the x and y-compo-\\nents, and the total force reaction, but
 the NRMSE value for the z-component worsened from $\SI{0.0534}{}$ to $\SI{0.09}{}$ (Table \ref{tab:forcecompnrmse}).
 In this validation case, the force components showed nonlinear trends in both the 
 experimental and computational curves, with the simulation closely matching the
-maximum forces obtained experimentally, with exception of the y-component, as 
+maximum forces obtained experimentally, except for the y-component, as 
 illustrated in Figure \ref{fig:bpforcecompvc}.
-This indicated that the identified parameters in set \SI{3}{} was suitable 
-for the blue case as well, in addition to display more stable results for 
+This indicated that the identified parameters in set \SI{3}{} were suitable 
+for the blue point case as well, in addition to displaying more stable results for 
 all load-displacements curves.\\
 
 \begin{figure}[htbp]
@@ -551,7 +551,7 @@ all load-displacements curves.\\
             \legend{EM II - BP, CM II - BP}
         \end{axis}
     \end{tikzpicture}
-    \caption{X-force component}
+    \caption{x-force component}
     \end{subfigure}
     \hspace{0.3cm}
     \begin{subfigure}[b]{0.45\textwidth}
@@ -570,7 +570,7 @@ all load-displacements curves.\\
             \legend{EM II - BP, CM II - BP}
         \end{axis}
     \end{tikzpicture}
-    \caption{Y-force component}
+    \caption{y-force component}
     \end{subfigure}
     \vspace{0.5cm}
     \begin{subfigure}[b]{0.45\textwidth}
@@ -589,7 +589,7 @@ all load-displacements curves.\\
             \legend{EM II - BP, CM II - BP}
         \end{axis}
     \end{tikzpicture}
-    \caption{Z-force component}
+    \caption{z-force component}
     \end{subfigure}  
     \hspace{0.3cm}
     \begin{subfigure}[b]{0.45\textwidth}
@@ -624,8 +624,8 @@ if considering different locations on the specimen's surface and analyzing all
 force components.
 %--------------------------------------------------------------------------------------------------
 \section{Framework Proposal}
-With this study a framework for the identification of soft material's parameters, focusing on the 
-simplest possible material model was proposed. This framework, illustrated in Figure \ref{fig:flowchart}, 
+With this study, a framework for the identification of soft material's parameters, focusing on the 
+simplest possible material model, was proposed. This framework, illustrated in Figure \ref{fig:flowchart}, 
 was based on an iFEM approach and provided a robust and systematic procedure that aligns experimental 
 load-displacement data with computational models.\\
 
@@ -639,21 +639,21 @@ load-displacement data was captured, which served as the benchmark
 against which the computational model was verified.\\
 
 On the computational model design side, the corresponding simulation was constructed to meet the experimental 
-conditions. Here, the simplest material law was selected and initial parameters were set, allowing for the simulation of 
+conditions. Here, the simplest material law was selected, and initial parameters were set, allowing for the simulation of 
 the indentation process and generation of load-displacement data.\\
 
 The simulation load-displacement data was then compared with the measured data from the experiments.
-An important inquiry at this stage was wether the selected material law adequately capture the mechanical 
+An important inquiry at this stage was whether the selected material law adequately captured the mechanical 
 behavior of the material. If the answer was no, the material law was adjusted to the next level, and the 
 simulation was rerun. This loop continued until a satisfactory agreement was found.\\
 
 Once the simulation captured the mechanical behavior, the material parameters' or design parameters were input into a 
-response surface optimization process. Here, the definition of an adequate range, played an important role 
+response surface optimization process. Here, the definition of an adequate range, played an essential role 
 in the obtained candidate sets.\\ 
 
 The next step, involved running the simulations for the different candidate points or material parameter sets,
 and calculating their pre-established error metric. This error metric, such as NRMSE, was used to determine 
-wether these simulations met or surpassed the established error threshold. If the simulation did not meet the threshold, 
+whether these simulations met or surpassed the established error threshold. If the simulation did not meet the threshold, 
 the process was repeated with new sets of candidate material sets.\\
 
 Finally, once a parameter set met the error threshold, it was identified as the optimal material parameter set.
@@ -746,13 +746,13 @@ An additional limitation was discovered in the analysis of the deformation profi
 It was observed that the Neo-Hookean model could match the experimental deformation
 profile at a single point but failed to reproduce the entire measured deformation shape.
 This indicated that a refinement in the experimental procedure, or the selection of a 
-different material model may be necessary to improve the results.\\
+different material model, may be necessary to improve the results.\\
 
 Assumptions drawn in this study also contributed to certain limitations. The assumed symmetrical
 deformation might not be applicable to all materials, thereby constraining the framework's
 utility. Furthermore, the choice of the middle point for the experimental model was based on
-simplicity and avoid external factor that could influence in the selection of the material 
-model. Nonetheless, this point was not optimal to accurately capturing all force reaction 
+simplicity and avoiding external factors that could influence in the selection of the material 
+model. Nonetheless, the middle point case was not optimal to accurately capturing all force reaction 
 components.\\
 
 The material parameters' range used in the RSO process affected the obtained candidate points, 
@@ -763,124 +763,8 @@ Despite this, set \SI{1}{}, the best candidate from the RSO process, demonstrate
 results to the MATLAB set, reinforcing the validity of the proposed methodology.\\
 
 Lastly, this study highlighted the significance
-of balancing simplicity and accuracy in material parameter identification process for ultra-soft polyurethane. 
+of balancing simplicity and accuracy in the material parameter identification process for ultra-soft polyurethane. 
 While the proposed methodology effectively handled simpler cases, the results indicated
 the need for a more sophisticated approach when dealing with complex deformation scenarios.
 These findings can provide useful insights and a valuable foundation for additional refinement and 
 improvement of parameter identification methodologies.
-
-
-
-
-
-
-
-%\subsection{First Experimental model}
-%The chosen experimental technique for the inverse identification for this project was indentation. 
-%The test specimen used for this experiment was an ultra-soft polyurethane resin. 
-%As shown in Fig.. the specimen possesses an ellipsoidal form with 
-%with a minor radius \(r_1\) = 35 mm and a major radius \(r_2\) = 60 mm. This was positioned
-% on a fixed platform that suited the ellipsoidal geometry of the 
-% specimen to constrain its movement. 
-% The specimen was tested in an indentation test configuration with a tensile/compression machine.
-% To achieve this congiguration a pin with a rounded head made of structural steel, 
-% with a radius of \(r_3\) = 3 mm was attached 
-% to the holding grips followed by a force load cell. 
-%The result of indentation test was a load-displacement points. The approximated 
-%polynomial curve was used as a reference for the material modeling.
-
-%test specimen is loaded at a quasi-static rate
-
-% The measured force reation \(F_1\) data showed a very small number, so the 
-% first 50 N load cell displayed a lot of noise in the measurements. 
-% Therefore, the load cell was change to 10N to reduce this interference. 
-%The 10 N load cell displayed the force-displacement curve of the indenter and the specimen
-% in a finer way. Furthermore, in order to get the measurement of the load and 
-% unloading process of
-% the indentation a displacement sensor was attached to the tensile machine.
-
-% The indentation depth \(h_1\) selected for the first model was 3,8 mm on the middle of the 
-% top surface of the specimen. This indentation depth surpasses the pin radius \(r_3\) and 
-% was chose arbitriarily to analyze the behavior of the material on the defined position.
- %reference?
-
-
-%\begin{figure}[th]
-%    \centering
-%    \begin{tikzpicture}
-%        %\pgfplotsset{%legend outside the plot
-%        %every axis legend/.append style={ at={(1.05,0.95)}, anchor=north west,legend columns = 1}}
-%        \begin{axis}[
-%            %axis lines=middle,
-%            %x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
-%            %y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south},
-%            xlabel={Displacement $u [mm]$},
-%            ylabel={Force reaction in z-axis $F_z [N]$},
-%            legend pos= north west]
-%            
-%            \addplot+[smooth, mark size = 1pt] table [y=$Force$, x=Def]{Table/data1.dat};
-%            %\addplot+[smooth] table [y=Force, x=$Def$]{Table/data2.dat};
-%            \legend{Experimental data}%,$l_2$}
-%        \end{axis}
-%    \end{tikzpicture}
-%    \caption[Expdata]{Experimental Load-displacement curve.}
-%    \label{fig:testgraph2}
-%\end{figure}
-
-%\subsection{Second Experimental model}
-%The second experimental model was developed by Yokohama National University. Similar to 
-%the first experimental model the test specimen and the platform were it lies, has the 
-%same dimensions, minor radius $r_1 = \SI{35}{\milli \m}$ and a major radius \(r_2\) of 60 mm. The
-%test specimen is also made from the same material, ultra-soft polyurethane resin.
-%
-%The indenter on the other hand, is a sphere made of ruby, the sphere radius is also 
-%equal to the radius of the pin \(r_s\) 3 mm and attached to it, is the force load cell.
-%
-%A laser is used to measure the displacement which results in a load-displacement curve.
-%With this model it is possible to not only determine the toal force reaction, but also
-%it's components \(F_x\),  \(F_y\) and \(F_z\). Furthermore, with the laser it is also
-%possible to observe the deformation not only in one point but around the whole area. 
-%This allows as to analyze the deformation of the whole structure.
-%
-%The indentation speed selcted was % ask for which speeed
-%and with an indentation depth of \(h_s\) is 4 mm. With this experiment, 4 key points on 
-%the sepcimen's surface were chosen: First, in the middle and three other points, one to right, 
-%one down, and one diagonal to middle, forming a square with a distance between points 
-%of \(d_s\) 20 mm. %add figure with points
-
-%----------------------------------------------------------------------------------
-%\section{Material model framework assumptions}
-%
-%The first point to be analyzed, which is used to build a material model is point No. 1,
-%in the middle of the surface. The advantages from this case, is the less influence of
-%external factors. For this case it is vaiable to assumed, that shear stresses can be 
-%neglected and offers a simple model to focus on the material definition.
-%
-%For this project, there is a focus on the limitation of each material model, 
-%departing from an ideal scenario. From this point on the material will be build 
-%accordingly and for each model the influence of the material parameters is going
-%to be assessed.
-
-%Por revisar!!!
-%----------------------------------------------------------------------------------
-%\section{Material model}
-
-%n an ideal and first scenario, this material can be assumed as linear, isotropic, 
-%lastic and nearly imcompressible. For this case, there are two main variables, the Young's
-%odulus \(E\), and the Poisson's ratio $\nu$.
-
-%comentario sobre la influencia del bulk modulus y poissons ratio
-%From the parametric analysis, it is possible to see that the bulk 
-%modulus of this material does not possess a big impact in the FE 
-%simulation results. This conclusion combined with the results 
-%from the Poisson ratio in the first material model coincide with the 
-%statements from Bergström, where it is no vital to know these parameters 
-%to obtain accurate FE computational models, as these have limited
-%influence on the mechanical response. \cite{Bergström2015} %pag64Bergströom
-
-%---------------------------------------------------------------------------------
-
-%Additionally, it was observed that in soft materials it is easier to capture 
-% parameters with a larger indentation.  references also observe that with
-%indentation depth lower than indenter radius has a lot of noise and do not describe
-%th results accurately. %reference?

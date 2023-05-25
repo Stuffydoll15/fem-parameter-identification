@@ -34,7 +34,7 @@
 \contentsline {section}{\numberline {4.3}Comparison Between RSO and MATLAB Optimization}{51}{section.180}%
 \contentsline {chapter}{\numberline {5}Results}{53}{chapter.181}%
 \contentsline {section}{\numberline {5.1}Overview and Analysis}{53}{section.182}%
-\contentsline {section}{\numberline {5.2}Validation of Computational Model}{55}{section.189}%
+\contentsline {section}{\numberline {5.2}Validation of the Computational Model}{55}{section.189}%
 \contentsline {subsection}{\numberline {5.2.1}Deeper Indentation}{56}{subsection.190}%
 \contentsline {subsection}{\numberline {5.2.2}Deformation Profile Analysis}{57}{subsection.194}%
 \contentsline {subsection}{\numberline {5.2.3}Nearby Point - Blue Point}{58}{subsection.200}%
